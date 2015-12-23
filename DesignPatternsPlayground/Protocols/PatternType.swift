@@ -12,4 +12,7 @@ protocol PatternType {
     
     /// Returns total number of types for this PatternType.
     static func numberOfTypes() -> Int
+    
+    /// Returns `String` representation for this enum.
+    func toString() -> String
 }
