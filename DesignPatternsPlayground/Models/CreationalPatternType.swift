@@ -8,16 +8,15 @@
 
 import Foundation
 
-enum CreationaPatternType {
+enum CreationaPatternType: Int, PatternType {
 
-    case AbstractFactory
-    case FactoryMethod
-    case Prototype
-    case Singleton
-    case Builder
-    case ObjectPool
+    case AbstractFactory = 0
+    case FactoryMethod = 1
+    case Builder = 2
+    case ObjectPool = 3
+    case Prototype = 4
+    case Singleton = 5
     
-    /// Returns number of available types for this enum
     static func numberOfTypes() -> Int {
         return 6
     }
