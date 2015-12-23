@@ -20,4 +20,17 @@ enum CreationaPatternType: Int, PatternType {
     static func numberOfTypes() -> Int {
         return 6
     }
+    
+    func toString() -> String {
+        
+        switch self {
+            
+        case .AbstractFactory: return "Abstract Factory"
+        case .FactoryMethod: return "Factory Method"
+        case .Builder: return "Builder"
+        case .ObjectPool: return "Object Pool"
+        case .Prototype: return "Prototype"
+        case .Singleton: return "Singleton"
+        }
+    }
 }
