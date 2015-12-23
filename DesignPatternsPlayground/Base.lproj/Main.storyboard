@@ -154,7 +154,7 @@
         <!--Behavioural Design Patterns-->
         <scene sceneID="Gji-v3-8js">
             <objects>
-                <viewController title="Behavioural Design Patterns" id="nIh-RI-rDS" sceneMemberID="viewController">
+                <viewController title="Behavioural Design Patterns" id="nIh-RI-rDS" customClass="BehaviouralPatternsViewController" customModule="DesignPatternsPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6QT-q6-7Az"/>
                         <viewControllerLayoutGuide type="bottom" id="4aT-XM-Og4"/>
