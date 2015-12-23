@@ -15,10 +15,10 @@
 		8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B06A1C2A852500B9509E /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0691C2A852500B9509E /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B06B1C2A852500B9509E /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0691C2A852500B9509E /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -41,8 +41,8 @@
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		8D51B0691C2A852500B9509E /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
+		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 		8D51B0681C2A84E900B9509E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8D51B0691C2A852500B9509E /* CreationalPatternType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +96,14 @@
 				8DDA04C41C2A8C7600B5A707 /* PatternType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8DDA04C71C2A8E3D00B5A707 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		8DED25631C2292FF00462C0F = {
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
+				8DDA04C71C2A8E3D00B5A707 /* Enums */,
 				8D51B0681C2A84E900B9509E /* Models */,
 				8D51B05A1C2A70B100B9509E /* ViewControllers */,
 				8DED256F1C2292FF00462C0F /* AppDelegate.swift */,
@@ -244,10 +252,10 @@
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
+				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
-				8D51B06A1C2A852500B9509E /* CreationalPatternType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +266,10 @@
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
+				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
-				8D51B06B1C2A852500B9509E /* CreationalPatternType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
