@@ -135,7 +135,7 @@
         <!--Creational Design Patterns-->
         <scene sceneID="mvn-ZP-6gl">
             <objects>
-                <viewController title="Creational Design Patterns" id="hI1-yn-XLF" sceneMemberID="viewController">
+                <viewController title="Creational Design Patterns" id="hI1-yn-XLF" customClass="CreationalPatternsViewController" customModule="DesignPatternsPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C2W-d0-Vtp"/>
                         <viewControllerLayoutGuide type="bottom" id="Kk6-nV-SCj"/>
