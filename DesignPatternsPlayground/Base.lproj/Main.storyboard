@@ -172,7 +172,7 @@
         <!--Structural Design Patterns-->
         <scene sceneID="EbC-nl-kV9">
             <objects>
-                <viewController title="Structural Design Patterns" id="ocO-5V-CHP" sceneMemberID="viewController">
+                <viewController title="Structural Design Patterns" id="ocO-5V-CHP" customClass="StructuralPatternsViewController" customModule="DesignPatternsPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bbk-cz-HiN"/>
                         <viewControllerLayoutGuide type="bottom" id="EDw-wl-VwL"/>
