@@ -11,6 +11,8 @@
 		8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -49,6 +51,7 @@
 /* Begin PBXFileReference section */
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
+		8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Randomiser.swift"; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */,
+			);
+			path = Decorators;
+			sourceTree = "<group>";
+		};
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +173,7 @@
 		8DED256E1C2292FF00462C0F /* DesignPatternsPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				8D34CA2B1C3139820002E3F9 /* Decorators */,
 				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
 				8DDA04C71C2A8E3D00B5A707 /* Enums */,
@@ -287,6 +299,7 @@
 			files = (
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
@@ -306,6 +319,7 @@
 			files = (
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
 				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
