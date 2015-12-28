@@ -13,6 +13,8 @@
 		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -52,6 +54,7 @@
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
 		8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Randomiser.swift"; sourceTree = "<group>"; };
+		8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndonesianChef.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 				8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */,
 				8D34CA251C3137100002E3F9 /* WesternChef.swift */,
 				8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */,
+				8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */,
 			);
 			path = Chefs;
 			sourceTree = "<group>";
@@ -306,6 +310,7 @@
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
@@ -326,6 +331,7 @@
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
