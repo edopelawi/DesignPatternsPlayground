@@ -19,6 +19,10 @@
 		8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -61,6 +65,8 @@
 		8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndonesianChef.swift; sourceTree = "<group>"; };
 		8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCuisineChef.swift; sourceTree = "<group>"; };
 		8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractChefFactory.swift; sourceTree = "<group>"; };
+		8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactorySampleViewController.swift; sourceTree = "<group>"; };
+		8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -107,9 +113,19 @@
 			path = Decorators;
 			sourceTree = "<group>";
 		};
+		8D34CA381C3140E90002E3F9 /* CreationalPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */,
+				8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */,
+			);
+			path = CreationalPatterns;
+			sourceTree = "<group>";
+		};
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D34CA381C3140E90002E3F9 /* CreationalPatterns */,
 				8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */,
 				8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */,
 				8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */,
@@ -290,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
+				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
 			);
@@ -299,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +342,7 @@
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
+				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +366,7 @@
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
+				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

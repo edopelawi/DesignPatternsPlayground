@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AbstractFactorySampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Vvf-V0-WLy" id="Isc-gT-0kp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD1-TS-QdD" userLabel="Top Wrapper View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojr-co-8U6" userLabel="Randomize Foods Button">
+                            <rect key="frame" x="12" y="10" width="576" height="30"/>
+                            <state key="normal" title="Randomize Foods!"/>
+                            <connections>
+                                <action selector="randomizeFood:" destination="-1" eventType="touchUpInside" id="rR7-D6-Dy8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ojr-co-8U6" firstAttribute="leading" secondItem="wD1-TS-QdD" secondAttribute="leading" constant="12" id="1IA-tq-CmS"/>
+                        <constraint firstAttribute="height" constant="50" id="Jdu-xr-g6j"/>
+                        <constraint firstAttribute="trailing" secondItem="ojr-co-8U6" secondAttribute="trailing" constant="12" id="d3r-su-aba"/>
+                        <constraint firstItem="ojr-co-8U6" firstAttribute="centerY" secondItem="wD1-TS-QdD" secondAttribute="centerY" id="t1c-tJ-eoK"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-V0-WLy">
+                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vvf-V0-WLy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7TF-oO-4qj"/>
+                <constraint firstAttribute="trailing" secondItem="Vvf-V0-WLy" secondAttribute="trailing" id="DG1-xC-bRE"/>
+                <constraint firstAttribute="bottom" secondItem="Vvf-V0-WLy" secondAttribute="bottom" id="Tly-tK-cb7"/>
+                <constraint firstItem="wD1-TS-QdD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XZ2-lY-tBb"/>
+                <constraint firstItem="wD1-TS-QdD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iCY-au-AXD"/>
+                <constraint firstItem="Vvf-V0-WLy" firstAttribute="top" secondItem="wD1-TS-QdD" secondAttribute="bottom" id="opG-uB-xbW"/>
+                <constraint firstAttribute="trailing" secondItem="wD1-TS-QdD" secondAttribute="trailing" id="tH9-g6-IH5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
