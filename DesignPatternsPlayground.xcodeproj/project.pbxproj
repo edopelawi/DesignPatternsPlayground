@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -19,6 +35,12 @@
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -37,12 +59,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
+		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
+		8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Randomiser.swift"; sourceTree = "<group>"; };
+		8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndonesianChef.swift; sourceTree = "<group>"; };
+		8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCuisineChef.swift; sourceTree = "<group>"; };
+		8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractChefFactory.swift; sourceTree = "<group>"; };
+		8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactorySampleViewController.swift; sourceTree = "<group>"; };
+		8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
+		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		8DDA04D21C2A9E3C00B5A707 /* Chef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChineseChef.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,9 +105,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */,
+			);
+			path = Decorators;
+			sourceTree = "<group>";
+		};
+		8D34CA381C3140E90002E3F9 /* CreationalPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */,
+				8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */,
+			);
+			path = CreationalPatterns;
+			sourceTree = "<group>";
+		};
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D34CA381C3140E90002E3F9 /* CreationalPatterns */,
 				8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */,
 				8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */,
 				8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */,
@@ -86,6 +137,7 @@
 		8D51B0681C2A84E900B9509E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8DDA04CF1C2A9DB000B5A707 /* Food.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA04C41C2A8C7600B5A707 /* PatternType.swift */,
+				8DDA04D21C2A9E3C00B5A707 /* Chef.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -104,6 +157,27 @@
 				8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		8DDA04CB1C2A9BF500B5A707 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				8DDA04D51C2A9FAB00B5A707 /* Chefs */,
+				8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		8DDA04D51C2A9FAB00B5A707 /* Chefs */ = {
+			isa = PBXGroup;
+			children = (
+				8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */,
+				8D34CA251C3137100002E3F9 /* WesternChef.swift */,
+				8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */,
+				8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */,
+				8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */,
+			);
+			path = Chefs;
 			sourceTree = "<group>";
 		};
 		8DED25631C2292FF00462C0F = {
@@ -127,6 +201,8 @@
 		8DED256E1C2292FF00462C0F /* DesignPatternsPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				8D34CA2B1C3139820002E3F9 /* Decorators */,
+				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
 				8DDA04C71C2A8E3D00B5A707 /* Enums */,
 				8D51B0681C2A84E900B9509E /* Models */,
@@ -230,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
+				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
 			);
@@ -239,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,11 +329,21 @@
 			files = (
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
+				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
+				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
+				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
+				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
+				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
+				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
+				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +353,21 @@
 			files = (
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
+				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
+				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
+				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
+				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
+				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
+				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
+				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
