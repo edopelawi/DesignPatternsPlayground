@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -46,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
+		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 			children = (
 				8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */,
 				8D34CA251C3137100002E3F9 /* WesternChef.swift */,
+				8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */,
 			);
 			path = Chefs;
 			sourceTree = "<group>";
@@ -283,6 +287,7 @@
 			files = (
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
@@ -301,6 +306,7 @@
 			files = (
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
