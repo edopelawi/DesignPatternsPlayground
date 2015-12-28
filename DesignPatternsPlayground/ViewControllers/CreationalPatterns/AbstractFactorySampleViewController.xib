@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD1-TS-QdD" userLabel="Top Wrapper View">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <rect key="frame" x="0.0" y="60" width="600" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojr-co-8U6" userLabel="Randomize Foods Button">
                             <rect key="frame" x="12" y="10" width="576" height="30"/>
@@ -35,7 +35,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-V0-WLy">
-                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                    <rect key="frame" x="0.0" y="110" width="600" height="490"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
@@ -44,7 +44,7 @@
                 <constraint firstItem="Vvf-V0-WLy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7TF-oO-4qj"/>
                 <constraint firstAttribute="trailing" secondItem="Vvf-V0-WLy" secondAttribute="trailing" id="DG1-xC-bRE"/>
                 <constraint firstAttribute="bottom" secondItem="Vvf-V0-WLy" secondAttribute="bottom" id="Tly-tK-cb7"/>
-                <constraint firstItem="wD1-TS-QdD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XZ2-lY-tBb"/>
+                <constraint firstItem="wD1-TS-QdD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="XZ2-lY-tBb"/>
                 <constraint firstItem="wD1-TS-QdD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iCY-au-AXD"/>
                 <constraint firstItem="Vvf-V0-WLy" firstAttribute="top" secondItem="wD1-TS-QdD" secondAttribute="bottom" id="opG-uB-xbW"/>
                 <constraint firstAttribute="trailing" secondItem="wD1-TS-QdD" secondAttribute="trailing" id="tH9-g6-IH5"/>

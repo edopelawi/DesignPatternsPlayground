@@ -20,6 +20,9 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Chefs and Cuisines!"
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
