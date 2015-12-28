@@ -18,9 +18,11 @@ class ChineseChef: Chef {
     
     /// Returns `Chinese` Food with random name.
     func cook() -> Food {
-        let foodNamesCount = foodNames.count
-        let selectedFoodIndex = Int(arc4random_uniform(UInt32(foodNamesCount)))
-        let selectedFoodName = foodNames[selectedFoodIndex]
+        var selectedFoodName = ""
+        
+        if let foodName = foodNames.randomElement() {
+            selectedFoodName = foodName
+        }
         
         return Food(type: .Chinese, name: selectedFoodName)
     }
