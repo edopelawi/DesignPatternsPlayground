@@ -76,6 +76,11 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
         
         if let patternType = CreationaPatternType(rawValue: indexPath.row) {
             selectedPatternName = patternType.toString()
+            
+            if patternType == .AbstractFactory {
+                let viewController = AbstractFactorySampleViewController()
+                navigationController?.pushViewController(viewController, animated: true)
+            }
         }
         
         print("Selected pattern: \(selectedPatternName)")
