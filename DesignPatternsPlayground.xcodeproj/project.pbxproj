@@ -29,6 +29,8 @@
 		8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
@@ -76,6 +78,7 @@
 		8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
 		8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeViewModel.swift; sourceTree = "<group>"; };
 		8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertParadeViewModel.swift; sourceTree = "<group>"; };
+		8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaParadeViewModel.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 			children = (
 				8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */,
 				8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */,
+				8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */,
 			);
 			path = Parades;
 			sourceTree = "<group>";
@@ -366,6 +370,7 @@
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
+				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
@@ -393,6 +398,7 @@
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
+				8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
