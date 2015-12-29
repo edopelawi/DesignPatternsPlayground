@@ -25,6 +25,8 @@
 		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; };
 		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
 		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
+		8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
@@ -70,6 +72,7 @@
 		8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractChefFactory.swift; sourceTree = "<group>"; };
 		8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactorySampleViewController.swift; sourceTree = "<group>"; };
 		8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
+		8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeViewModel.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +126,22 @@
 				8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */,
 			);
 			path = CreationalPatterns;
+			sourceTree = "<group>";
+		};
+		8D3E42B21C327D9D0018E6BC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E42B31C327DC10018E6BC /* Parades */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8D3E42B31C327DC10018E6BC /* Parades */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */,
+			);
+			path = Parades;
 			sourceTree = "<group>";
 		};
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
@@ -211,6 +230,7 @@
 				8DDA04C71C2A8E3D00B5A707 /* Enums */,
 				8D51B0681C2A84E900B9509E /* Models */,
 				8D51B05A1C2A70B100B9509E /* ViewControllers */,
+				8D3E42B21C327D9D0018E6BC /* ViewModels */,
 				8DED256F1C2292FF00462C0F /* AppDelegate.swift */,
 				8DED25731C2292FF00462C0F /* Main.storyboard */,
 				8DED25761C2292FF00462C0F /* Assets.xcassets */,
@@ -338,6 +358,7 @@
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
+				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
@@ -363,6 +384,7 @@
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
+				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
