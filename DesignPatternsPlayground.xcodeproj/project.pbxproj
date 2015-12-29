@@ -31,6 +31,8 @@
 		8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
@@ -79,6 +81,7 @@
 		8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParadeViewModel.swift; sourceTree = "<group>"; };
 		8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertParadeViewModel.swift; sourceTree = "<group>"; };
 		8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaParadeViewModel.swift; sourceTree = "<group>"; };
+		8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyParadeViewModel.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +151,7 @@
 				8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */,
 				8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */,
 				8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */,
+				8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */,
 			);
 			path = Parades;
 			sourceTree = "<group>";
@@ -374,6 +378,7 @@
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
+				8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
@@ -402,6 +407,7 @@
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
+				8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
