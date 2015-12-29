@@ -10,13 +10,13 @@ import Foundation
 
 class ParadeViewModel {
     
-    internal func decoratedParadeName() -> String {
+    final internal func decoratedParadeName() -> String {
         let paradeName = retrieveParade().name
         
         return "✨✨ \(paradeName) ✨✨"
     }
     
-    internal func decoratedParadeMembers() -> String {
+    final internal func decoratedParadeMembers() -> String {
         let paradeMembers = retrieveParade().members
         
         return "🎉🎉🎊🎊🎈 \(paradeMembers) 🎈🎊🎊🎉🎉"
