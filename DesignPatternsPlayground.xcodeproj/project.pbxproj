@@ -7,40 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; settings = {ASSET_TAGS = (); }; };
-		8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
+		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
+		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
+		8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
+		8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; };
+		8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */; };
+		8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; };
+		8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */; };
+		8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; };
+		8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA2F1C313C510002E3F9 /* IndonesianChef.swift */; };
+		8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; };
+		8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA321C313D4F0002E3F9 /* OtherCuisineChef.swift */; };
+		8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; };
+		8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */; };
+		8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; };
+		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; };
+		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
+		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
+		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
+		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
+		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
+		8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
+		8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; };
+		8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; };
+		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
+		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
+		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
+		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
+		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
+		8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
+		8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; };
+		8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; };
+		8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; };
+		8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D21C2A9E3C00B5A707 /* Chef.swift */; };
+		8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; };
+		8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04D61C2A9FDD00B5A707 /* ChineseChef.swift */; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -59,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
 		8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Randomiser.swift"; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA04CF1C2A9DB000B5A707 /* Food.swift */,
+				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,6 +343,7 @@
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
+				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
@@ -363,6 +368,7 @@
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
+				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
