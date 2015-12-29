@@ -33,6 +33,8 @@
 		8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
@@ -82,6 +84,7 @@
 		8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertParadeViewModel.swift; sourceTree = "<group>"; };
 		8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaParadeViewModel.swift; sourceTree = "<group>"; };
 		8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyParadeViewModel.swift; sourceTree = "<group>"; };
+		8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JungleParadeViewModel.swift; sourceTree = "<group>"; };
 		8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */,
 				8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */,
 				8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */,
+				8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */,
 			);
 			path = Parades;
 			sourceTree = "<group>";
@@ -382,6 +386,7 @@
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
+				8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
@@ -411,6 +416,7 @@
 				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
+				8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
