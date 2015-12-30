@@ -72,6 +72,8 @@
 		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
 		8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
 		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
+		8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,7 @@
 		8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodSampleViewController.xib; sourceTree = "<group>"; };
 		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
 		8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */,
+				8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */,
 			);
 			path = BurgerOrders;
 			sourceTree = "<group>";
@@ -413,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
@@ -449,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
