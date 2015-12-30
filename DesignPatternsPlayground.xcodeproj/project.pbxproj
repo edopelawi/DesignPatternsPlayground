@@ -78,6 +78,8 @@
 		8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,7 @@
 		8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
 		8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
+		8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3E42B31C327DC10018E6BC /* Parades */,
+				8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -439,6 +443,7 @@
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
+				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
@@ -477,6 +482,7 @@
 				8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
+				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
