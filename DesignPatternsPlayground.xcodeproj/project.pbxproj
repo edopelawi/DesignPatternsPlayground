@@ -60,6 +60,8 @@
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
 		8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25781C2292FF00462C0F /* LaunchScreen.storyboard */; };
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
+		8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		8DED25801C2292FF00462C0F /* DesignPatternsPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsPlaygroundTests.swift; sourceTree = "<group>"; };
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackParadeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,7 @@
 				8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */,
 				8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */,
 				8D3E42C31C3286A20018E6BC /* CityParadeViewModel.swift */,
+				8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */,
 			);
 			path = Parades;
 			sourceTree = "<group>";
@@ -372,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
+				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
@@ -403,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
+				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
