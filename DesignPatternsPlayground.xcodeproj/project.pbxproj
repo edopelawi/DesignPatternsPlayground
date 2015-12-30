@@ -62,6 +62,10 @@
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
 		8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63701C33961100F65DAB /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63711C33961100F65DAB /* FactoryMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63721C33961100F65DAB /* FactoryMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DEF63731C33961100F65DAB /* FactoryMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,8 @@
 		8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsPlaygroundTests.swift; sourceTree = "<group>"; };
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackParadeViewModel.swift; sourceTree = "<group>"; };
+		8DEF636E1C33961100F65DAB /* FactoryMethodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodViewController.swift; sourceTree = "<group>"; };
+		8DEF636F1C33961100F65DAB /* FactoryMethodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,8 @@
 			children = (
 				8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */,
 				8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */,
+				8DEF636E1C33961100F65DAB /* FactoryMethodViewController.swift */,
+				8DEF636F1C33961100F65DAB /* FactoryMethodViewController.xib */,
 			);
 			path = CreationalPatterns;
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
+				8DEF63721C33961100F65DAB /* FactoryMethodViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
 			);
@@ -364,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEF63731C33961100F65DAB /* FactoryMethodViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +393,7 @@
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
+				8DEF63701C33961100F65DAB /* FactoryMethodViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
@@ -415,6 +426,7 @@
 				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
+				8DEF63711C33961100F65DAB /* FactoryMethodViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
