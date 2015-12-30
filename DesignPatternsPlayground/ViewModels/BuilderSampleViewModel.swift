@@ -41,10 +41,7 @@ class BuilderSampleViewModel {
     
     internal private(set) var orderPartNames: [ String ] = []
     
-    internal var orderPartSelectedMarker = Array(
-        count: BurgerOrderRows.numberOfRows(),
-        repeatedValue: false
-    )
+    internal var orderPartSelectedMarker: [ Bool ] = []
     
     internal private(set) var orderPackages = [
         BurgerOrderPackage.Normal.rawValue,
@@ -57,6 +54,16 @@ class BuilderSampleViewModel {
     
     init() {
         prepareOrderPartNames()
+        resetOrderPartSelections()
+    }
+    
+    /// Sets this instance's `orderPartSelectedMarker` booleans to `false`.
+    internal func resetOrderPartSelections() {
+        
+        orderPartSelectedMarker = Array(
+            count: BurgerOrderRows.numberOfRows(),
+            repeatedValue: false
+        )
     }
     
     // MARK: Private methods
