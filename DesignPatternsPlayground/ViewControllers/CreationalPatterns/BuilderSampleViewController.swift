@@ -38,8 +38,16 @@ class BuilderSampleViewController: UITableViewController {
     
     private let reuseIdentifier = "reuseIdentifier"
     
+    private var selectionMarker = Array(
+        count: BurgerOrderRows.numberOfRows(),
+        repeatedValue: false
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Order A Burger!"
+        
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         
         // TODO: Add headerView and footerView here.
@@ -61,14 +69,37 @@ class BuilderSampleViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
 
-        cell.selectionStyle = .Blue
+        cell.selectionStyle = .None
         cell.textLabel?.text = ""
         
         if let row = BurgerOrderRows(rawValue: indexPath.row) {
             cell.textLabel?.text = row.toString()
         }
+        
+        let cellSelected = (indexPath.row < selectionMarker.count) &&
+            (selectionMarker[indexPath.row] == true)
+
+        cell.accessoryType = cellSelected ? .Checkmark : .None
+        
 
         return cell
     }
     
+
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+            cell.accessoryType = .None
+        }
+        
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if indexPath.row < selectionMarker.count {
+            selectionMarker[indexPath.row] = true
+
+            tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: UITableViewRowAnimation.Fade)
+        }
+    }
 }
