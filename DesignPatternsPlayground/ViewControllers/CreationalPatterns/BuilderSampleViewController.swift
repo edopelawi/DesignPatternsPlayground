@@ -28,7 +28,12 @@ class BuilderSampleViewController: UITableViewController {
 
     }
     
-    // TODO: Add headerView and footerView's action here.
+    // MARK: headerView and footerView's button actions
+
+    @IBAction func clearOrderPartSelections(sender: AnyObject) {        
+        viewModel.resetOrderPartSelections()
+        tableView.reloadData()
+    }
 
     // MARK: - Table view data source
 

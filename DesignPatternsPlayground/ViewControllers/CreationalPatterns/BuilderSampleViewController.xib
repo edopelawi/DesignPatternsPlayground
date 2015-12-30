@@ -59,6 +59,9 @@
                     <state key="normal" title="Clear Selection">
                         <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="clearOrderPartSelections:" destination="-1" eventType="touchUpInside" id="ajG-Z8-m8P"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAf-tD-Tbl">
                     <rect key="frame" x="304" y="12" width="288" height="30"/>
