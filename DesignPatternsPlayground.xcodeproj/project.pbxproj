@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
+		8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
@@ -25,18 +27,18 @@
 		8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */; };
 		8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
 		8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */; };
-		8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C31C3286A20018E6BC /* CityParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C31C3286A20018E6BC /* CityParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; };
+		8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B41C327DED0018E6BC /* ParadeViewModel.swift */; };
+		8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; };
+		8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42B71C3280A00018E6BC /* DesertParadeViewModel.swift */; };
+		8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; };
+		8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BA1C32837A0018E6BC /* SeaParadeViewModel.swift */; };
+		8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; };
+		8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42BD1C32846E0018E6BC /* SkyParadeViewModel.swift */; };
+		8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; };
+		8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C01C3285630018E6BC /* JungleParadeViewModel.swift */; };
+		8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C31C3286A20018E6BC /* CityParadeViewModel.swift */; };
+		8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E42C31C3286A20018E6BC /* CityParadeViewModel.swift */; };
 		8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */; };
 		8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */; };
@@ -60,16 +62,16 @@
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
 		8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25781C2292FF00462C0F /* LaunchScreen.storyboard */; };
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
-		8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; };
+		8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */; };
+		8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */; };
+		8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */; };
+		8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; };
+		8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; };
+		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
+		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
+		8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
+		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -141,6 +144,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D03ADC41C33C54200CA932B /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				8D03ADC51C33C56A00CA932B /* BurgerOrders */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		8D03ADC51C33C56A00CA932B /* BurgerOrders */ = {
+			isa = PBXGroup;
+			children = (
+				8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */,
+			);
+			path = BurgerOrders;
+			sourceTree = "<group>";
+		};
 		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +283,7 @@
 		8DED256E1C2292FF00462C0F /* DesignPatternsPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				8D03ADC41C33C54200CA932B /* Builders */,
 				8D34CA2B1C3139820002E3F9 /* Decorators */,
 				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
@@ -421,6 +441,7 @@
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
+				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +477,7 @@
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
+				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
