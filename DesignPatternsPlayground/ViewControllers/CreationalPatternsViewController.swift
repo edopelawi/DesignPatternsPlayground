@@ -81,7 +81,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
             
             switch patternType {
             case .AbstractFactory: viewController = AbstractFactorySampleViewController()
-            case .FactoryMethod: viewController = FactoryMethodViewController()
+            case .FactoryMethod: viewController = FactoryMethodSampleViewController()
             default: break
             }
             

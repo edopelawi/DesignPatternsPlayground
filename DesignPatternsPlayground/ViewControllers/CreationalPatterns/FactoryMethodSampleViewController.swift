@@ -1,5 +1,5 @@
 //
-//  FactoryMethodViewController.swift
+//  FactoryMethodSampleViewController.swift
 //  DesignPatternsPlayground
 //
 //  Created by Ricardo Pramana Suranta on 12/30/15.
@@ -8,13 +8,20 @@
 
 import UIKit
 
-class FactoryMethodViewController: UITableViewController {
+class FactoryMethodSampleViewController: UITableViewController {
     
     private var viewModels: [ ParadeViewModel ] = []
     private let reuseIdentifier = "reuseIdentifier"
     
+    convenience init() {
+        self.init(nibName: "FactoryMethodSampleViewController", bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Parades, Parades!"
+        
         prepareViewModels()
         registerCells()
     }
