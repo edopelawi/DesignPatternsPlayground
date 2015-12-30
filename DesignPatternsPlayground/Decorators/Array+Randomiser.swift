@@ -20,6 +20,6 @@ extension Array {
         
         let selectedIndex = Int(arc4random_uniform(UInt32(count)))
         
-        return self[selectedIndex] as? Element
+        return self[selectedIndex]
     }
 }
