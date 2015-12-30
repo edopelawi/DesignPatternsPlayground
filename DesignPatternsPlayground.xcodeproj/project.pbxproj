@@ -68,6 +68,8 @@
 		8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
 		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,7 @@
 		8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodSampleViewController.xib; sourceTree = "<group>"; };
 		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
+		8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +209,7 @@
 			children = (
 				8DDA04C41C2A8C7600B5A707 /* PatternType.swift */,
 				8DDA04D21C2A9E3C00B5A707 /* Chef.swift */,
+				8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -410,6 +414,7 @@
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
+				8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
@@ -444,6 +449,7 @@
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
+				8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D51B05D1C2A71B000B9509E /* CreationalPatternsViewController.swift in Sources */,
 				8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
