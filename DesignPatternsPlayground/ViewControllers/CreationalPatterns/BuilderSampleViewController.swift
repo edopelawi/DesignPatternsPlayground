@@ -49,8 +49,9 @@ class BuilderSampleViewController: UITableViewController {
         title = "Order A Burger!"
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
-        
-        // TODO: Add headerView and footerView here.
+        tableView.tableHeaderView = headerView
+        tableView.tableFooterView = footerView
+
     }
     
     // TODO: Add headerView and footerView's action here.
@@ -65,6 +66,9 @@ class BuilderSampleViewController: UITableViewController {
         return BurgerOrderRows.numberOfRows()
     }
 
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Select your order!"
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
