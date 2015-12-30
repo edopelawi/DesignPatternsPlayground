@@ -82,6 +82,8 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
             switch patternType {
             case .AbstractFactory: viewController = AbstractFactorySampleViewController()
             case .FactoryMethod: viewController = FactoryMethodSampleViewController()
+            case .Builder: viewController = BuilderSampleViewController()
+                
             default: break
             }
             
@@ -91,8 +93,6 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
         }
         
         print("Selected pattern: \(selectedPatternName)")
-        
-        // TODO: push corresponding sample page here.
         
     }
 }
