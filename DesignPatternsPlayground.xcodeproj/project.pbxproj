@@ -74,6 +74,10 @@
 		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
 		8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,8 @@
 		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
 		8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
+		8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,8 @@
 			children = (
 				8D34CA3C1C3141680002E3F9 /* AbstractFactorySampleViewController.swift */,
 				8D34CA3D1C3141680002E3F9 /* AbstractFactorySampleViewController.xib */,
+				8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */,
+				8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */,
 				8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */,
 				8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */,
 			);
@@ -395,6 +403,7 @@
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
+				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
@@ -407,6 +416,7 @@
 			files = (
 				8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
+				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +455,7 @@
 				8D3E42C11C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
+				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
@@ -482,6 +493,7 @@
 				8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
+				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
