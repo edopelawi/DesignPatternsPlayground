@@ -66,6 +66,8 @@
 		8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
+		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,7 @@
 		8DEF636B1C3394BB00F65DAB /* BlackParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackParadeViewModel.swift; sourceTree = "<group>"; };
 		8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodSampleViewController.xib; sourceTree = "<group>"; };
+		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,7 @@
 			children = (
 				8DDA04CF1C2A9DB000B5A707 /* Food.swift */,
 				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
+				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -389,6 +393,7 @@
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
+				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
@@ -422,6 +427,7 @@
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
+				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
 				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
