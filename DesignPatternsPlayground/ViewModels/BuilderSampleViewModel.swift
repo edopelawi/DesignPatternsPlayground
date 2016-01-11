@@ -79,6 +79,20 @@ class BuilderSampleViewModel {
         )
     }
     
+    /// Create `BurgerOrder` instance based on current package and selections.
+    internal func createBurderOrder() -> BurgerOrder {
+        
+        var builder: BurgerOrderBuilder
+        
+        if selectedPackage == .Normal {
+            builder = NormalBurgerOrderBuilder()
+        } else {
+            builder = WhopperBurgerOrderBuilder()
+        }
+        
+        return buildOrderWithBuilder(builder)
+    }
+    
     // MARK: Private methods
     
     private func prepareOrderPartNames() {
@@ -89,5 +103,24 @@ class BuilderSampleViewModel {
                 orderPartNames.append(row.toString())
             }
         }
+    }
+    
+    private func buildOrderWithBuilder(builder: BurgerOrderBuilder) -> BurgerOrder {
+
+        for (index, selected) in orderPartSelectedMarker.enumerate() {
+            
+            if let row = BurgerOrderRows(rawValue: index) where selected {
+                
+                switch row {
+                case .Burger: builder.addBurger()
+                case .Drinks: builder.addDrinks()
+                case .Fries: builder.addFries()
+                case .Salads: builder.addSalad()
+                case .Sweets: builder.addSweets()
+                }
+            }
+        }
+        
+        return builder.makeOrder()
     }
 }
