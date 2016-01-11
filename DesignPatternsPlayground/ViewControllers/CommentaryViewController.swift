@@ -10,7 +10,8 @@ import UIKit
 
 class CommentaryViewController: UIViewController {
 
-    @IBOutlet weak var commentaryLabel: UILabel!
+    @IBOutlet private weak var commentaryLabel: UILabel!
+    @IBOutlet private weak var scrollView: UIScrollView!
     
     private var commentaryTextBuffer: String?
     
@@ -20,6 +21,13 @@ class CommentaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Comments"
+        
+        if let navigationBarHeight = navigationController?.navigationBar.frame.height {
+            let topContentInset = navigationBarHeight + CGFloat(20)
+            scrollView.contentInset = UIEdgeInsetsMake(topContentInset, 0, 0, 0)
+        }
         
         if let commentary = commentaryTextBuffer {
             setCommentaryText(commentary)
