@@ -35,6 +35,13 @@ enum BurgerOrderPackage: String {
     case Whopper = "WHOPPER™ Package"
 }
 
+protocol BuilderSampleViewModelDelegate: class {
+
+    /// This method will be called when passed `viewModel`'s `selectedPackage` is changed.
+    /// Will pass the latest `BurgerOrderPackage` through `selectedPackageChanged` parameter.
+    func viewModel(viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage);
+}
+
 class BuilderSampleViewModel {
     
     // MARK: Properties
@@ -48,7 +55,13 @@ class BuilderSampleViewModel {
         BurgerOrderPackage.Whopper.rawValue
     ]
     
-    internal var selectedPackage = BurgerOrderPackage.Normal
+    internal var selectedPackage = BurgerOrderPackage.Normal {
+        didSet {
+            delegate?.viewModel(self, selectedPackageChanged: selectedPackage)
+        }
+    }
+    
+    weak internal var delegate: BuilderSampleViewModelDelegate?
     
     // MARK: Public methods
     
