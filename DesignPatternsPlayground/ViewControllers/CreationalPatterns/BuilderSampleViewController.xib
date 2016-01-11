@@ -28,13 +28,13 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Burger Package:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQb-Nf-9pi">
-                    <rect key="frame" x="8" y="8" width="584" height="21"/>
+                    <rect key="frame" x="12" y="8" width="576" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-Cv-kxn">
-                    <rect key="frame" x="8" y="37" width="584" height="30"/>
+                    <rect key="frame" x="12" y="37" width="576" height="31"/>
                     <state key="normal" title="Default Package"/>
                     <connections>
                         <action selector="showPackageOptions:" destination="-1" eventType="touchUpInside" id="wJX-Th-4LG"/>
@@ -44,11 +44,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Ma8-Cv-kxn" firstAttribute="top" secondItem="oQb-Nf-9pi" secondAttribute="bottom" constant="8" id="7aj-5Q-7br"/>
-                <constraint firstItem="oQb-Nf-9pi" firstAttribute="leading" secondItem="yRc-lN-H4K" secondAttribute="leading" constant="8" id="SgS-sb-7qn"/>
+                <constraint firstItem="oQb-Nf-9pi" firstAttribute="leading" secondItem="yRc-lN-H4K" secondAttribute="leading" constant="12" id="SgS-sb-7qn"/>
                 <constraint firstItem="Ma8-Cv-kxn" firstAttribute="trailing" secondItem="oQb-Nf-9pi" secondAttribute="trailing" id="epl-lD-g1W"/>
                 <constraint firstItem="oQb-Nf-9pi" firstAttribute="top" secondItem="yRc-lN-H4K" secondAttribute="top" constant="8" id="k0m-Ea-a2a"/>
                 <constraint firstItem="Ma8-Cv-kxn" firstAttribute="leading" secondItem="oQb-Nf-9pi" secondAttribute="leading" id="o67-kV-I3h"/>
-                <constraint firstAttribute="trailing" secondItem="oQb-Nf-9pi" secondAttribute="trailing" constant="8" id="uGq-Xz-B93"/>
+                <constraint firstAttribute="trailing" secondItem="oQb-Nf-9pi" secondAttribute="trailing" constant="12" id="uGq-Xz-B93"/>
                 <constraint firstAttribute="bottom" secondItem="Ma8-Cv-kxn" secondAttribute="bottom" constant="20" id="zSf-Gd-eJg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
