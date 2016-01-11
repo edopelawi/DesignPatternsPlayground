@@ -23,9 +23,8 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
         
         title = "Chefs and Cuisines!"
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        prepareTableView()
+        prepareCommentBarButton()
     }
     
     
@@ -55,5 +54,34 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
         
         return cell
     }
+    
+    // MARK: - Private methods -
+    
+    private func prepareTableView() {
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    }
 
+    private func prepareCommentBarButton() {
+        let button = UIBarButtonItem(
+            title: "Comments",
+            style: .Plain,
+            target: self,
+            action: Selector("pushCommentPage:")
+        )
+        
+        self.navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc private func pushCommentPage(sender: UIBarButtonItem) {
+
+        // TODO: Update loaded commentary here
+        
+        let commentPage = CommentaryViewController()
+        commentPage.setCommentaryText("This is just a test!");
+        
+        self.navigationController?.pushViewController(commentPage, animated: true)
+    }
 }
