@@ -8,10 +8,12 @@
 
 import UIKit
 
-class BuilderSampleViewController: UITableViewController {
+class BuilderSampleViewController: UITableViewController, BuilderSampleViewModelDelegate {
         
     @IBOutlet private var headerView: UIView!
     @IBOutlet private var footerView: UIView!
+    
+    @IBOutlet weak var packageSelectionButton: UIButton!
     
     private let reuseIdentifier = "reuseIdentifier"
     
@@ -22,9 +24,10 @@ class BuilderSampleViewController: UITableViewController {
         
         title = "Order A Burger!"
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
-        tableView.tableHeaderView = headerView
-        tableView.tableFooterView = footerView
+        viewModel.delegate = self
+        
+        prepareTableView()
+        preparePackageButton()
 
     }
     
@@ -38,7 +41,7 @@ class BuilderSampleViewController: UITableViewController {
     @IBAction func showPackageOptions(sender: AnyObject) {
         
         let actionController = packageSelectionAlertController()
-        self.presentViewController(actionController, animated: true, completion: nil)        
+        self.presentViewController(actionController, animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
@@ -83,7 +86,30 @@ class BuilderSampleViewController: UITableViewController {
         tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: .Fade)
     }
     
-    // MARK: Private methods
+    
+    // MARK: - BuilderSampleViewModel delegate
+    
+    func viewModel(viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage) {
+        
+        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, forState: .Normal);
+        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, forState: .Highlighted);
+    }
+    
+    // MARK: - Private methods
+    
+    private func prepareTableView() {
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+        tableView.tableHeaderView = headerView
+        tableView.tableFooterView = footerView
+    }
+    
+    private func preparePackageButton() {
+        
+        let initialTitle = viewModel.selectedPackage.rawValue
+        
+        packageSelectionButton.setTitle(initialTitle, forState: .Normal)
+        packageSelectionButton.setTitle(initialTitle, forState: .Highlighted)
+    }
     
     private func packageSelectionAlertController() -> UIAlertController {
         

@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="footerView" destination="yq9-4C-zSg" id="e3k-Ze-3ai"/>
                 <outlet property="headerView" destination="yRc-lN-H4K" id="EuV-GZ-SN6"/>
+                <outlet property="packageSelectionButton" destination="Ma8-Cv-kxn" id="yJJ-n4-rXH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
