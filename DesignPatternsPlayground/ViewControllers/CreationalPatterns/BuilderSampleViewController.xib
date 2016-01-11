@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuilderSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="footerView" destination="yq9-4C-zSg" id="e3k-Ze-3ai"/>
+                <outlet property="headerView" destination="yRc-lN-H4K" id="EuV-GZ-SN6"/>
+                <outlet property="packageSelectionButton" destination="Ma8-Cv-kxn" id="yJJ-n4-rXH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+            <point key="canvasLocation" x="600" y="481"/>
+        </tableView>
+        <view contentMode="scaleToFill" id="yRc-lN-H4K" userLabel="Header View">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Burger Package:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQb-Nf-9pi">
+                    <rect key="frame" x="12" y="8" width="576" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-Cv-kxn">
+                    <rect key="frame" x="12" y="37" width="576" height="31"/>
+                    <state key="normal" title="Default Package"/>
+                    <connections>
+                        <action selector="showPackageOptions:" destination="-1" eventType="touchUpInside" id="wJX-Th-4LG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ma8-Cv-kxn" firstAttribute="top" secondItem="oQb-Nf-9pi" secondAttribute="bottom" constant="8" id="7aj-5Q-7br"/>
+                <constraint firstItem="oQb-Nf-9pi" firstAttribute="leading" secondItem="yRc-lN-H4K" secondAttribute="leading" constant="12" id="SgS-sb-7qn"/>
+                <constraint firstItem="Ma8-Cv-kxn" firstAttribute="trailing" secondItem="oQb-Nf-9pi" secondAttribute="trailing" id="epl-lD-g1W"/>
+                <constraint firstItem="oQb-Nf-9pi" firstAttribute="top" secondItem="yRc-lN-H4K" secondAttribute="top" constant="8" id="k0m-Ea-a2a"/>
+                <constraint firstItem="Ma8-Cv-kxn" firstAttribute="leading" secondItem="oQb-Nf-9pi" secondAttribute="leading" id="o67-kV-I3h"/>
+                <constraint firstAttribute="trailing" secondItem="oQb-Nf-9pi" secondAttribute="trailing" constant="12" id="uGq-Xz-B93"/>
+                <constraint firstAttribute="bottom" secondItem="Ma8-Cv-kxn" secondAttribute="bottom" constant="20" id="zSf-Gd-eJg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="600" y="76.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="yq9-4C-zSg" userLabel="Footer View">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqU-r6-tRH">
+                    <rect key="frame" x="8" y="12" width="288" height="30"/>
+                    <state key="normal" title="Clear Selection">
+                        <color key="titleColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clearOrderPartSelections:" destination="-1" eventType="touchUpInside" id="ajG-Z8-m8P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAf-tD-Tbl">
+                    <rect key="frame" x="304" y="12" width="288" height="30"/>
+                    <state key="normal" title="Send Order"/>
+                    <connections>
+                        <action selector="sendOrder:" destination="-1" eventType="touchUpInside" id="Aef-BT-WQT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OAf-tD-Tbl" secondAttribute="trailing" constant="8" id="Kua-De-dc3"/>
+                <constraint firstItem="YqU-r6-tRH" firstAttribute="top" secondItem="yq9-4C-zSg" secondAttribute="top" constant="12" id="jge-JW-Ef1"/>
+                <constraint firstItem="OAf-tD-Tbl" firstAttribute="top" secondItem="YqU-r6-tRH" secondAttribute="top" id="tS6-P2-bNr"/>
+                <constraint firstAttribute="bottom" secondItem="YqU-r6-tRH" secondAttribute="bottom" constant="33" id="u9C-lv-bdU"/>
+                <constraint firstItem="OAf-tD-Tbl" firstAttribute="width" secondItem="YqU-r6-tRH" secondAttribute="width" id="uVT-Eg-wCY"/>
+                <constraint firstItem="OAf-tD-Tbl" firstAttribute="leading" secondItem="YqU-r6-tRH" secondAttribute="trailing" constant="8" id="vg2-sX-h1A"/>
+                <constraint firstItem="YqU-r6-tRH" firstAttribute="leading" secondItem="yq9-4C-zSg" secondAttribute="leading" constant="8" id="w1n-Ko-9Cu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="600" y="900.5"/>
+        </view>
+    </objects>
+</document>
