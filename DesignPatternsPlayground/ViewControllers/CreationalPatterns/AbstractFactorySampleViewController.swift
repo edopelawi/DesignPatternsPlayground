@@ -65,14 +65,7 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     }
 
     private func prepareCommentBarButton() {
-        let button = UIBarButtonItem(
-            title: "Comments",
-            style: .Plain,
-            target: self,
-            action: Selector("pushCommentPage:")
-        )
-        
-        self.navigationItem.rightBarButtonItem = button
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
     }
     
     @objc private func pushCommentPage(sender: UIBarButtonItem) {        
