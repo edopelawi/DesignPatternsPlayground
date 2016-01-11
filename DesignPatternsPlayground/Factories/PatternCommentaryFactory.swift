@@ -10,7 +10,7 @@ import Foundation
 
 class PatternCommentaryFactory {
     
-    class func commentaryForCreationalPattern(pattern: CreationalPatternType) -> String {
+    class func commentaryForCreationalPatternType(pattern: CreationalPatternType) -> String {
 
         var comments = ""
         

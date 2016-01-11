@@ -13,7 +13,7 @@ extension UIViewController {
     /// Push commentary page for passed `creationalPatternType`. Will only work if this instance has `navigationController`.
     func pushCommentaryPage(creationalPatternType creationalPatternType: CreationalPatternType) {
         
-        let commentaries = PatternCommentaryFactory.commentaryForCreationalPattern(creationalPatternType)
+        let commentaries = PatternCommentaryFactory.commentaryForCreationalPatternType(creationalPatternType)
         
         let commentPage = CommentaryViewController()
         commentPage.setCommentaryText(commentaries)
