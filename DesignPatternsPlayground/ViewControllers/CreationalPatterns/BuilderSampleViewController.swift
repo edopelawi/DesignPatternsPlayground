@@ -30,11 +30,17 @@ class BuilderSampleViewController: UITableViewController {
     
     // MARK: headerView and footerView's button actions
 
-    @IBAction func clearOrderPartSelections(sender: AnyObject) {        
+    @IBAction func clearOrderPartSelections(sender: AnyObject) {
         viewModel.resetOrderPartSelections()
         tableView.reloadData()
     }
 
+    @IBAction func showPackageOptions(sender: AnyObject) {
+        
+        let actionController = packageSelectionAlertController()
+        self.presentViewController(actionController, animated: true, completion: nil)        
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -75,5 +81,34 @@ class BuilderSampleViewController: UITableViewController {
         
         viewModel.orderPartSelectedMarker[indexPath.row] = true
         tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: .Fade)
+    }
+    
+    // MARK: Private methods
+    
+    private func packageSelectionAlertController() -> UIAlertController {
+        
+        let alertController = UIAlertController(
+            title: nil,
+            message: "Choose package!",
+            preferredStyle: .ActionSheet
+        )
+        
+        for orderPackage in viewModel.orderPackages {
+            
+            let action = UIAlertAction(
+                title: orderPackage,
+                style: .Default,
+                handler: {
+                    [weak self] alert in
+                    
+                    if let burgerPackage = BurgerOrderPackage(rawValue: orderPackage) {
+                        self?.viewModel.selectedPackage = burgerPackage
+                    }
+            })
+            
+            alertController.addAction(action)
+        }
+        
+        return alertController
     }
 }
