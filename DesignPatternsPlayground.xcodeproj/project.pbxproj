@@ -55,6 +55,8 @@
 		8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72D1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8BD72F1C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8BD7301C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -125,6 +127,7 @@
 		8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
+		8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PatternCommentary.swift"; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */,
+				8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */,
 			);
 			path = Decorators;
 			sourceTree = "<group>";
@@ -498,6 +502,7 @@
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
+				8D8BD72F1C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
@@ -539,6 +544,7 @@
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
+				8D8BD7301C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D51B0601C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
