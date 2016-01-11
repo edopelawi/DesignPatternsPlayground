@@ -7,58 +7,37 @@ This project was made as an attempt to learn [GoF's Design Patterns](https://en.
 Here's the list of patterns that currently implemented (and not).
 
 ## Creational
-[x] Abstract Factory
+- [x] Abstract Factory
+- [x] Builder
+- [x] Factory Method
+- [ ] Prototype
+- [ ] Singleton
 
-[x] Builder
-
-[x] Factory Method
-
-[ ] Prototype
-
-[ ] Singleton
 
 ##Structural
-[ ] Adapter
-
-[ ] Bridge
-
-[ ] Composite
-
-[ ] Decorator
-
-[ ] Facade
-
-[ ] Flyweight
-
-[ ] Proxy
+- [ ] Adapter
+- [ ] Bridge
+- [ ] Composite
+- [ ] Decorator
+- [ ] Facade
+- [ ] Flyweight
+- [ ] Proxy
 
 ##Behavioural
-
-[ ] Chain of Responsibility
-
-[ ] Command
-
-[ ] Interpreter
-
-[ ] Iterator
-
-[ ] Mediator
-
-[ ] Memento
-
-[ ] Observer
-
-[ ] State
-
-[ ] Strategy
-
-[ ] Template method
-
-[ ] Visitor
+- [ ] Chain of Responsibility
+- [ ] Command
+- [ ] Interpreter
+- [ ] Iterator
+- [ ] Mediator
+- [ ] Memento
+- [ ] Observer
+- [ ] State
+- [ ] Strategy
+- [ ] Template method
+- [ ] Visitor
 
 # Other TODOs
 
-[ ] Create comments page
-
-[ ] Add comments on implemented patterns
+- [ ] Create comments page functionality
+- [ ] Add comments on implemented patterns
 
