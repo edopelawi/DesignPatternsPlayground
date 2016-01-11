@@ -79,8 +79,10 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
 
         // TODO: Update loaded commentary here
         
+        let commentaries = PatternCommentaryFactory.commentaryForCreationalPattern(.AbstractFactory)
+        
         let commentPage = CommentaryViewController()
-        commentPage.setCommentaryText("This is just a test!");
+        commentPage.setCommentaryText(commentaries);
         
         self.navigationController?.pushViewController(commentPage, animated: true)
     }
