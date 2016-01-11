@@ -39,7 +39,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
 
     private func configureCell(cell: UITableViewCell, forRow row: Int) {
         
-        let optionalType = CreationaPatternType(rawValue: row)
+        let optionalType = CreationalPatternType(rawValue: row)
         
         var text = ""
         
@@ -58,7 +58,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
     // MARK: - UITableView Delegate and Datasource -
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CreationaPatternType.numberOfTypes()
+        return CreationalPatternType.numberOfTypes()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -74,7 +74,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
         
         var selectedPatternName = ""
         
-        if let patternType = CreationaPatternType(rawValue: indexPath.row) {
+        if let patternType = CreationalPatternType(rawValue: indexPath.row) {
             selectedPatternName = patternType.toString()
             
             var viewController: UIViewController?
