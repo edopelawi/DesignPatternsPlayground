@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentaryViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="commentaryLabel" destination="ph7-sc-Jdh" id="2TY-sv-KYj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61W-Tr-YHm" userLabel="Width Reference View">
+                    <rect key="frame" x="12" y="0.0" width="576" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="YzQ-8L-eAs"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIE-ks-SjL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph7-sc-Jdh" userLabel="Commentary Label">
+                            <rect key="frame" x="12" y="12" width="576" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ph7-sc-Jdh" secondAttribute="trailing" constant="12" id="PPG-k0-bhc"/>
+                        <constraint firstItem="ph7-sc-Jdh" firstAttribute="top" secondItem="EIE-ks-SjL" secondAttribute="top" constant="12" id="dd2-Vh-BJY"/>
+                        <constraint firstAttribute="bottom" secondItem="ph7-sc-Jdh" secondAttribute="bottom" constant="12" id="meB-af-je4"/>
+                        <constraint firstItem="ph7-sc-Jdh" firstAttribute="leading" secondItem="EIE-ks-SjL" secondAttribute="leading" constant="12" id="zqC-h1-7M2"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EIE-ks-SjL" secondAttribute="trailing" id="00f-5I-AJr"/>
+                <constraint firstAttribute="trailing" secondItem="61W-Tr-YHm" secondAttribute="trailing" constant="12" id="6sL-Za-qRv"/>
+                <constraint firstItem="61W-Tr-YHm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="M4C-a6-4ko"/>
+                <constraint firstItem="EIE-ks-SjL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rpr-9Y-yPM"/>
+                <constraint firstItem="61W-Tr-YHm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="atl-vf-JzZ"/>
+                <constraint firstItem="ph7-sc-Jdh" firstAttribute="width" secondItem="61W-Tr-YHm" secondAttribute="width" id="e1k-du-Wws"/>
+                <constraint firstAttribute="bottom" secondItem="EIE-ks-SjL" secondAttribute="bottom" id="rna-Ik-jcC"/>
+                <constraint firstItem="EIE-ks-SjL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sOc-kN-5un"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

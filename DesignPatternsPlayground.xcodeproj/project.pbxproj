@@ -47,6 +47,10 @@
 		8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; };
 		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
+		8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -113,6 +117,8 @@
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
+		8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -225,6 +231,8 @@
 				8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */,
 				8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */,
 				8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */,
+				8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */,
+				8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
+				8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
@@ -421,6 +430,7 @@
 				8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
+				8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +452,7 @@
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
+				8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
@@ -481,6 +492,7 @@
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
+				8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
