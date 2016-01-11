@@ -44,6 +44,23 @@ class BuilderSampleViewController: UITableViewController, BuilderSampleViewModel
         self.presentViewController(actionController, animated: true, completion: nil)
     }
     
+    @IBAction func sendOrder(sender: AnyObject) {
+        
+        let order = viewModel.createBurderOrder()
+        
+        let alert = UIAlertController(
+            title: "Order sent!",
+            message: order.description(),
+            preferredStyle: .Alert
+        )
+        
+        let dismissAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert.addAction(dismissAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

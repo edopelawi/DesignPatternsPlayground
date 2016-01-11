@@ -70,6 +70,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAf-tD-Tbl">
                     <rect key="frame" x="304" y="12" width="288" height="30"/>
                     <state key="normal" title="Send Order"/>
+                    <connections>
+                        <action selector="sendOrder:" destination="-1" eventType="touchUpInside" id="Aef-BT-WQT"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
