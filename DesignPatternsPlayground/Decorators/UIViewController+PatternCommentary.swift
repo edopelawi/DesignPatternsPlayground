@@ -10,6 +10,19 @@ import UIKit
 
 extension UIViewController {
     
+    /// Adds "Comments" right bar button with passed parameters.
+    func addCommentsRightBarButton(target target: AnyObject, action: Selector) {
+        
+        let button = UIBarButtonItem(
+            title: "Comments",
+            style: .Plain,
+            target: target,
+            action: action
+        )
+        
+        self.navigationItem.rightBarButtonItem = button
+    }
+    
     /// Push commentary page for passed `creationalPatternType`. Will only work if this instance has `navigationController`.
     func pushCommentaryPage(creationalPatternType creationalPatternType: CreationalPatternType) {
         
