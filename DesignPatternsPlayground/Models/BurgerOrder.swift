@@ -23,31 +23,31 @@ struct BurgerOrder {
         
         var description = ""
         
-        if let burger = burger {
+        if let burger = burger where !burger.isEmpty {
             description += "\nBURGER \n"
             description += titleLimiter
             description += burger
         }
         
-        if let drinks = drinks {
+        if let drinks = drinks where !drinks.isEmpty {
             description += "\nDRINKS \n"
             description += titleLimiter
             description += drinks
         }
         
-        if let fries = fries {
+        if let fries = fries where !fries.isEmpty {
             description += "\nFRIES \n"
             description += titleLimiter
             description += fries
         }
         
-        if let salad = salad {
+        if let salad = salad where !salad.isEmpty {
             description += "\nSALAD \n"
             description += titleLimiter
             description += salad
         }
         
-        if let sweets = sweets {
+        if let sweets = sweets where !sweets.isEmpty {
             description += "\nSWEETS \n"
             description += titleLimiter
             description += sweets
