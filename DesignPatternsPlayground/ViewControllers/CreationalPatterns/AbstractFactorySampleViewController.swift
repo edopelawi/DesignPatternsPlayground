@@ -75,15 +75,7 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
         self.navigationItem.rightBarButtonItem = button
     }
     
-    @objc private func pushCommentPage(sender: UIBarButtonItem) {
-
-        // TODO: Update loaded commentary here
-        
-        let commentaries = PatternCommentaryFactory.commentaryForCreationalPattern(.AbstractFactory)
-        
-        let commentPage = CommentaryViewController()
-        commentPage.setCommentaryText(commentaries);
-        
-        self.navigationController?.pushViewController(commentPage, animated: true)
+    @objc private func pushCommentPage(sender: UIBarButtonItem) {        
+        pushCommentaryPage(creationalPatternType: .AbstractFactory)
     }
 }
