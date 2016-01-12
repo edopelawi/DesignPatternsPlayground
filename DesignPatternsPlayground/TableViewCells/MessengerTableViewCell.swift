@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MessengerTableViewCell: UITableViewCell, UITextFieldDelegate, MessengerObserver {
+class MessengerTableViewCell: UITableViewCell, MessengerObserver {
 
     static let identifier = "MessengerCellIdentifier"
     static let preferredHeight = CGFloat(96)
@@ -39,6 +39,20 @@ class MessengerTableViewCell: UITableViewCell, UITextFieldDelegate, MessengerObs
     
     internal func configureForMessenger(messenger: Messenger) {
         currentMessenger = messenger
+    }
+    
+    @IBAction func nameTextEdited(sender: UITextField) {
+        
+        if let validText = sender.text {
+            currentMessenger?.name = validText
+        }        
+    }
+    
+    @IBAction func messageTextEdited(sender: UITextField) {
+        
+        if let validText = sender.text {
+            currentMessenger?.message = validText
+        }
     }
     
     // MARK: UITextField delegate
