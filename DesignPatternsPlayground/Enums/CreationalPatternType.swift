@@ -13,12 +13,11 @@ enum CreationalPatternType: Int, PatternType {
     case AbstractFactory = 0
     case FactoryMethod = 1
     case Builder = 2
-    case ObjectPool = 3
-    case Prototype = 4
-    case Singleton = 5
+    case Prototype = 3
+    case Singleton = 4
     
     static func numberOfTypes() -> Int {
-        return 6
+        return 5
     }
     
     func toString() -> String {
@@ -28,7 +27,6 @@ enum CreationalPatternType: Int, PatternType {
         case .AbstractFactory: return "Abstract Factory"
         case .FactoryMethod: return "Factory Method"
         case .Builder: return "Builder"
-        case .ObjectPool: return "Object Pool"
         case .Prototype: return "Prototype"
         case .Singleton: return "Singleton"
         }
