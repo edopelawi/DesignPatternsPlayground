@@ -8,25 +8,99 @@
 
 import UIKit
 
+enum PrototypeSampleSection: Int {
+
+    case Prototype = 0
+    case OtherObjects = 1
+    
+    static func numberOfSections() -> Int {
+        return 2
+    }
+}
+
 class PrototypeSampleViewController: UITableViewController {
 
-    @IBOutlet var headerView: UIView!
+    @IBOutlet private var headerView: UIView!
+    
+    private let kNumberOfOtherMessengers = 5
+    
+    private var prototypeMessenger = Messenger(name: "Tegami", message: "Good news has come for you!")
+    private var otherMessengers: [ Messenger ] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Calling all the Messengers!"
+        
+        prepareTableView()
+        prepareInitialMessengers()
+        
+    }
+    
+    // MARK: - Private methods -
+    
+    private func prepareTableView() {
         tableView.tableHeaderView = headerView
+        tableView.registerNib(MessengerTableViewCell.nib(), forCellReuseIdentifier: MessengerTableViewCell.identifier)
+    }
+    
+    private func prepareInitialMessengers() {
+        for _ in 1 ... kNumberOfOtherMessengers {
+            otherMessengers.append(prototypeMessenger)
+        }
     }
 
+    // MARK: - IBActions -
+    
+    @IBAction func cloneButtonTapped(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return PrototypeSampleSection.numberOfSections()
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        guard let prototypeSection = PrototypeSampleSection(rawValue: section) else {
+            return 0
+        }
+        
+        switch prototypeSection {
+        case .Prototype: return 1
+        case .OtherObjects: return otherMessengers.count
+        }
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let prototypeSection = PrototypeSampleSection(rawValue: section) else {
+            return nil
+        }
+        
+        switch prototypeSection {
+        case .Prototype: return "Prototype Messenger"
+        case .OtherObjects: return "Other Messengers"
+        }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return MessengerTableViewCell.preferredHeight
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(MessengerTableViewCell.identifier, forIndexPath: indexPath) as! MessengerTableViewCell
+        
+        if let section = PrototypeSampleSection(rawValue: indexPath.section) {
+            switch section {
+            case .Prototype: cell.configureForMessenger(prototypeMessenger)
+            case .OtherObjects: cell.configureForMessenger(otherMessengers[indexPath.row])
+            }
+        }
+        
+        return cell
     }
     
 }
