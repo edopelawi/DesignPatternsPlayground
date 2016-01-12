@@ -28,6 +28,11 @@ class MessengerTableViewCell: UITableViewCell, UITextFieldDelegate, MessengerObs
     
     // MARK: Public methods
     
+    /// Returns this class' UINib.
+    static func nib() -> UINib {        
+        return UINib(nibName: "MessengerTableViewCell", bundle: nil)
+    }
+    
     internal func configureForMessenger(messenger: Messenger) {
         currentMessenger = messenger
     }
