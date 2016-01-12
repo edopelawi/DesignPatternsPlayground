@@ -13,6 +13,8 @@
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
@@ -110,6 +112,7 @@
 		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
+		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -259,6 +262,7 @@
 				8DDA04CF1C2A9DB000B5A707 /* Food.swift */,
 				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
 				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
+				8D2D14B01C44D49B001DDB2C /* Messenger.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -498,6 +502,7 @@
 				8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
@@ -540,6 +545,7 @@
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
