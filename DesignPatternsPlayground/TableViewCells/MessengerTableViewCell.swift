@@ -45,7 +45,7 @@ class MessengerTableViewCell: UITableViewCell, MessengerObserver {
         
         if let validText = sender.text {
             currentMessenger?.name = validText
-        }        
+        }
     }
     
     @IBAction func messageTextEdited(sender: UITextField) {
