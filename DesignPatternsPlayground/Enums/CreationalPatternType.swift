@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CreationaPatternType: Int, PatternType {
+enum CreationalPatternType: Int, PatternType {
 
     case AbstractFactory = 0
     case FactoryMethod = 1

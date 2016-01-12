@@ -1,0 +1,7 @@
+I might implemented this pattern with the wrong case. There's so much potential on how this pattern can be used.
+
+The upside of this patterns is it encapsulates the details of creating an object (just as other creational patterns), plus allowing you to choose specific things that need to be added on the created object.
+On this sample, the BurgerOrderBuilder has methods to add burger order parts (Burger, Drinks, Salads) which is strings. On real world case, each part could be an object of a class (Burger, Drinks, Salad class), which take more logic on how to build it.
+Plus, since I used conditionals, I haven't used the "chaining method" that available from the BurgerOrderBuilder methods. This was done by making the build methods returns the Builder object.
+
+I haven't really thought about the downside of this pattern. I'll add it when I revisit this implementation in the future.

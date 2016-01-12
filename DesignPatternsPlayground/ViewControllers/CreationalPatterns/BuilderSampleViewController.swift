@@ -26,9 +26,19 @@ class BuilderSampleViewController: UITableViewController, BuilderSampleViewModel
         
         viewModel.delegate = self
         
+        prepareCommentBarButtons()
+        
         prepareTableView()
         preparePackageButton()
 
+    }
+    
+    private func prepareCommentBarButtons() {
+        self.addCommentsRightBarButton(target: self, action: Selector("pushCommentButton:"))
+    }
+    
+    @objc private func pushCommentButton(sender: AnyObject) {
+        self.pushCommentaryPage(creationalPatternType: .Builder);
     }
     
     // MARK: headerView and footerView's button actions

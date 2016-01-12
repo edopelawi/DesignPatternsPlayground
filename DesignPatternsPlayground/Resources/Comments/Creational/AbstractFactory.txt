@@ -1,0 +1,9 @@
+Implementing this pattern gave me a good grasp on how useful is this pattern for real projects.
+
+The upside of this pattern is separation between creational and business-related codes, which endorses Single Responsiblity Principle (which results in cleaner code!).
+It also hides the creational and detail complexities of the factory and produced objects from the clients. The client only knows that the factory will return an object that conforms to certain protocol - and it has methods that will produce other objects, too.
+
+The downside of this pattern is it has a lot of moving parts. Unless clear architecture / class responsibilities is available, coming up with this pattern at the start might become a premature optimization.
+Yet, it would be a good refactoring step to factories with common interfaces - or, even better - Factory Method pattern of a class' subclasses, when the number of subclass starts to grow.
+
+In real project implementations, we could remove "Abstract" from naming Abstract Factory classes, so it doesn't feel too awkward. Though the current code's class name was "AbstractChefFactory", "ChefFactory" alone will suffice.

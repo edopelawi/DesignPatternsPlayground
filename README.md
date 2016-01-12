@@ -38,6 +38,6 @@ Here's the list of patterns that currently implemented (and not).
 
 # Other TODOs
 
-- [ ] Create comments page functionality
+- [x] Create comments page functionality
 - [ ] Add comments on implemented patterns
 

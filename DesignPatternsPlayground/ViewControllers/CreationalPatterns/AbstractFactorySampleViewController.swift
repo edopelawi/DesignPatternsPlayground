@@ -23,9 +23,8 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
         
         title = "Chefs and Cuisines!"
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        prepareTableView()
+        prepareCommentBarButton()
     }
     
     
@@ -55,5 +54,21 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
         
         return cell
     }
+    
+    // MARK: - Private methods -
+    
+    private func prepareTableView() {
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    }
 
+    private func prepareCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: UIBarButtonItem) {        
+        pushCommentaryPage(creationalPatternType: .AbstractFactory)
+    }
 }

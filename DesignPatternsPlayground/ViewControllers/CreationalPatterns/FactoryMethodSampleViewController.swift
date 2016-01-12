@@ -22,10 +22,20 @@ class FactoryMethodSampleViewController: UITableViewController {
         
         title = "Parades, Parades!"
         
+        prepareCommentBarButton()
+        
         prepareViewModels()
         registerCells()
     }
 
+    private func prepareCommentBarButton() {
+        self.addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        self.pushCommentaryPage(creationalPatternType: .FactoryMethod)
+    }
+    
     private func prepareViewModels() {
         viewModels = [
             DesertParadeViewModel(),
