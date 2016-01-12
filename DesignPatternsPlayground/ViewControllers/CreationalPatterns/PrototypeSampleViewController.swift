@@ -34,7 +34,7 @@ class PrototypeSampleViewController: UITableViewController {
         
         prepareTableView()
         prepareInitialMessengers()
-        
+        prepareCommentBarButton()
     }
     
     // MARK: - Private methods -
@@ -68,6 +68,14 @@ class PrototypeSampleViewController: UITableViewController {
         }
         
         tableView.reloadData()
+    }
+    
+    private func prepareCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(creationalPatternType: .Prototype)
     }
     
     // MARK: - IBActions -
