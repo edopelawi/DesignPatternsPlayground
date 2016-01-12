@@ -13,7 +13,6 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Prototype
 - [ ] Singleton
 
-
 ##Structural
 - [ ] Adapter
 - [ ] Bridge
