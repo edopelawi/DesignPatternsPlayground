@@ -19,6 +19,10 @@
 		8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
@@ -119,6 +123,8 @@
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeSampleViewController.swift; sourceTree = "<group>"; };
 		8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeSampleViewController.xib; sourceTree = "<group>"; };
+		8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
+		8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -201,6 +207,15 @@
 				8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */,
 			);
 			path = BurgerOrders;
+			sourceTree = "<group>";
+		};
+		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */,
+				8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
@@ -368,6 +383,7 @@
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
 				8DDA04C71C2A8E3D00B5A707 /* Enums */,
 				8D51B0681C2A84E900B9509E /* Models */,
+				8D2D14B91C44E49D001DDB2C /* TableViewCells */,
 				8D51B05A1C2A70B100B9509E /* ViewControllers */,
 				8D3E42B21C327D9D0018E6BC /* ViewModels */,
 				8D8BD7251C43A41400E71C88 /* Resources */,
@@ -476,6 +492,7 @@
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
+				8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
@@ -494,6 +511,7 @@
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
+				8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +558,7 @@
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
+				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
@@ -584,6 +603,7 @@
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
+				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
