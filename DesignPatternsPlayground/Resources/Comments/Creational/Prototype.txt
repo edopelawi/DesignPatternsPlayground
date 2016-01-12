@@ -1,0 +1,7 @@
+I had fun implementing this sample! Not only having better grasp on Prototype pattern, looking how all the text fields changed synchronizedly (when its not cloned) feels so good. Yay Observer pattern! (wrong page, hehe 😋)
+
+The Prototype pattern is available long time ago in Cocoa framework, via the NSCopying protocol. It's possible to create our own protocol, but implementing NSCopying allows our objects to be copied when using built-in collections, e.g. NSArray.
+
+Upside of this pattern? Reduced hassles of passing properties by a single clone method! In this case, it's the NSCopying's copy() method. Plus, like other creational patterns, it hides the complexity of creating the copy of an object from the client.
+
+I don't really find a downside of this pattern except increased memory usage. Be careful on cloning objects with high memory usage!

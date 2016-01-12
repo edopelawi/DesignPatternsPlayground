@@ -13,6 +13,18 @@
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B51C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
+		8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
@@ -110,6 +122,12 @@
 		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
+		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeSampleViewController.swift; sourceTree = "<group>"; };
+		8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeSampleViewController.xib; sourceTree = "<group>"; };
+		8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
+		8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
+		8D2D14C01C450259001DDB2C /* Prototype.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prototype.txt; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -194,6 +212,15 @@
 			path = BurgerOrders;
 			sourceTree = "<group>";
 		};
+		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */,
+				8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +239,8 @@
 				8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */,
 				8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */,
 				8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */,
+				8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */,
+				8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */,
 			);
 			path = CreationalPatterns;
 			sourceTree = "<group>";
@@ -259,6 +288,7 @@
 				8DDA04CF1C2A9DB000B5A707 /* Food.swift */,
 				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
 				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
+				8D2D14B01C44D49B001DDB2C /* Messenger.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,6 +315,7 @@
 				8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */,
 				8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */,
 				8D2D14AD1C44B530001DDB2C /* Builder.txt */,
+				8D2D14C01C450259001DDB2C /* Prototype.txt */,
 			);
 			path = Creational;
 			sourceTree = "<group>";
@@ -356,6 +387,7 @@
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
 				8DDA04C71C2A8E3D00B5A707 /* Enums */,
 				8D51B0681C2A84E900B9509E /* Models */,
+				8D2D14B91C44E49D001DDB2C /* TableViewCells */,
 				8D51B05A1C2A70B100B9509E /* ViewControllers */,
 				8D3E42B21C327D9D0018E6BC /* ViewModels */,
 				8D8BD7251C43A41400E71C88 /* Resources */,
@@ -464,9 +496,12 @@
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
+				8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
+				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
+				8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,9 +512,12 @@
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
 				8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
+				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
+				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
+				8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,8 +534,10 @@
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
+				8D2D14B51C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
@@ -524,6 +564,7 @@
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
+				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
@@ -538,8 +579,10 @@
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
+				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
 				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA2A1C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C51C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
@@ -566,6 +609,7 @@
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
+				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);

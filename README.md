@@ -10,7 +10,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Abstract Factory
 - [x] Builder
 - [x] Factory Method
-- [ ] Prototype
+- [x] Prototype
 - [ ] Singleton
 
 
