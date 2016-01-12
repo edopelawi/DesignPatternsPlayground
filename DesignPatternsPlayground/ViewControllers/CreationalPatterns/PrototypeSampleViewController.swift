@@ -45,15 +45,44 @@ class PrototypeSampleViewController: UITableViewController {
     }
     
     private func prepareInitialMessengers() {
+        replaceOtherMessengersWithPointers()
+    }
+
+    private func replaceOtherMessengersWithClones() {
+        
+        otherMessengers = []
+        
+        for _ in 1 ... kNumberOfOtherMessengers {
+            otherMessengers.append(prototypeMessenger.copy() as! Messenger)
+        }
+        
+        tableView.reloadData()
+    }
+    
+    private func replaceOtherMessengersWithPointers() {
+        
+        otherMessengers = []
+        
         for _ in 1 ... kNumberOfOtherMessengers {
             otherMessengers.append(prototypeMessenger)
         }
+        
+        tableView.reloadData()
     }
-
+    
     // MARK: - IBActions -
     
     @IBAction func cloneButtonTapped(sender: UIButton) {
         sender.selected = !sender.selected
+        
+        let shouldClonePrototype = sender.selected
+        
+        if shouldClonePrototype {
+            replaceOtherMessengersWithClones()
+        } else {    
+            replaceOtherMessengersWithPointers()
+        }
+       
     }
     
     // MARK: - Table view data source
