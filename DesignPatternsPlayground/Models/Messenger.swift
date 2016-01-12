@@ -16,10 +16,10 @@ protocol MessengerObserver: AnyObject {
     // instance is a clone or not.
     
     /// This method will be called if corresponding `Messenger` instance's name is changed.
-    func nameChanged(name: String)
+    func messenger(messenger: Messenger, nameChanged name: String)
     
     /// This method will be called if corresponding `Messenger` instance's message is changed.
-    func messageChanged(message: String)
+    func messenger(messenger: Messenger, messageChanged message: String)
 }
 
 class Messenger: NSObject, NSCopying {
@@ -27,7 +27,7 @@ class Messenger: NSObject, NSCopying {
     internal var name: String {
         didSet {
             for observer in observers {
-                observer.nameChanged(name)
+                observer.messenger(self, nameChanged: name)
             }
         }
     }
@@ -35,7 +35,7 @@ class Messenger: NSObject, NSCopying {
     internal var message: String {
         didSet {
             for observer in observers {
-                observer.messageChanged(message)
+                observer.messenger(self, messageChanged: message)
             }
         }
     }

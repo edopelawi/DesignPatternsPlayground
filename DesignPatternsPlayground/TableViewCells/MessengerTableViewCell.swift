@@ -53,12 +53,12 @@ class MessengerTableViewCell: UITableViewCell, UITextFieldDelegate, MessengerObs
     
     // MARK: MessengerObserver methods
     
-    func nameChanged(name: String) {
-        nameTextField.text = name
+    func messenger(messenger: Messenger, messageChanged message: String) {
+        messageTextField.text = message
     }
     
-    func messageChanged(message: String) {
-        messageTextField.text = message
+    func messenger(messenger: Messenger, nameChanged name: String) {
+        nameTextField.text = name
     }
     
 }
