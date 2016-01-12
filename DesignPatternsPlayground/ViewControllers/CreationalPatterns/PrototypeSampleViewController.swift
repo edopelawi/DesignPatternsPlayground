@@ -24,13 +24,13 @@ class PrototypeSampleViewController: UITableViewController {
     
     private let kNumberOfOtherMessengers = 5
     
-    private var prototypeMessenger = Messenger(name: "Tegami", message: "Good news has come for you!")
+    private var prototypeMessenger = Messenger(name: "Tegami Bachi", message: "Good news!")
     private var otherMessengers: [ Messenger ] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Calling all the Messengers!"
+        title = "Messengers!"
         
         prepareTableView()
         prepareInitialMessengers()
