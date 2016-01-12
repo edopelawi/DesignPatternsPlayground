@@ -23,6 +23,8 @@
 		8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
+		8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34CA251C3137100002E3F9 /* WesternChef.swift */; };
@@ -125,6 +127,7 @@
 		8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeSampleViewController.xib; sourceTree = "<group>"; };
 		8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
 		8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
+		8D2D14C01C450259001DDB2C /* Prototype.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prototype.txt; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D34CA251C3137100002E3F9 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D34CA281C3138BE0002E3F9 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 				8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */,
 				8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */,
 				8D2D14AD1C44B530001DDB2C /* Builder.txt */,
+				8D2D14C01C450259001DDB2C /* Prototype.txt */,
 			);
 			path = Creational;
 			sourceTree = "<group>";
@@ -493,6 +497,7 @@
 				8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
+				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
@@ -511,6 +516,7 @@
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
+				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
 				8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 			);
