@@ -83,7 +83,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
             case .AbstractFactory: viewController = AbstractFactorySampleViewController()
             case .FactoryMethod: viewController = FactoryMethodSampleViewController()
             case .Builder: viewController = BuilderSampleViewController()
-                
+            case .Prototype: viewController = PrototypeSampleViewController()
             default: break
             }
             
