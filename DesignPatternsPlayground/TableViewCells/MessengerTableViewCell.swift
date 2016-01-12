@@ -22,14 +22,18 @@ class MessengerTableViewCell: UITableViewCell, UITextFieldDelegate, MessengerObs
                 validOldMessenger.removeObserver(self)
             }
             
-            currentMessenger?.addObserver(self)
+            if let validMessenger = currentMessenger {
+                validMessenger.addObserver(self)
+                nameTextField.text = validMessenger.name
+                messageTextField.text = validMessenger.message
+            }
         }
     }
     
     // MARK: Public methods
     
     /// Returns this class' UINib.
-    static func nib() -> UINib {        
+    static func nib() -> UINib {
         return UINib(nibName: "MessengerTableViewCell", bundle: nil)
     }
     
