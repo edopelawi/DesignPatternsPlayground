@@ -1,0 +1,8 @@
+At first, I thought I've implemented this pattern numerous times in my projects. It turns out that I've implemented  Josuha Bloch's "Static Factory Method" pattern, from his Effective Java, 2nd edition book.
+
+From the book, the right way to implement this pattern is by creating an abstract class that has virtual method(s) that returns an object - which is the "factory method" of the class. It should have implemented "final" method(s) that uses those factory methods, too. The subclasses will implement the factory methods, and decidewhat object to be returned.
+This isn't possible to be implemented correctly in Swift 2, since it doesn't have abstract class. That way, the only way to implement this class was creating a base class (ParadeViewModel, in this example), and create subclass from it that overrides the factory method (retrieveParade).
+
+The upside of this pattern is encapsulation of how a dependency is being created from the clients. All the client need to do is pick a subclass from the main class that suits what it needs, and call the methods. Plus, when the number of subclasses start to grow, the "subclass selection" can be moved to a factory - e.g. by implementing an AbstractFactory pattern.
+
+The downside of this pattern (at least in Swift) is that there's no way for the compiler to enforce the subclass to override the factory method - since there's no abstract class. Plus, there's a chance that the number of subclass grows too big - if that's the case, we should change the factory method to a property / variable that holds the needed object. Or even better - holds an object that creates another object that needed for this class, which takes class' condition / type to decide what object to be created.
