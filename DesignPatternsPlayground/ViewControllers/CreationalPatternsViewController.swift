@@ -84,7 +84,7 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
             case .FactoryMethod: viewController = FactoryMethodSampleViewController()
             case .Builder: viewController = BuilderSampleViewController()
             case .Prototype: viewController = PrototypeSampleViewController()
-            default: break
+            case .Singleton: viewController = SingletonSampleViewController()
             }
             
             if let viewController = viewController {
