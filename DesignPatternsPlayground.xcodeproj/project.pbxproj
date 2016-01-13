@@ -72,6 +72,8 @@
 		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -161,6 +163,7 @@
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
+		8D7728DE1C465670005211FE /* PatternTypeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTypeTableController.swift; sourceTree = "<group>"; };
 		8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
 		8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
@@ -310,6 +313,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8D7728DD1C4655EC005211FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D7728DE1C465670005211FE /* PatternTypeTableController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8D8BD7251C43A41400E71C88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				8D03ADC41C33C54200CA932B /* Builders */,
+				8D7728DD1C4655EC005211FE /* Controllers */,
 				8D34CA2B1C3139820002E3F9 /* Decorators */,
 				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
@@ -562,6 +574,7 @@
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
 				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
+				8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
@@ -639,6 +652,7 @@
 				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
+				8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */,
 				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
