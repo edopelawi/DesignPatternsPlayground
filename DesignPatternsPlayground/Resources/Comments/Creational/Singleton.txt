@@ -1,1 +1,7 @@
-// TODO: Add comments here.
+Just as other languages, implementing Singleton pattern in Swift isn't that difficult. All we need to do is make the initializer private, create a static private instance, and prepare method / readonly static property (which implemented on this sample) to return the instance.
+
+The upside of this pattern - just as other creational patterns, is hiding the creational complexity from the client. Plus, it also ensure that there's only one instance available at a time. This is might needed on several cases, e.g. a global message queue.
+
+The downside of this pattern already discussed on great lengths by others. In this sample, I simulate a heavy-loading singleton instance, which might block the UI / main thread. To handle this, try to load singleton instances on background threads. The great thing is, Swift use lazy-loading for static instances as default - which reduces any unnecessary resources consumed if there's nobody calling the singleton.
+
+Other common downside of Sigsngleton pattern is shared state(s). Make sure you know the responsibility of the Singleton instance, to prevent any bugs jump to you that caused by shared state! 😉
