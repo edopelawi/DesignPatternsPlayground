@@ -10,10 +10,14 @@ import UIKit
 
 class StructuralPatternsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = false
         title = "Structural Design Patterns"
+        
+        tableView.backgroundColor = view.backgroundColor
     }
 
 }

@@ -195,8 +195,23 @@
                     <view key="view" contentMode="scaleToFill" id="9gv-Gv-Dy3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-86-pNX">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EDw-wl-VwL" firstAttribute="top" secondItem="rPE-86-pNX" secondAttribute="bottom" id="8IG-0a-RMq"/>
+                            <constraint firstItem="rPE-86-pNX" firstAttribute="top" secondItem="bbk-cz-HiN" secondAttribute="bottom" id="lND-E1-uvm"/>
+                            <constraint firstAttribute="trailing" secondItem="rPE-86-pNX" secondAttribute="trailing" id="oTC-Xe-09H"/>
+                            <constraint firstItem="rPE-86-pNX" firstAttribute="leading" secondItem="9gv-Gv-Dy3" secondAttribute="leading" id="uYe-SE-Sui"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="rPE-86-pNX" id="Qq9-m1-Qhn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2a-LN-LYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
