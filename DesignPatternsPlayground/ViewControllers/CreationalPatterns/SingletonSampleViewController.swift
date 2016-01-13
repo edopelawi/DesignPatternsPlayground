@@ -15,7 +15,8 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet private weak var topSpaceConstraint: NSLayoutConstraint!
     
-    private let diary = Diary.sharedDiary
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    private var diary: Diary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +24,10 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
         title = "Dear Diary."
         
         configureTopSpaceConstraint()
+        activityIndicator.startAnimating()
         
-        titleTextField.text = diary.name
-        diaryTextView.text = diary.diaryText
+        loadDiaryData()
+        
     }
     
     private func configureTopSpaceConstraint() {
@@ -35,6 +37,24 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
             
             topSpaceConstraint.constant = navigationBarHeight + statusBarHeight + topPadding
         }
+    }
+    
+    private func loadDiaryData() {
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            [weak self] _ in
+
+            self?.diary = Diary.sharedDiary
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                _ in
+                
+                self?.titleTextField.text = self?.diary.name
+                self?.diaryTextView.text = self?.diary.diaryText
+                self?.activityIndicator.stopAnimating()
+            })
+        }
+        
     }
     
     // MARK: IBActions

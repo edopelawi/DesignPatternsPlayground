@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingletonSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="CtE-SD-szz" id="kgc-yR-1dM"/>
                 <outlet property="diaryTextView" destination="2Ys-jO-INq" id="1L7-Sd-gPA"/>
                 <outlet property="titleTextField" destination="0vx-rN-vv8" id="y4m-YM-Npy"/>
                 <outlet property="topSpaceConstraint" destination="udp-up-GMb" id="M2Y-4a-0uY"/>
@@ -53,18 +54,27 @@
                         <outlet property="delegate" destination="-1" id="dpJ-c9-4c7"/>
                     </connections>
                 </textView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CtE-SD-szz">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                    <color key="color" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="CtE-SD-szz" secondAttribute="bottom" id="4SR-9v-dvq"/>
+                <constraint firstAttribute="trailing" secondItem="CtE-SD-szz" secondAttribute="trailing" id="6Tl-eP-g3C"/>
                 <constraint firstItem="VOZ-2K-Cwl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lf9-VH-lJ2"/>
                 <constraint firstItem="2Ys-jO-INq" firstAttribute="trailing" secondItem="0vx-rN-vv8" secondAttribute="trailing" constant="4" id="MBn-WZ-2ix"/>
                 <constraint firstItem="0vx-rN-vv8" firstAttribute="leading" secondItem="Kiu-on-ENL" secondAttribute="leading" id="PgZ-qE-6sm"/>
                 <constraint firstItem="0vx-rN-vv8" firstAttribute="top" secondItem="VOZ-2K-Cwl" secondAttribute="bottom" constant="12" id="YWV-ID-s1B"/>
                 <constraint firstAttribute="trailing" secondItem="VOZ-2K-Cwl" secondAttribute="trailing" id="bmc-4D-SMG"/>
                 <constraint firstItem="2Ys-jO-INq" firstAttribute="leading" secondItem="0vx-rN-vv8" secondAttribute="leading" constant="-4" id="hTq-Cb-pRF"/>
+                <constraint firstItem="CtE-SD-szz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iYy-eh-1qL"/>
                 <constraint firstItem="2Ys-jO-INq" firstAttribute="top" secondItem="0vx-rN-vv8" secondAttribute="bottom" constant="8" id="kXp-Oa-hXN"/>
                 <constraint firstItem="VOZ-2K-Cwl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m0t-Oh-5Pe"/>
                 <constraint firstAttribute="bottom" secondItem="2Ys-jO-INq" secondAttribute="bottom" constant="8" id="scc-Wh-507"/>
+                <constraint firstItem="CtE-SD-szz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u40-Qc-qhp"/>
                 <constraint firstItem="0vx-rN-vv8" firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" id="zmY-Sd-6cv"/>
             </constraints>
             <connections>
