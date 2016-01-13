@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingletonSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="CtE-SD-szz" id="kgc-yR-1dM"/>
+                <outlet property="diaryTextView" destination="2Ys-jO-INq" id="1L7-Sd-gPA"/>
+                <outlet property="titleTextField" destination="0vx-rN-vv8" id="y4m-YM-Npy"/>
+                <outlet property="topSpaceConstraint" destination="udp-up-GMb" id="M2Y-4a-0uY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOZ-2K-Cwl" userLabel="Top Wrapper View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="This diary below is made with Singleton pattern. What you write here will be preserved until the app is terminated! 😄" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiu-on-ENL">
+                            <rect key="frame" x="8" y="8" width="584" height="35"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" constant="8" id="9Gk-1p-75O"/>
+                        <constraint firstAttribute="bottom" secondItem="Kiu-on-ENL" secondAttribute="bottom" constant="8" id="OVG-0M-hLn"/>
+                        <constraint firstItem="Kiu-on-ENL" firstAttribute="leading" secondItem="VOZ-2K-Cwl" secondAttribute="leading" constant="8" id="bRu-KA-feL"/>
+                        <constraint firstItem="Kiu-on-ENL" firstAttribute="top" secondItem="VOZ-2K-Cwl" secondAttribute="top" constant="8" id="udp-up-GMb"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Diary title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-rN-vv8" userLabel="Title Text Field">
+                    <rect key="frame" x="8" y="63" width="584" height="28"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="diaryTitleChanged:" destination="-1" eventType="editingChanged" id="RvR-kR-5Bm"/>
+                    </connections>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="Your diary text here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Ys-jO-INq" userLabel="Diary Text View">
+                    <rect key="frame" x="4" y="99" width="592" height="493"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="dpJ-c9-4c7"/>
+                    </connections>
+                </textView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CtE-SD-szz">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                    <color key="color" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CtE-SD-szz" secondAttribute="bottom" id="4SR-9v-dvq"/>
+                <constraint firstAttribute="trailing" secondItem="CtE-SD-szz" secondAttribute="trailing" id="6Tl-eP-g3C"/>
+                <constraint firstItem="VOZ-2K-Cwl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lf9-VH-lJ2"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="trailing" secondItem="0vx-rN-vv8" secondAttribute="trailing" constant="4" id="MBn-WZ-2ix"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="leading" secondItem="Kiu-on-ENL" secondAttribute="leading" id="PgZ-qE-6sm"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="top" secondItem="VOZ-2K-Cwl" secondAttribute="bottom" constant="12" id="YWV-ID-s1B"/>
+                <constraint firstAttribute="trailing" secondItem="VOZ-2K-Cwl" secondAttribute="trailing" id="bmc-4D-SMG"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="leading" secondItem="0vx-rN-vv8" secondAttribute="leading" constant="-4" id="hTq-Cb-pRF"/>
+                <constraint firstItem="CtE-SD-szz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iYy-eh-1qL"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="top" secondItem="0vx-rN-vv8" secondAttribute="bottom" constant="8" id="kXp-Oa-hXN"/>
+                <constraint firstItem="VOZ-2K-Cwl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m0t-Oh-5Pe"/>
+                <constraint firstAttribute="bottom" secondItem="2Ys-jO-INq" secondAttribute="bottom" constant="8" id="scc-Wh-507"/>
+                <constraint firstItem="CtE-SD-szz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u40-Qc-qhp"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" id="zmY-Sd-6cv"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="TLa-Cl-byN" appends="YES" id="GVx-qh-04x"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="TLa-Cl-byN">
+            <connections>
+                <action selector="mainViewTapped:" destination="-1" id="9Wk-9y-mSU"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
