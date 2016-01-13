@@ -1,6 +1,6 @@
 #Design Patterns Playground
 
-This project was made as an attempt to learn [GoF's Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns) and how to implement it in Swift 2. I might not implement all of them (or at least, the right way), since there's a chance that Swift 2 doesn't have concepts that available in C++ or Smalltalk, which were the main languages of the book.
+This project was made as an attempt to learn [GoF's Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns) and how to implement it in Swift 2. I might not implement all of them (or at least, the right way), since there's a chance that Swift 2 doesn't have concepts that available in C++ or Smalltalk, which were the main languages of the book. I tried my best to add UI representations on how the patterns are used (instead of just print logs), and comments about the pattern tha accessible from the UI!
 
 #Patterns Checklist
 
@@ -11,7 +11,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Builder
 - [x] Factory Method
 - [x] Prototype
-- [ ] Singleton
+- [x] Singleton
 
 ##Structural
 - [ ] Adapter
