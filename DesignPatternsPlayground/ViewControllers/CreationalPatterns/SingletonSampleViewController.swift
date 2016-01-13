@@ -23,11 +23,21 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
     
         title = "Dear Diary."
         
+        configureCommentBarButton()
         configureTopSpaceConstraint()
+        
         activityIndicator.startAnimating()
         
         loadDiaryData()
         
+    }
+    
+    private func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(creationalPatternType: .Singleton)
     }
     
     private func configureTopSpaceConstraint() {
