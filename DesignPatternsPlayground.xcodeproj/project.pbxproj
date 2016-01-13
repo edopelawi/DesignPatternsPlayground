@@ -71,6 +71,7 @@
 		8D51B0631C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */; };
 		8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
+		8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -159,6 +160,7 @@
 		8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
 		8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */,
+				8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
+				8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
