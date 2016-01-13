@@ -8,12 +8,13 @@
 
 import UIKit
 
-class CreationalPatternsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CreationalPatternsViewController: UIViewController {
 
     // MARK: Properties
     
     @IBOutlet private weak var tableView: UITableView!
-    private let cellReuseIdentifier = "creatiionalCellIdentifier"
+    
+    private var tableController: PatternTypeTableController!
     
     // MARK: - UIViewController -
     
@@ -23,76 +24,41 @@ class CreationalPatternsViewController: UIViewController, UITableViewDelegate, U
         navigationController?.navigationBarHidden = false
         title = "Creational Design Patterns"
         
-        configureTableView()
+        tableView.backgroundColor = view.backgroundColor
+        
+        tableController = PatternTypeTableController(
+            tableView: tableView,
+            patternGroupType: .Creational
+        )
+        
+        tableController.patternTypeSelectedClosure = {
+            [weak self] patternType in
+            
+            print("Selected pattern: \(patternType)")
+            
+            if let creationalType = patternType as? CreationalPatternType {
+                self?.pushPageForPatternType(creationalType)
+            }
+        }
+        
     }
     
     // MARK: - Private Methods -
     
-    private func configureTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        tableView.backgroundColor = view.backgroundColor
-        
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-    }
+    private func pushPageForPatternType(patternType: CreationalPatternType) {
 
-    private func configureCell(cell: UITableViewCell, forRow row: Int) {
+        var viewController: UIViewController?
         
-        let optionalType = CreationalPatternType(rawValue: row)
-        
-        var text = ""
-        
-        if let typeName = optionalType?.toString() {
-            text = typeName
+        switch patternType {
+        case .AbstractFactory: viewController = AbstractFactorySampleViewController()
+        case .FactoryMethod: viewController = FactoryMethodSampleViewController()
+        case .Builder: viewController = BuilderSampleViewController()
+        case .Prototype: viewController = PrototypeSampleViewController()
+        case .Singleton: viewController = SingletonSampleViewController()
         }
         
-        cell.textLabel?.text = text
-        
-        cell.backgroundColor = view.backgroundColor
-        cell.accessoryType = .DisclosureIndicator
-        
-        cell.textLabel?.textColor = UIColor.whiteColor()
-    }
-    
-    // MARK: - UITableView Delegate and Datasource -
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CreationalPatternType.numberOfTypes()
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
-        
-        self.configureCell(cell, forRow: indexPath.row)
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        var selectedPatternName = ""
-        
-        if let patternType = CreationalPatternType(rawValue: indexPath.row) {
-            selectedPatternName = patternType.toString()
-            
-            var viewController: UIViewController?
-            
-            switch patternType {
-            case .AbstractFactory: viewController = AbstractFactorySampleViewController()
-            case .FactoryMethod: viewController = FactoryMethodSampleViewController()
-            case .Builder: viewController = BuilderSampleViewController()
-            case .Prototype: viewController = PrototypeSampleViewController()
-            case .Singleton: viewController = SingletonSampleViewController()
-            }
-            
-            if let viewController = viewController {
-                navigationController?.pushViewController(viewController, animated: true)
-            }
+        if let viewController = viewController {
+            navigationController?.pushViewController(viewController, animated: true)
         }
-        
-        print("Selected pattern: \(selectedPatternName)")
-        
     }
 }
