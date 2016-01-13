@@ -10,7 +10,8 @@ import UIKit
 
 class StructuralPatternsViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    private var tableController: PatternTypeTableController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,26 @@ class StructuralPatternsViewController: UIViewController {
         title = "Structural Design Patterns"
         
         tableView.backgroundColor = view.backgroundColor
+        
+        tableController = PatternTypeTableController(
+            tableView: tableView,
+            patternGroupType: .Structural
+        )
+        
+        tableController.patternTypeSelectedClosure = {
+            [weak self] patternType in
+
+            print("Selected pattern: \(patternType)")
+            
+            if let structuralPatternType = patternType as? StructuralPatternType {
+                
+                self?.pushPageForPatternType(structuralPatternType)
+            }
+        }
+    }
+    
+    private func pushPageForPatternType(patternType: StructuralPatternType) {
+        // TODO: push corresponding pages here
     }
 
 }
