@@ -12,6 +12,9 @@ class Diary {
     
     static private var privateSingletonDiary: Diary = {
 
+        // Added delay to simulate long-running instance construction        
+        sleep(3)
+        
         var newDiary = Diary(
             name: "My Diary",
             diaryText: "Dear diary, why do I like dairy?"
