@@ -93,6 +93,10 @@ class PrototypeSampleViewController: UITableViewController {
        
     }
     
+    @IBAction func mainViewTapped(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

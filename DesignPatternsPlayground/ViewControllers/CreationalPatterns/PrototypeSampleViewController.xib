@@ -18,6 +18,7 @@
             <connections>
                 <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
                 <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+                <outletCollection property="gestureRecognizers" destination="8d5-j3-Gbc" appends="YES" id="E8s-OY-tdM"/>
             </connections>
         </tableView>
         <view contentMode="scaleToFill" id="TVC-aw-nVk" userLabel="Header View">
@@ -60,5 +61,10 @@
             </variation>
             <point key="canvasLocation" x="470" y="-33.5"/>
         </view>
+        <tapGestureRecognizer id="8d5-j3-Gbc">
+            <connections>
+                <action selector="mainViewTapped:" destination="-1" id="aHp-H2-65x"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
