@@ -45,7 +45,11 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
             diary.name = diaryTitle
         }
     }
-        
+    
+    @IBAction func mainViewTapped(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     // MARK: UITextView delegate
     
     func textViewDidChange(textView: UITextView) {        

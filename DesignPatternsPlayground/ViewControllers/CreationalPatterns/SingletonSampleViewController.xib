@@ -67,6 +67,14 @@
                 <constraint firstAttribute="bottom" secondItem="2Ys-jO-INq" secondAttribute="bottom" constant="8" id="scc-Wh-507"/>
                 <constraint firstItem="0vx-rN-vv8" firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" id="zmY-Sd-6cv"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="TLa-Cl-byN" appends="YES" id="GVx-qh-04x"/>
+            </connections>
         </view>
+        <tapGestureRecognizer id="TLa-Cl-byN">
+            <connections>
+                <action selector="mainViewTapped:" destination="-1" id="9Wk-9y-mSU"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
