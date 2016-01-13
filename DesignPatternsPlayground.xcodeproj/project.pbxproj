@@ -15,6 +15,8 @@
 		8D0963F11C45F5B900173678 /* SingletonSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D0963F21C45F5B900173678 /* SingletonSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D0963F31C45F5B900173678 /* SingletonSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D0963F51C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
+		8D0963F61C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -129,6 +131,7 @@
 		8D0963EB1C45EFBB00173678 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonSampleViewController.swift; sourceTree = "<group>"; };
 		8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonSampleViewController.xib; sourceTree = "<group>"; };
+		8D0963F41C460A4800173678 /* Singleton.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singleton.txt; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -328,6 +331,7 @@
 				8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */,
 				8D2D14AD1C44B530001DDB2C /* Builder.txt */,
 				8D2D14C01C450259001DDB2C /* Prototype.txt */,
+				8D0963F41C460A4800173678 /* Singleton.txt */,
 			);
 			path = Creational;
 			sourceTree = "<group>";
@@ -506,6 +510,7 @@
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
+				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
 				8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
 				8DEF63721C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
@@ -530,6 +535,7 @@
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
+				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
 				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
 				8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7241C43900F00E71C88 /* CommentaryViewController.xib in Resources */,
