@@ -13,13 +13,28 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
     @IBOutlet private weak var titleTextField: UITextField!
     @IBOutlet private weak var diaryTextView: UITextView!
     
+    @IBOutlet private weak var topSpaceConstraint: NSLayoutConstraint!
+    
     private let diary = Diary.sharedDiary
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        title = "Dear Diary."
+        
+        configureTopSpaceConstraint()
         
         titleTextField.text = diary.name
         diaryTextView.text = diary.diaryText
+    }
+    
+    private func configureTopSpaceConstraint() {
+        if let navigationBarHeight = navigationController?.navigationBar.frame.height {
+            let statusBarHeight = CGFloat(20)
+            let topPadding = CGFloat(8)
+            
+            topSpaceConstraint.constant = navigationBarHeight + statusBarHeight + topPadding
+        }
     }
     
     // MARK: IBActions
@@ -30,8 +45,7 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
             diary.name = diaryTitle
         }
     }
-    
-    
+        
     // MARK: UITextView delegate
     
     func textViewDidChange(textView: UITextView) {        

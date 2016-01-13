@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="diaryTextView" destination="2Ys-jO-INq" id="1L7-Sd-gPA"/>
                 <outlet property="titleTextField" destination="0vx-rN-vv8" id="y4m-YM-Npy"/>
+                <outlet property="topSpaceConstraint" destination="udp-up-GMb" id="M2Y-4a-0uY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,14 +17,27 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This diary below is made with Singleton pattern. What you write here will be preserved until the app is terminated! 😄" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiu-on-ENL">
-                    <rect key="frame" x="8" y="8" width="584" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Diary title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-rN-vv8" userLabel="Title Text Field">
-                    <rect key="frame" x="8" y="93" width="584" height="28"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOZ-2K-Cwl" userLabel="Top Wrapper View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="This diary below is made with Singleton pattern. What you write here will be preserved until the app is terminated! 😄" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiu-on-ENL">
+                            <rect key="frame" x="8" y="8" width="584" height="35"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" constant="8" id="9Gk-1p-75O"/>
+                        <constraint firstAttribute="bottom" secondItem="Kiu-on-ENL" secondAttribute="bottom" constant="8" id="OVG-0M-hLn"/>
+                        <constraint firstItem="Kiu-on-ENL" firstAttribute="leading" secondItem="VOZ-2K-Cwl" secondAttribute="leading" constant="8" id="bRu-KA-feL"/>
+                        <constraint firstItem="Kiu-on-ENL" firstAttribute="top" secondItem="VOZ-2K-Cwl" secondAttribute="top" constant="8" id="udp-up-GMb"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Diary title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0vx-rN-vv8" userLabel="Title Text Field">
+                    <rect key="frame" x="8" y="63" width="584" height="28"/>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
@@ -31,7 +45,7 @@
                     </connections>
                 </textField>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="Your diary text here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Ys-jO-INq" userLabel="Diary Text View">
-                    <rect key="frame" x="8" y="132" width="584" height="460"/>
+                    <rect key="frame" x="4" y="99" width="592" height="493"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
@@ -42,16 +56,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Kiu-on-ENL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="51c-51-N5N"/>
-                <constraint firstItem="2Ys-jO-INq" firstAttribute="trailing" secondItem="0vx-rN-vv8" secondAttribute="trailing" id="MBn-WZ-2ix"/>
-                <constraint firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" constant="8" id="RpF-CY-112"/>
-                <constraint firstItem="0vx-rN-vv8" firstAttribute="leading" secondItem="Kiu-on-ENL" secondAttribute="leading" id="VWK-uR-18l"/>
-                <constraint firstItem="0vx-rN-vv8" firstAttribute="top" secondItem="Kiu-on-ENL" secondAttribute="bottom" constant="44" id="bCB-kh-yra"/>
-                <constraint firstItem="2Ys-jO-INq" firstAttribute="leading" secondItem="0vx-rN-vv8" secondAttribute="leading" id="hTq-Cb-pRF"/>
-                <constraint firstItem="Kiu-on-ENL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="i5v-4a-uU2"/>
-                <constraint firstItem="2Ys-jO-INq" firstAttribute="top" secondItem="0vx-rN-vv8" secondAttribute="bottom" constant="11" id="kXp-Oa-hXN"/>
-                <constraint firstItem="0vx-rN-vv8" firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" id="qa4-Cb-OTy"/>
+                <constraint firstItem="VOZ-2K-Cwl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lf9-VH-lJ2"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="trailing" secondItem="0vx-rN-vv8" secondAttribute="trailing" constant="4" id="MBn-WZ-2ix"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="leading" secondItem="Kiu-on-ENL" secondAttribute="leading" id="PgZ-qE-6sm"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="top" secondItem="VOZ-2K-Cwl" secondAttribute="bottom" constant="12" id="YWV-ID-s1B"/>
+                <constraint firstAttribute="trailing" secondItem="VOZ-2K-Cwl" secondAttribute="trailing" id="bmc-4D-SMG"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="leading" secondItem="0vx-rN-vv8" secondAttribute="leading" constant="-4" id="hTq-Cb-pRF"/>
+                <constraint firstItem="2Ys-jO-INq" firstAttribute="top" secondItem="0vx-rN-vv8" secondAttribute="bottom" constant="8" id="kXp-Oa-hXN"/>
+                <constraint firstItem="VOZ-2K-Cwl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m0t-Oh-5Pe"/>
                 <constraint firstAttribute="bottom" secondItem="2Ys-jO-INq" secondAttribute="bottom" constant="8" id="scc-Wh-507"/>
+                <constraint firstItem="0vx-rN-vv8" firstAttribute="trailing" secondItem="Kiu-on-ENL" secondAttribute="trailing" id="zmY-Sd-6cv"/>
             </constraints>
         </view>
     </objects>
