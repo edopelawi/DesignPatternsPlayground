@@ -104,6 +104,10 @@
 		8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8189E1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA818A71C47988600D99065 /* AdapterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -199,6 +203,8 @@
 		8DA8189B1C4791A500D99065 /* KoalaCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoalaCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA8189E1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkeyCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaCulinaryTourGuide.swift; sourceTree = "<group>"; };
+		8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
+		8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdapterSampleViewController.xib; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -320,6 +326,7 @@
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8DA818A41C4797C400D99065 /* StructuralPatterns */,
 				8D34CA381C3140E90002E3F9 /* CreationalPatterns */,
 				8D51B05B1C2A71AD00B9509E /* CreationalPatternsViewController.swift */,
 				8D51B05E1C2A77E700B9509E /* StructuralPatternsViewController.swift */,
@@ -408,6 +415,15 @@
 				8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */,
 			);
 			path = AnimalTourGuides;
+			sourceTree = "<group>";
+		};
+		8DA818A41C4797C400D99065 /* StructuralPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */,
+				8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */,
+			);
+			path = StructuralPatterns;
 			sourceTree = "<group>";
 		};
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
@@ -586,6 +602,7 @@
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
+				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
@@ -611,6 +628,7 @@
 				8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D0963F31C45F5B900173678 /* SingletonSampleViewController.xib in Resources */,
 				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
+				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
@@ -673,6 +691,7 @@
 				8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA818911C478D3600D99065 /* MonkeyChef.swift in Sources */,
 				8DA8188D1C478D3600D99065 /* CatChef.swift in Sources */,
+				8DA818A71C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
 				8DDA04D71C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3E1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
@@ -737,6 +756,7 @@
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */,
+				8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
 				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
