@@ -86,6 +86,8 @@
 		8D8BD7301C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA818841C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -172,6 +174,7 @@
 		8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
 		8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PatternCommentary.swift"; sourceTree = "<group>"; };
 		8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourGuide.swift; sourceTree = "<group>"; };
+		8DA818821C47850300D99065 /* BearCulinaryTourist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourist.swift; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
 				8D2D14B01C44D49B001DDB2C /* Messenger.swift */,
 				8D0963EB1C45EFBB00173678 /* Diary.swift */,
+				8DA818821C47850300D99065 /* BearCulinaryTourist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,13 +356,6 @@
 			path = Creational;
 			sourceTree = "<group>";
 		};
-		8DA818721C476AAE00D99065 /* AnimalChefs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimalChefs;
-			sourceTree = "<group>";
-		};
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,7 +379,6 @@
 		8DDA04CB1C2A9BF500B5A707 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				8DA818721C476AAE00D99065 /* AnimalChefs */,
 				8DDA04D51C2A9FAB00B5A707 /* Chefs */,
 				8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */,
 				8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */,
@@ -590,6 +586,7 @@
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
+				8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
@@ -650,6 +647,7 @@
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
+				8DA818841C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D8BD7301C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D0963F11C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
