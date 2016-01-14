@@ -8,16 +8,16 @@
 
 import Foundation
 
+typealias AnimalCulinaryRequestClosure = (String) -> (Void)
+
 protocol AnimalCulinaryTourGuide {
-    
-    typealias CulinaryRequestClosure = ((String) -> Void)
     
     /// Request drinks for this animal culinary spot. Will return `String` through
     /// passed `closure`.
-    func requestDrinks(closure: CulinaryRequestClosure)
+    func requestDrinks(closure: AnimalCulinaryRequestClosure)
 
     /// Request food for this animal culinary spot. Will return `String` through
     /// passed `closure`.
-    func requestFood(closure: CulinaryRequestClosure)
+    func requestFood(closure: AnimalCulinaryRequestClosure)
     
 }
