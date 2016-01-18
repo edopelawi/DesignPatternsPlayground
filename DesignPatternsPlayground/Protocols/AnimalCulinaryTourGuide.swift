@@ -12,6 +12,12 @@ typealias AnimalCulinaryRequestClosure = (String) -> (Void)
 
 protocol AnimalCulinaryTourGuide {
     
+    /// Emoji that used as this tour guide's icon.
+    var tourGuideIcon: String { get }
+    
+    /// Emoji that used as the chef's icon that currently handled by this tour guide.
+    var culinaryChefIcon: String { get }
+    
     /// Request drinks for this animal culinary spot. Will return `String` through
     /// passed `closure`.
     func requestDrinks(closure: AnimalCulinaryRequestClosure)
