@@ -10,6 +10,14 @@ import Foundation
 
 class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
+    var tourGuideIcon: String {
+        return "🐨"
+    }
+    
+    var culinaryChefIcon: String {
+        return "🐨🌿"
+    }
+    
     private var chef: KoalaChef
  
     init(chef: KoalaChef) {

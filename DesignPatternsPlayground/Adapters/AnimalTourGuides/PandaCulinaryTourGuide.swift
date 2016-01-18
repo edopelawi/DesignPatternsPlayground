@@ -10,6 +10,14 @@ import Foundation
 
 class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
+    var tourGuideIcon: String {
+        return "🐼"
+    }
+    
+    var culinaryChefIcon: String {
+        return "🐼🎋"
+    }
+    
     private var chef: PandaChef
     
     init(chef: PandaChef) {

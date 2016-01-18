@@ -10,6 +10,14 @@ import Foundation
 
 class CatCulinaryTourGuide: AnimalCulinaryTourGuide {
     
+    var tourGuideIcon: String {
+        return "😸"
+    }
+    
+    var culinaryChefIcon: String {
+        return "🐱🍼"
+    }
+    
     private var chef: CatChef
     
     init(chef: CatChef) {
