@@ -38,7 +38,17 @@ class StructuralPatternsViewController: UIViewController {
     }
     
     private func pushPageForPatternType(patternType: StructuralPatternType) {
-        // TODO: push corresponding pages here
+
+        var optionalViewController: UIViewController?
+        
+        switch patternType {
+        case .Adapter: optionalViewController = AdapterSampleViewController()
+        default: break
+        }
+        
+        if let viewController = optionalViewController {
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 
 }
