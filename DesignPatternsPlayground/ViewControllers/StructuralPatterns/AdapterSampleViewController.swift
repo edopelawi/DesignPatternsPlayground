@@ -23,6 +23,16 @@ class AdapterSampleViewController: UIViewController, AdapterSampleViewModelDeleg
         title = "Rotana's Culinary Trip!"
         viewModel.delegate = self
         configureInitialTexts()
+        configureCommentBarButton()
+    }
+    
+    private func configureCommentBarButton() {
+
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Adapter)
     }
     
     // MARK: IBActions
