@@ -32,6 +32,16 @@ extension UIViewController {
         commentPage.setCommentaryText(commentaries)
         
         self.navigationController?.pushViewController(commentPage, animated: true)
-    }
+    }    
     
+    /// Push commentary page for passed `structuralPatternType`. Will only work if this instance has `navigationController`.
+    func pushCommentaryPage(structuralPatternType structuralPatternType: StructuralPatternType) {
+        
+        let commentaries = PatternCommentaryFactory.commentaryForStructuralPatternType(structuralPatternType)
+        
+        let commentPage = CommentaryViewController()
+        commentPage.setCommentaryText(commentaries)
+        
+        self.navigationController?.pushViewController(commentPage, animated: true)
+    }
 }
