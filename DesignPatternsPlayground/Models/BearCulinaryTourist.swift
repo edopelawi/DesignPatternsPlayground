@@ -10,27 +10,66 @@ import Foundation
 
 class BearCulinaryTourist {
     
-    typealias BearActionClosure = (String) -> (Void)
+    typealias BearActionClosure = (AnimalCulinaryTourDialogue) -> (Void)
     
     internal var tourGuide: AnimalCulinaryTourGuide?
+    private let bearName = "Mangix(🐻)"
     
-    /// Returns retrieved `String` food, according to current `tourGuide` instance.
-    internal func hungryAction(closure: BearActionClosure) {
+    /// Requests food to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
+    internal func requestFood(closure: BearActionClosure) {
+        
         guard let validGuide = tourGuide else {
-            closure("")
+            closure(noTourGuideDialogue())
             return
         }
         
-        validGuide.requestFood(closure)
+        validGuide.requestFood {
+            [weak self] baseDialogue in
+
+            var dialogue = baseDialogue
+            dialogue.touristDialogue = "I am hungry... can we get something to eat?"
+            
+            if let strongSelf = self {
+                dialogue.touristName = strongSelf.bearName
+            } else {
+                dialogue.touristName = "Bear(🐻)"
+            }
+            
+            closure(dialogue)
+        }
     }
     
-    /// Returns retrieved `String` drink, according to current `tourGuide` instance.
-    internal func thirstyAction(closure: BearActionClosure) {
+    /// Requests drink to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
+    internal func requestAction(closure: BearActionClosure) {
         guard let validGuide = tourGuide else {
-            closure("")
+            closure(noTourGuideDialogue())
             return
         }
         
-        validGuide.requestDrinks(closure)
+        validGuide.requestDrinks {
+            [weak self] baseDialogue in
+            
+            var dialogue = baseDialogue
+            dialogue.touristDialogue = "I am thirsty... can we get something to drink?"
+            
+            if let strongSelf = self {
+                dialogue.touristName = strongSelf.bearName
+            } else {
+                dialogue.touristName = "Bear(🐻)"
+            }
+            
+            closure(dialogue)
+        }
+    }
+    
+    // MARK: Private methods
+    
+    private func noTourGuideDialogue() -> AnimalCulinaryTourDialogue {
+        var dialogue = AnimalCulinaryTourDialogue()
+        
+        dialogue.touristName = bearName
+        dialogue.touristDialogue = "Erm, May I have a ... wait, nobody's here :("
+        
+        return dialogue
     }
 }
