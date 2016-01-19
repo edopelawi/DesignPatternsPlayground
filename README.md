@@ -4,11 +4,11 @@ This project was made as an attempt to learn [GoF's Design Patterns](https://en.
 
 #Screenshots
 
-![Home page](/screenshots/home_page.png?raw=true)
-![List of creational patterns](/screnshots/list_of_creational_patterns.png?raw=true)
-![Factory method sample](/screenshots/factory_method_sample.png?raw=true)
-![Factory method comments](/screenshots/factory_method_comments.png?raw=true)
-![Adapter method sample](/screenshots/adapter_method_sample.png?raw=true)
+![Home page](/screenshots/home_page.png)
+![List of creational patterns](/screnshots/list_of_creational_patterns.png =40x)
+![Factory method sample](/screenshots/factory_method_sample.png =40x)
+![Factory method comments](/screenshots/factory_method_comments.png =40x)
+![Adapter method sample](/screenshots/adapter_method_sample.png =40x)
 
 #Patterns Checklist
 
