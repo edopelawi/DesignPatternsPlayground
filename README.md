@@ -5,7 +5,7 @@ This project was made as an attempt to learn [GoF's Design Patterns](https://en.
 #Screenshots
 
 ![Home page](/screenshots/home_page.png)
-![List of creational patterns](/screnshots/list_of_creational_patterns.png)
+![List of creational patterns](/screenshots/list_of_creational_patterns.png)
 ![Factory method sample](/screenshots/factory_method_sample.png)
 ![Factory method comments](/screenshots/factory_method_comments.png)
 ![Adapter method sample](/screenshots/adapter_method_sample.png)
