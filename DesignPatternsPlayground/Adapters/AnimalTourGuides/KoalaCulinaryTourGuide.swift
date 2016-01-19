@@ -10,14 +10,6 @@ import Foundation
 
 class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
-    var tourGuideIcon: String {
-        return "🐨"
-    }
-    
-    var culinaryChefIcon: String {
-        return "🐨🌿"
-    }
-    
     private var chef: KoalaChef
  
     init(chef: KoalaChef) {
@@ -25,10 +17,33 @@ class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
     }
     
     func requestFood(closure: AnimalCulinaryRequestClosure) {
-        closure(chef.eucalyptusLeaves())
+        
+        var dialogue = basicDialogue()
+        
+        dialogue.tourGuideDialogue = "Heerp, may I have a dish for my guest, heeerp?"
+        dialogue.tourChefDialogue = chef.eucalyptusLeaves()
+        
+        closure(dialogue)
     }
     
     func requestDrinks(closure: AnimalCulinaryRequestClosure) {
-        closure(chef.eucalyptusOil())
+        
+        var dialogue = basicDialogue()
+        
+        dialogue.tourGuideDialogue = "Heerp, may I have a drink for my guest, heerp?"
+        dialogue.tourChefDialogue = chef.eucalyptusOil()
+        
+        closure(dialogue)
+    }
+    
+    // MARK: Private methods
+    
+    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+        var dialogue = AnimalCulinaryTourDialogue()
+        
+        dialogue.tourGuideName = "Yabbra(🐨)"
+        dialogue.tourChefName = "Goonaroo(🐨🌿)"
+        
+        return dialogue
     }
 }
