@@ -10,14 +10,6 @@ import Foundation
 
 class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
-    var tourGuideIcon: String {
-        return "🐼"
-    }
-    
-    var culinaryChefIcon: String {
-        return "🐼🎋"
-    }
-    
     private var chef: PandaChef
     
     init(chef: PandaChef) {
@@ -26,6 +18,36 @@ class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
     func requestDrinks(closure: AnimalCulinaryRequestClosure) {
         
+        var dialogue = basicDialogue()
+        
+        dialogue.tourGuideDialogue = "Chef, may I have a drink for my guest? *munches*"
+        dialogue.tourChefDialogue = getDrinkFromChef()
+        
+        closure(dialogue)
+    }
+    
+    func requestFood(closure: AnimalCulinaryRequestClosure) {
+        
+        var dialogue = basicDialogue()
+        
+        dialogue.tourGuideDialogue = "Chef, may I have a dish for my guest? *munches*"
+        dialogue.tourChefDialogue = chef.bambooLeaves()
+        
+        closure(dialogue)
+    }    
+    
+    // MARK: Private methods
+    
+    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+        var dialogue = AnimalCulinaryTourDialogue()
+
+        dialogue.tourGuideName = "Tian Tian(🐼)"
+        dialogue.tourChefName = "Yang Guang(🐼🎋)"
+        
+        return dialogue
+    }
+    
+    private func getDrinkFromChef() -> String {
         var beverageType: PandaBeverage
         
         let randomInt = random() % 2
@@ -36,11 +58,6 @@ class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
             beverageType = .GreenTea
         }
         
-        let drinks = chef.beverage(beverageType)
-        closure(drinks)
-    }
-    
-    func requestFood(closure: AnimalCulinaryRequestClosure) {
-        closure(chef.bambooLeaves())
+        return chef.beverage(beverageType)
     }
 }
