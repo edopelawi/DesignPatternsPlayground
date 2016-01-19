@@ -9,12 +9,22 @@
 import Foundation
 
 class PatternCommentaryFactory {
-    
-    class func commentaryForCreationalPatternType(pattern: CreationalPatternType) -> String {
-
-        var comments = ""
         
+    /// Returns `String` instance of commentaries of passed `pattern`.
+    class func commentaryForCreationalPatternType(pattern: CreationalPatternType) -> String {
         let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+        return commentariesFromTextFile(fileName)
+    }
+    
+    /// Returns `String` instance of commentaries of passed `pattern`.
+    class func commentaryForStructuralPatternType(pattern: StructuralPatternType) -> String {
+        let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+        return commentariesFromTextFile(fileName)
+    }
+    
+    private class func commentariesFromTextFile(fileName: String) -> String {
+    
+        var comments = ""
         
         if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "txt") {
             
@@ -24,7 +34,7 @@ class PatternCommentaryFactory {
                 print("Failed to load \(fileName).txt. Please check if the file has proper name.")
             }
         }
-        
+     
         return comments
     }
 }
