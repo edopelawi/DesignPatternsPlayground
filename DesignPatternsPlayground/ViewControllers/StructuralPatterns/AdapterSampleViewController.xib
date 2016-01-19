@@ -51,11 +51,17 @@
                                     <rect key="frame" x="137" y="75" width="463" height="33"/>
                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                     <state key="normal" title="None"/>
+                                    <connections>
+                                        <action selector="showPlaceOptions:" destination="-1" eventType="touchUpInside" id="vVq-4E-VEf"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL1-db-dfk" userLabel="Order Button">
                                     <rect key="frame" x="137" y="104" width="463" height="33"/>
                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                     <state key="normal" title="None"/>
+                                    <connections>
+                                        <action selector="showOrderOptions:" destination="-1" eventType="touchUpInside" id="4vg-cX-0VH"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dialogue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fn-aH-Vc3" userLabel="Dialogue Header Label">
                                     <rect key="frame" x="8" y="151" width="584" height="24"/>
