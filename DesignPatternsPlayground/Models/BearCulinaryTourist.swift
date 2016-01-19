@@ -13,7 +13,7 @@ class BearCulinaryTourist {
     typealias BearActionClosure = (AnimalCulinaryTourDialogue) -> (Void)
     
     internal var tourGuide: AnimalCulinaryTourGuide?
-    private let bearName = "Mangix(🐻)"
+    private let bearName = "Rotana(🐻)"
     
     /// Requests food to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
     internal func requestFood(closure: BearActionClosure) {
