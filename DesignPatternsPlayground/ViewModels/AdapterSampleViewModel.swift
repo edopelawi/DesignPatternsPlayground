@@ -26,6 +26,12 @@ protocol AdapterSampleViewModelDelegate: class {
     
     /// Executed when passed `viewModel`'s `currentDialogue` is updated.
     func currentDialogueUpdated(viewModel: AdapterSampleViewModel, currentDialogue: String)
+
+    /// Executed when passed `viewModel`'s `selectedPlace` is updated.
+    func selectedPlaceUpdated(viewModel: AdapterSampleViewModel, selectedPlace: AdapterSamplePlace)
+    
+    /// Executed when passed `viewModel`'s `selectedOrder` is updated.
+    func selectedOrderUpdated(viewModel: AdapterSampleViewModel, selectedOrder: AdapterSampleOrder)
 }
 
 class AdapterSampleViewModel {
@@ -54,6 +60,7 @@ class AdapterSampleViewModel {
         didSet {
             bearTourist.tourGuide = tourGuideForPlace(selectedPlace)
             updateCurrentDialogue()
+            delegate?.selectedPlaceUpdated(self, selectedPlace: selectedPlace)
         }
     }
 
@@ -64,6 +71,7 @@ class AdapterSampleViewModel {
     internal var selectedOrder = AdapterSampleOrder.None {
         didSet {
             updateCurrentDialogue()
+            delegate?.selectedOrderUpdated(self, selectedOrder: selectedOrder)
         }
     }
     
