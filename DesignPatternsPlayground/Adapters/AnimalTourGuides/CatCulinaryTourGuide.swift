@@ -10,14 +10,6 @@ import Foundation
 
 class CatCulinaryTourGuide: AnimalCulinaryTourGuide {
     
-    var tourGuideIcon: String {
-        return "😸"
-    }
-    
-    var culinaryChefIcon: String {
-        return "🐱🍼"
-    }
-    
     private var chef: CatChef
     
     init(chef: CatChef) {
@@ -25,21 +17,40 @@ class CatCulinaryTourGuide: AnimalCulinaryTourGuide {
     }
     
     func requestDrinks(closure: AnimalCulinaryRequestClosure) {
-        closure(chef.catMilk())
+        var dialogue = basicDialogue()
+        
+        dialogue.tourGuideDialogue = "May I have a drink for my guest, meow?"
+        dialogue.tourChefDialogue = chef.catMilk()
+        
+        closure(dialogue)
     }
     
     func requestFood(closure: AnimalCulinaryRequestClosure) {
-        let randomNumber = random() % 2
+
+        var dialogue = basicDialogue()
+        dialogue.tourGuideDialogue = "May I have a dish for my guest, meow meow?"
+        dialogue.tourChefDialogue = getFoodFromChef()
         
-        var food = ""
-        
-        if randomNumber > 0 {
-            food = chef.grilledHamster()
-        } else {
-            food = chef.roastedMice()
-        }
-        
-        closure(food)
+        closure(dialogue)
     }
     
+    // MARK: Private methods
+    
+    private func  basicDialogue() -> AnimalCulinaryTourDialogue {
+        var dialogue = AnimalCulinaryTourDialogue()
+        dialogue.tourGuideName = "Miao(😸)"
+        dialogue.tourChefName = "Kato(🐱🍼)"
+        return dialogue
+    }
+    
+    private func getFoodFromChef() -> String {
+        
+        let randomNumber = random() % 2
+        
+        if randomNumber > 0 {
+            return chef.grilledHamster()
+        } else {
+            return chef.roastedMice()
+        }
+    }
 }
