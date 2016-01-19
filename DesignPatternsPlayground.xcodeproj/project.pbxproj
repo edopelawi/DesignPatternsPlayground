@@ -76,6 +76,8 @@
 		8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8A49511C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8A49521C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8A49541C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8A49551C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7231C43900F00E71C88 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -191,6 +193,7 @@
 		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8D7728DE1C465670005211FE /* PatternTypeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTypeTableController.swift; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
+		8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewModel.swift; sourceTree = "<group>"; };
 		8D8BD71F1C43900F00E71C88 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
 		8D8BD7201C43900F00E71C88 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
@@ -308,6 +311,7 @@
 			children = (
 				8D3E42B31C327DC10018E6BC /* Parades */,
 				8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */,
+				8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -682,6 +686,7 @@
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
 				8DA8189F1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
+				8D8A49541C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
 				8D34CA261C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8D3E42BE1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
 				8D8BD72F1C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */,
@@ -753,6 +758,7 @@
 				8D3E42C21C3285630018E6BC /* JungleParadeViewModel.swift in Sources */,
 				8D8BD72D1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA8189D1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
+				8D8A49551C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
 				8DDA04D81C2A9FDD00B5A707 /* ChineseChef.swift in Sources */,
 				8D34CA3F1C3141680002E3F9 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
