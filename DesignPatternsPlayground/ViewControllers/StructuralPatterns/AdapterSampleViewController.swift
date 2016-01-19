@@ -19,6 +19,8 @@ class AdapterSampleViewController: UIViewController, AdapterSampleViewModelDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Rotana's Culinary Trip!"
         viewModel.delegate = self
         configureInitialTexts()
     }
