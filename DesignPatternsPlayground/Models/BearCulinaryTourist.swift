@@ -40,7 +40,7 @@ class BearCulinaryTourist {
     }
     
     /// Requests drink to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
-    internal func requestAction(closure: BearActionClosure) {
+    internal func requestDrinks(closure: BearActionClosure) {
         guard let validGuide = tourGuide else {
             closure(noTourGuideDialogue())
             return
