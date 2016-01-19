@@ -23,7 +23,7 @@ struct AnimalCulinaryTourDialogue {
     internal var tourChefDialogue = ""
     
     /// Returns `String` representation of full dialogue from this instance's properties.
-    internal func createFullDialogueString -> String {
+    internal func createFullDialogueString() -> String {
         var fullDialogue = "\(touristName): \(touristDialogue)\n"
         fullDialogue += "\(tourGuideName): \(tourGuideDialogue)\n"
         fullDialogue += "\(tourChefName): \(tourChefDialogue)"
