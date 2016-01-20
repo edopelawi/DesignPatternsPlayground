@@ -30,7 +30,7 @@ public class JamesBondCar {
     
     private var engine: JamesBondCarEngine
     
-    init(terrainType: JamesBondTerrainType) {
+    public init(terrainType: JamesBondTerrainType) {
 
         switch terrainType {
         case .Air: engine = JamesBondAirCarEngine()
