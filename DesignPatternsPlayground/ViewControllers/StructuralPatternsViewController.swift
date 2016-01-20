@@ -43,6 +43,7 @@ class StructuralPatternsViewController: UIViewController {
         
         switch patternType {
         case .Adapter: optionalViewController = AdapterSampleViewController()
+        case .Bridge: optionalViewController = BridgeSampleViewController()
         default: break
         }
         
