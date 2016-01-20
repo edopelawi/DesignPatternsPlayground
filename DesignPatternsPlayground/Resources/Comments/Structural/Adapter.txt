@@ -1,10 +1,10 @@
 This pattern is pretty useful to decouple third party dependencies with our code.
 
-The upside of this pattern, beside the obvious reasons (handle different method calls / return types), is letting us to change the dependecy classes easily. changing the dependency classes won't require us to change code of many parts of the app, since they uses the Adapter.
+The upside of this pattern, beside the obvious reasons (handle different method calls / return types) is letting us to change the dependecy classes easily. Changing the dependency classes won't require us to change code of many parts of the app, since they use the Adapters.
 In current sample, I wrapped Animal Chef classes (which has different methods) to a AnimalCulinaryTourGuide. Changing the method  In this case, it's BearCulinaryTourist. I normally use this technique on implementing third party libraries, e.g. Analytics or networking libraries.
 
-Another notable practice on current sample is how this pattern works well with Dependency Inversion - where the BearCulinaryTourist specifies first what is its dependecies via AnimalCulinaryTourGuide protocol, instead of preparing multiple properties with different chef types (CatChef, KoalaChef, MonkeyChef, etc.)
+According to GoF's book, there are two type of Adapter - Class and Object adapter. On current sample, I implemented Class adapter in BearCulinaryTourGuide, which is a subclass of BearChef that implements AnimalCulinaryTourGuide protocol. Other tour guides was implemented as Object adapter, since they got the animal chef's instance as its property. 😉
 
-According to GoF's book, there are two type of Adapter - Class and Object adapter. On current sample, I implemented Object adapter - since the TourGuides takes animal chefs as its property. To implement the Class adapter, all we need to do is create a subclass from the any of the animal chef, and make it implement the AnimalCulinaryTourGuide protocol. 😉
+Another notable practice on current sample is how this pattern works well with Dependency Inversion - where the BearCulinaryTourist specifies first what is its dependecies via AnimalCulinaryTourGuide protocol, instead of preparing multiple properties with different chef types (CatChef, KoalaChef, MonkeyChef, etc.)
 
 I haven no comment regarding downside of this pattern. I might add one or two when revisiting this pattern in the future.
