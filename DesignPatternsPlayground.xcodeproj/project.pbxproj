@@ -19,6 +19,8 @@
 		8D0963F61C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
 		8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A6F1C4F3B0300E6CD4E /* BearChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A6F1C4F3B0300E6CD4E /* BearChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -168,6 +170,7 @@
 		8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonSampleViewController.xib; sourceTree = "<group>"; };
 		8D0963F41C460A4800173678 /* Singleton.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singleton.txt; sourceTree = "<group>"; };
 		8D278A6F1C4F3B0300E6CD4E /* BearChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearChef.swift; sourceTree = "<group>"; };
+		8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -437,6 +440,7 @@
 				8DA8189B1C4791A500D99065 /* KoalaCulinaryTourGuide.swift */,
 				8DA8189E1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift */,
 				8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */,
+				8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */,
 			);
 			path = AnimalTourGuides;
 			sourceTree = "<group>";
@@ -695,6 +699,7 @@
 				8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D8BD7211C43900F00E71C88 /* CommentaryViewController.swift in Sources */,
 				8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
+				8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
@@ -742,6 +747,7 @@
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
+				8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DA818921C478D3600D99065 /* MonkeyChef.swift in Sources */,
 				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2E1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
