@@ -1,1 +1,5 @@
-// TODO: Add comments here later.
+This pattern is interesting! Somehow, it looks like a mix of Apple's Class Cluster and Abstract Factory. Plus, by implementing this pattern, I got to try to implement dynamic framework (the JamesBondTools) in Swift 😆
+
+IMHO, the upside of this pattern is just like Class Clusters - hiding the complexity of multiple implementations from the client. This pattern usually used to handle multi-platform cases - e.g. 3D renderers. The difference between Class Cluster is, it holds the subclass / protocol implementer instead of its own subclass.
+
+The downside of this pattern is it might need proper planning to use it - and a good reason to use it, too. If the only need is creating simple strings (just like this sample), perhaps Abstract Factory will suffice.
