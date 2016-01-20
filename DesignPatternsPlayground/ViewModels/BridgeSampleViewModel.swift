@@ -62,7 +62,6 @@ class BridgeSampleViewModel {
         }
     }
     
-    
     init() {
         updateTerrainEmojis()
         updateBondCarForCurrentTerrain()
@@ -80,7 +79,7 @@ class BridgeSampleViewModel {
     
     private func updateTerrainEmojis() {
 
-        let repeatCount = 20
+        let repeatCount = 40
         let terrainIconCharacter = Character(selectedTerrain.terrainIcon())
         
         terrainEmojis = String(count: repeatCount, repeatedValue: terrainIconCharacter)
