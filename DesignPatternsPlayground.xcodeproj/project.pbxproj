@@ -21,6 +21,31 @@
 		8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A6F1C4F3B0300E6CD4E /* BearChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AA81C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ASSET_TAGS = (); }; };
+		8D278AB31C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; };
+		8D278AB41C4F46C100E6CD4E /* JamesBondTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D278AE51C4F51ED00E6CD4E /* JamesBondCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AE61C4F51ED00E6CD4E /* JamesBondCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AE91C4F51ED00E6CD4E /* JamesBondCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278ADF1C4F51ED00E6CD4E /* JamesBondCar.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AEA1C4F51ED00E6CD4E /* JamesBondCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278ADF1C4F51ED00E6CD4E /* JamesBondCar.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AED1C4F51ED00E6CD4E /* JamesBondTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D278AE11C4F51ED00E6CD4E /* JamesBondTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D278AF11C4F51ED00E6CD4E /* JamesBondToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AE41C4F51ED00E6CD4E /* JamesBondToolsTests.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AF31C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF21C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AF41C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF21C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AF61C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AF71C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AF91C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AFA1C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AFC1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278AFD1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
+		8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -154,6 +179,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8D278AA91C4F46C100E6CD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DED25641C2292FF00462C0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D278A9D1C4F46C100E6CD4E;
+			remoteInfo = JamesBondTools;
+		};
+		8D278AAB1C4F46C100E6CD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DED25641C2292FF00462C0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DED256B1C2292FF00462C0F;
+			remoteInfo = DesignPatternsPlayground;
+		};
+		8D278AB11C4F46C100E6CD4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DED25641C2292FF00462C0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D278A9D1C4F46C100E6CD4E;
+			remoteInfo = JamesBondTools;
+		};
 		8DED25811C2292FF00462C0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8DED25641C2292FF00462C0F /* Project object */;
@@ -163,6 +209,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8D278A951C4F457B00E6CD4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8D278AB41C4F46C100E6CD4E /* JamesBondTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D0963EB1C45EFBB00173678 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
@@ -171,6 +231,22 @@
 		8D0963F41C460A4800173678 /* Singleton.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singleton.txt; sourceTree = "<group>"; };
 		8D278A6F1C4F3B0300E6CD4E /* BearChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearChef.swift; sourceTree = "<group>"; };
 		8D278A721C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourGuide.swift; sourceTree = "<group>"; };
+		8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JamesBondTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D278AA71C4F46C100E6CD4E /* JamesBondToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamesBondToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondCarEngine.swift; sourceTree = "<group>"; };
+		8D278ADF1C4F51ED00E6CD4E /* JamesBondCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondCar.swift; sourceTree = "<group>"; };
+		8D278AE01C4F51ED00E6CD4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D278AE11C4F51ED00E6CD4E /* JamesBondTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JamesBondTools.h; sourceTree = "<group>"; };
+		8D278AE31C4F51ED00E6CD4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D278AE41C4F51ED00E6CD4E /* JamesBondToolsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondToolsTests.swift; sourceTree = "<group>"; };
+		8D278AF21C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondRoadCarEngine.swift; sourceTree = "<group>"; };
+		8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondMountainCarEngine.swift; sourceTree = "<group>"; };
+		8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondSeaCarEngine.swift; sourceTree = "<group>"; };
+		8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondAirCarEngine.swift; sourceTree = "<group>"; };
+		8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewController.swift; sourceTree = "<group>"; };
+		8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BridgeSampleViewController.xib; sourceTree = "<group>"; };
+		8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewModel.swift; sourceTree = "<group>"; };
+		8D278B071C4F826100E6CD4E /* Bridge.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge.txt; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -246,10 +322,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D278A9A1C4F46C100E6CD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D278AA41C4F46C100E6CD4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D278AA81C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DED25691C2292FF00462C0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D278AB31C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +370,55 @@
 				8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */,
 			);
 			path = BurgerOrders;
+			sourceTree = "<group>";
+		};
+		8D278AD91C4F51ED00E6CD4E /* InternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D278ADA1C4F51ED00E6CD4E /* JamesBondTools */,
+				8D278AE21C4F51ED00E6CD4E /* JamesBondToolsTests */,
+			);
+			path = InternalFrameworks;
+			sourceTree = "<group>";
+		};
+		8D278ADA1C4F51ED00E6CD4E /* JamesBondTools */ = {
+			isa = PBXGroup;
+			children = (
+				8D278ADB1C4F51ED00E6CD4E /* Cars */,
+				8D278AE01C4F51ED00E6CD4E /* Info.plist */,
+				8D278AE11C4F51ED00E6CD4E /* JamesBondTools.h */,
+			);
+			path = JamesBondTools;
+			sourceTree = "<group>";
+		};
+		8D278ADB1C4F51ED00E6CD4E /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				8D278ADC1C4F51ED00E6CD4E /* CarEngines */,
+				8D278ADF1C4F51ED00E6CD4E /* JamesBondCar.swift */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		8D278ADC1C4F51ED00E6CD4E /* CarEngines */ = {
+			isa = PBXGroup;
+			children = (
+				8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */,
+				8D278AF21C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift */,
+				8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */,
+				8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */,
+				8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */,
+			);
+			path = CarEngines;
+			sourceTree = "<group>";
+		};
+		8D278AE21C4F51ED00E6CD4E /* JamesBondToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D278AE31C4F51ED00E6CD4E /* Info.plist */,
+				8D278AE41C4F51ED00E6CD4E /* JamesBondToolsTests.swift */,
+			);
+			path = JamesBondToolsTests;
 			sourceTree = "<group>";
 		};
 		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
@@ -321,6 +462,7 @@
 				8D3E42B31C327DC10018E6BC /* Parades */,
 				8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */,
 				8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */,
+				8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -372,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				8D5D112A1C4E1D56003CA559 /* Adapter.txt */,
+				8D278B071C4F826100E6CD4E /* Bridge.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -450,6 +593,8 @@
 			children = (
 				8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */,
 				8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */,
+				8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */,
+				8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */,
 			);
 			path = StructuralPatterns;
 			sourceTree = "<group>";
@@ -503,6 +648,7 @@
 				8DED256E1C2292FF00462C0F /* DesignPatternsPlayground */,
 				8DED25831C2292FF00462C0F /* DesignPatternsPlaygroundTests */,
 				8DED256D1C2292FF00462C0F /* Products */,
+				8D278AD91C4F51ED00E6CD4E /* InternalFrameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -511,6 +657,8 @@
 			children = (
 				8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */,
 				8DED25801C2292FF00462C0F /* DesignPatternsPlaygroundTests.xctest */,
+				8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */,
+				8D278AA71C4F46C100E6CD4E /* JamesBondToolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,7 +698,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8D278A9B1C4F46C100E6CD4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D278AED1C4F51ED00E6CD4E /* JamesBondTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		8D278A9D1C4F46C100E6CD4E /* JamesBondTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D278AB51C4F46C100E6CD4E /* Build configuration list for PBXNativeTarget "JamesBondTools" */;
+			buildPhases = (
+				8D278A991C4F46C100E6CD4E /* Sources */,
+				8D278A9A1C4F46C100E6CD4E /* Frameworks */,
+				8D278A9B1C4F46C100E6CD4E /* Headers */,
+				8D278A9C1C4F46C100E6CD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JamesBondTools;
+			productName = JamesBondTools;
+			productReference = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D278AA61C4F46C100E6CD4E /* JamesBondToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D278AB81C4F46C100E6CD4E /* Build configuration list for PBXNativeTarget "JamesBondToolsTests" */;
+			buildPhases = (
+				8D278AA31C4F46C100E6CD4E /* Sources */,
+				8D278AA41C4F46C100E6CD4E /* Frameworks */,
+				8D278AA51C4F46C100E6CD4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D278AAA1C4F46C100E6CD4E /* PBXTargetDependency */,
+				8D278AAC1C4F46C100E6CD4E /* PBXTargetDependency */,
+			);
+			name = JamesBondToolsTests;
+			productName = JamesBondToolsTests;
+			productReference = 8D278AA71C4F46C100E6CD4E /* JamesBondToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DED256B1C2292FF00462C0F /* DesignPatternsPlayground */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DED25891C2292FF00462C0F /* Build configuration list for PBXNativeTarget "DesignPatternsPlayground" */;
@@ -558,10 +754,12 @@
 				8DED25681C2292FF00462C0F /* Sources */,
 				8DED25691C2292FF00462C0F /* Frameworks */,
 				8DED256A1C2292FF00462C0F /* Resources */,
+				8D278A951C4F457B00E6CD4E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D278AB21C4F46C100E6CD4E /* PBXTargetDependency */,
 			);
 			name = DesignPatternsPlayground;
 			productName = DesignPatternsPlayground;
@@ -595,6 +793,13 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ricardo Pramana Suranta";
 				TargetAttributes = {
+					8D278A9D1C4F46C100E6CD4E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					8D278AA61C4F46C100E6CD4E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 8DED256B1C2292FF00462C0F;
+					};
 					8DED256B1C2292FF00462C0F = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -619,11 +824,27 @@
 			targets = (
 				8DED256B1C2292FF00462C0F /* DesignPatternsPlayground */,
 				8DED257F1C2292FF00462C0F /* DesignPatternsPlaygroundTests */,
+				8D278A9D1C4F46C100E6CD4E /* JamesBondTools */,
+				8D278AA61C4F46C100E6CD4E /* JamesBondToolsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8D278A9C1C4F46C100E6CD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D278AA51C4F46C100E6CD4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DED256A1C2292FF00462C0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,6 +854,7 @@
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
+				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
@@ -644,6 +866,7 @@
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
+				8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,9 +880,11 @@
 				8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */,
 				8D0963F31C45F5B900173678 /* SingletonSampleViewController.xib in Resources */,
+				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
+				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
@@ -672,6 +897,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8D278A991C4F46C100E6CD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D278AE51C4F51ED00E6CD4E /* JamesBondCarEngine.swift in Sources */,
+				8D278AFC1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */,
+				8D278AF31C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift in Sources */,
+				8D278AF61C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift in Sources */,
+				8D278AE91C4F51ED00E6CD4E /* JamesBondCar.swift in Sources */,
+				8D278AF91C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D278AA31C4F46C100E6CD4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D278AF41C4F54E200E6CD4E /* JamesBondRoadCarEngine.swift in Sources */,
+				8D278AFD1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */,
+				8D278AE61C4F51ED00E6CD4E /* JamesBondCarEngine.swift in Sources */,
+				8D278AFA1C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */,
+				8D278AEA1C4F51ED00E6CD4E /* JamesBondCar.swift in Sources */,
+				8D278AF71C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift in Sources */,
+				8D278AF11C4F51ED00E6CD4E /* JamesBondToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DED25681C2292FF00462C0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -680,6 +932,7 @@
 				8D51B0651C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
+				8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8DA818931C478D3600D99065 /* PandaChef.swift in Sources */,
 				8DA8188F1C478D3600D99065 /* KoalaChef.swift in Sources */,
 				8D3E42B81C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
@@ -718,6 +971,7 @@
 				8D0963F01C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
+				8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
 				8D0963EC1C45EFBB00173678 /* Diary.swift in Sources */,
 				8D51B05C1C2A71AD00B9509E /* CreationalPatternsViewController.swift in Sources */,
@@ -766,6 +1020,7 @@
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DDA04D41C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
+				8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
@@ -792,6 +1047,7 @@
 				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
+				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */,
 				8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
@@ -802,6 +1058,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8D278AAA1C4F46C100E6CD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D278A9D1C4F46C100E6CD4E /* JamesBondTools */;
+			targetProxy = 8D278AA91C4F46C100E6CD4E /* PBXContainerItemProxy */;
+		};
+		8D278AAC1C4F46C100E6CD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DED256B1C2292FF00462C0F /* DesignPatternsPlayground */;
+			targetProxy = 8D278AAB1C4F46C100E6CD4E /* PBXContainerItemProxy */;
+		};
+		8D278AB21C4F46C100E6CD4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D278A9D1C4F46C100E6CD4E /* JamesBondTools */;
+			targetProxy = 8D278AB11C4F46C100E6CD4E /* PBXContainerItemProxy */;
+		};
 		8DED25821C2292FF00462C0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DED256B1C2292FF00462C0F /* DesignPatternsPlayground */;
@@ -829,6 +1100,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8D278AB61C4F46C100E6CD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InternalFrameworks/JamesBondTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.JamesBondTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D278AB71C4F46C100E6CD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = InternalFrameworks/JamesBondTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.JamesBondTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D278AB91C4F46C100E6CD4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/InternalFrameworks/JamesBondTools";
+				INFOPLIST_FILE = InternalFrameworks/JamesBondToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.JamesBondToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesignPatternsPlayground.app/DesignPatternsPlayground";
+			};
+			name = Debug;
+		};
+		8D278ABA1C4F46C100E6CD4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/InternalFrameworks/JamesBondTools";
+				INFOPLIST_FILE = InternalFrameworks/JamesBondToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.JamesBondToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesignPatternsPlayground.app/DesignPatternsPlayground";
+			};
+			name = Release;
+		};
 		8DED25871C2292FF00462C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -916,6 +1251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.DesignPatternsPlayground;
@@ -927,6 +1263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.DesignPatternsPlayground;
@@ -961,6 +1298,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D278AB51C4F46C100E6CD4E /* Build configuration list for PBXNativeTarget "JamesBondTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D278AB61C4F46C100E6CD4E /* Debug */,
+				8D278AB71C4F46C100E6CD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8D278AB81C4F46C100E6CD4E /* Build configuration list for PBXNativeTarget "JamesBondToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D278AB91C4F46C100E6CD4E /* Debug */,
+				8D278ABA1C4F46C100E6CD4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8DED25671C2292FF00462C0F /* Build configuration list for PBXProject "DesignPatternsPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

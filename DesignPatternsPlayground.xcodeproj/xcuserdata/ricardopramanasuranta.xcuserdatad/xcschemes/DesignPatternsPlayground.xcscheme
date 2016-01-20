@@ -38,6 +38,16 @@
                ReferencedContainer = "container:DesignPatternsPlayground.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8D278A831C4F457B00E6CD4E"
+               BuildableName = "JamesBondToolsTests.xctest"
+               BlueprintName = "JamesBondToolsTests"
+               ReferencedContainer = "container:DesignPatternsPlayground.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
