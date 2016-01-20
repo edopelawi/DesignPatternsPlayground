@@ -13,6 +13,17 @@ public enum JamesBondTerrainType: String {
     case Road = "Road"
     case Mountain = "Mountain"
     case Sea = "Sea"
+    
+    
+    /// Returns `String` instance representation of current this terrain. Mostly emojis.
+    public func terrainIcon() -> String {
+        switch self {
+        case.Air: return "☁️"
+        case .Road: return "🚧"
+        case .Mountain: return "🗻"
+        case .Sea: return "🌊"
+        }
+    }
 }
 
 public class JamesBondCar {
