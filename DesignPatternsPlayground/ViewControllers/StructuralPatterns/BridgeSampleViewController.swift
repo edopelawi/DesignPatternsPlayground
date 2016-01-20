@@ -26,6 +26,7 @@ class BridgeSampleViewController: UIViewController, BridgeSampleViewModelDelegat
         title = "Bond's Super Car!"
         viewModel.delegate = self
         loadStringsFromCurrentViewModel()
+        prepareCommentBarButton()
     }
     
     // MARK: IBOutlets
@@ -52,7 +53,6 @@ class BridgeSampleViewController: UIViewController, BridgeSampleViewModelDelegat
         
     }
     
-    
     // MARK: BridgeSampleViewModelDelegate methods
     
     func selectedTerrainUpdated(viewModel: BridgeSampleViewModel, selectedTerrain: JamesBondTerrainType) {
@@ -71,6 +71,14 @@ class BridgeSampleViewController: UIViewController, BridgeSampleViewModelDelegat
     }
     
     // MARK: Private methods
+    
+    private func prepareCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Bridge)
+    }
     
     private func loadStringsFromCurrentViewModel() {
         terrainTopLabel.text = viewModel.terrainEmojis
