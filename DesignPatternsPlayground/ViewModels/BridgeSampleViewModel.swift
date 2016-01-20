@@ -35,6 +35,8 @@ class BridgeSampleViewModel {
     internal var selectedTerrain =  JamesBondTerrainType.Road {
         didSet {
             updateTerrainEmojis()
+            updateBondCarForCurrentTerrain()
+            delegate?.selectedTerrainUpdated(self, selectedTerrain: selectedTerrain)
         }
     }
     
