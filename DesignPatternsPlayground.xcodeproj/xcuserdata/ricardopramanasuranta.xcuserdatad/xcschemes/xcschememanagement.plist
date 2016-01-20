@@ -9,9 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>JamesBondTools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8D278A7A1C4F457A00E6CD4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D278A831C4F457B00E6CD4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D278A9D1C4F46C100E6CD4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D278AA61C4F46C100E6CD4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8DED256B1C2292FF00462C0F</key>
 		<dict>
 			<key>primary</key>
