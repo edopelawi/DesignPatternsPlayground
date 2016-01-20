@@ -31,6 +31,8 @@
 		8D278AC51C4F47A400E6CD4E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D278ABF1C4F47A400E6CD4E /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		8D278AC61C4F47A400E6CD4E /* JamesBondToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AC01C4F47A400E6CD4E /* JamesBondToolsTests.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AC71C4F47A400E6CD4E /* JamesBondToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AC01C4F47A400E6CD4E /* JamesBondToolsTests.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278ACA1C4F49FB00E6CD4E /* JamesBondCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AC91C4F49FB00E6CD4E /* JamesBondCar.swift */; settings = {ASSET_TAGS = (); }; };
+		8D278ACB1C4F49FB00E6CD4E /* JamesBondCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AC91C4F49FB00E6CD4E /* JamesBondCar.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -222,6 +224,7 @@
 		8D278ABD1C4F47A400E6CD4E /* JamesBondTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JamesBondTools.h; sourceTree = "<group>"; };
 		8D278ABF1C4F47A400E6CD4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D278AC01C4F47A400E6CD4E /* JamesBondToolsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondToolsTests.swift; sourceTree = "<group>"; };
+		8D278AC91C4F49FB00E6CD4E /* JamesBondCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondCar.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -361,6 +364,7 @@
 			children = (
 				8D278ABC1C4F47A400E6CD4E /* Info.plist */,
 				8D278ABD1C4F47A400E6CD4E /* JamesBondTools.h */,
+				8D278AC81C4F48C100E6CD4E /* Cars */,
 			);
 			path = JamesBondTools;
 			sourceTree = "<group>";
@@ -372,6 +376,14 @@
 				8D278AC01C4F47A400E6CD4E /* JamesBondToolsTests.swift */,
 			);
 			path = JamesBondToolsTests;
+			sourceTree = "<group>";
+		};
+		8D278AC81C4F48C100E6CD4E /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				8D278AC91C4F49FB00E6CD4E /* JamesBondCar.swift */,
+			);
+			path = Cars;
 			sourceTree = "<group>";
 		};
 		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
@@ -850,6 +862,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D278ACA1C4F49FB00E6CD4E /* JamesBondCar.swift in Sources */,
 				8D278AC61C4F47A400E6CD4E /* JamesBondToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,6 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D278ACB1C4F49FB00E6CD4E /* JamesBondCar.swift in Sources */,
 				8D278AC71C4F47A400E6CD4E /* JamesBondToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
