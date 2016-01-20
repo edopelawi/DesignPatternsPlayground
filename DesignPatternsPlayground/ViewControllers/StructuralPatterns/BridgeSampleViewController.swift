@@ -22,6 +22,8 @@ class BridgeSampleViewController: UIViewController, BridgeSampleViewModelDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Bond's Super Car!"
         viewModel.delegate = self
         loadStringsFromCurrentViewModel()
     }
