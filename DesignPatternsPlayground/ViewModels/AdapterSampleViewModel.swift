@@ -14,6 +14,7 @@ enum AdapterSamplePlace: String {
     case AntipodeanTrees = "Antipodean Trees"
     case TropicalJungle = "Tropical Jungle"
     case BambooForest = "Bamboo Forest"
+    case RotanaHometown = "Rotana's Hometown"
 }
 
 enum AdapterSampleOrder: String {
@@ -42,7 +43,8 @@ class AdapterSampleViewModel {
         AdapterSamplePlace.HiddenLeaves,
         AdapterSamplePlace.AntipodeanTrees,
         AdapterSamplePlace.TropicalJungle,
-        AdapterSamplePlace.BambooForest
+        AdapterSamplePlace.BambooForest,
+        AdapterSamplePlace.RotanaHometown
     ]
     
     /// Array of `AdapterSampleOrder` enum options.
@@ -96,6 +98,7 @@ class AdapterSampleViewModel {
     private var koalaTourGuide: KoalaCulinaryTourGuide!
     private var monkeyTourGuide: MonkeyCulinaryTourGuide!
     private var pandaTourGuide: PandaCulinaryTourGuide!
+    private var bearTourGuide: BearCulinaryTourGuide!
     
     // MARK: Bear Tourist
     
@@ -113,6 +116,7 @@ class AdapterSampleViewModel {
         koalaTourGuide = KoalaCulinaryTourGuide(chef: koalaChef)
         monkeyTourGuide = MonkeyCulinaryTourGuide(chef: monkeyChef)
         pandaTourGuide = PandaCulinaryTourGuide(chef: pandaChef)
+        bearTourGuide = BearCulinaryTourGuide()
     }
     
     private func tourGuideForPlace(place: AdapterSamplePlace) -> AnimalCulinaryTourGuide? {
@@ -122,6 +126,7 @@ class AdapterSampleViewModel {
         case .BambooForest: return pandaTourGuide
         case .TropicalJungle: return monkeyTourGuide
         case .HiddenLeaves: return catTourGuide
+        case .RotanaHometown: return bearTourGuide
         }
     }
     
