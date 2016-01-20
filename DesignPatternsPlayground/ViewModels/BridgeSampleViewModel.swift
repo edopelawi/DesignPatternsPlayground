@@ -9,6 +9,18 @@
 import Foundation
 import JamesBondTools
 
+protocol BridgeSampleViewModelDelegate: class {
+    
+    /// Executed when `viewModel`'s `selectedTerrain` property is updated.
+    func selectedTerrainUpdated(viewModel: BridgeSampleViewModel, selectedTerrain: JamesBondTerrainType)
+    
+    /// Executed when `viewModel`'s `terrainEmojis` property is updated.
+    func terrainEmojisUpdated(viewModel: BridgeSampleViewModel, terrainEmojis: String)
+    
+    /// Executed when `viewModel`'s `bondCarWithEffects` property is updated
+    func bondCarWithEffectsUpdated(viewModel: BridgeSampleViewModel, bondCarWithEffects: String)
+}
+
 class BridgeSampleViewModel {
     
     /// Contains array of `JamesBondTerrainType` options.
@@ -22,25 +34,35 @@ class BridgeSampleViewModel {
     /// Selected `JamesBondTerrainType` of this instance.
     internal var selectedTerrain =  JamesBondTerrainType.Road {
         didSet {
-            updateTerrainString()
+            updateTerrainEmojis()
         }
     }
     
     /// Stores `String` of emoji representation of current `selectedTerrain`.
-    internal var terrain = ""
+    internal var terrainEmojis = "" {
+        didSet {
+            delegate?.terrainEmojisUpdated(self, terrainEmojis: terrainEmojis)
+        }        
+    }
     
     /// Stores `String` of emoji and text representation of bond car for currently `selectedTerrain`.
-    internal var bondCarWithEffects = ""
+    internal var bondCarWithEffects = "" {
+        didSet {
+            delegate?.bondCarWithEffectsUpdated(self, bondCarWithEffects: bondCarWithEffects)
+        }
+    }
+    
+    weak internal var delegate: BridgeSampleViewModelDelegate?
     
     private var bondCar: JamesBondCar! {
         didSet {
-            updateBondCarWithEffectsString()
+            updateBondCarWithEffects()
         }
     }
     
     
     init() {
-        updateTerrainString()
+        updateTerrainEmojis()
         updateBondCarForCurrentTerrain()
     }
     
@@ -50,15 +72,15 @@ class BridgeSampleViewModel {
         bondCar = JamesBondCar(terrainType: selectedTerrain)
     }
     
-    private func updateBondCarWithEffectsString() {
+    private func updateBondCarWithEffects() {
         bondCarWithEffects = "\(bondCar.carIcon())💨 \(bondCar.engineSound())"
     }
     
-    private func updateTerrainString() {
+    private func updateTerrainEmojis() {
 
         let repeatCount = 20
         let terrainIconCharacter = Character(selectedTerrain.terrainIcon())
         
-        terrain = String(count: repeatCount, repeatedValue: terrainIconCharacter)
+        terrainEmojis = String(count: repeatCount, repeatedValue: terrainIconCharacter)
     }
 }
