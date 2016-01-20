@@ -15,6 +15,6 @@ class BearChef {
     }
     
     internal func sake() -> String {
-        return "Sake! 🍶 Mangix went here when you started your trip, and he brought some sake the villagers!"
+        return "Sake! 🍶 Mangix went here when you started your trip, and he brought some sake for the villagers!"
     }
 }
