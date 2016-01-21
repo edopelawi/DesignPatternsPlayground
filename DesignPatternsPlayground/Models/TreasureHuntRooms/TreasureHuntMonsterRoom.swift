@@ -10,11 +10,17 @@ import Foundation
 
 class TreasureHuntMonsterRoom: TreasureHuntRoom {
     
+    var roomNumber: Int
+    
     private let possibleMonsters = [
         "👻", "👹", "👺",
         "💀", "👽", "👾",
         "🐲"
     ]
+    
+    init(roomNumber: Int) {
+        self.roomNumber = roomNumber
+    }
     
     func roomContentType() -> TreasureHuntRoomContentType {
         return .Monster

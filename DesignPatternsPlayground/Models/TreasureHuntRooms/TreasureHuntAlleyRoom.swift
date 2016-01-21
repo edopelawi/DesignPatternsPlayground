@@ -11,7 +11,13 @@ import Foundation
 /// Composite implementation of `TreasureHuntRoom`.
 class TreasureHuntAlleyRoom: TreasureHuntRoom {
     
+    var roomNumber: Int
+    
     private var nextRooms: [ TreasureHuntRoom ] = []
+    
+    init(roomNumber: Int) {
+        self.roomNumber = roomNumber
+    }
     
     /// MARK: TreasureHuntRoom
     

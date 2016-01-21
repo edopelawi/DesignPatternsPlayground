@@ -10,6 +10,12 @@ import Foundation
 
 class TreasureHuntTreasureRoom: TreasureHuntRoom {
     
+    var roomNumber: Int
+    
+    init(roomNumber: Int) {
+        self.roomNumber = roomNumber
+    }
+    
     func roomContentType() -> TreasureHuntRoomContentType {
         return .Treasure
     }
