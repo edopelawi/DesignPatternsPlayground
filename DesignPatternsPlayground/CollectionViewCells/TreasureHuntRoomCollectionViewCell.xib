@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TreasureHuntRoomCollectionViewCellIdentifier" id="gTV-IL-0wX" customClass="TreasureHuntRoomCollectionViewCell" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="375"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="375"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Room number #123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-hW-3Wl" userLabel="Room Number Label">
+                        <rect key="frame" x="0.0" y="344" width="303" height="24"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="🚪" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ohu-QN-ndo">
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="344"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Ohu-QN-ndo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Ov-fL-qQd"/>
+                <constraint firstAttribute="bottom" secondItem="Ohu-QN-ndo" secondAttribute="bottom" id="4lF-IB-Jxy"/>
+                <constraint firstAttribute="trailing" secondItem="Ohu-QN-ndo" secondAttribute="trailing" id="Cdl-Va-Fng"/>
+                <constraint firstAttribute="bottom" secondItem="qgL-hW-3Wl" secondAttribute="bottom" constant="8" id="K6t-Ec-lws"/>
+                <constraint firstItem="qgL-hW-3Wl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZNY-sM-3El"/>
+                <constraint firstItem="Ohu-QN-ndo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="agC-6r-PLs"/>
+                <constraint firstItem="qgL-hW-3Wl" firstAttribute="top" secondItem="Ohu-QN-ndo" secondAttribute="bottom" id="iRh-jW-ryk"/>
+                <constraint firstAttribute="trailing" secondItem="qgL-hW-3Wl" secondAttribute="trailing" id="kkR-W6-YOC"/>
+            </constraints>
+            <size key="customSize" width="303" height="375"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4lF-IB-Jxy"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="roomNumberLabel" destination="qgL-hW-3Wl" id="wAV-nl-VQV"/>
+            </connections>
+            <point key="canvasLocation" x="596.5" y="379.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
