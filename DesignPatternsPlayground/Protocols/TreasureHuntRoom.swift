@@ -16,6 +16,8 @@ enum TreasureHuntRoomContentType {
 
 protocol TreasureHuntRoom {
     
+    var roomNumber: Int { get }
+    
     /// Returns content type of this instance.
     func roomContentType() -> TreasureHuntRoomContentType
     
