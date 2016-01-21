@@ -123,6 +123,10 @@
 		8DA659A41C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659A61C50801300A97E87 /* TreasureHuntAlleyRoom.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659A81C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659A61C50801300A97E87 /* TreasureHuntAlleyRoom.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659AA1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659A91C50881C00A97E87 /* TreasureHuntMonsterRoom.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659A91C50881C00A97E87 /* TreasureHuntMonsterRoom.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659AD1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659AC1C508ADF00A97E87 /* TreasureHuntTreasureRoom.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659AC1C508ADF00A97E87 /* TreasureHuntTreasureRoom.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
@@ -290,6 +294,8 @@
 		8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PatternCommentary.swift"; sourceTree = "<group>"; };
 		8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoom.swift; sourceTree = "<group>"; };
 		8DA659A61C50801300A97E87 /* TreasureHuntAlleyRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntAlleyRoom.swift; sourceTree = "<group>"; };
+		8DA659A91C50881C00A97E87 /* TreasureHuntMonsterRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntMonsterRoom.swift; sourceTree = "<group>"; };
+		8DA659AC1C508ADF00A97E87 /* TreasureHuntTreasureRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntTreasureRoom.swift; sourceTree = "<group>"; };
 		8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818821C47850300D99065 /* BearCulinaryTourist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourist.swift; sourceTree = "<group>"; };
 		8DA818891C478D3600D99065 /* CatChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatChef.swift; sourceTree = "<group>"; };
@@ -567,6 +573,8 @@
 			isa = PBXGroup;
 			children = (
 				8DA659A61C50801300A97E87 /* TreasureHuntAlleyRoom.swift */,
+				8DA659A91C50881C00A97E87 /* TreasureHuntMonsterRoom.swift */,
+				8DA659AC1C508ADF00A97E87 /* TreasureHuntTreasureRoom.swift */,
 			);
 			path = TreasureHuntRooms;
 			sourceTree = "<group>";
@@ -961,6 +969,7 @@
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
+				8DA659AA1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8DA8189C1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
@@ -1005,6 +1014,7 @@
 				8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
+				8DA659AD1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,6 +1043,7 @@
 				8DEF63711C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
 				8D8BD7221C43900F00E71C88 /* CommentaryViewController.swift in Sources */,
 				8DA818941C478D3600D99065 /* PandaChef.swift in Sources */,
+				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
@@ -1067,6 +1078,7 @@
 				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
+				8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D34CA341C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */,
