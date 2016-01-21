@@ -26,7 +26,7 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
     // MARK: Public method
     
     internal func configureForTreasureHuntRoom(room: TreasureHuntRoom) {
-        // TODO: add configuration method here.
+        roomNumberLabel.text = "Room number #\(room.roomNumber)"
     }
 
 }
