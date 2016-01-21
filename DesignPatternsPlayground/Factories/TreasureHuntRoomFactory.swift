@@ -20,16 +20,16 @@ class TreasureHuntRoomFactory {
     static func treasureHuntRoomsWithDepth(depth: Int) -> TreasureHuntRoom {
         
         if depth <= 1 {
-            return TreasureHuntTreasureRoom(roomNumber: 0)
+            return TreasureHuntTreasureRoom(roomNumber: 1)
         }
 
-        let firstAlleyRoom = TreasureHuntAlleyRoom(roomNumber: 0)
+        let firstAlleyRoom = TreasureHuntAlleyRoom(roomNumber: 1)
         var processedAlleyRoom = firstAlleyRoom
         
         for index in 1...depth {
             
             let lastDepth = index == depth
-            let numberOfRooms = (random() % 3) + 2
+            let numberOfRooms = (random() % 5) + 2
             
             populateAlleyRoom(
                 processedAlleyRoom,
