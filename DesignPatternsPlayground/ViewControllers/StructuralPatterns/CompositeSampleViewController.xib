@@ -15,13 +15,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="💂🏼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ek-8g-KQw">
-                    <rect key="frame" x="260" y="28" width="80" height="95.5"/>
+                    <rect key="frame" x="260" y="68" width="80" height="95.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="80"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-C1-PCq">
-                    <rect key="frame" x="8" y="144" width="584" height="305.5"/>
+                    <rect key="frame" x="8" y="184" width="584" height="265.5"/>
                     <string key="text">Dear Adventurer, there is a very valuable treasure hidden in these dungeons.
 Each room will have doors in it - and only one of it contains a door to the next room, or the treasure itself.
 
@@ -84,7 +84,7 @@ Which one will you take?</string>
                 <constraint firstItem="bL3-C1-PCq" firstAttribute="top" secondItem="4Ek-8g-KQw" secondAttribute="bottom" constant="20" id="jpH-LD-rlP"/>
                 <constraint firstItem="bL3-C1-PCq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="jx8-NG-1tg"/>
                 <constraint firstItem="bL3-C1-PCq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="obR-Pi-Xhy"/>
-                <constraint firstItem="4Ek-8g-KQw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="rw9-BV-1tk"/>
+                <constraint firstItem="4Ek-8g-KQw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="68" id="rw9-BV-1tk"/>
                 <constraint firstItem="4Ek-8g-KQw" firstAttribute="top" secondItem="bL3-C1-PCq" secondAttribute="top" id="vHn-w4-hxg"/>
                 <constraint firstItem="A8J-1N-9yC" firstAttribute="top" secondItem="bL3-C1-PCq" secondAttribute="bottom" constant="20" id="xWr-X5-AUL"/>
             </constraints>

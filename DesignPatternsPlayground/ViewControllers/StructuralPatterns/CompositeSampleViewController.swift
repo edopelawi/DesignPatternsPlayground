@@ -13,6 +13,10 @@ class CompositeSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Dungeon of Treasures!"
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBarHidden = false
     }
 
