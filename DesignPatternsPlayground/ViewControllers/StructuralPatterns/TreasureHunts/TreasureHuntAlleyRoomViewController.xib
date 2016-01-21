@@ -19,6 +19,7 @@
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o5E-6k-n8j">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m9V-NJ-Phl">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="50" height="50"/>
@@ -56,7 +57,7 @@
                 <constraint firstAttribute="bottom" secondItem="UaW-uv-hcc" secondAttribute="bottom" constant="8" id="ToZ-CB-Ums"/>
                 <constraint firstAttribute="trailing" secondItem="UaW-uv-hcc" secondAttribute="trailing" constant="8" id="wph-sq-ntb"/>
             </constraints>
-            <point key="canvasLocation" x="270" y="-29"/>
+            <point key="canvasLocation" x="353" y="-22"/>
         </collectionReusableView>
     </objects>
 </document>
