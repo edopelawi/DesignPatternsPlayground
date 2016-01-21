@@ -38,7 +38,7 @@ class TreasureHuntAlleyRoom: TreasureHuntRoom {
     
     /// Retrieve this instance's  next `TreasureHuntRoom` on passed index. Will return
     /// nil for invalid index.
-    internal func retrieveTreasyreHuntRoomAtIndex(index: Int) -> TreasureHuntRoom? {
+    internal func retrieveTreasureHuntRoomAtIndex(index: Int) -> TreasureHuntRoom? {
         if index < 0 || index >= nextRooms.count {
             return nil
         }
