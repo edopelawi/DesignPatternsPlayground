@@ -17,11 +17,11 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
         return CGSizeMake(screenWidth/2, screenWidth/2)
     }
     
-    static func nib() -> UINib? {        
+    static func nib() -> UINib? {
         return UINib(nibName: "TreasureHuntRoomCollectionViewCell", bundle: nil)
     }
     
-    @IBOutlet weak var roomNumberLabel: UILabel!
+    @IBOutlet private weak var roomNumberLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +30,10 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
     // MARK: Public method
     
     internal func configureForTreasureHuntRoom(room: TreasureHuntRoom) {
-        roomNumberLabel.text = "Room number #\(room.roomNumber)"
+        roomNumberLabel.text = "Room #\(room.roomNumber)"
     }
-
+    
+    internal func setLabelColor(color: UIColor) {
+        roomNumberLabel.textColor = color
+    }
 }
