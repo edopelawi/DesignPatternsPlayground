@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreasureHuntAlleyRoomViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="o5E-6k-n8j" id="iX5-Oa-ESp"/>
+                <outlet property="headerView" destination="GJq-Nj-Dy0" id="5Gf-rN-64W"/>
+                <outlet property="headerViewLabel" destination="UaW-uv-hcc" id="0uD-NT-IjK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o5E-6k-n8j">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m9V-NJ-Phl">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GWL-aK-nY7"/>
+                        <outlet property="delegate" destination="-1" id="wZO-m0-A8N"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o5E-6k-n8j" secondAttribute="bottom" id="00j-m5-OIm"/>
+                <constraint firstItem="o5E-6k-n8j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i8w-nL-gzf"/>
+                <constraint firstAttribute="trailing" secondItem="o5E-6k-n8j" secondAttribute="trailing" id="ivb-R2-kNM"/>
+                <constraint firstItem="o5E-6k-n8j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sIs-jc-XDq"/>
+            </constraints>
+        </view>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GJq-Nj-Dy0" userLabel="Doors Header View">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 room(s) left. Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaW-uv-hcc">
+                    <rect key="frame" x="8" y="8" width="584" height="46"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UaW-uv-hcc" firstAttribute="top" secondItem="GJq-Nj-Dy0" secondAttribute="top" constant="8" id="COz-Ie-JZe"/>
+                <constraint firstItem="UaW-uv-hcc" firstAttribute="leading" secondItem="GJq-Nj-Dy0" secondAttribute="leading" constant="8" id="HJc-ip-Mra"/>
+                <constraint firstAttribute="bottom" secondItem="UaW-uv-hcc" secondAttribute="bottom" constant="8" id="ToZ-CB-Ums"/>
+                <constraint firstAttribute="trailing" secondItem="UaW-uv-hcc" secondAttribute="trailing" constant="8" id="wph-sq-ntb"/>
+            </constraints>
+            <point key="canvasLocation" x="270" y="-29"/>
+        </collectionReusableView>
+    </objects>
+</document>
