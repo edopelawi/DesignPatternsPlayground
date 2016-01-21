@@ -131,6 +131,10 @@
 		8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659B11C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659B21C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA659B61C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659B21C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DA659B91C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659B71C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659B71C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659B81C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659B81C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
@@ -302,6 +306,8 @@
 		8DA659AC1C508ADF00A97E87 /* TreasureHuntTreasureRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntTreasureRoom.swift; sourceTree = "<group>"; };
 		8DA659B11C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntMonsterRoomViewController.swift; sourceTree = "<group>"; };
 		8DA659B21C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntMonsterRoomViewController.xib; sourceTree = "<group>"; };
+		8DA659B71C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntTreasureRoomViewController.swift; sourceTree = "<group>"; };
+		8DA659B81C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntTreasureRoomViewController.xib; sourceTree = "<group>"; };
 		8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818821C47850300D99065 /* BearCulinaryTourist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourist.swift; sourceTree = "<group>"; };
 		8DA818891C478D3600D99065 /* CatChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatChef.swift; sourceTree = "<group>"; };
@@ -590,6 +596,8 @@
 			children = (
 				8DA659B11C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift */,
 				8DA659B21C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib */,
+				8DA659B71C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift */,
+				8DA659B81C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib */,
 			);
 			path = TreasureHunts;
 			sourceTree = "<group>";
@@ -894,6 +902,7 @@
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
+				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
@@ -924,6 +933,7 @@
 				8D0963F31C45F5B900173678 /* SingletonSampleViewController.xib in Resources */,
 				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
+				8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
@@ -999,6 +1009,7 @@
 				8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
+				8DA659B91C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */,
@@ -1065,6 +1076,7 @@
 				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
+				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
