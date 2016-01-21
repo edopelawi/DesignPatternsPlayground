@@ -149,6 +149,8 @@
 		8DA659D31C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659D01C50E85500A97E87 /* CompositeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659D41C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
@@ -329,6 +331,7 @@
 		8DA659CD1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomFactory.swift; sourceTree = "<group>"; };
 		8DA659D01C50E85500A97E87 /* CompositeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeSampleViewController.swift; sourceTree = "<group>"; };
 		8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompositeSampleViewController.xib; sourceTree = "<group>"; };
+		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818821C47850300D99065 /* BearCulinaryTourist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourist.swift; sourceTree = "<group>"; };
 		8DA818891C478D3600D99065 /* CatChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatChef.swift; sourceTree = "<group>"; };
@@ -561,6 +564,7 @@
 			children = (
 				8D5D112A1C4E1D56003CA559 /* Adapter.txt */,
 				8D278B071C4F826100E6CD4E /* Bridge.txt */,
+				8DA659D61C50F06E00A97E87 /* Composite.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -938,6 +942,7 @@
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
+				8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */,
 				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
@@ -966,6 +971,7 @@
 			files = (
 				8DA659B61C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8DA659C91C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
+				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
 				8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */,
