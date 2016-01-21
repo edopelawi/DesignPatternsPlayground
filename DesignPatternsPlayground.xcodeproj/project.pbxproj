@@ -143,6 +143,8 @@
 		8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659C81C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA659C91C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8DA659CE1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659CD1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659CD1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818821C47850300D99065 /* BearCulinaryTourist.swift */; settings = {ASSET_TAGS = (); }; };
@@ -320,6 +322,7 @@
 		8DA659BE1C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntAlleyRoomViewController.xib; sourceTree = "<group>"; };
 		8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DA659CD1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomFactory.swift; sourceTree = "<group>"; };
 		8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818821C47850300D99065 /* BearCulinaryTourist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearCulinaryTourist.swift; sourceTree = "<group>"; };
 		8DA818891C478D3600D99065 /* CatChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatChef.swift; sourceTree = "<group>"; };
@@ -697,6 +700,7 @@
 				8DDA04D51C2A9FAB00B5A707 /* Chefs */,
 				8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */,
 				8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */,
+				8DA659CD1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1075,6 +1079,7 @@
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8DA659AD1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
+				8DA659CE1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,6 +1088,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
+				8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
