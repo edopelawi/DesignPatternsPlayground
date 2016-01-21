@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompositeSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2v-dj-ShC">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wax-Zu-ger">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="426"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="💂🏼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ek-8g-KQw">
+                                    <rect key="frame" x="260" y="20" width="80" height="95.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-C1-PCq">
+                                    <rect key="frame" x="20" y="136" width="560" height="139.5"/>
+                                    <string key="text">Dear Adventurer, there is a very valuable treasure hidden in these dungeons.
+Each room will have doors in it - and only one of it contains a door to the next room, or the treasure itself.
+
+Which one will you take?</string>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8J-1N-9yC" userLabel="Easy Level Button">
+                                    <rect key="frame" x="20" y="295" width="560" height="37"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                    <state key="normal" title="EASY - I'm still new, afterall.">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="enterEasyDungeon:" destination="-1" eventType="touchUpInside" id="R9h-Fi-9jy"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcX-8f-KB4" userLabel="Medium Level Button">
+                                    <rect key="frame" x="20" y="332" width="560" height="37"/>
+                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                    <state key="normal" title="MEDIUM - I know my way around.">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="enterMediumDungeon:" destination="-1" eventType="touchUpInside" id="VhI-cE-Mvh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QB-iF-CzD" userLabel="Hard Level Button">
+                                    <rect key="frame" x="20" y="369" width="560" height="37"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
+                                    <state key="normal" title="HARD - I'm ready to face anything.">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="enterHardDungeon:" destination="-1" eventType="touchUpInside" id="jKD-bY-FS5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="A8J-1N-9yC" firstAttribute="trailing" secondItem="bL3-C1-PCq" secondAttribute="trailing" id="1Wj-dV-3Oz"/>
+                                <constraint firstAttribute="trailing" secondItem="bL3-C1-PCq" secondAttribute="trailing" constant="20" id="2q2-7B-ARO"/>
+                                <constraint firstItem="A8J-1N-9yC" firstAttribute="leading" secondItem="bL3-C1-PCq" secondAttribute="leading" id="3XH-TD-TBJ"/>
+                                <constraint firstAttribute="bottom" secondItem="6QB-iF-CzD" secondAttribute="bottom" constant="20" id="4tM-ff-wsN"/>
+                                <constraint firstItem="bL3-C1-PCq" firstAttribute="top" secondItem="4Ek-8g-KQw" secondAttribute="bottom" constant="20.5" id="BPM-6b-Pl3"/>
+                                <constraint firstItem="4Ek-8g-KQw" firstAttribute="top" secondItem="Wax-Zu-ger" secondAttribute="top" constant="20" id="Iua-H2-sQS"/>
+                                <constraint firstItem="XcX-8f-KB4" firstAttribute="top" secondItem="A8J-1N-9yC" secondAttribute="bottom" id="JAR-SZ-2hO"/>
+                                <constraint firstItem="XcX-8f-KB4" firstAttribute="trailing" secondItem="A8J-1N-9yC" secondAttribute="trailing" id="RVb-xe-e8g"/>
+                                <constraint firstItem="bL3-C1-PCq" firstAttribute="leading" secondItem="Wax-Zu-ger" secondAttribute="leading" constant="20" id="RrZ-2a-ZTt"/>
+                                <constraint firstItem="4Ek-8g-KQw" firstAttribute="centerX" secondItem="Wax-Zu-ger" secondAttribute="centerX" id="T5j-ba-MYD"/>
+                                <constraint firstItem="6QB-iF-CzD" firstAttribute="top" secondItem="XcX-8f-KB4" secondAttribute="bottom" id="VhW-te-YP8"/>
+                                <constraint firstItem="6QB-iF-CzD" firstAttribute="leading" secondItem="XcX-8f-KB4" secondAttribute="leading" id="WaC-jR-Rnx"/>
+                                <constraint firstItem="6QB-iF-CzD" firstAttribute="trailing" secondItem="XcX-8f-KB4" secondAttribute="trailing" id="ayM-Wa-t7v"/>
+                                <constraint firstItem="XcX-8f-KB4" firstAttribute="leading" secondItem="A8J-1N-9yC" secondAttribute="leading" id="bsK-Nq-v9V"/>
+                                <constraint firstItem="A8J-1N-9yC" firstAttribute="top" secondItem="bL3-C1-PCq" secondAttribute="bottom" constant="19.5" id="eQ4-65-Rg5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Wax-Zu-ger" firstAttribute="leading" secondItem="U2v-dj-ShC" secondAttribute="leading" id="AWw-F7-ofL"/>
+                        <constraint firstItem="Wax-Zu-ger" firstAttribute="top" secondItem="U2v-dj-ShC" secondAttribute="top" id="WUL-7X-OKB"/>
+                        <constraint firstAttribute="bottom" secondItem="Wax-Zu-ger" secondAttribute="bottom" id="mRX-tQ-5eU"/>
+                        <constraint firstAttribute="trailing" secondItem="Wax-Zu-ger" secondAttribute="trailing" id="wfg-dK-JAD"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="U2v-dj-ShC" secondAttribute="trailing" id="3kT-nE-s87"/>
+                <constraint firstAttribute="bottom" secondItem="U2v-dj-ShC" secondAttribute="bottom" id="Acb-93-dxy"/>
+                <constraint firstItem="U2v-dj-ShC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E85-Al-lgZ"/>
+                <constraint firstItem="U2v-dj-ShC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NWl-Tg-ah9"/>
+                <constraint firstItem="Wax-Zu-ger" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="lbc-TT-qQH"/>
+            </constraints>
+            <point key="canvasLocation" x="262" y="432"/>
+        </view>
+    </objects>
+</document>

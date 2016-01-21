@@ -1,0 +1,5 @@
+I really had fun implementing this sample! After a little thought, I choose to implement a mini game instead - a mini game where you will win, of course 😉
+
+The upside of this pattern is obvious - it lets you run through a nested components / tree with same interface / protocol. This alone will simplify a lot of boilerplate code - by using recursion.
+
+The only downside that I know about this pattern is the danger of oversimplifying - which normally happens when we force a problem to fit into a pattern, instead the other way around.

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreasureHuntTreasureRoomViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="treasureLabel" destination="xbi-6j-SEb" id="rBb-ro-yi7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="👑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbi-6j-SEb" userLabel="Treasure Label">
+                    <rect key="frame" x="8" y="8" width="584" height="383"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="IT'S THE TREASURE! CONGRATS! 🎉🎉🎊" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pd-Pq-4ey">
+                    <rect key="frame" x="8" y="411" width="584" height="110"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdd-A3-8RC" userLabel="Take It Home Button">
+                    <rect key="frame" x="8" y="540" width="584" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="TAKE IT HOME!"/>
+                    <connections>
+                        <action selector="takeHomeAction:" destination="-1" eventType="touchUpInside" id="hfY-F5-lcJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xbi-6j-SEb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="0Bb-Ou-yye"/>
+                <constraint firstItem="0Pd-Pq-4ey" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="0Rz-eh-AB5"/>
+                <constraint firstAttribute="bottom" secondItem="jdd-A3-8RC" secondAttribute="bottom" constant="20" id="7pu-sJ-KqW"/>
+                <constraint firstItem="0Pd-Pq-4ey" firstAttribute="top" secondItem="xbi-6j-SEb" secondAttribute="bottom" constant="20" id="AdA-Rz-Js1"/>
+                <constraint firstItem="jdd-A3-8RC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Lj5-ol-cds"/>
+                <constraint firstItem="jdd-A3-8RC" firstAttribute="top" secondItem="0Pd-Pq-4ey" secondAttribute="bottom" constant="20" id="Sm2-GQ-oXq"/>
+                <constraint firstItem="xbi-6j-SEb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="YfS-ya-I2W"/>
+                <constraint firstAttribute="trailing" secondItem="0Pd-Pq-4ey" secondAttribute="trailing" constant="8" id="ecR-YN-XhQ"/>
+                <constraint firstAttribute="trailing" secondItem="jdd-A3-8RC" secondAttribute="trailing" constant="8" id="gTu-ME-XSZ"/>
+                <constraint firstAttribute="trailing" secondItem="xbi-6j-SEb" secondAttribute="trailing" constant="8" id="tFt-D5-P9A"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
