@@ -46,10 +46,6 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         collectionView.registerNib(cellNib, forCellWithReuseIdentifier: cellIdentifier)
     }
     
-    private func registerHeaderView() {
-        
-    }
-    
     // MARK: UICollectionView delegate and datasource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -83,8 +79,9 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         // TODO: Update this later.
         
         let identifier = TreasureHuntRoomCollectionViewCell.identifier
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! TreasureHuntRoomCollectionViewCell        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! TreasureHuntRoomCollectionViewCell
         
+        cell.setLabelColor(UIColor.whiteColor())
         let index = indexPath.row
         
         if let nextRoom = alleyRoom?.retrieveTreasureHuntRoomAtIndex(index) {
@@ -132,9 +129,18 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                         return
                     }
                     
-                    // TODO: Update this to pop to first view controller.
-                    strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
+                    guard let viewControllers = strongSelf.navigationController?.viewControllers else {
+                        return
+                    }
                     
+                    for viewController in viewControllers {
+                        
+                        // TODO: Update this to pop to first page.
+                        if let firstPage = viewController as? StructuralPatternsViewController {
+                            strongSelf.navigationController?.popToViewController(firstPage, animated: true)
+                            break
+                        }
+                    }                    
             })
         }
         
