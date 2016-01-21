@@ -17,6 +17,13 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
         return CGSizeMake(screenWidth/2, screenWidth/2)
     }
     
+    static func nib() -> UINib? {
+        let mainBundle = NSBundle.mainBundle()
+        let nibs = mainBundle.loadNibNamed("TreasureHuntRoomCollectionViewCell", owner: nil, options: nil)
+        
+        return nibs[0] as? UINib
+    }
+    
     @IBOutlet weak var roomNumberLabel: UILabel!
     
     override func awakeFromNib() {
