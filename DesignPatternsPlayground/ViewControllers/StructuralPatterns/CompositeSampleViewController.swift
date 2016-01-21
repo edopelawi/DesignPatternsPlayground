@@ -13,6 +13,7 @@ class CompositeSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Dungeon of Treasures!"
+        configureCommentBarButton()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -36,6 +37,14 @@ class CompositeSampleViewController: UIViewController {
     }
     
     // MARK: Private methods
+    
+    private func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Composite)
+    }
     
     private func pushDungeonWithDepth(depth: Int) {
         let alleyRoom = TreasureHuntRoomFactory.treasureHuntRoomsWithDepth(depth) as! TreasureHuntAlleyRoom
