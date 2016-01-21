@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreasureHuntMonsterRoomViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="monsterLabel" destination="LZK-K4-UvY" id="QIz-RE-0Pf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="IT'S A MONSTER! RUN!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAK-5b-Gny">
+                    <rect key="frame" x="8" y="465" width="584" height="55"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh4-gi-zwI" userLabel="Action Button">
+                    <rect key="frame" x="8" y="540" width="584" height="40"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="GET ME OUT OF HERE!"/>
+                    <connections>
+                        <action selector="executeAction:" destination="-1" eventType="touchUpInside" id="gQp-2l-IgO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="👹" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-K4-UvY" userLabel="Monster Label">
+                    <rect key="frame" x="20" y="20" width="560" height="363"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LZK-K4-UvY" secondAttribute="height" multiplier="1:1" id="yeo-BO-ddL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="yeo-BO-ddL"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kh4-gi-zwI" secondAttribute="bottom" constant="20" id="0Qu-gb-zwD"/>
+                <constraint firstItem="LZK-K4-UvY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="EWR-kG-ZE4"/>
+                <constraint firstItem="kh4-gi-zwI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="PpX-Vk-Hhm"/>
+                <constraint firstAttribute="trailing" secondItem="RAK-5b-Gny" secondAttribute="trailing" constant="8" id="TBD-ir-Z9r"/>
+                <constraint firstItem="RAK-5b-Gny" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="fbv-2C-yB2"/>
+                <constraint firstAttribute="trailing" secondItem="kh4-gi-zwI" secondAttribute="trailing" constant="8" id="fyS-Jb-orC"/>
+                <constraint firstItem="LZK-K4-UvY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="g24-hr-was"/>
+                <constraint firstItem="kh4-gi-zwI" firstAttribute="top" secondItem="RAK-5b-Gny" secondAttribute="bottom" constant="20" id="pDd-Ig-F4J"/>
+                <constraint firstAttribute="trailing" secondItem="LZK-K4-UvY" secondAttribute="trailing" constant="20" id="wJq-2w-7Cx"/>
+                <constraint firstItem="RAK-5b-Gny" firstAttribute="top" secondItem="LZK-K4-UvY" secondAttribute="bottom" constant="82" id="yT6-L8-rDz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
