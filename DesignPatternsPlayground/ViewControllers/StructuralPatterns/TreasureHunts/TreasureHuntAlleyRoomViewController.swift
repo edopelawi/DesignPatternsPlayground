@@ -135,8 +135,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                     
                     for viewController in viewControllers {
                         
-                        // TODO: Update this to pop to first page.
-                        if let firstPage = viewController as? StructuralPatternsViewController {
+                        if let firstPage = viewController as? CompositeSampleViewController {
                             strongSelf.navigationController?.popToViewController(firstPage, animated: true)
                             break
                         }
