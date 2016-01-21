@@ -91,7 +91,50 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // TODO: Push corresponding page later.
+
+        let index = indexPath.row
+        
+        guard let nextRoom = alleyRoom?.retrieveTreasureHuntRoomAtIndex(index) else {
+            return
+        }
+        
+        var nextViewController: UIViewController
+        
+        switch nextRoom.roomContentType() {
+        
+        case .MoreRooms: nextViewController = TreasureHuntAlleyRoomViewController(alleyRoom: nextRoom as! TreasureHuntAlleyRoom)
+            
+        case .Monster:
+            nextViewController = TreasureHuntMonsterRoomViewController(
+                monsterRoom: nextRoom as! TreasureHuntMonsterRoom,
+                backButtonTappedClosure: {
+                    [weak self] in
+                    
+                    guard let strongSelf = self else {
+                        return
+                    }
+                    
+                    strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
+                    
+            })                    
+            
+        case .Treasure:
+            nextViewController = TreasureHuntTreasureRoomViewController(
+                treasureRoom: nextRoom as! TreasureHuntTreasureRoom,
+                takeHomeActionClosure: {
+                    [weak self] in
+                    
+                    guard let strongSelf = self else {
+                        return
+                    }
+                    
+                    // TODO: Update this to pop to first view controller.
+                    strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
+                    
+            })
+        }
+        
+        navigationController?.pushViewController(nextViewController, animated: true)
     }
     
 
