@@ -7,8 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreasureHuntAlleyRoomViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="o5E-6k-n8j" id="iX5-Oa-ESp"/>
-                <outlet property="headerView" destination="GJq-Nj-Dy0" id="5Gf-rN-64W"/>
-                <outlet property="headerViewLabel" destination="UaW-uv-hcc" id="0uD-NT-IjK"/>
+                <outlet property="headerLabel" destination="tHo-k8-6MG" id="3ek-NB-PnS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Room #0. Choose your door wisely." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHo-k8-6MG" userLabel="Header Label">
+                    <rect key="frame" x="8" y="28" width="584" height="26"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o5E-6k-n8j">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <rect key="frame" x="0.0" y="62" width="600" height="538"/>
+                    <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m9V-NJ-Phl">
                         <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
@@ -32,32 +38,22 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.24313725489999999" green="0.5450980392" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="o5E-6k-n8j" secondAttribute="bottom" id="00j-m5-OIm"/>
+                <constraint firstItem="tHo-k8-6MG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="Dcf-Xl-8RG"/>
+                <constraint firstItem="o5E-6k-n8j" firstAttribute="top" secondItem="tHo-k8-6MG" secondAttribute="bottom" constant="8" id="Qe5-mC-Ds8"/>
+                <constraint firstAttribute="trailing" secondItem="tHo-k8-6MG" secondAttribute="trailing" constant="8" id="Y4A-TF-jOr"/>
                 <constraint firstItem="o5E-6k-n8j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i8w-nL-gzf"/>
                 <constraint firstAttribute="trailing" secondItem="o5E-6k-n8j" secondAttribute="trailing" id="ivb-R2-kNM"/>
+                <constraint firstItem="tHo-k8-6MG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="rcT-PJ-R6N"/>
                 <constraint firstItem="o5E-6k-n8j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sIs-jc-XDq"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="i8w-nL-gzf"/>
+                </mask>
+            </variation>
         </view>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GJq-Nj-Dy0" userLabel="Doors Header View">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are 0 room(s) left. Choose wisely." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaW-uv-hcc">
-                    <rect key="frame" x="8" y="8" width="584" height="46"/>
-                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="19"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <constraints>
-                <constraint firstItem="UaW-uv-hcc" firstAttribute="top" secondItem="GJq-Nj-Dy0" secondAttribute="top" constant="8" id="COz-Ie-JZe"/>
-                <constraint firstItem="UaW-uv-hcc" firstAttribute="leading" secondItem="GJq-Nj-Dy0" secondAttribute="leading" constant="8" id="HJc-ip-Mra"/>
-                <constraint firstAttribute="bottom" secondItem="UaW-uv-hcc" secondAttribute="bottom" constant="8" id="ToZ-CB-Ums"/>
-                <constraint firstAttribute="trailing" secondItem="UaW-uv-hcc" secondAttribute="trailing" constant="8" id="wph-sq-ntb"/>
-            </constraints>
-            <point key="canvasLocation" x="353" y="-22"/>
-        </collectionReusableView>
     </objects>
 </document>

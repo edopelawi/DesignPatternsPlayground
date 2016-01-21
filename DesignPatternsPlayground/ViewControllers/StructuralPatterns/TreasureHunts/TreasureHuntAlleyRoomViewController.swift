@@ -14,8 +14,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet var headerView: UICollectionReusableView!
-    @IBOutlet weak var headerViewLabel: UILabel!
+    @IBOutlet weak var headerLabel: UILabel!
     
     init(alleyRoom: TreasureHuntAlleyRoom) {
         super.init(nibName: "TreasureHuntAlleyRoomViewController", bundle: nil)
@@ -30,7 +29,12 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         super.viewDidLoad()
         
         registerCells()
-        registerHeaderView()
+        
+        if let validRoom = alleyRoom {
+            headerLabel.text = "Room #\(validRoom.roomNumber). Choose your door wisely."
+        }
+        
+        navigationController?.navigationBarHidden = true
     }
     
     // MARK: Private methods
@@ -43,7 +47,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
     }
     
     private func registerHeaderView() {
-        // TODO: Implement this method later.
+        
     }
     
     // MARK: UICollectionView delegate and datasource
@@ -116,7 +120,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                     
                     strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
                     
-            })                    
+            })
             
         case .Treasure:
             nextViewController = TreasureHuntTreasureRoomViewController(
