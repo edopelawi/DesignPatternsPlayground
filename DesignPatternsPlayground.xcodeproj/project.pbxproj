@@ -54,6 +54,8 @@
 		8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825931C51E5F700EDF542 /* FireFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825951C51E66800EDF542 /* IceFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825941C51E66800EDF542 /* IceFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825961C51E66800EDF542 /* IceFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825941C51E66800EDF542 /* IceFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -291,6 +293,7 @@
 		8D2825871C51E3D600EDF542 /* StreetFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetFighter.swift; sourceTree = "<group>"; };
 		8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
 		8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireFightingArmament.swift; sourceTree = "<group>"; };
+		8D2825941C51E66800EDF542 /* IceFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceFightingArmament.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -486,6 +489,7 @@
 			children = (
 				8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */,
 				8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */,
+				8D2825941C51E66800EDF542 /* IceFightingArmament.swift */,
 			);
 			path = FightingMoves;
 			sourceTree = "<group>";
@@ -1072,6 +1076,7 @@
 				8DA659AA1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
+				8D2825951C51E66800EDF542 /* IceFightingArmament.swift in Sources */,
 				8DA8189C1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
@@ -1167,6 +1172,7 @@
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
+				8D2825961C51E66800EDF542 /* IceFightingArmament.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
 				8D2825891C51E3D600EDF542 /* StreetFighter.swift in Sources */,
 				8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */,
