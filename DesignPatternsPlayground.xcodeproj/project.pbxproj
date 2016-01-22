@@ -56,6 +56,10 @@
 		8D2825931C51E5F700EDF542 /* FireFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825951C51E66800EDF542 /* IceFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825941C51E66800EDF542 /* IceFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825961C51E66800EDF542 /* IceFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825941C51E66800EDF542 /* IceFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825991C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D28259B1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -294,6 +298,8 @@
 		8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
 		8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireFightingArmament.swift; sourceTree = "<group>"; };
 		8D2825941C51E66800EDF542 /* IceFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceFightingArmament.swift; sourceTree = "<group>"; };
+		8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorSampleViewController.swift; sourceTree = "<group>"; };
+		8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecoratorSampleViewController.xib; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -706,6 +712,8 @@
 				8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */,
 				8DA659D01C50E85500A97E87 /* CompositeSampleViewController.swift */,
 				8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */,
+				8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */,
+				8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */,
 			);
 			path = StructuralPatterns;
 			sourceTree = "<group>";
@@ -987,6 +995,7 @@
 				8DA659D41C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
+				8D28259B1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
 				8DA659C11C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
@@ -1011,6 +1020,7 @@
 				8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
+				8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
@@ -1087,6 +1097,7 @@
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8DA659BF1C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
+				8D2825991C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8DA659B91C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
@@ -1203,6 +1214,7 @@
 				8DA659D31C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
+				8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
