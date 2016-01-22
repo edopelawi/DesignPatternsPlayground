@@ -22,6 +22,7 @@ class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelD
         title = "Street Fighter!"
         viewModel.delegate = self
         loadInitialViewModelValue()
+        addCommentBarButton()
     }
     
     @IBAction func showFightingMoveOptions(sender: UIButton) {
@@ -94,5 +95,13 @@ class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelD
         fightingMoveButton.setTitle(selectedMoveString, forState: .Highlighted)
         
         resultLabel.text = viewModel.resultMove
+    }
+    
+    private func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Decorator)
     }
 }
