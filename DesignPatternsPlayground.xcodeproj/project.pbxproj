@@ -50,8 +50,8 @@
 		8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825831C51E07B00EDF542 /* FightingMoves.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825881C51E3D600EDF542 /* StreetFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825871C51E3D600EDF542 /* StreetFighter.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825891C51E3D600EDF542 /* StreetFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825871C51E3D600EDF542 /* StreetFighter.swift */; settings = {ASSET_TAGS = (); }; };
-		8D28258C1C51E4C300EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258B1C51E4C300EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
-		8D28258D1C51E4C300EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258B1C51E4C300EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D28258F1C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -287,7 +287,7 @@
 		8D278B071C4F826100E6CD4E /* Bridge.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge.txt; sourceTree = "<group>"; };
 		8D2825831C51E07B00EDF542 /* FightingMoves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightingMoves.swift; sourceTree = "<group>"; };
 		8D2825871C51E3D600EDF542 /* StreetFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetFighter.swift; sourceTree = "<group>"; };
-		8D28258B1C51E4C300EDF542 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
+		8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -478,12 +478,12 @@
 			path = JamesBondToolsTests;
 			sourceTree = "<group>";
 		};
-		8D28258A1C51E45C00EDF542 /* StreetFighter */ = {
+		8D28258A1C51E45C00EDF542 /* FightingMoves */ = {
 			isa = PBXGroup;
 			children = (
-				8D28258B1C51E4C300EDF542 /* ThunderFightingArmament.swift */,
+				8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */,
 			);
-			name = StreetFighter;
+			path = FightingMoves;
 			sourceTree = "<group>";
 		};
 		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
@@ -498,7 +498,7 @@
 		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
 			isa = PBXGroup;
 			children = (
-				8D28258A1C51E45C00EDF542 /* StreetFighter */,
+				8D28258A1C51E45C00EDF542 /* FightingMoves */,
 				8D34CA2C1C3139DF0002E3F9 /* Array+Randomiser.swift */,
 				8D8BD72E1C43A99000E71C88 /* UIViewController+PatternCommentary.swift */,
 			);
@@ -1095,7 +1095,7 @@
 				8D8BD72F1C43A99000E71C88 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D2825881C51E3D600EDF542 /* StreetFighter.swift in Sources */,
 				8DA818991C478EC100D99065 /* CatCulinaryTourGuide.swift in Sources */,
-				8D28258C1C51E4C300EDF542 /* ThunderFightingArmament.swift in Sources */,
+				8D28258F1C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
 				8D0963F01C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
 				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
@@ -1131,7 +1131,7 @@
 				8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
-				8D28258D1C51E4C300EDF542 /* ThunderFightingArmament.swift in Sources */,
+				8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
