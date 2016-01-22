@@ -8,23 +8,91 @@
 
 import UIKit
 
-class DecoratorSampleViewController: UIViewController {
+class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelDelegate {
 
-    @IBOutlet weak var fightingMoveButton: UIButton!
-    @IBOutlet weak var armamentButton: UIButton!
+    @IBOutlet private weak var fightingMoveButton: UIButton!
+    @IBOutlet private weak var armamentButton: UIButton!
     
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet private weak var resultLabel: UILabel!
+    
+    private var viewModel = DecoratorSampleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Street Fighter!"
+        viewModel.delegate = self
+        loadInitialViewModelValue()
     }
     
     @IBAction func showFightingMoveOptions(sender: UIButton) {
-        // TODO: Show action sheet here.
+        
+        let actionSheet = UIAlertController(title: "Fighting Moves", message: "", preferredStyle: .ActionSheet)
+        
+        for fightingMove in viewModel.fightingMoveOptions {
+            
+            let action = UIAlertAction(
+                title: fightingMove.rawValue,
+                style: .Default,
+                handler: {
+                    [weak self] _ in
+                    self?.viewModel.selectedFightingMove = fightingMove
+                }
+            )
+            
+            actionSheet.addAction(action)
+        }
+        
+        self.presentViewController(actionSheet, animated: true, completion: nil)
     }
 
     @IBAction func showArmamentOptions(sender: UIButton) {
-        // TODO: Show actino sheet here.
+        
+        let actionSheet = UIAlertController(title: "Fighting Armaments", message: "", preferredStyle: .ActionSheet)
+        
+        for armament in viewModel.armamentOptions {
+            
+            let action = UIAlertAction(
+                title: armament.rawValue,
+                style: .Default,
+                handler: {
+                    [weak self] _ in
+                    self?.viewModel.selectedArmament = armament
+                }
+            )
+            
+            actionSheet.addAction(action)
+        }
+        
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+    }
+    
+    // MARK: DecoratorSampleViewModelDelegate
+    
+    func selectedArmamentUpdated(viewModel: DecoratorSampleViewModel, selectedArmament: DecoratorSampleViewModelArmaments) {
+        armamentButton.setTitle(selectedArmament.rawValue, forState: .Normal)
+        armamentButton.setTitle(selectedArmament.rawValue, forState: .Highlighted)
+    }
+    
+    func selectedFightingMoveUpdated(viewModel: DecoratorSampleViewModel, selectedFightingMove: DecoratorSampleViewModelMoves) {
+        fightingMoveButton.setTitle(selectedFightingMove.rawValue, forState: .Normal)
+        fightingMoveButton.setTitle(selectedFightingMove.rawValue, forState: .Highlighted)
+    }
+    
+    func resultMoveUpdated(viewModel: DecoratorSampleViewModel, resultMove: String) {
+        resultLabel.text = resultMove
+    }
+    
+    // MARK: Private methods
+    
+    private func loadInitialViewModelValue() {
+        let selectedArmamentString = viewModel.selectedArmament.rawValue
+        armamentButton.setTitle(selectedArmamentString, forState: .Normal)
+        armamentButton.setTitle(selectedArmamentString, forState: .Highlighted)
+        
+        let selectedMoveString = viewModel.selectedFightingMove.rawValue
+        fightingMoveButton.setTitle(selectedMoveString, forState: .Normal)
+        fightingMoveButton.setTitle(selectedMoveString, forState: .Highlighted)
+        
+        resultLabel.text = viewModel.resultMove
     }
 }
