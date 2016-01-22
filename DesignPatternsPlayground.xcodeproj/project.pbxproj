@@ -46,6 +46,8 @@
 		8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
 		8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
+		8D2825841C51E07B00EDF542 /* FightingMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825831C51E07B00EDF542 /* FightingMoves.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825831C51E07B00EDF542 /* FightingMoves.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -279,6 +281,7 @@
 		8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BridgeSampleViewController.xib; sourceTree = "<group>"; };
 		8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewModel.swift; sourceTree = "<group>"; };
 		8D278B071C4F826100E6CD4E /* Bridge.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge.txt; sourceTree = "<group>"; };
+		8D2825831C51E07B00EDF542 /* FightingMoves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightingMoves.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -692,6 +695,7 @@
 				8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */,
 				8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */,
 				8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */,
+				8D2825831C51E07B00EDF542 /* FightingMoves.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1066,6 +1070,7 @@
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
 				8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D2825841C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA8189F1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D34CA301C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D8A49541C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
@@ -1138,6 +1143,7 @@
 				8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8D3E42BC1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
 				8DDA04D11C2A9DB000B5A707 /* Food.swift in Sources */,
+				8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
