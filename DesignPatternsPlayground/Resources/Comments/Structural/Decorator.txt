@@ -1,0 +1,7 @@
+After implementing this sample, I realised that GoF's Decorator pattern is different from RayWenderlich's one - which uses Objective-C's Category (or Swift's Extension, in this case).
+
+In GoF's decorator pattern, the decorator class is expected to have the same API (method) with the decorated object. To implement this, we need a single interface that implemented by both decorator and decorated class. Swift's Extension, in other hand, doesn't need this - but it can't have the same method name from the decorated class.
+
+The upside of this pattern is it lets client to get a "extended" function from the decorated class - without changing the method that should be called. We could use this in wide range of applications: UI related, modelling, data processing, etc. Plus, since it's expected that they will have similiar APIs, the common "conflicting / same method name between extensions" fear for Swift Extension's user is fairly nonexistent.
+
+The downside of this patter is it needs the interface to be created first. This way, this pattern isn't applicable to base classes that available from the SDK - e.g. UIView, UIViewController, etc. Swift's Extension fits better for handling these cases.
