@@ -52,6 +52,8 @@
 		8D2825891C51E3D600EDF542 /* StreetFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825871C51E3D600EDF542 /* StreetFighter.swift */; settings = {ASSET_TAGS = (); }; };
 		8D28258F1C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
+		8D2825931C51E5F700EDF542 /* FireFightingArmament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
@@ -288,6 +290,7 @@
 		8D2825831C51E07B00EDF542 /* FightingMoves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightingMoves.swift; sourceTree = "<group>"; };
 		8D2825871C51E3D600EDF542 /* StreetFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetFighter.swift; sourceTree = "<group>"; };
 		8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
+		8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireFightingArmament.swift; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
@@ -482,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				8D28258E1C51E5BE00EDF542 /* ThunderFightingArmament.swift */,
+				8D2825911C51E5F700EDF542 /* FireFightingArmament.swift */,
 			);
 			path = FightingMoves;
 			sourceTree = "<group>";
@@ -1115,6 +1119,7 @@
 				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8DA659D21C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
+				8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
 				8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8D34CA331C313D4F0002E3F9 /* OtherCuisineChef.swift in Sources */,
 				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
@@ -1127,6 +1132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2825931C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
 				8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
