@@ -38,7 +38,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Adapter
 - [x] Bridge
 - [x] Composite
-- [ ] Decorator
+- [x] Decorator
 - [ ] Facade
 - [ ] Flyweight
 - [ ] Proxy
