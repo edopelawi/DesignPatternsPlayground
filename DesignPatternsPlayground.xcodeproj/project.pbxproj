@@ -121,6 +121,8 @@
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
+		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
+		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
 		8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -349,6 +351,7 @@
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
+		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8D7728DE1C465670005211FE /* PatternTypeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTypeTableController.swift; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -646,6 +649,7 @@
 				8D278B071C4F826100E6CD4E /* Bridge.txt */,
 				8DA659D61C50F06E00A97E87 /* Composite.txt */,
 				8D2825A01C51FF2000EDF542 /* Decorator.txt */,
+				8D68A6B31C579A8700BEDC5C /* Proxy.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -1041,6 +1045,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
+				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
@@ -1088,6 +1093,7 @@
 				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 				8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
+				8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
