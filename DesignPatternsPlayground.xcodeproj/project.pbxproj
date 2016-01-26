@@ -195,6 +195,8 @@
 		8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE13931C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -374,6 +376,7 @@
 		8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
 		8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdapterSampleViewController.xib; sourceTree = "<group>"; };
 		8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkVisitor.swift; sourceTree = "<group>"; };
+		8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketProvider.swift; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -739,6 +742,7 @@
 				8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */,
 				8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */,
 				8D2825831C51E07B00EDF542 /* FightingMoves.swift */,
+				8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1116,6 +1120,7 @@
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */,
+				8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
@@ -1172,6 +1177,7 @@
 				8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
 				8DAE13931C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
+				8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
