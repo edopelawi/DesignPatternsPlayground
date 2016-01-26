@@ -199,6 +199,8 @@
 		8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE13991C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -380,6 +382,7 @@
 		8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkVisitor.swift; sourceTree = "<group>"; };
 		8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketProvider.swift; sourceTree = "<group>"; };
 		8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketVendingMachine.swift; sourceTree = "<group>"; };
+		8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -740,6 +743,7 @@
 			isa = PBXGroup;
 			children = (
 				8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */,
+				8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */,
 			);
 			path = ThemeParkTicketProvider;
 			sourceTree = "<group>";
@@ -1110,6 +1114,7 @@
 				8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
@@ -1212,6 +1217,7 @@
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
+				8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
