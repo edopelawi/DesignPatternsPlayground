@@ -40,10 +40,6 @@ class ProxySampleViewController: UIViewController {
         }
     }
     
-    @IBAction func mainViewTapped(sender: UITapGestureRecognizer) {
-        view.endEditing(true)
-    }
-    
     // MARK: Private methods
     
     private func updateResponseLabel() {
