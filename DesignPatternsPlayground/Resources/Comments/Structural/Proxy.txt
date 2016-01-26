@@ -1,0 +1,9 @@
+This pattern is quite straightforward to implement. The sole purpose is pattern is to create a proxy (duh) with same method / API with the real object.
+
+In a glance, this pattern looked similiar with Decorator pattern since they add extra functionality with same API from the real object. The underlying difference is the purpose - while Decorator used to add enhance feature, Proxy used to "represent" the feature of the main object, with extra validation.
+
+On this sample, the Proxy class (ThemeParkTicketSalesPerson) creates its own real object (ThemeParkTicketVendingMachine). In real case implementation, it would be better pass the real object in initializer, and create a Factory class for the Proxy object. This might be beneficial if the real object is a Singleton or takes a lot of resource to make.
+
+The upside of this pattern is obvious. The proxy objects could represent a big / expensive object, while themselves are light / easy to create. Plus, the proxy object could be used to add validation before accessing the main object's method, usually the ones with sensitive information.
+
+I haven't found any downside of this pattern. I might change my mind on the future, though! 😁

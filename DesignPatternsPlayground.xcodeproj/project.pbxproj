@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7648BD30926BAB06B270CE1A /* libPods-DesignPatternsPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */; };
 		8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
 		8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
 		8D0963EC1C45EFBB00173678 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963EB1C45EFBB00173678 /* Diary.swift */; settings = {ASSET_TAGS = (); }; };
@@ -120,6 +121,8 @@
 		8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
+		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
+		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
 		8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D7728E01C465670005211FE /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7728DE1C465670005211FE /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -193,6 +196,18 @@
 		8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13931C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13991C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -274,6 +289,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D0963EB1C45EFBB00173678 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonSampleViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +351,7 @@
 		8D51B0611C2A79C000B9509E /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D51B0641C2A7A8F00B9509E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
+		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8D7728DE1C465670005211FE /* PatternTypeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTypeTableController.swift; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -371,6 +389,12 @@
 		8DA818A11C4793E800D99065 /* PandaCulinaryTourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaCulinaryTourGuide.swift; sourceTree = "<group>"; };
 		8DA818A51C47988600D99065 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
 		8DA818A61C47988600D99065 /* AdapterSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdapterSampleViewController.xib; sourceTree = "<group>"; };
+		8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkVisitor.swift; sourceTree = "<group>"; };
+		8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketProvider.swift; sourceTree = "<group>"; };
+		8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketVendingMachine.swift; sourceTree = "<group>"; };
+		8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
+		8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySampleViewController.swift; sourceTree = "<group>"; };
+		8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxySampleViewController.xib; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -394,6 +418,7 @@
 		8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
 		8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
 		8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewModel.swift; sourceTree = "<group>"; };
+		D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DesignPatternsPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D278AB31C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */,
+				7648BD30926BAB06B270CE1A /* libPods-DesignPatternsPlayground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +456,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A6551BF5A4AB32FD3CCAEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ED1534C10DCD5379B86080C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */,
+				0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D03ADC41C33C54200CA932B /* Builders */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +637,7 @@
 				8D0963EB1C45EFBB00173678 /* Diary.swift */,
 				8DA818821C47850300D99065 /* BearCulinaryTourist.swift */,
 				8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */,
+				8DAE13911C5749E4002A1E33 /* ThemeParkVisitor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -605,6 +649,7 @@
 				8D278B071C4F826100E6CD4E /* Bridge.txt */,
 				8DA659D61C50F06E00A97E87 /* Composite.txt */,
 				8D2825A01C51FF2000EDF542 /* Decorator.txt */,
+				8D68A6B31C579A8700BEDC5C /* Proxy.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -722,8 +767,19 @@
 				8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */,
 				8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */,
 				8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */,
+				8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */,
+				8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */,
 			);
 			path = StructuralPatterns;
+			sourceTree = "<group>";
+		};
+		8DAE13971C574A95002A1E33 /* ThemeParkTicketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */,
+				8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */,
+			);
+			path = ThemeParkTicketProvider;
 			sourceTree = "<group>";
 		};
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
@@ -735,6 +791,7 @@
 				8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */,
 				8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */,
 				8D2825831C51E07B00EDF542 /* FightingMoves.swift */,
+				8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -751,6 +808,7 @@
 		8DDA04CB1C2A9BF500B5A707 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				8DAE13971C574A95002A1E33 /* ThemeParkTicketProvider */,
 				8DA818881C478D3600D99065 /* AnimalChefs */,
 				8DDA04D51C2A9FAB00B5A707 /* Chefs */,
 				8D34CA351C313F660002E3F9 /* AbstractChefFactory.swift */,
@@ -780,6 +838,8 @@
 				8DED25831C2292FF00462C0F /* DesignPatternsPlaygroundTests */,
 				8DED256D1C2292FF00462C0F /* Products */,
 				8D278AD91C4F51ED00E6CD4E /* InternalFrameworks */,
+				0ED1534C10DCD5379B86080C /* Pods */,
+				06A6551BF5A4AB32FD3CCAEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -883,10 +943,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DED25891C2292FF00462C0F /* Build configuration list for PBXNativeTarget "DesignPatternsPlayground" */;
 			buildPhases = (
+				1C901F4D2F97B1FC4FFEF88F /* Check Pods Manifest.lock */,
 				8DED25681C2292FF00462C0F /* Sources */,
 				8DED25691C2292FF00462C0F /* Frameworks */,
 				8DED256A1C2292FF00462C0F /* Resources */,
 				8D278A951C4F457B00E6CD4E /* Embed Frameworks */,
+				3020373647FD9DDF45315094 /* Embed Pods Frameworks */,
+				0021157B9376641205B9A6DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -982,6 +1045,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
+				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8D34CA401C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
@@ -990,6 +1054,7 @@
 				8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */,
 				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
+				8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
@@ -1028,9 +1093,11 @@
 				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 				8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
+				8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
+				8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
@@ -1043,6 +1110,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0021157B9376641205B9A6DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C901F4D2F97B1FC4FFEF88F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3020373647FD9DDF45315094 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D278A991C4F46C100E6CD4E /* Sources */ = {
@@ -1090,11 +1205,13 @@
 				8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8D34CA2D1C3139DF0002E3F9 /* Array+Randomiser.swift in Sources */,
+				8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D34CA291C3138BE0002E3F9 /* JapaneseChef.swift in Sources */,
 				8DA659AA1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D7728DF1C465670005211FE /* PatternTypeTableController.swift in Sources */,
+				8DAE13991C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8D51B0621C2A79C000B9509E /* BehaviouralPatternsViewController.swift in Sources */,
 				8D2825951C51E66800EDF542 /* IceFightingArmament.swift in Sources */,
 				8DA8189C1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
@@ -1112,6 +1229,8 @@
 				8D3E42B51C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */,
+				8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
+				8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
@@ -1130,6 +1249,7 @@
 				8D0963F01C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
 				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
+				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D51B05F1C2A77E700B9509E /* StructuralPatternsViewController.swift in Sources */,
@@ -1165,7 +1285,9 @@
 				8D51B0661C2A7A8F00B9509E /* HomeViewController.swift in Sources */,
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
+				8DAE13931C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
+				8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
 				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
@@ -1186,7 +1308,9 @@
 				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
+				8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
+				8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
 				8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
@@ -1200,6 +1324,7 @@
 				8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D34CA311C313C510002E3F9 /* IndonesianChef.swift in Sources */,
+				8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8D34CA271C3137100002E3F9 /* WesternChef.swift in Sources */,
 				8DA818841C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D3E42BF1C32846E0018E6BC /* SkyParadeViewModel.swift in Sources */,
@@ -1431,6 +1556,7 @@
 		};
 		8DED258A1C2292FF00462C0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -1443,6 +1569,7 @@
 		};
 		8DED258B1C2292FF00462C0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
