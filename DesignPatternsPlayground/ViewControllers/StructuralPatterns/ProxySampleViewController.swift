@@ -28,6 +28,7 @@ class ProxySampleViewController: UIViewController {
         
         minimumHeightLabel.text = "Very well, but you must be \(ticketSalesPerson.minimumVisitorHeight) cm tall or more to enter the park. What's your height?"
         updateResponseLabel()
+        configureCommentBarButton()
     }
     
     // IBActions
@@ -41,6 +42,14 @@ class ProxySampleViewController: UIViewController {
     }
     
     // MARK: Private methods
+    
+    private func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Proxy)
+    }
     
     private func updateResponseLabel() {
 
