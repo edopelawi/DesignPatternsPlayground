@@ -42,7 +42,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Decorator
 - [ ] Facade
 - [ ] Flyweight
-- [ ] Proxy
+- [x] Proxy
 
 ##Behavioural
 - [ ] Chain of Responsibility
