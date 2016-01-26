@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ThemeParkVisitor {
+class ThemeParkVisitor {
     /// Represents height for a theme park visitor.
     internal var height = 0
 }
