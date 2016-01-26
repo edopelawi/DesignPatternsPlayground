@@ -201,6 +201,10 @@
 		8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
@@ -383,6 +387,8 @@
 		8DAE13941C574A2A002A1E33 /* ThemeParkTicketProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketProvider.swift; sourceTree = "<group>"; };
 		8DAE13981C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketVendingMachine.swift; sourceTree = "<group>"; };
 		8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
+		8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySampleViewController.swift; sourceTree = "<group>"; };
+		8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxySampleViewController.xib; sourceTree = "<group>"; };
 		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -735,6 +741,8 @@
 				8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */,
 				8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */,
 				8D2825981C51E81200EDF542 /* DecoratorSampleViewController.xib */,
+				8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */,
+				8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */,
 			);
 			path = StructuralPatterns;
 			sourceTree = "<group>";
@@ -1014,6 +1022,7 @@
 				8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */,
 				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
+				8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
@@ -1055,6 +1064,7 @@
 				8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
+				8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8D34CA411C3141680002E3F9 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
@@ -1139,6 +1149,7 @@
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D7728DC1C4646BB005211FE /* StructuralPatternType.swift in Sources */,
 				8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
+				8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DDA04D31C2A9E3C00B5A707 /* Chef.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D3E42BB1C32837A0018E6BC /* SeaParadeViewModel.swift in Sources */,
@@ -1216,6 +1227,7 @@
 				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */,
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
+				8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
