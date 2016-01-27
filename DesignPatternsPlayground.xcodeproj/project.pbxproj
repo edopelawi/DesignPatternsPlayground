@@ -27,10 +27,6 @@
 		8D278AFA1C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AFC1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AFD1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
-		8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
@@ -237,6 +233,10 @@
 		8DC42C6B1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C621C58C7F70061D5F3 /* MonkeyChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C6C1C58C7F70061D5F3 /* PandaChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C631C58C7F70061D5F3 /* PandaChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C6D1C58C7F70061D5F3 /* PandaChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C631C58C7F70061D5F3 /* PandaChef.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C701C58C9BF0061D5F3 /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C6E1C58C9BF0061D5F3 /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C711C58C9BF0061D5F3 /* BridgeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C6E1C58C9BF0061D5F3 /* BridgeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC42C6F1C58C9BF0061D5F3 /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DC42C731C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC42C6F1C58C9BF0061D5F3 /* BridgeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -305,8 +305,6 @@
 		8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondMountainCarEngine.swift; sourceTree = "<group>"; };
 		8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondSeaCarEngine.swift; sourceTree = "<group>"; };
 		8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondAirCarEngine.swift; sourceTree = "<group>"; };
-		8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewController.swift; sourceTree = "<group>"; };
-		8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BridgeSampleViewController.xib; sourceTree = "<group>"; };
 		8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewModel.swift; sourceTree = "<group>"; };
 		8D278B071C4F826100E6CD4E /* Bridge.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge.txt; sourceTree = "<group>"; };
 		8D2825831C51E07B00EDF542 /* FightingMoves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightingMoves.swift; sourceTree = "<group>"; };
@@ -410,6 +408,8 @@
 		8DC42C611C58C7F70061D5F3 /* KoalaChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoalaChef.swift; sourceTree = "<group>"; };
 		8DC42C621C58C7F70061D5F3 /* MonkeyChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkeyChef.swift; sourceTree = "<group>"; };
 		8DC42C631C58C7F70061D5F3 /* PandaChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PandaChef.swift; sourceTree = "<group>"; };
+		8DC42C6E1C58C9BF0061D5F3 /* BridgeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewController.swift; sourceTree = "<group>"; };
+		8DC42C6F1C58C9BF0061D5F3 /* BridgeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BridgeSampleViewController.xib; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -823,8 +823,6 @@
 			isa = PBXGroup;
 			children = (
 				8DA659B01C508E8B00A97E87 /* TreasureHunts */,
-				8D278AFE1C4F678200E6CD4E /* BridgeSampleViewController.swift */,
-				8D278AFF1C4F678200E6CD4E /* BridgeSampleViewController.xib */,
 				8DA659D01C50E85500A97E87 /* CompositeSampleViewController.swift */,
 				8DA659D11C50E85500A97E87 /* CompositeSampleViewController.xib */,
 				8D2825971C51E81200EDF542 /* DecoratorSampleViewController.swift */,
@@ -877,6 +875,8 @@
 		8DC42C291C58C4910061D5F3 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
+				8DC42C6E1C58C9BF0061D5F3 /* BridgeSampleViewController.swift */,
+				8DC42C6F1C58C9BF0061D5F3 /* BridgeSampleViewController.xib */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -1182,6 +1182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
+				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1193,7 +1194,6 @@
 				8DC42C391C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
 				8D5524181C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
-				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
@@ -1236,10 +1236,10 @@
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8D28259C1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
 				8DC42C3A1C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
+				8DC42C731C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D5524191C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8D5524B51C58B70F00D5A4B4 /* SingletonSampleViewController.xib in Resources */,
 				8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
-				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
 				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
@@ -1331,7 +1331,6 @@
 				8DA659A31C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8D5524371C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
-				8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
@@ -1346,6 +1345,7 @@
 				8DAE13991C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8DC42C6C1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
 				8D2825951C51E66800EDF542 /* IceFightingArmament.swift in Sources */,
+				8DC42C701C58C9BF0061D5F3 /* BridgeSampleViewController.swift in Sources */,
 				8D5524901C58B3BE00D5A4B4 /* SeaParadeViewModel.swift in Sources */,
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
@@ -1433,6 +1433,7 @@
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6D1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
+				8DC42C711C58C9BF0061D5F3 /* BridgeSampleViewController.swift in Sources */,
 				8D5524911C58B3BE00D5A4B4 /* SeaParadeViewModel.swift in Sources */,
 				8D55244E1C58AF5100D5A4B4 /* Food.swift in Sources */,
 				8D5524681C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
@@ -1451,7 +1452,6 @@
 				8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8D55247B1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift in Sources */,
-				8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8D5524201C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
 				8D5524511C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
 				8DC42C381C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
