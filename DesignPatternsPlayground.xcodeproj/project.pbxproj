@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7648BD30926BAB06B270CE1A /* libPods-DesignPatternsPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */; };
-		8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
-		8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */; };
 		8D0963EC1C45EFBB00173678 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963EB1C45EFBB00173678 /* Diary.swift */; settings = {ASSET_TAGS = (); }; };
 		8D0963ED1C45EFBB00173678 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963EB1C45EFBB00173678 /* Diary.swift */; settings = {ASSET_TAGS = (); }; };
 		8D0963F01C45F5B900173678 /* SingletonSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -139,6 +137,18 @@
 		8D5524611C58AF9A00D5A4B4 /* WesternChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524571C58AF9A00D5A4B4 /* WesternChef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524621C58AFC200D5A4B4 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524641C58AFC200D5A4B4 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524621C58AFC200D5A4B4 /* Chef.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524681C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524711C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524721C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524731C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524741C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524761C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524771C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -232,16 +242,6 @@
 		8DEF63731C33961100F65DAB /* FactoryMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */; };
 		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
 		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
-		8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
-		8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */; };
-		8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,7 +292,6 @@
 /* Begin PBXFileReference section */
 		0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.debug.xcconfig"; sourceTree = "<group>"; };
-		8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D0963EB1C45EFBB00173678 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonSampleViewController.swift; sourceTree = "<group>"; };
 		8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingletonSampleViewController.xib; sourceTree = "<group>"; };
@@ -361,6 +360,12 @@
 		8D5524561C58AF9A00D5A4B4 /* OtherCuisineChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCuisineChef.swift; sourceTree = "<group>"; };
 		8D5524571C58AF9A00D5A4B4 /* WesternChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChef.swift; sourceTree = "<group>"; };
 		8D5524621C58AFC200D5A4B4 /* Chef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
+		8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
+		8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewModel.swift; sourceTree = "<group>"; };
+		8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -414,11 +419,6 @@
 		8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodSampleViewController.xib; sourceTree = "<group>"; };
 		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
-		8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
-		8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
-		8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
-		8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
-		8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewModel.swift; sourceTree = "<group>"; };
 		D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DesignPatternsPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -477,18 +477,8 @@
 		8D03ADC41C33C54200CA932B /* Builders */ = {
 			isa = PBXGroup;
 			children = (
-				8D03ADC51C33C56A00CA932B /* BurgerOrders */,
 			);
 			path = Builders;
-			sourceTree = "<group>";
-		};
-		8D03ADC51C33C56A00CA932B /* BurgerOrders */ = {
-			isa = PBXGroup;
-			children = (
-				8D03ADC61C33C58800CA932B /* WhopperBurgerOrderBuilder.swift */,
-				8DEF637F1C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift */,
-			);
-			path = BurgerOrders;
 			sourceTree = "<group>";
 		};
 		8D278AD91C4F51ED00E6CD4E /* InternalFrameworks */ = {
@@ -570,8 +560,6 @@
 		8D34CA381C3140E90002E3F9 /* CreationalPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				8DEF63881C33E51100F65DAB /* BuilderSampleViewController.swift */,
-				8DEF63891C33E51100F65DAB /* BuilderSampleViewController.xib */,
 				8DEF636E1C33961100F65DAB /* FactoryMethodSampleViewController.swift */,
 				8DEF636F1C33961100F65DAB /* FactoryMethodSampleViewController.xib */,
 				8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */,
@@ -586,7 +574,6 @@
 			isa = PBXGroup;
 			children = (
 				8D3E42B31C327DC10018E6BC /* Parades */,
-				8DEF638E1C33F5F000F65DAB /* BuilderSampleViewModel.swift */,
 				8D8A49531C4DECEB00C21352 /* AdapterSampleViewModel.swift */,
 				8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */,
 				8D28259D1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift */,
@@ -735,6 +722,11 @@
 		8D5524421C58AE6D00D5A4B4 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */,
+				8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */,
+				8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */,
+				8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */,
+				8D55246E1C58B1D100D5A4B4 /* Builders */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -770,6 +762,15 @@
 				8D5524571C58AF9A00D5A4B4 /* WesternChef.swift */,
 			);
 			path = Chefs;
+			sourceTree = "<group>";
+		};
+		8D55246E1C58B1D100D5A4B4 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */,
+				8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */,
+			);
+			path = Builders;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
@@ -907,7 +908,6 @@
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */,
 				8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */,
 				8DA659A21C507E5700A97E87 /* TreasureHuntRoom.swift */,
 				8D2825831C51E07B00EDF542 /* FightingMoves.swift */,
@@ -1143,6 +1143,7 @@
 			files = (
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8D55244A1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
 				8DA818A91C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
@@ -1153,7 +1154,6 @@
 				8DA659BB1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B021C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
 				8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
-				8DEF638C1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
@@ -1177,6 +1177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8DA659B61C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8DA659C91C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
@@ -1198,7 +1199,6 @@
 				8D5524191C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */,
 				8D278B031C4F678200E6CD4E /* BridgeSampleViewController.xib in Resources */,
-				8DEF638D1C33E51100F65DAB /* BuilderSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
 				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
@@ -1289,7 +1289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA659A31C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
-				8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
+				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8D5524371C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
 				8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
@@ -1312,14 +1312,15 @@
 				8DA8189C1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D3E42C41C3286A20018E6BC /* CityParadeViewModel.swift in Sources */,
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
+				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DEF63701C33961100F65DAB /* FactoryMethodSampleViewController.swift in Sources */,
 				8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
-				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D55243F1C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */,
 				8DA659BF1C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
 				8D5524291C58ABE700D5A4B4 /* PatternType.swift in Sources */,
+				8D5524761C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */,
 				8D55241F1C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
 				8D2825991C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8DA659B91C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
@@ -1347,7 +1348,7 @@
 				8D5524391C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
 				8D5524601C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
-				8DEF63781C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
+				8D5524711C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D55245C1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D0963EC1C45EFBB00173678 /* Diary.swift in Sources */,
@@ -1358,15 +1359,14 @@
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA8188D1C478D3600D99065 /* CatChef.swift in Sources */,
 				8DA818A71C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
+				8D5524731C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
-				8DEF638A1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8DA659D21C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
 				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
-				8D03ADC71C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8DA659AD1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DA659CE1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 			);
@@ -1377,7 +1377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2825931C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
-				8DEF63811C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
+				8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 				8DEF636D1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
 				8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
@@ -1400,14 +1400,15 @@
 				8DA818941C478D3600D99065 /* PandaChef.swift in Sources */,
 				8DA659AE1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8D55244E1C58AF5100D5A4B4 /* Food.swift in Sources */,
+				8D5524681C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8D5524491C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
-				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8D55242A1C58ABE700D5A4B4 /* PatternType.swift in Sources */,
 				8D5524401C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */,
 				8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
+				8D5524771C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */,
 				8DA659B41C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8D278B011C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
@@ -1427,7 +1428,6 @@
 				8D0963F11C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
 				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
-				8DEF63791C33BEF400F65DAB /* BurgerOrderBuilder.swift in Sources */,
 				8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DA659A81C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D0963ED1C45EFBB00173678 /* Diary.swift in Sources */,
@@ -1436,17 +1436,18 @@
 				8D5524611C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8D8BD72D1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA8189D1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
+				8D5524721C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D55245D1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D8A49551C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
 				8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8DA8188E1C478D3600D99065 /* CatChef.swift in Sources */,
-				8DEF638B1C33E51100F65DAB /* BuilderSampleViewController.swift in Sources */,
 				8DA659D31C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
+				8D5524741C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D55245B1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
@@ -1455,7 +1456,6 @@
 				8D5524641C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
-				8D03ADC81C33C58800CA932B /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
