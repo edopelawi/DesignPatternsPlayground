@@ -237,6 +237,8 @@
 		8DC42CD11C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8DC42CD41C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -410,6 +412,7 @@
 		8DC42CCC1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
+		8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMemoryInfoFactory.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -909,6 +912,7 @@
 		8DC42CD21C58E2970061D5F3 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */,
 				8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */,
 			);
 			path = Factories;
@@ -1267,6 +1271,7 @@
 				8DC42C861C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8D5524371C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
+				8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C8C1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
@@ -1355,6 +1360,7 @@
 				8DC42C871C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
 				8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8DC42C8D1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
+				8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C6B1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
