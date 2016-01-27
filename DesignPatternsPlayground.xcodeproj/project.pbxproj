@@ -67,16 +67,6 @@
 		8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B01C44D49B001DDB2C /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B51C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
@@ -155,6 +145,16 @@
 		8D5524981C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524991C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55249B1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55249E1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55249B1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D55249C1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D5524A01C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D55249C1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8D5524A31C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A11C58B64700D5A4B4 /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524A41C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A11C58B64700D5A4B4 /* MessengerTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D5524A61C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8D5524A81C58B67000D5A4B4 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A71C58B67000D5A4B4 /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524A91C58B67000D5A4B4 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A71C58B67000D5A4B4 /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -325,11 +325,6 @@
 		8D2825A01C51FF2000EDF542 /* Decorator.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Decorator.txt; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
-		8D2D14B01C44D49B001DDB2C /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
-		8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeSampleViewController.swift; sourceTree = "<group>"; };
-		8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeSampleViewController.xib; sourceTree = "<group>"; };
-		8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
-		8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
 		8D2D14C01C450259001DDB2C /* Prototype.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prototype.txt; sourceTree = "<group>"; };
 		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D5524131C58A9F700D5A4B4 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +364,11 @@
 		8D5524851C58B3BE00D5A4B4 /* SkyParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyParadeViewModel.swift; sourceTree = "<group>"; };
 		8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8D55249B1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeSampleViewController.swift; sourceTree = "<group>"; };
+		8D55249C1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeSampleViewController.xib; sourceTree = "<group>"; };
+		8D5524A11C58B64700D5A4B4 /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
+		8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
+		8D5524A71C58B67000D5A4B4 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -543,8 +543,6 @@
 		8D2D14B91C44E49D001DDB2C /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				8D2D14BA1C44E4CF001DDB2C /* MessengerTableViewCell.swift */,
-				8D2D14BB1C44E4CF001DDB2C /* MessengerTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -560,8 +558,6 @@
 		8D34CA381C3140E90002E3F9 /* CreationalPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				8D2D14B31C44DCAE001DDB2C /* PrototypeSampleViewController.swift */,
-				8D2D14B41C44DCAE001DDB2C /* PrototypeSampleViewController.xib */,
 				8D0963EE1C45F5B900173678 /* SingletonSampleViewController.swift */,
 				8D0963EF1C45F5B900173678 /* SingletonSampleViewController.xib */,
 			);
@@ -593,7 +589,6 @@
 				8DA659A51C507F4A00A97E87 /* TreasureHuntRooms */,
 				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
 				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
-				8D2D14B01C44D49B001DDB2C /* Messenger.swift */,
 				8D0963EB1C45EFBB00173678 /* Diary.swift */,
 				8DA818821C47850300D99065 /* BearCulinaryTourist.swift */,
 				8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */,
@@ -728,6 +723,11 @@
 		8D5524441C58AE9000D5A4B4 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				8D55249B1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift */,
+				8D55249C1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib */,
+				8D5524A11C58B64700D5A4B4 /* MessengerTableViewCell.swift */,
+				8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */,
+				8D5524A71C58B67000D5A4B4 /* Messenger.swift */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -1157,10 +1157,11 @@
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DA659B51C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
+				8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
 				8DA659C81C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
-				8D2D14BE1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 				8D0963F21C45F5B900173678 /* SingletonSampleViewController.xib in Resources */,
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
+				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8DA659D41C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
@@ -1169,7 +1170,6 @@
 				8D28259B1C51E81200EDF542 /* DecoratorSampleViewController.xib in Resources */,
 				8DA659C11C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */,
-				8D2D14B71C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1187,10 +1187,11 @@
 				8D0963F31C45F5B900173678 /* SingletonSampleViewController.xib in Resources */,
 				8DA659C21C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
-				8D2D14B81C44DCAE001DDB2C /* PrototypeSampleViewController.xib in Resources */,
 				8DA659BC1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
+				8D5524A61C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8DA818AA1C47988600D99065 /* AdapterSampleViewController.xib in Resources */,
 				8D55244B1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
+				8D5524A01C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
 				8D55247D1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DA659D51C50E85500A97E87 /* CompositeSampleViewController.xib in Resources */,
@@ -1202,7 +1203,6 @@
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
 				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
-				8D2D14BF1C44E4CF001DDB2C /* MessengerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1297,14 +1297,12 @@
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8D55245E1C58AF9A00D5A4B4 /* OtherCuisineChef.swift in Sources */,
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
-				8D2D14B51C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
 				8D8A49511C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
-				8D2D14B11C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8D5524351C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
 				8DA659AA1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8DAE13991C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
@@ -1315,6 +1313,7 @@
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D5524881C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
+				8D5524A81C58B67000D5A4B4 /* Messenger.swift in Sources */,
 				8DA818831C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D278A731C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8D55243F1C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */,
@@ -1331,6 +1330,7 @@
 				8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
 				8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
+				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8D2825841C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA8189F1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
@@ -1361,7 +1361,6 @@
 				8D55248E1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
 				8D5524991C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
-				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8D5524861C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
@@ -1369,6 +1368,7 @@
 				8DA818701C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8DA659AD1C508AE000A97E87 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DA659CE1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
+				8D5524A31C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1386,13 +1386,11 @@
 				8D5524221C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D55248D1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
 				8D55245F1C58AF9A00D5A4B4 /* OtherCuisineChef.swift in Sources */,
-				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
 				8DA659A41C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DA818921C478D3600D99065 /* MonkeyChef.swift in Sources */,
 				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
-				8D2D14B21C44D49B001DDB2C /* Messenger.swift in Sources */,
 				8DA8189A1C478EC100D99065 /* CatCulinaryTourGuide.swift in Sources */,
 				8DA818901C478D3600D99065 /* KoalaChef.swift in Sources */,
 				8DA818941C478D3600D99065 /* PandaChef.swift in Sources */,
@@ -1403,6 +1401,7 @@
 				8D5524491C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8D5524891C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
+				8D5524A91C58B67000D5A4B4 /* Messenger.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8D55242A1C58ABE700D5A4B4 /* PatternType.swift in Sources */,
 				8D5524401C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */,
@@ -1419,6 +1418,7 @@
 				8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D55243A1C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
+				8D55249E1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8DA818841C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
 				8D55243D1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */,
@@ -1443,7 +1443,6 @@
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
-				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D55248F1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
@@ -1457,6 +1456,7 @@
 				8DA818A81C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
+				8D5524A41C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
