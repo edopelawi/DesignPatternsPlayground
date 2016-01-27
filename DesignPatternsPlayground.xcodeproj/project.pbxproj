@@ -127,6 +127,8 @@
 		8D5524221C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55241E1C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524251C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524241C58AB3800D5A4B4 /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524241C58AB3800D5A4B4 /* PatternTypeTableController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524291C58ABE700D5A4B4 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524281C58ABE700D5A4B4 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55242A1C58ABE700D5A4B4 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524281C58ABE700D5A4B4 /* PatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -208,8 +210,6 @@
 		8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
-		8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C41C2A8C7600B5A707 /* PatternType.swift */; };
 		8DDA04C91C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
 		8DDA04CA1C2A8E3D00B5A707 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */; };
 		8DDA04D01C2A9DB000B5A707 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA04CF1C2A9DB000B5A707 /* Food.swift */; };
@@ -354,6 +354,7 @@
 		8D55241D1C58AABC00D5A4B4 /* Array+Randomiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Randomiser.swift"; sourceTree = "<group>"; };
 		8D55241E1C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PatternCommentary.swift"; sourceTree = "<group>"; };
 		8D5524241C58AB3800D5A4B4 /* PatternTypeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTypeTableController.swift; sourceTree = "<group>"; };
+		8D5524281C58ABE700D5A4B4 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D7728DB1C4646BB005211FE /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
@@ -395,7 +396,6 @@
 		8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
 		8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySampleViewController.swift; sourceTree = "<group>"; };
 		8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxySampleViewController.xib; sourceTree = "<group>"; };
-		8DDA04C41C2A8C7600B5A707 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8DDA04C81C2A8E3D00B5A707 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8DDA04CF1C2A9DB000B5A707 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8DDA04D21C2A9E3C00B5A707 /* Chef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
@@ -642,6 +642,7 @@
 			children = (
 				8D5524231C58AB1100D5A4B4 /* Controllers */,
 				8D55241C1C58AA8500D5A4B4 /* Extensions */,
+				8D5524271C58AB9000D5A4B4 /* Protocols */,
 				8D5524121C58A96F00D5A4B4 /* ViewControllers */,
 			);
 			path = GeneralClasses;
@@ -703,6 +704,14 @@
 				8D5524241C58AB3800D5A4B4 /* PatternTypeTableController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D5524271C58AB9000D5A4B4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D5524281C58ABE700D5A4B4 /* PatternType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
@@ -840,7 +849,6 @@
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				8DDA04C41C2A8C7600B5A707 /* PatternType.swift */,
 				8DDA04D21C2A9E3C00B5A707 /* Chef.swift */,
 				8DEF63771C33BEF400F65DAB /* BurgerOrderBuilder.swift */,
 				8DA8186F1C4763C000D99065 /* AnimalCulinaryTourGuide.swift */,
@@ -1250,7 +1258,6 @@
 				8DA659A31C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
 				8DEF63801C33D38B00F65DAB /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DEF636C1C3394BB00F65DAB /* BlackParadeViewModel.swift in Sources */,
-				8DDA04C51C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
 				8DA818931C478D3600D99065 /* PandaChef.swift in Sources */,
 				8DA8188F1C478D3600D99065 /* KoalaChef.swift in Sources */,
@@ -1277,6 +1284,7 @@
 				8DEF638F1C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8D34CA361C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8DA659BF1C50A38800A97E87 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
+				8D5524291C58ABE700D5A4B4 /* PatternType.swift in Sources */,
 				8D55241F1C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
 				8D2825991C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8DA659B91C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
@@ -1344,7 +1352,6 @@
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
 				8D5524221C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
-				8DDA04C61C2A8C7600B5A707 /* PatternType.swift in Sources */,
 				8D3E42B91C3280A00018E6BC /* DesertParadeViewModel.swift in Sources */,
 				8D2D14B61C44DCAE001DDB2C /* PrototypeSampleViewController.swift in Sources */,
 				8DA659A41C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
@@ -1364,6 +1371,7 @@
 				8DEF63901C33F5F000F65DAB /* BuilderSampleViewModel.swift in Sources */,
 				8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DA659BA1C5096DE00A97E87 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
+				8D55242A1C58ABE700D5A4B4 /* PatternType.swift in Sources */,
 				8DAE139D1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8D34CA371C313F660002E3F9 /* AbstractChefFactory.swift in Sources */,
 				8D3E42B61C327DED0018E6BC /* ParadeViewModel.swift in Sources */,
