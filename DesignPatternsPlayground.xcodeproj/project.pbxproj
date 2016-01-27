@@ -131,10 +131,6 @@
 		8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D5524711C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8D5524721C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8D5524731C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
-		8D5524741C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524761C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524771C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D55247A1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524781C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -155,6 +151,10 @@
 		8D5524911C58B3BE00D5A4B4 /* SeaParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524841C58B3BE00D5A4B4 /* SeaParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524921C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524851C58B3BE00D5A4B4 /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524851C58B3BE00D5A4B4 /* SkyParadeViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524981C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524991C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -357,8 +357,6 @@
 		8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewController.swift; sourceTree = "<group>"; };
 		8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuilderSampleViewController.xib; sourceTree = "<group>"; };
 		8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderSampleViewModel.swift; sourceTree = "<group>"; };
-		8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
-		8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D5524781C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8D5524791C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FactoryMethodSampleViewController.xib; sourceTree = "<group>"; };
@@ -369,6 +367,8 @@
 		8D5524831C58B3BE00D5A4B4 /* JungleParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JungleParadeViewModel.swift; sourceTree = "<group>"; };
 		8D5524841C58B3BE00D5A4B4 /* SeaParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaParadeViewModel.swift; sourceTree = "<group>"; };
 		8D5524851C58B3BE00D5A4B4 /* SkyParadeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyParadeViewModel.swift; sourceTree = "<group>"; };
+		8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBurgerOrderBuilder.swift; sourceTree = "<group>"; };
+		8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhopperBurgerOrderBuilder.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -709,7 +709,7 @@
 				8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */,
 				8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */,
 				8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */,
-				8D55246E1C58B1D100D5A4B4 /* Builders */,
+				8D5524941C58B40E00D5A4B4 /* BurgerOrderBuilders */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -751,15 +751,6 @@
 			path = Chefs;
 			sourceTree = "<group>";
 		};
-		8D55246E1C58B1D100D5A4B4 /* Builders */ = {
-			isa = PBXGroup;
-			children = (
-				8D55246F1C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift */,
-				8D5524701C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift */,
-			);
-			path = Builders;
-			sourceTree = "<group>";
-		};
 		8D55247F1C58B3BE00D5A4B4 /* ParadeViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +762,15 @@
 				8D5524851C58B3BE00D5A4B4 /* SkyParadeViewModel.swift */,
 			);
 			path = ParadeViewModels;
+			sourceTree = "<group>";
+		};
+		8D5524941C58B40E00D5A4B4 /* BurgerOrderBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				8D5524951C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift */,
+				8D5524961C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift */,
+			);
+			path = BurgerOrderBuilders;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
@@ -1346,9 +1346,9 @@
 				8D5524391C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
 				8D5524601C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
-				8D5524711C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D55245C1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
+				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D0963EC1C45EFBB00173678 /* Diary.swift in Sources */,
 				8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA659B31C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
@@ -1356,10 +1356,10 @@
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA8188D1C478D3600D99065 /* CatChef.swift in Sources */,
 				8DA818A71C47988600D99065 /* AdapterSampleViewController.swift in Sources */,
-				8D5524731C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8DA659D21C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8D55248E1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
+				8D5524991C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
 				8D2D14BC1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
 				8D2825921C51E5F700EDF542 /* FireFightingArmament.swift in Sources */,
@@ -1433,10 +1433,10 @@
 				8D5524611C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8D8BD72D1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA8189D1C4791A500D99065 /* KoalaCulinaryTourGuide.swift in Sources */,
-				8D5524721C58B1D100D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D55245D1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D8A49551C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
 				8DA818711C4763C000D99065 /* AnimalCulinaryTourGuide.swift in Sources */,
+				8D5524981C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DA8188E1C478D3600D99065 /* CatChef.swift in Sources */,
 				8DA659D31C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
@@ -1444,10 +1444,10 @@
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
 				8D2D14BD1C44E4CF001DDB2C /* MessengerTableViewCell.swift in Sources */,
-				8D5524741C58B1D100D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8DA659AB1C50881C00A97E87 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D55248F1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
+				8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D55245B1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
 				8D55241B1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8D28259F1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */,
