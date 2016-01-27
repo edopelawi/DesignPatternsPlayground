@@ -11,8 +11,7 @@ I tried my best to add UI representations on how the patterns are used (instead 
 - Open the result `*.xcworkspace` on XCode 7 or up.
 - Run the project in simulator / device.
 - Play around a sample.
-- Check how it implemented from DesignPatternsPlayground > ViewControllers > (Corresponding Pattern Group) > Pattern sample view controller.
-- Trace related class from current view controller.
+- Check how it implemented from DesignPatternsPlayground > PatternSampleClasses > (Corresponding Pattern Group) > (Pattern Name).
 - ???
 - Profit!
 
