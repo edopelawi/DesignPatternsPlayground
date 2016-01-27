@@ -27,12 +27,8 @@
 		8D278AFA1C4F576800E6CD4E /* JamesBondSeaCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AFC1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AFD1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */; settings = {ASSET_TAGS = (); }; };
-		8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
 		8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D278B071C4F826100E6CD4E /* Bridge.txt */; settings = {ASSET_TAGS = (); }; };
-		8D28259E1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28259D1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
-		8D28259F1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28259D1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8D2825A11C51FF2000EDF542 /* Decorator.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2825A01C51FF2000EDF542 /* Decorator.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2825A01C51FF2000EDF542 /* Decorator.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */; settings = {ASSET_TAGS = (); }; };
@@ -237,6 +233,10 @@
 		8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CA41C58E00E0061D5F3 /* FightingMoves.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CAE1C58E00E0061D5F3 /* StreetFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CA51C58E00E0061D5F3 /* StreetFighter.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CAF1C58E00E0061D5F3 /* StreetFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CA51C58E00E0061D5F3 /* StreetFighter.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CB01C58E0D70061D5F3 /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CB21C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CB01C58E0D70061D5F3 /* BridgeSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CB41C58E0E80061D5F3 /* DecoratorSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CB31C58E0E80061D5F3 /* DecoratorSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CB51C58E0E80061D5F3 /* DecoratorSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CB31C58E0E80061D5F3 /* DecoratorSampleViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -305,9 +305,7 @@
 		8D278AF51C4F55A700E6CD4E /* JamesBondMountainCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondMountainCarEngine.swift; sourceTree = "<group>"; };
 		8D278AF81C4F576800E6CD4E /* JamesBondSeaCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondSeaCarEngine.swift; sourceTree = "<group>"; };
 		8D278AFB1C4F602E00E6CD4E /* JamesBondAirCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondAirCarEngine.swift; sourceTree = "<group>"; };
-		8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewModel.swift; sourceTree = "<group>"; };
 		8D278B071C4F826100E6CD4E /* Bridge.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge.txt; sourceTree = "<group>"; };
-		8D28259D1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorSampleViewModel.swift; sourceTree = "<group>"; };
 		8D2825A01C51FF2000EDF542 /* Decorator.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Decorator.txt; sourceTree = "<group>"; };
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
@@ -410,6 +408,8 @@
 		8DC42CA31C58E00E0061D5F3 /* ThunderFightingArmament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThunderFightingArmament.swift; sourceTree = "<group>"; };
 		8DC42CA41C58E00E0061D5F3 /* FightingMoves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightingMoves.swift; sourceTree = "<group>"; };
 		8DC42CA51C58E00E0061D5F3 /* StreetFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetFighter.swift; sourceTree = "<group>"; };
+		8DC42CB01C58E0D70061D5F3 /* BridgeSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSampleViewModel.swift; sourceTree = "<group>"; };
+		8DC42CB31C58E0E80061D5F3 /* DecoratorSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoratorSampleViewModel.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -528,22 +528,6 @@
 			children = (
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		8D34CA2B1C3139820002E3F9 /* Decorators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Decorators;
-			sourceTree = "<group>";
-		};
-		8D3E42B21C327D9D0018E6BC /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				8D278B041C4F73A600E6CD4E /* BridgeSampleViewModel.swift */,
-				8D28259D1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8D51B05A1C2A70B100B9509E /* ViewControllers */ = {
@@ -837,6 +821,7 @@
 			children = (
 				8DC42C6E1C58C9BF0061D5F3 /* BridgeSampleViewController.swift */,
 				8DC42C6F1C58C9BF0061D5F3 /* BridgeSampleViewController.xib */,
+				8DC42CB01C58E0D70061D5F3 /* BridgeSampleViewModel.swift */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -858,6 +843,7 @@
 			children = (
 				8DC42C9A1C58DF870061D5F3 /* DecoratorSampleViewController.swift */,
 				8DC42C9B1C58DF870061D5F3 /* DecoratorSampleViewController.xib */,
+				8DC42CB31C58E0E80061D5F3 /* DecoratorSampleViewModel.swift */,
 				8DC42CA41C58E00E0061D5F3 /* FightingMoves.swift */,
 				8DC42CA51C58E00E0061D5F3 /* StreetFighter.swift */,
 				8DC42CA01C58E00E0061D5F3 /* FightingMoveDecorators */,
@@ -999,13 +985,11 @@
 				8D55240D1C58792D00D5A4B4 /* GeneralClasses */,
 				8D55242E1C58AD7B00D5A4B4 /* PatternSampleClasses */,
 				8DA659C31C50A85900A97E87 /* CollectionViewCells */,
-				8D34CA2B1C3139820002E3F9 /* Decorators */,
 				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8DDA04C31C2A8C5200B5A707 /* Protocols */,
 				8D51B0681C2A84E900B9509E /* Models */,
 				8D2D14B91C44E49D001DDB2C /* TableViewCells */,
 				8D51B05A1C2A70B100B9509E /* ViewControllers */,
-				8D3E42B21C327D9D0018E6BC /* ViewModels */,
 				8D8BD7251C43A41400E71C88 /* Resources */,
 				8DED256F1C2292FF00462C0F /* AppDelegate.swift */,
 				8DED25731C2292FF00462C0F /* Main.storyboard */,
@@ -1378,8 +1362,8 @@
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8DC42C5A1C58C7A40061D5F3 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8DC42C4D1C58C77A0061D5F3 /* BearCulinaryTourGuide.swift in Sources */,
+				8DC42CB41C58E0E80061D5F3 /* DecoratorSampleViewModel.swift in Sources */,
 				8DC42C5C1C58C7A40061D5F3 /* BearCulinaryTourist.swift in Sources */,
-				8D28259E1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */,
 				8DC42C9C1C58DF870061D5F3 /* DecoratorSampleViewController.swift in Sources */,
 				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DC42CAE1C58E00E0061D5F3 /* StreetFighter.swift in Sources */,
@@ -1387,7 +1371,6 @@
 				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8DC42C881C58D1820061D5F3 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D55245C1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
-				8D278B051C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
@@ -1395,6 +1378,7 @@
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
+				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D5524B71C58B72800D5A4B4 /* Diary.swift in Sources */,
 				8DC42C421C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
@@ -1466,6 +1450,7 @@
 				8DC42C5B1C58C7A40061D5F3 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DC42C5D1C58C7A40061D5F3 /* BearCulinaryTourist.swift in Sources */,
+				8DC42CB51C58E0E80061D5F3 /* DecoratorSampleViewModel.swift in Sources */,
 				8DC42C4E1C58C77A0061D5F3 /* BearCulinaryTourGuide.swift in Sources */,
 				8DC42C9D1C58DF870061D5F3 /* DecoratorSampleViewController.swift in Sources */,
 				8D5524611C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
@@ -1480,8 +1465,8 @@
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8DC42C651C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
-				8D278B061C4F73A600E6CD4E /* BridgeSampleViewModel.swift in Sources */,
 				8D5524B81C58B72800D5A4B4 /* Diary.swift in Sources */,
+				8DC42CB21C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8DC42C431C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
 				8D55248F1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
 				8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
@@ -1489,7 +1474,6 @@
 				8DC42C521C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D55241B1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8DC42C691C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
-				8D28259F1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */,
 				8D5524641C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8D5524871C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
 				8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
