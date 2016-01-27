@@ -155,6 +155,8 @@
 		8D5524A91C58B67000D5A4B4 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A71C58B67000D5A4B4 /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524AB1C58B6A900D5A4B4 /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AA1C58B6A900D5A4B4 /* Parade.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AA1C58B6A900D5A4B4 /* Parade.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AD1C58B6D200D5A4B4 /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AD1C58B6D200D5A4B4 /* BurgerOrder.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -240,8 +242,6 @@
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
 		8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25781C2292FF00462C0F /* LaunchScreen.storyboard */; };
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
-		8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
-		8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +369,7 @@
 		8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
 		8D5524A71C58B67000D5A4B4 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
 		8D5524AA1C58B6A900D5A4B4 /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
+		8D5524AD1C58B6D200D5A4B4 /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -418,7 +419,6 @@
 		8DED25801C2292FF00462C0F /* DesignPatternsPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsPlaygroundTests.swift; sourceTree = "<group>"; };
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurgerOrder.swift; sourceTree = "<group>"; };
 		D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DesignPatternsPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -587,7 +587,6 @@
 			isa = PBXGroup;
 			children = (
 				8DA659A51C507F4A00A97E87 /* TreasureHuntRooms */,
-				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
 				8D0963EB1C45EFBB00173678 /* Diary.swift */,
 				8DA818821C47850300D99065 /* BearCulinaryTourist.swift */,
 				8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */,
@@ -702,6 +701,7 @@
 				8D5524651C58B10900D5A4B4 /* BuilderSampleViewController.swift */,
 				8D5524661C58B10A00D5A4B4 /* BuilderSampleViewController.xib */,
 				8D55246B1C58B13100D5A4B4 /* BuilderSampleViewModel.swift */,
+				8D5524AD1C58B6D200D5A4B4 /* BurgerOrder.swift */,
 				8D5524751C58B21000D5A4B4 /* BurgerOrderBuilder.swift */,
 				8D5524941C58B40E00D5A4B4 /* BurgerOrderBuilders */,
 			);
@@ -1292,6 +1292,7 @@
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8D5524371C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
 				8D278B001C4F678200E6CD4E /* BridgeSampleViewController.swift in Sources */,
+				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DA818931C478D3600D99065 /* PandaChef.swift in Sources */,
 				8DA8188F1C478D3600D99065 /* KoalaChef.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
@@ -1301,7 +1302,6 @@
 				8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AB1C58B6A900D5A4B4 /* Parade.swift in Sources */,
-				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D5524351C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
@@ -1380,6 +1380,7 @@
 				8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8DA659CF1C50BF6B00A97E87 /* TreasureHuntRoomFactory.swift in Sources */,
 				8D2825901C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
+				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DAE13931C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8D278A711C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8DAE13961C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
@@ -1391,7 +1392,6 @@
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DA818921C478D3600D99065 /* MonkeyChef.swift in Sources */,
-				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8DA8189A1C478EC100D99065 /* CatCulinaryTourGuide.swift in Sources */,
 				8DA818901C478D3600D99065 /* KoalaChef.swift in Sources */,
 				8DA818941C478D3600D99065 /* PandaChef.swift in Sources */,
