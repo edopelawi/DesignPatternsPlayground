@@ -704,6 +704,11 @@
 			children = (
 				8D5524321C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift */,
 				8D55243E1C58ADD400D5A4B4 /* CreationalPatternType.swift */,
+				8D5524411C58AE5500D5A4B4 /* AbstractFactory */,
+				8D5524421C58AE6D00D5A4B4 /* Builder */,
+				8D5524431C58AE8000D5A4B4 /* FactoryMethod */,
+				8D5524441C58AE9000D5A4B4 /* Prototype */,
+				8D5524451C58AEAE00D5A4B4 /* Singleton */,
 			);
 			path = Creational;
 			sourceTree = "<group>";
@@ -715,6 +720,41 @@
 				8D55243B1C58ADCE00D5A4B4 /* StructuralPatternType.swift */,
 			);
 			path = Structural;
+			sourceTree = "<group>";
+		};
+		8D5524411C58AE5500D5A4B4 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		8D5524421C58AE6D00D5A4B4 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8D5524431C58AE8000D5A4B4 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		8D5524441C58AE9000D5A4B4 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		8D5524451C58AEAE00D5A4B4 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
