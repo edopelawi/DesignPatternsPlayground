@@ -81,10 +81,6 @@
 		8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524301C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524371C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524321C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524321C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D5524391C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524341C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D55243A1C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524341C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8D55243C1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55243B1C58ADCE00D5A4B4 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
-		8D55243D1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55243B1C58ADCE00D5A4B4 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D55243F1C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55243E1C58ADD400D5A4B4 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524401C58ADD400D5A4B4 /* CreationalPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55243E1C58ADD400D5A4B4 /* CreationalPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524461C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -237,6 +233,10 @@
 		8DAE13A11C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DAE13A21C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DAE13A31C574EAD002A1E33 /* ProxySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -332,8 +332,6 @@
 		8D5524281C58ABE700D5A4B4 /* PatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternType.swift; sourceTree = "<group>"; };
 		8D5524301C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternsViewController.swift; sourceTree = "<group>"; };
 		8D5524321C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternsViewController.swift; sourceTree = "<group>"; };
-		8D5524341C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
-		8D55243B1C58ADCE00D5A4B4 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8D55243E1C58ADD400D5A4B4 /* CreationalPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreationalPatternType.swift; sourceTree = "<group>"; };
 		8D5524461C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactorySampleViewController.swift; sourceTree = "<group>"; };
 		8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
@@ -410,6 +408,8 @@
 		8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
 		8DAE139E1C574EAD002A1E33 /* ProxySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySampleViewController.swift; sourceTree = "<group>"; };
 		8DAE139F1C574EAD002A1E33 /* ProxySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxySampleViewController.xib; sourceTree = "<group>"; };
+		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
+		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -635,7 +635,7 @@
 			children = (
 				8D55242F1C58AD7B00D5A4B4 /* Behavioural */,
 				8D5524311C58AD7B00D5A4B4 /* Creational */,
-				8D5524331C58AD7B00D5A4B4 /* Structural */,
+				8DC42C271C58C4910061D5F3 /* Structural */,
 			);
 			path = PatternSampleClasses;
 			sourceTree = "<group>";
@@ -660,15 +660,6 @@
 				8D5524451C58AEAE00D5A4B4 /* Singleton */,
 			);
 			path = Creational;
-			sourceTree = "<group>";
-		};
-		8D5524331C58AD7B00D5A4B4 /* Structural */ = {
-			isa = PBXGroup;
-			children = (
-				8D5524341C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift */,
-				8D55243B1C58ADCE00D5A4B4 /* StructuralPatternType.swift */,
-			);
-			path = Structural;
 			sourceTree = "<group>";
 		};
 		8D5524411C58AE5500D5A4B4 /* AbstractFactory */ = {
@@ -895,6 +886,71 @@
 				8DAE139B1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift */,
 			);
 			path = ThemeParkTicketProvider;
+			sourceTree = "<group>";
+		};
+		8DC42C271C58C4910061D5F3 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				8DC42C281C58C4910061D5F3 /* Adapter */,
+				8DC42C291C58C4910061D5F3 /* Bridge */,
+				8DC42C2A1C58C4910061D5F3 /* Composite */,
+				8DC42C2B1C58C4910061D5F3 /* Decorator */,
+				8DC42C2C1C58C4910061D5F3 /* Facade */,
+				8DC42C2D1C58C4910061D5F3 /* Flyweight */,
+				8DC42C2E1C58C4910061D5F3 /* Proxy */,
+				8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */,
+				8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		8DC42C281C58C4910061D5F3 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		8DC42C291C58C4910061D5F3 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		8DC42C2A1C58C4910061D5F3 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		8DC42C2B1C58C4910061D5F3 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		8DC42C2C1C58C4910061D5F3 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		8DC42C2D1C58C4910061D5F3 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		8DC42C2E1C58C4910061D5F3 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		8DDA04C31C2A8C5200B5A707 /* Protocols */ = {
@@ -1322,6 +1378,7 @@
 				8DA659A71C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
 				8DAE13951C574A2A002A1E33 /* ThemeParkTicketProvider.swift in Sources */,
+				8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8DAE13A01C574EAD002A1E33 /* ProxySampleViewController.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
@@ -1329,13 +1386,11 @@
 				8D2825841C51E07B00EDF542 /* FightingMoves.swift in Sources */,
 				8DA8189F1C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
 				8D8A49541C4DECEB00C21352 /* AdapterSampleViewModel.swift in Sources */,
-				8D55243C1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */,
 				8D2825881C51E3D600EDF542 /* StreetFighter.swift in Sources */,
 				8DA818991C478EC100D99065 /* CatCulinaryTourGuide.swift in Sources */,
 				8D28258F1C51E5BE00EDF542 /* ThunderFightingArmament.swift in Sources */,
 				8D28259E1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */,
 				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
-				8D5524391C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
 				8D5524601C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
 				8D55245C1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
@@ -1343,6 +1398,7 @@
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */,
 				8DA659B31C508F3400A97E87 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
+				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8DA818911C478D3600D99065 /* MonkeyChef.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA8188D1C478D3600D99065 /* CatChef.swift in Sources */,
@@ -1410,12 +1466,11 @@
 				8D2825961C51E66800EDF542 /* IceFightingArmament.swift in Sources */,
 				8D2825891C51E3D600EDF542 /* StreetFighter.swift in Sources */,
 				8D2825851C51E07B00EDF542 /* FightingMoves.swift in Sources */,
+				8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8DA818A01C47933E00D99065 /* MonkeyCulinaryTourGuide.swift in Sources */,
-				8D55243A1C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
 				8D55249E1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8DAE139A1C574ABA002A1E33 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8DA818841C47850300D99065 /* BearCulinaryTourist.swift in Sources */,
-				8D55243D1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */,
 				8D8A49521C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
 				8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
@@ -1431,6 +1486,7 @@
 				8DA8188E1C478D3600D99065 /* CatChef.swift in Sources */,
 				8DA659D31C50E85500A97E87 /* CompositeSampleViewController.swift in Sources */,
 				8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
+				8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DA818A31C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
 				8D28259A1C51E81200EDF542 /* DecoratorSampleViewController.swift in Sources */,
