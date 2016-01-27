@@ -69,8 +69,6 @@
 		8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14AD1C44B530001DDB2C /* Builder.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
 		8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D2D14C01C450259001DDB2C /* Prototype.txt */; settings = {ASSET_TAGS = (); }; };
-		8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
-		8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D929A1C327A0000AFA1BE /* Parade.swift */; };
 		8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524131C58A9F700D5A4B4 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524131C58A9F700D5A4B4 /* CommentaryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524181C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524141C58A9F700D5A4B4 /* CommentaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -155,6 +153,8 @@
 		8D5524A61C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8D5524A81C58B67000D5A4B4 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A71C58B67000D5A4B4 /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5524A91C58B67000D5A4B4 /* Messenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524A71C58B67000D5A4B4 /* Messenger.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524AB1C58B6A900D5A4B4 /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AA1C58B6A900D5A4B4 /* Parade.swift */; settings = {ASSET_TAGS = (); }; };
+		8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524AA1C58B6A900D5A4B4 /* Parade.swift */; settings = {ASSET_TAGS = (); }; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; settings = {ASSET_TAGS = (); }; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
@@ -326,7 +326,6 @@
 		8D2D14AA1C44A48C001DDB2C /* FactoryMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactoryMethod.txt; sourceTree = "<group>"; };
 		8D2D14AD1C44B530001DDB2C /* Builder.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builder.txt; sourceTree = "<group>"; };
 		8D2D14C01C450259001DDB2C /* Prototype.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prototype.txt; sourceTree = "<group>"; };
-		8D2D929A1C327A0000AFA1BE /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D5524131C58A9F700D5A4B4 /* CommentaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentaryViewController.swift; sourceTree = "<group>"; };
 		8D5524141C58A9F700D5A4B4 /* CommentaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentaryViewController.xib; sourceTree = "<group>"; };
 		8D5524151C58A9F700D5A4B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -369,6 +368,7 @@
 		8D5524A11C58B64700D5A4B4 /* MessengerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessengerTableViewCell.swift; sourceTree = "<group>"; };
 		8D5524A21C58B64700D5A4B4 /* MessengerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessengerTableViewCell.xib; sourceTree = "<group>"; };
 		8D5524A71C58B67000D5A4B4 /* Messenger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messenger.swift; sourceTree = "<group>"; };
+		8D5524AA1C58B6A900D5A4B4 /* Parade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parade.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8A49501C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCulinaryTourDialogue.swift; sourceTree = "<group>"; };
@@ -587,7 +587,6 @@
 			isa = PBXGroup;
 			children = (
 				8DA659A51C507F4A00A97E87 /* TreasureHuntRooms */,
-				8D2D929A1C327A0000AFA1BE /* Parade.swift */,
 				8DEF63741C33BDD800F65DAB /* BurgerOrder.swift */,
 				8D0963EB1C45EFBB00173678 /* Diary.swift */,
 				8DA818821C47850300D99065 /* BearCulinaryTourist.swift */,
@@ -714,6 +713,7 @@
 			children = (
 				8D5524781C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift */,
 				8D5524791C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib */,
+				8D5524AA1C58B6A900D5A4B4 /* Parade.swift */,
 				8D55247E1C58B3BE00D5A4B4 /* ParadeViewModel.swift */,
 				8D55247F1C58B3BE00D5A4B4 /* ParadeViewModels */,
 			);
@@ -1300,6 +1300,7 @@
 				8D8A49511C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D278A701C4F3B0300E6CD4E /* BearChef.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
+				8D5524AB1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8DEF63751C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
 				8DAE139C1C574D07002A1E33 /* ThemeParkTicketSalesPerson.swift in Sources */,
 				8DA818A21C4793E800D99065 /* PandaCulinaryTourGuide.swift in Sources */,
@@ -1342,7 +1343,6 @@
 				8D28259E1C51F3FC00EDF542 /* DecoratorSampleViewModel.swift in Sources */,
 				8D0963F01C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
 				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
-				8D2D929B1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D5524391C58AD7B00D5A4B4 /* StructuralPatternsViewController.swift in Sources */,
 				8D5524601C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8DAE13921C5749E4002A1E33 /* ThemeParkVisitor.swift in Sources */,
@@ -1388,6 +1388,7 @@
 				8D55245F1C58AF9A00D5A4B4 /* OtherCuisineChef.swift in Sources */,
 				8DA659A41C507E5700A97E87 /* TreasureHuntRoom.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
+				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8D278A741C4F3CA900E6CD4E /* BearCulinaryTourGuide.swift in Sources */,
 				8DA818921C478D3600D99065 /* MonkeyChef.swift in Sources */,
 				8DEF63761C33BDD800F65DAB /* BurgerOrder.swift in Sources */,
@@ -1424,7 +1425,6 @@
 				8D55243D1C58ADCE00D5A4B4 /* StructuralPatternType.swift in Sources */,
 				8D8A49521C4DDE6C00C21352 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D0963F11C45F5B900173678 /* SingletonSampleViewController.swift in Sources */,
-				8D2D929C1C327A0000AFA1BE /* Parade.swift in Sources */,
 				8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
 				8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DA659A81C50801300A97E87 /* TreasureHuntAlleyRoom.swift in Sources */,
