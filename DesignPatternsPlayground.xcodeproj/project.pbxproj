@@ -135,10 +135,6 @@
 		8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72C1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72D1C43A58000E71C88 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
-		8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		8DA659C81C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		8DA659C91C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -237,6 +233,10 @@
 		8DC42CC91C58E1D40061D5F3 /* ThemeParkTicketVendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CBE1C58E1D40061D5F3 /* ThemeParkTicketVendingMachine.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CBF1C58E1D40061D5F3 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CBF1C58E1D40061D5F3 /* ThemeParkVisitor.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CCE1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CCC1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CCF1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CCC1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8DC42CD01C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8DC42CD11C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -359,8 +359,6 @@
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8BD72B1C43A58000E71C88 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
-		8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomCollectionViewCell.swift; sourceTree = "<group>"; };
-		8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
@@ -410,6 +408,8 @@
 		8DC42CBD1C58E1D40061D5F3 /* ThemeParkTicketSalesPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketSalesPerson.swift; sourceTree = "<group>"; };
 		8DC42CBE1C58E1D40061D5F3 /* ThemeParkTicketVendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkTicketVendingMachine.swift; sourceTree = "<group>"; };
 		8DC42CBF1C58E1D40061D5F3 /* ThemeParkVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeParkVisitor.swift; sourceTree = "<group>"; };
+		8DC42CCC1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureHuntRoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -736,15 +736,6 @@
 			path = Creational;
 			sourceTree = "<group>";
 		};
-		8DA659C31C50A85900A97E87 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				8DA659C41C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift */,
-				8DA659C51C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib */,
-			);
-			path = CollectionViewCells;
-			sourceTree = "<group>";
-		};
 		8DC42C271C58C4910061D5F3 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,6 +781,8 @@
 			children = (
 				8DC42C741C58D1820061D5F3 /* CompositeSampleViewController.swift */,
 				8DC42C751C58D1820061D5F3 /* CompositeSampleViewController.xib */,
+				8DC42CCC1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift */,
+				8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */,
 				8DC42C761C58D1820061D5F3 /* TreasureHuntRoom.swift */,
 				8DC42CB61C58E1350061D5F3 /* TreasureHuntRoomFactory.swift */,
 				8DC42C771C58D1820061D5F3 /* TreasureHuntRooms */,
@@ -948,7 +941,6 @@
 			children = (
 				8D55240D1C58792D00D5A4B4 /* GeneralClasses */,
 				8D55242E1C58AD7B00D5A4B4 /* PatternSampleClasses */,
-				8DA659C31C50A85900A97E87 /* CollectionViewCells */,
 				8DDA04CB1C2A9BF500B5A707 /* Factories */,
 				8D8BD7251C43A41400E71C88 /* Resources */,
 				8DED256F1C2292FF00462C0F /* AppDelegate.swift */,
@@ -1126,6 +1118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC42C841C58D1820061D5F3 /* CompositeSampleViewController.xib in Resources */,
+				8DC42CD01C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
@@ -1143,7 +1136,6 @@
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
 				8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
-				8DA659C81C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8DC42C941C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
@@ -1162,13 +1154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
-				8DA659C91C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
 				8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DC42CC31C58E1D40061D5F3 /* ProxySampleViewController.xib in Resources */,
 				8DC42C911C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */,
+				8DC42CD11C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D5524A61C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8D55244B1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
@@ -1317,6 +1309,7 @@
 				8DC42CA61C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8DC42C661C58C7F70061D5F3 /* CatChef.swift in Sources */,
+				8DC42CCE1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
@@ -1325,7 +1318,6 @@
 				8DC42CB41C58E0E80061D5F3 /* DecoratorSampleViewModel.swift in Sources */,
 				8DC42C5C1C58C7A40061D5F3 /* BearCulinaryTourist.swift in Sources */,
 				8DC42C9C1C58DF870061D5F3 /* DecoratorSampleViewController.swift in Sources */,
-				8DA659C61C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DC42CAE1C58E00E0061D5F3 /* StreetFighter.swift in Sources */,
 				8D5524601C58AF9A00D5A4B4 /* WesternChef.swift in Sources */,
 				8DC42C881C58D1820061D5F3 /* TreasureHuntAlleyRoom.swift in Sources */,
@@ -1405,6 +1397,7 @@
 				8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8D55249E1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
+				8DC42CCF1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DC42C5B1C58C7A40061D5F3 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8D5524171C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DC42C5D1C58C7A40061D5F3 /* BearCulinaryTourist.swift in Sources */,
@@ -1417,7 +1410,6 @@
 				8D55245D1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D5524981C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DC42C891C58D1820061D5F3 /* TreasureHuntAlleyRoom.swift in Sources */,
-				8DA659C71C50A89D00A97E87 /* TreasureHuntRoomCollectionViewCell.swift in Sources */,
 				8DC42C561C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
