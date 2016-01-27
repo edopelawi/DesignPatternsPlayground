@@ -648,35 +648,14 @@
 			path = GeneralClasses;
 			sourceTree = "<group>";
 		};
-		8D55240E1C58A8DA00D5A4B4 /* PatternSpecificClasses */ = {
+		8D55240E1C58A8DA00D5A4B4 /* PatternSampleClasses */ = {
 			isa = PBXGroup;
 			children = (
-				8D5524111C58A91C00D5A4B4 /* Behavioural */,
-				8D5524101C58A90E00D5A4B4 /* Creational */,
-				8D55240F1C58A8FB00D5A4B4 /* Structural */,
+				8D55242B1C58AC8000D5A4B4 /* Behavioural */,
+				8D55242C1C58AC9300D5A4B4 /* Creational */,
+				8D55242D1C58AC9D00D5A4B4 /* Structural */,
 			);
-			path = PatternSpecificClasses;
-			sourceTree = "<group>";
-		};
-		8D55240F1C58A8FB00D5A4B4 /* Structural */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Structural;
-			sourceTree = "<group>";
-		};
-		8D5524101C58A90E00D5A4B4 /* Creational */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Creational;
-			sourceTree = "<group>";
-		};
-		8D5524111C58A91C00D5A4B4 /* Behavioural */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Behavioural;
+			path = PatternSampleClasses;
 			sourceTree = "<group>";
 		};
 		8D5524121C58A96F00D5A4B4 /* ViewControllers */ = {
@@ -712,6 +691,27 @@
 				8D5524281C58ABE700D5A4B4 /* PatternType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8D55242B1C58AC8000D5A4B4 /* Behavioural */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Behavioural;
+			sourceTree = "<group>";
+		};
+		8D55242C1C58AC9300D5A4B4 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		8D55242D1C58AC9D00D5A4B4 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Structural;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
@@ -921,7 +921,7 @@
 			isa = PBXGroup;
 			children = (
 				8D55240D1C58792D00D5A4B4 /* GeneralClasses */,
-				8D55240E1C58A8DA00D5A4B4 /* PatternSpecificClasses */,
+				8D55240E1C58A8DA00D5A4B4 /* PatternSampleClasses */,
 				8DA818951C478DAB00D99065 /* Adapters */,
 				8D03ADC41C33C54200CA932B /* Builders */,
 				8DA659C31C50A85900A97E87 /* CollectionViewCells */,
