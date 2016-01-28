@@ -22,11 +22,12 @@ class FlyweightSampleViewController: UICollectionViewController {
         title = "Alien Invasion!"
 
         // Register cell classes
-        self.collectionView?.registerNib(
+        collectionView?.registerNib(
             FlyweightSampleCollectionHeaderView.nib(),
             forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
             withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier
         )
+        
         
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
@@ -47,6 +48,10 @@ class FlyweightSampleViewController: UICollectionViewController {
             forIndexPath: indexPath
         )
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return FlyweightSampleCollectionHeaderView.preferredSize()
+    }    
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
