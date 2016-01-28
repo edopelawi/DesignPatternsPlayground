@@ -135,6 +135,8 @@
 		8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
+		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
+		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
@@ -369,6 +371,7 @@
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
+		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -834,6 +837,7 @@
 				8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */,
 				8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */,
 				8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */,
+				8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1304,6 +1308,7 @@
 				8DC42C8A1C58D1820061D5F3 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8DC42CD41C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
+				8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8DC42C451C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
@@ -1395,6 +1400,7 @@
 				8D55245F1C58AF9A00D5A4B4 /* OtherCuisineChef.swift in Sources */,
 				8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8DC42C461C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
+				8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
 				8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
