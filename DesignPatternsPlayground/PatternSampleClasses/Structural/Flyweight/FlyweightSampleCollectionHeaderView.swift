@@ -19,6 +19,13 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView {
     @IBOutlet private var monsterButtons: [UIButton]!
     
     
+    // MARK: Public methods
+    
+    /// Returns `UINib` instance for this class. Might be `nil`.
+    static func nib() -> UINib? {
+        return UINib(nibName: "FlyweightSampleCollectionHeaderView", bundle: nil)
+    }
+    
     // TODO: Add method for configuring this according to view model.
     
     // MARK: IBActions
