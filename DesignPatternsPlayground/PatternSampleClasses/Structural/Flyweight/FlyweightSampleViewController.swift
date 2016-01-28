@@ -12,12 +12,22 @@ private let reuseIdentifier = "Cell"
 
 class FlyweightSampleViewController: UICollectionViewController {
     
+    convenience init() {
+        self.init(nibName:"FlyweightSampleViewController", bundle:nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Alien Invasion!"
 
         // Register cell classes
+        self.collectionView?.registerNib(
+            FlyweightSampleCollectionHeaderView.nib(),
+            forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+            withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier
+        )
+        
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
@@ -26,11 +36,18 @@ class FlyweightSampleViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-
+    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        return collectionView.dequeueReusableSupplementaryViewOfKind(
+            UICollectionElementKindSectionHeader,
+            withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier,
+            forIndexPath: indexPath
+        )
+    }
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 0
