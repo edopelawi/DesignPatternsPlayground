@@ -137,6 +137,8 @@
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
+		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
@@ -372,6 +374,7 @@
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
+		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -838,6 +841,7 @@
 				8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */,
 				8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */,
 				8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */,
+				8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1373,6 +1377,7 @@
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8D5524861C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
+				8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67921C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524921C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
 				8DC42C8E1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
@@ -1465,6 +1470,7 @@
 				8DC42CC11C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
+				8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
 				8DC42C8F1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
