@@ -244,6 +244,10 @@
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
 		8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25781C2292FF00462C0F /* LaunchScreen.storyboard */; };
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
+		8DFF67921C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DFF67951C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -422,6 +426,8 @@
 		8DED25801C2292FF00462C0F /* DesignPatternsPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsPlaygroundTests.swift; sourceTree = "<group>"; };
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewController.swift; sourceTree = "<group>"; };
+		8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyweightSampleViewController.xib; sourceTree = "<group>"; };
 		D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DesignPatternsPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -818,6 +824,8 @@
 		8DC42C2D1C58C4910061D5F3 /* Flyweight */ = {
 			isa = PBXGroup;
 			children = (
+				8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */,
+				8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1127,6 +1135,7 @@
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8D55244A1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
@@ -1160,6 +1169,7 @@
 				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
+				8DFF67951C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8DC42CC31C58E1D40061D5F3 /* ProxySampleViewController.xib in Resources */,
 				8DC42C911C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
@@ -1347,6 +1357,7 @@
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8D5524861C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
+				8DFF67921C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524921C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
 				8DC42C8E1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
 				8D5524A31C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
@@ -1436,6 +1447,7 @@
 				8DC42CC11C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
+				8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
 				8DC42C8F1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
 				8D5524A41C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
