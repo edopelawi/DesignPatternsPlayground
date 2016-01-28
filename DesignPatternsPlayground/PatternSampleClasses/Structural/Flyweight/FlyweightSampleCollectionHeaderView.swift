@@ -40,7 +40,8 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView {
     
     @IBAction func monsterSelected(sender: UIButton) {
         
-        sender.selected != sender.selected
+        print("isButtonSelected: \(sender.selected)")
+        sender.selected = !sender.selected
         
         sender.backgroundColor = sender.selected ? UIColor.lightGrayColor() : UIColor.whiteColor()
         

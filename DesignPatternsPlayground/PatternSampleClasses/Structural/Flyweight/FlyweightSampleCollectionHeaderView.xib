@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -31,7 +32,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Duplication method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-I9-EmJ">
                     <rect key="frame" x="8" y="57" width="139.5" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-39-BhE" userLabel="Duplication Method Button">
@@ -42,7 +43,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number per type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-C3-h7J" userLabel="Number per Type">
                     <rect key="frame" x="8" y="89" width="139.5" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0, 10, 100, 1000, etc." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-Qd-zXX" userLabel="Number per Type Field">
@@ -53,36 +54,52 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spawned types (tap to select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-ln-fxf">
                     <rect key="frame" x="8" y="126" width="209" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orZ-Tf-pf2" userLabel="Monster Button">
-                    <rect key="frame" x="253" y="158" width="40" height="60"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                    <state key="normal" title="💀"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-ze-8Gz" userLabel="Monster Button">
-                    <rect key="frame" x="193" y="158" width="40" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-ze-8Gz" userLabel="Monster Button">
+                    <rect key="frame" x="183" y="158" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rDS-ze-8Gz" secondAttribute="height" multiplier="1:1" id="1dT-Ju-D6C"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👹"/>
+                    <connections>
+                        <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="7MR-C5-fV4"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoO-d5-arZ" userLabel="Monster Button">
-                    <rect key="frame" x="133" y="158" width="40" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoO-d5-arZ" userLabel="Monster Button">
+                    <rect key="frame" x="123" y="158" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KoO-d5-arZ" secondAttribute="height" multiplier="1:1" id="BVT-ND-AGE"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👻"/>
                     <connections>
                         <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="mbf-6V-LDJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-qG-mUh" userLabel="Monster Button">
-                    <rect key="frame" x="313" y="158" width="40" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-qG-mUh" userLabel="Monster Button">
+                    <rect key="frame" x="303" y="158" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="tGT-qG-mUh" secondAttribute="height" multiplier="1:1" id="SNw-iV-koY"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👽"/>
+                    <connections>
+                        <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="7M8-OV-1gZ"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luj-n0-bDC" userLabel="Monster Button">
-                    <rect key="frame" x="373" y="158" width="40" height="60"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luj-n0-bDC" userLabel="Monster Button">
+                    <rect key="frame" x="363" y="158" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="luj-n0-bDC" secondAttribute="height" multiplier="1:1" id="X7a-YT-nbA"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👾"/>
+                    <connections>
+                        <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="ZNO-lY-hCg"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIA-9P-3Cp" userLabel="Start Invasion Button">
                     <rect key="frame" x="214" y="238" width="119" height="36"/>
@@ -95,34 +112,45 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory used(*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-m7-f7q">
                     <rect key="frame" x="8" y="286" width="139.5" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 byte" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-IE-BZu" userLabel="Used Memory Label">
                     <rect key="frame" x="155" y="286" width="382.5" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*calculated by number of unique instances in the memory." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-xc-stv" userLabel="Memory Calculation Info Label">
                     <rect key="frame" x="8" y="327" width="530" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orZ-Tf-pf2" userLabel="Monster Button">
+                    <rect key="frame" x="243" y="158" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="orZ-Tf-pf2" secondAttribute="height" multiplier="1:1" id="Xsc-J1-h9H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <state key="normal" title="💀"/>
+                    <connections>
+                        <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="NgK-1p-JRe"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="FQV-IE-BZu" firstAttribute="baseline" secondItem="XWP-m7-f7q" secondAttribute="baseline" id="25o-v5-bUT"/>
                 <constraint firstAttribute="trailing" secondItem="8J2-xc-stv" secondAttribute="trailing" constant="8" id="2j7-ww-obK"/>
                 <constraint firstItem="J0E-I9-EmJ" firstAttribute="top" secondItem="dO6-SY-Vg8" secondAttribute="bottom" constant="20" id="4pC-m9-6Ju"/>
-                <constraint firstItem="rDS-ze-8Gz" firstAttribute="leading" secondItem="KoO-d5-arZ" secondAttribute="trailing" constant="20" id="6kc-ZK-Shh"/>
+                <constraint firstItem="rDS-ze-8Gz" firstAttribute="leading" secondItem="KoO-d5-arZ" secondAttribute="trailing" id="6kc-ZK-Shh"/>
                 <constraint firstItem="NIA-9P-3Cp" firstAttribute="top" secondItem="orZ-Tf-pf2" secondAttribute="bottom" constant="20" id="836-KZ-ay4"/>
                 <constraint firstItem="8J2-xc-stv" firstAttribute="top" secondItem="FQV-IE-BZu" secondAttribute="bottom" constant="20" id="8V5-re-160"/>
                 <constraint firstItem="LhQ-Qd-zXX" firstAttribute="trailing" secondItem="Qx2-39-BhE" secondAttribute="trailing" id="AVL-zW-gHV"/>
                 <constraint firstItem="XWP-m7-f7q" firstAttribute="top" secondItem="NIA-9P-3Cp" secondAttribute="bottom" constant="12" id="Bhe-Vh-gkG"/>
                 <constraint firstItem="FQV-IE-BZu" firstAttribute="leading" secondItem="XWP-m7-f7q" secondAttribute="trailing" constant="8" id="Bvk-rO-83L"/>
-                <constraint firstItem="orZ-Tf-pf2" firstAttribute="leading" secondItem="rDS-ze-8Gz" secondAttribute="trailing" constant="20" id="COd-Nt-fWW"/>
+                <constraint firstItem="orZ-Tf-pf2" firstAttribute="leading" secondItem="rDS-ze-8Gz" secondAttribute="trailing" id="COd-Nt-fWW"/>
                 <constraint firstItem="luj-n0-bDC" firstAttribute="centerY" secondItem="tGT-qG-mUh" secondAttribute="centerY" id="DFB-N2-MwQ"/>
                 <constraint firstAttribute="trailing" secondItem="FQV-IE-BZu" secondAttribute="trailing" constant="8" id="JmD-u2-5jo"/>
                 <constraint firstItem="KoO-d5-arZ" firstAttribute="centerY" secondItem="rDS-ze-8Gz" secondAttribute="centerY" id="KrF-91-18B"/>
@@ -141,14 +169,14 @@
                 <constraint firstItem="NIA-9P-3Cp" firstAttribute="centerY" secondItem="orZ-Tf-pf2" secondAttribute="centerY" id="eXA-YD-YgX"/>
                 <constraint firstAttribute="trailing" secondItem="dO6-SY-Vg8" secondAttribute="trailing" id="hc2-Sw-VlK"/>
                 <constraint firstItem="EM5-ln-fxf" firstAttribute="top" secondItem="6Vm-C3-h7J" secondAttribute="bottom" constant="16" id="nMB-lx-ekt"/>
-                <constraint firstItem="luj-n0-bDC" firstAttribute="leading" secondItem="tGT-qG-mUh" secondAttribute="trailing" constant="20" id="nTK-HP-DCO"/>
+                <constraint firstItem="luj-n0-bDC" firstAttribute="leading" secondItem="tGT-qG-mUh" secondAttribute="trailing" id="nTK-HP-DCO"/>
                 <constraint firstItem="orZ-Tf-pf2" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="oSv-ZU-DEz"/>
                 <constraint firstItem="XWP-m7-f7q" firstAttribute="leading" secondItem="6Vm-C3-h7J" secondAttribute="leading" id="q5D-IU-HAN"/>
                 <constraint firstItem="dO6-SY-Vg8" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="qpo-K4-10s"/>
                 <constraint firstItem="XWP-m7-f7q" firstAttribute="trailing" secondItem="6Vm-C3-h7J" secondAttribute="trailing" id="tiq-YD-Gq3"/>
                 <constraint firstItem="J0E-I9-EmJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="uMx-op-o8I"/>
                 <constraint firstItem="6Vm-C3-h7J" firstAttribute="leading" secondItem="J0E-I9-EmJ" secondAttribute="leading" id="uxO-By-eFV"/>
-                <constraint firstItem="tGT-qG-mUh" firstAttribute="leading" secondItem="orZ-Tf-pf2" secondAttribute="trailing" constant="20" id="v6J-kX-x6N"/>
+                <constraint firstItem="tGT-qG-mUh" firstAttribute="leading" secondItem="orZ-Tf-pf2" secondAttribute="trailing" id="v6J-kX-x6N"/>
                 <constraint firstItem="NIA-9P-3Cp" firstAttribute="centerX" secondItem="orZ-Tf-pf2" secondAttribute="centerX" id="vBk-6Y-c5C"/>
                 <constraint firstItem="8J2-xc-stv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="vjp-Wo-lSE"/>
                 <constraint firstItem="LhQ-Qd-zXX" firstAttribute="baseline" secondItem="6Vm-C3-h7J" secondAttribute="baseline" id="zZw-4g-PqJ"/>
