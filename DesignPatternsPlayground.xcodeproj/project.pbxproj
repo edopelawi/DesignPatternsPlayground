@@ -248,6 +248,10 @@
 		8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8DFF67951C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFF67991C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFF679A1C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		8DFF679B1C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -428,6 +432,8 @@
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewController.swift; sourceTree = "<group>"; };
 		8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyweightSampleViewController.xib; sourceTree = "<group>"; };
+		8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleCollectionHeaderView.swift; sourceTree = "<group>"; };
+		8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyweightSampleCollectionHeaderView.xib; sourceTree = "<group>"; };
 		D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DesignPatternsPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -826,6 +832,8 @@
 			children = (
 				8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */,
 				8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */,
+				8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */,
+				8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
@@ -1130,6 +1138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC42C841C58D1820061D5F3 /* CompositeSampleViewController.xib in Resources */,
+				8DFF679A1C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib in Resources */,
 				8DC42CD01C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
@@ -1171,6 +1180,7 @@
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
 				8DFF67951C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D2D14AC1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
+				8DFF679B1C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib in Resources */,
 				8DC42CC31C58E1D40061D5F3 /* ProxySampleViewController.xib in Resources */,
 				8DC42C911C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1339,6 +1349,7 @@
 				8DC42C881C58D1820061D5F3 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8D55245C1C58AF9A00D5A4B4 /* JapaneseChef.swift in Sources */,
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
+				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8DC42C641C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
@@ -1429,6 +1440,7 @@
 				8DC42C891C58D1820061D5F3 /* TreasureHuntAlleyRoom.swift in Sources */,
 				8DC42C561C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
+				8DFF67991C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8DC42C651C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
