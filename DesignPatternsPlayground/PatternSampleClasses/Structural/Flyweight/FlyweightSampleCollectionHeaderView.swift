@@ -10,7 +10,7 @@ import UIKit
 
 class FlyweightSampleCollectionHeaderView: UICollectionReusableView {
 
-    let identifier = "FlyweightSampleCollectionHeaderViewIdentifier"
+    static let identifier = "FlyweightSampleCollectionHeaderViewIdentifier"
     
     @IBOutlet private weak var duplicationMethodButton: UIButton!
     @IBOutlet private weak var numberPerTypeTextField: UITextField!
