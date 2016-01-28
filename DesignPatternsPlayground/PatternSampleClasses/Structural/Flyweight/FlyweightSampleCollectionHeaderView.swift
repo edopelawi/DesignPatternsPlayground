@@ -26,6 +26,14 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView {
         return UINib(nibName: "FlyweightSampleCollectionHeaderView", bundle: nil)
     }
     
+    /// Returns preferred `CGSize` to present this class' instance
+    static func preferredSize() -> CGSize {
+        let width = UIScreen.mainScreen().bounds.width
+        let height = CGFloat(402)
+        
+        return CGSize(width: width, height: height)
+    }
+    
     // TODO: Add method for configuring this according to view model.
     
     // MARK: IBActions

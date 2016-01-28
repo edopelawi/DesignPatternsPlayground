@@ -7,7 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlyweightSampleCollectionHeaderViewIdentifier" id="U6b-Vx-4bR" customClass="FlyweightSampleCollectionHeaderView" customModule="DesignPatternsPlayground" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="546" height="433"/>
+            <rect key="frame" x="0.0" y="0.0" width="546" height="401.5"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-SY-Vg8" userLabel="Top Wrapper View">
@@ -111,6 +111,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="FQV-IE-BZu" firstAttribute="baseline" secondItem="XWP-m7-f7q" secondAttribute="baseline" id="25o-v5-bUT"/>
                 <constraint firstAttribute="trailing" secondItem="8J2-xc-stv" secondAttribute="trailing" constant="8" id="2j7-ww-obK"/>
@@ -163,7 +164,7 @@
                 <outlet property="numberPerTypeTextField" destination="LhQ-Qd-zXX" id="5XG-pv-RVm"/>
                 <outletCollection property="monsterButtons" destination="KoO-d5-arZ" collectionClass="NSMutableArray" id="t00-x0-o5l"/>
             </connections>
-            <point key="canvasLocation" x="539" y="447.5"/>
+            <point key="canvasLocation" x="539" y="431.75"/>
         </collectionReusableView>
     </objects>
 </document>
