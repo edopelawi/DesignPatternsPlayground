@@ -11,11 +11,11 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-SY-Vg8" userLabel="Top Wrapper View">
-                    <rect key="frame" x="0.0" y="0.0" width="546" height="39.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="546" height="36.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Help these monsters to choose the most memory-effective invasion!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aGI-6i-sA1">
-                            <rect key="frame" x="8" y="8" width="530" height="23.5"/>
-                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Help these monsters to choose the most memory-effective invasion!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGI-6i-sA1">
+                            <rect key="frame" x="8" y="8" width="530" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -28,85 +28,85 @@
                         <constraint firstAttribute="trailing" secondItem="aGI-6i-sA1" secondAttribute="trailing" constant="8" id="xBe-ER-N0U"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duplication method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-I9-EmJ">
-                    <rect key="frame" x="8" y="60" width="158" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Duplication method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0E-I9-EmJ">
+                    <rect key="frame" x="8" y="57" width="139.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-39-BhE" userLabel="Duplication Method Button">
-                    <rect key="frame" x="174" y="53.5" width="364" height="36"/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="155" y="50" width="382.5" height="33"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                     <state key="normal" title="Clone"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number per type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-C3-h7J" userLabel="Number per Type">
-                    <rect key="frame" x="8" y="95.5" width="158" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="8" y="89" width="139.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0, 10, 100, 1000... anything!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-Qd-zXX" userLabel="Number per Type Field">
-                    <rect key="frame" x="174" y="92.5" width="364" height="30"/>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0, 10, 100, 1000, etc." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-Qd-zXX" userLabel="Number per Type Field">
+                    <rect key="frame" x="155" y="91" width="382.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spawned types (tap to select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-ln-fxf">
-                    <rect key="frame" x="8" y="135" width="237" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="8" y="126" width="209" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orZ-Tf-pf2" userLabel="Monster Button">
-                    <rect key="frame" x="248" y="170.5" width="50" height="72"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <rect key="frame" x="253" y="158" width="40" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="💀"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDS-ze-8Gz" userLabel="Monster Button">
-                    <rect key="frame" x="178" y="171" width="50" height="72"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <rect key="frame" x="193" y="158" width="40" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👹"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoO-d5-arZ" userLabel="Monster Button">
-                    <rect key="frame" x="108" y="171" width="50" height="72"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <rect key="frame" x="133" y="158" width="40" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👻"/>
                     <connections>
                         <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="mbf-6V-LDJ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGT-qG-mUh" userLabel="Monster Button">
-                    <rect key="frame" x="318" y="171" width="50" height="72"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <rect key="frame" x="313" y="158" width="40" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👽"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luj-n0-bDC" userLabel="Monster Button">
-                    <rect key="frame" x="388" y="171" width="50" height="72"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <rect key="frame" x="373" y="158" width="40" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <state key="normal" title="👾"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIA-9P-3Cp" userLabel="Start Invasion Button">
-                    <rect key="frame" x="204" y="263" width="139" height="40"/>
-                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                    <rect key="frame" x="214" y="238" width="119" height="36"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                     <state key="normal" title="Start Invasion!"/>
                     <connections>
                         <action selector="startInvasion:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="G0v-wu-qZ9"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory used(*)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-m7-f7q">
-                    <rect key="frame" x="8" y="315" width="158" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="8" y="286" width="139.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 byte" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-IE-BZu" userLabel="Used Memory Label">
-                    <rect key="frame" x="174" y="314.5" width="364" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="155" y="286" width="382.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*calculated by number of unique instances in the memory." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-xc-stv" userLabel="Memory Calculation Info Label">
-                    <rect key="frame" x="8" y="358" width="530" height="23.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                    <rect key="frame" x="8" y="327" width="530" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
