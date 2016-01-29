@@ -35,7 +35,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-39-BhE" userLabel="Duplication Method Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx2-39-BhE" userLabel="Duplication Method Button">
                     <rect key="frame" x="155" y="50" width="382.5" height="33"/>
                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                     <state key="normal" title="Clone"/>
@@ -53,6 +53,9 @@
                     <rect key="frame" x="155" y="91" width="382.5" height="18"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="numberTypeFieldUpdated:" destination="U6b-Vx-4bR" eventType="editingChanged" id="k31-JX-P6x"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spawned types (tap to select)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-ln-fxf">
                     <rect key="frame" x="8" y="126" width="209" height="20.5"/>

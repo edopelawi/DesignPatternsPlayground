@@ -69,7 +69,8 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
         
-        duplicationMethodButton.titleLabel?.text = duplicationMethodUpdated.rawValue
+        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, forState: .Normal)
+        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, forState: .Highlighted)
     }
     
     func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
@@ -109,6 +110,15 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
         
         delegate?.headerView(self, shouldPresentAlertController: alertController)
     }
+    
+    @IBAction func numberTypeFieldUpdated(sender: UITextField) {
+        
+        if let validString = sender.text,
+           let validNumber = Int(validString) {
+                viewModel?.numberPerType = validNumber
+        }        
+    }
+    
     
     @IBAction func monsterSelected(sender: UIButton) {
         
