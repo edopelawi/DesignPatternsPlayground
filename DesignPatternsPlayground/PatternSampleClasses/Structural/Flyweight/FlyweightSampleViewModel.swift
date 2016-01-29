@@ -136,9 +136,13 @@ class FlyweightSampleViewModel {
     
     private func generateNewMonsterInvadersWithCurrentSettings() -> [MonsterInvader] {
     
+        if numberPerType <= 0 {
+            return []
+        }
+        
         var newMonsterInvaders = [MonsterInvader]()
         
-        for _ in 1...numberPerType {
+        for _ in 0...numberPerType-1 {
             
             for monsterIcon in selectedMonsterIcons {
                 
