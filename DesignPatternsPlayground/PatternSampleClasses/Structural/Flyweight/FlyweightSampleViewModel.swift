@@ -13,11 +13,28 @@ enum FlyweightSampleDuplicationMethod: String {
     case Flyweight = "Flyweight"
 }
 
-class FlyweightSampleViewModel {
+protocol FlyweightSampleViewModelDelegate: class {
     
+    /// Called when `viewModel`'s `monsterInvaders` property is updated.
+    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader])
+    
+    /// Called when `viewModel`'s `usedMemoryString` property is updated.
+    func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String)
+    
+    /// Called when `viewModel`'s `selectedDuplicationMethod` property is updated.
+    func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod)
+}
+
+class FlyweightSampleViewModel {    
     
     // MARK: Public properties
-    internal var selectedDuplicationMethod = FlyweightSampleDuplicationMethod.Clone
+    internal var selectedDuplicationMethod = FlyweightSampleDuplicationMethod.Clone {
+        didSet {
+            for (_, delegate) in delegates {
+                delegate.viewModel(self, duplicationMethodUpdated: selectedDuplicationMethod)
+            }
+        }
+    }
     
     internal var duplicationMethodOptions = [
         FlyweightSampleDuplicationMethod.Clone,
@@ -27,16 +44,28 @@ class FlyweightSampleViewModel {
     /// Number of monsters that will be spawned for each `MonsterInvader` in `monsterInvaders` property.
     internal var numberPerType = 0
     
-    internal var usedMemoryString = "0 byte"
-    internal var monsterInvaders = [MonsterInvader]() {
+    internal private(set) var usedMemoryString = "0 byte" {
+        didSet {
+            for (_, delegate) in delegates {
+                delegate.viewModel(self, usedMemoryStringUpdated: usedMemoryString)
+            }
+        }
+    }
+    
+    internal private(set) var monsterInvaders = [MonsterInvader]() {
         didSet {
             updateUsedMemoryString()
+            for (_, delegate) in delegates {
+                delegate.viewModel(self, monsterInvadersUpdated:monsterInvaders)
+            }
         }
     }
     
     // MARK: Private properties
     private var selectedMonsterIcons = Set<String>()
     private var invaderFlyweightFactory = MonsterInvaderFlyweightFactory()
+    
+    private var delegates = [String: FlyweightSampleViewModelDelegate]()
     
     // MARK: Public methods
     
@@ -52,10 +81,31 @@ class FlyweightSampleViewModel {
         selectedMonsterIcons.remove(icon)
     }
     
+    /// Populates this instance's `monsterInvaders` with current settings. Will execute `finishedClosure` when its done.
     internal func startInvasion(finishedClosure finishedClosure: (Void)->(Void) ) {
         
         usedMemoryString = "Calculating..."
         generateMonsterInvaders(finishedClosure: finishedClosure)
+    }
+    
+    /// Add passed `delegate` to this instance's delegates. Nothing will happen if it's already as a delegate.
+    internal func addDelegate(delegate: FlyweightSampleViewModelDelegate) {
+
+        let delegateAddress = "\(unsafeAddressOf(delegate))"
+        let delegateAdded = delegates[delegateAddress] != nil
+        
+        if delegateAdded {
+            return
+        }
+        
+        delegates[delegateAddress] = delegate
+    }
+    
+    /// Remove passed `delegate` from this instance's delegates. Nothing will happen if it's not added as delegate yet.
+    internal func removeDelegate(delegate: FlyweightSampleViewModelDelegate) {
+        
+        let delegateAddress = "\(unsafeAddressOf(delegate))"
+        delegates[delegateAddress] = nil
     }
     
     // MARK: Private methods 
@@ -129,7 +179,7 @@ class FlyweightSampleViewModel {
         
         // TODO: Refactor this assignment below to add conversion to KB, MB, etc.
         
-        usedMemoryString = "\(totalSize) bytes"        
+        usedMemoryString = "\(totalSize) bytes"
     }
     
 }
