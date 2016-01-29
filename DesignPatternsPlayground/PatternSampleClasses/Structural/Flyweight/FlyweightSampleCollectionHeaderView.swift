@@ -63,6 +63,10 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     // MARK: FlyweightSampleViewModel delegate methods
     
+    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
+        usedMemoryLabel.text = "Generating..."
+    }
+    
     func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
         
         duplicationMethodButton.titleLabel?.text = duplicationMethodUpdated.rawValue
@@ -126,11 +130,6 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     }
     
     @IBAction func startInvasion(sender: UIButton) {
-        
-        viewModel?.startInvasion(finishedClosure: {
-            _ in
-            
-            // Update this later.
-        })
+        viewModel?.startInvasion()
     }
 }
