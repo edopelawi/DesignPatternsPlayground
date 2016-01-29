@@ -198,17 +198,17 @@ class FlyweightSampleViewModel {
         
         for invader in monsterInvaders {
             
-            let invaderMemoryAddress = "\(unsafeAddressOf(invader))"
-            let addressCounted = sizePerMemory[invaderMemoryAddress] != nil
+            let invaderMemoryAddress = unsafeAddressOf(invader)
+            let addressKey = "\(invaderMemoryAddress)"
+            let addressCounted = sizePerMemory[addressKey] != nil
             
             if addressCounted {
                 break
             }
             
-            var invaderBuffer = invader
-            let invaderSize = malloc_size(&invaderBuffer)
+            let invaderSize = malloc_size(invaderMemoryAddress)
             
-            sizePerMemory[invaderMemoryAddress] = invaderSize
+            sizePerMemory[addressKey] = invaderSize
         }
         
         var totalSize = 0
