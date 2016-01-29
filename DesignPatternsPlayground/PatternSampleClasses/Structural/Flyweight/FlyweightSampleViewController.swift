@@ -10,30 +10,39 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class FlyweightSampleViewController: UICollectionViewController {
+class FlyweightSampleViewController: UICollectionViewController, FlyweightSampleCollectionHeaderViewDelegate, FlyweightSampleViewModelDelegate {
+    
+    private var viewModel = FlyweightSampleViewModel()
     
     convenience init() {
         self.init(nibName:"FlyweightSampleViewController", bundle:nil)
     }
     
+    deinit {
+        viewModel.removeDelegate(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Alien Invasion!"
+        title = "Monster Invasion!"
+        registerNibs()
+        viewModel.addDelegate(self)
+    }
 
-        // Register cell classes
+    private func registerNibs() {
         collectionView?.registerNib(
             FlyweightSampleCollectionHeaderView.nib(),
             forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
             withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier
         )
         
-        
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        collectionView?.registerNib(
+            FlyweightSampleCollectionViewCell.nib(),
+            forCellWithReuseIdentifier: FlyweightSampleCollectionViewCell.identifier
+        )
     }
-
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -42,11 +51,15 @@ class FlyweightSampleViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
-        return collectionView.dequeueReusableSupplementaryViewOfKind(
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(
             UICollectionElementKindSectionHeader,
             withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier,
             forIndexPath: indexPath
-        )
+        ) as! FlyweightSampleCollectionHeaderView
+        
+        headerView.configureForViewModel(viewModel)
+        headerView.delegate = self
+        return headerView
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -54,47 +67,46 @@ class FlyweightSampleViewController: UICollectionViewController {
     }    
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return viewModel.monsterInvaders.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
+        
+        let identifier = FlyweightSampleCollectionViewCell.identifier
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! FlyweightSampleCollectionViewCell
     
-        // Configure the cell
+        let monster = viewModel.monsterInvaders[indexPath.row]
+        let monsterNumber = "#\(indexPath.row)"
     
+        cell.configureForIcon(monster.icon, numberString: monsterNumber)
+        cell.sizeToFit()
+        
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
+    // MARK: FlyweightSampleCollectionHeaderViewDelegate 
     
+    func headerView(headerView: FlyweightSampleCollectionHeaderView, shouldPresentAlertController: UIAlertController) {
+        
+        presentViewController(shouldPresentAlertController, animated: true, completion: nil)
     }
-    */
+    
+    // MARK: FlyweightSampleViewModelDelegate
+    
+    func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
+        
+    }
+    
+    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
+        
+    }
+    
+    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader]) {
+        collectionView?.reloadData()
+    }
+    
+    func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
+        
+    }
     
 }
