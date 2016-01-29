@@ -43,9 +43,7 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
         let height = CGFloat(402)
         
         return CGSize(width: width, height: height)
-    }
-    
-    // TODO: Add method for configuring this according to view model.
+    }    
     
     internal func configureForViewModel(viewModel: FlyweightSampleViewModel) {
         
@@ -122,7 +120,6 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     @IBAction func monsterSelected(sender: UIButton) {
         
-        print("isButtonSelected: \(sender.selected)")
         sender.selected = !sender.selected
         
         sender.backgroundColor = sender.selected ? UIColor.lightGrayColor() : UIColor.whiteColor()
