@@ -39,6 +39,9 @@
                     <rect key="frame" x="155" y="50" width="382.5" height="33"/>
                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                     <state key="normal" title="Clone"/>
+                    <connections>
+                        <action selector="showDuplicationMethodOptions:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="jdG-Wb-GyD"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number per type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-C3-h7J" userLabel="Number per Type">
                     <rect key="frame" x="8" y="89" width="139.5" height="20.5"/>
@@ -115,12 +118,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 byte" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-IE-BZu" userLabel="Used Memory Label">
-                    <rect key="frame" x="155" y="286" width="382.5" height="20.5"/>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*calculated by number of unique instances in the memory." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J2-xc-stv" userLabel="Memory Calculation Info Label">
                     <rect key="frame" x="8" y="327" width="530" height="20.5"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
@@ -138,6 +135,12 @@
                         <action selector="monsterSelected:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="NgK-1p-JRe"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 byte" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-IE-BZu" userLabel="Used Memory Label">
+                    <rect key="frame" x="155" y="286" width="382.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -190,6 +193,7 @@
             <connections>
                 <outlet property="duplicationMethodButton" destination="Qx2-39-BhE" id="1HQ-rB-cxx"/>
                 <outlet property="numberPerTypeTextField" destination="LhQ-Qd-zXX" id="5XG-pv-RVm"/>
+                <outlet property="usedMemoryLabel" destination="FQV-IE-BZu" id="f1v-11-bZA"/>
                 <outletCollection property="monsterButtons" destination="KoO-d5-arZ" collectionClass="NSMutableArray" id="t00-x0-o5l"/>
             </connections>
             <point key="canvasLocation" x="539" y="431.75"/>
