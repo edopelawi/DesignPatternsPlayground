@@ -250,6 +250,10 @@
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
 		8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25781C2292FF00462C0F /* LaunchScreen.storyboard */; };
 		8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */; };
+		8DFCB58A1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCB5881C5B577000272165 /* FlyweightSampleCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFCB58B1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCB5881C5B577000272165 /* FlyweightSampleCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		8DFCB58C1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCB5891C5B577000272165 /* FlyweightSampleCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8DFCB58D1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCB5891C5B577000272165 /* FlyweightSampleCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8DFF67921C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -439,6 +443,8 @@
 		8DED25801C2292FF00462C0F /* DesignPatternsPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED25841C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsPlaygroundTests.swift; sourceTree = "<group>"; };
 		8DED25861C2292FF00462C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFCB5881C5B577000272165 /* FlyweightSampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DFCB5891C5B577000272165 /* FlyweightSampleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyweightSampleCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewController.swift; sourceTree = "<group>"; };
 		8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyweightSampleViewController.xib; sourceTree = "<group>"; };
 		8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleCollectionHeaderView.swift; sourceTree = "<group>"; };
@@ -842,6 +848,8 @@
 				8DFF67901C59FBF40095B7D7 /* FlyweightSampleViewController.swift */,
 				8DFF67911C59FBF40095B7D7 /* FlyweightSampleViewController.xib */,
 				8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */,
+				8DFCB5881C5B577000272165 /* FlyweightSampleCollectionViewCell.swift */,
+				8DFCB5891C5B577000272165 /* FlyweightSampleCollectionViewCell.xib */,
 				8DFF67961C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift */,
 				8DFF67971C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib */,
 				8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */,
@@ -1167,6 +1175,7 @@
 				8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */,
 				8DC42C391C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
 				8D5524181C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
+				8DFCB58C1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
 				8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
@@ -1188,6 +1197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
+				8DFCB58D1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
 				8DFF67951C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
@@ -1346,6 +1356,7 @@
 				8DC42CC41C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42C371C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
 				8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
+				8DFCB58A1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
 				8DC42CA61C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8DC42C661C58C7F70061D5F3 /* CatChef.swift in Sources */,
@@ -1440,6 +1451,7 @@
 				8DC42CC51C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42CA71C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C671C58C7F70061D5F3 /* CatChef.swift in Sources */,
+				8DFCB58B1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
 				8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
 				8D55249E1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D5524361C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
