@@ -15,6 +15,9 @@ enum FlyweightSampleDuplicationMethod: String {
 
 protocol FlyweightSampleViewModelDelegate: class {
     
+    /// Called when viewModel's `monsterInvaders` property is being updated.
+    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void)
+    
     /// Called when `viewModel`'s `monsterInvaders` property is updated.
     func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader])
     
@@ -81,11 +84,32 @@ class FlyweightSampleViewModel {
         selectedMonsterIcons.remove(icon)
     }
     
-    /// Populates this instance's `monsterInvaders` with current settings. Will execute `finishedClosure` when its done.
-    internal func startInvasion(finishedClosure finishedClosure: (Void)->(Void) ) {
+    /// Populates this instance's `monsterInvaders` with current settings. Will invoke corresponding delegate methods.
+    internal func startInvasion() {
         
-        usedMemoryString = "Calculating..."
-        generateMonsterInvaders(finishedClosure: finishedClosure)
+        for (_, delegate) in delegates {
+            delegate.viewModel(self, monsterInvadersStartUpdating: Void() )
+        }
+        
+        let queuePriority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        
+        dispatch_async(dispatch_get_global_queue(queuePriority, 0)) {
+            [weak self] in
+            
+            guard let strongSelf = self else {
+                return
+            }
+            
+            let newInvaders = strongSelf.generateNewMonsterInvadersWithCurrentSettings()
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                _ in
+                
+                strongSelf.monsterInvaders = newInvaders
+                
+            })
+        }
+        
     }
     
     /// Add passed `delegate` to this instance's delegates. Nothing will happen if it's already as a delegate.
@@ -110,32 +134,20 @@ class FlyweightSampleViewModel {
     
     // MARK: Private methods 
     
-    private func generateMonsterInvaders(finishedClosure finishedClosure: (Void) -> (Void)) {
+    private func generateNewMonsterInvadersWithCurrentSettings() -> [MonsterInvader] {
     
+        var newMonsterInvaders = [MonsterInvader]()
         
-        let queuePriority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-        
-        dispatch_async(dispatch_get_global_queue(queuePriority, 0)) {
-            [weak self] in
+        for _ in 1...numberPerType {
             
-            guard let strongSelf = self else {
-                return
-            }
-            
-            var newMonsterInvaders = [MonsterInvader]()
-            
-            for _ in 1...strongSelf.numberPerType {
+            for monsterIcon in selectedMonsterIcons {
                 
-                for monsterIcon in strongSelf.selectedMonsterIcons {
-                    
-                    let newMonster = strongSelf.generateMonsterInvaderWithCurrentMethod(monsterIcon: monsterIcon)
-                    newMonsterInvaders.append(newMonster)
-                }
+                let newMonster = generateMonsterInvaderWithCurrentMethod(monsterIcon: monsterIcon)
+                newMonsterInvaders.append(newMonster)
             }
-            
-            strongSelf.monsterInvaders = newMonsterInvaders
-            finishedClosure()
         }
+        
+        return newMonsterInvaders
     }
     
     private func generateMonsterInvaderWithCurrentMethod(monsterIcon monsterIcon: String) -> MonsterInvader {
@@ -153,6 +165,31 @@ class FlyweightSampleViewModel {
     
     private func updateUsedMemoryString() {
         
+        usedMemoryString = "Calculating..."
+        
+        let queuePriority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        
+        dispatch_async(dispatch_get_global_queue(queuePriority, 0), {
+            [weak self] _ in
+            
+            guard let strongSelf = self else {
+                return
+            }
+            
+            let totalSize = strongSelf.calculateUsedMemoryForCurrentInvaders()
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                _ in
+
+                // TODO: Refactor this assignment below to add conversion to KB, MB, etc.
+                
+                self?.usedMemoryString = "\(totalSize) bytes"
+            })
+        })
+    }
+    
+    private func calculateUsedMemoryForCurrentInvaders() -> Int {
+        
         var sizePerMemory = [String: Int]()
         
         for invader in monsterInvaders {
@@ -161,7 +198,7 @@ class FlyweightSampleViewModel {
             let addressCounted = sizePerMemory[invaderMemoryAddress] != nil
             
             if addressCounted {
-                return
+                break
             }
             
             var invaderBuffer = invader
@@ -173,13 +210,11 @@ class FlyweightSampleViewModel {
         var totalSize = 0
         
         for (_, size) in sizePerMemory {
-
+            
             totalSize += size
         }
         
-        // TODO: Refactor this assignment below to add conversion to KB, MB, etc.
-        
-        usedMemoryString = "\(totalSize) bytes"
+        return totalSize
     }
     
 }
