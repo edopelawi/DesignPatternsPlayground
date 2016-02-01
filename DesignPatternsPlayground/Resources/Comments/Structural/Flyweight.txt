@@ -1,1 +1,8 @@
-// TODO: Add comments here.
+IMHO, this pattern has traits of a Singleton, but with a lifetime that limited by the object factory (instead of the app lifetime). And yes, I had fun implementing this sample! :)
+
+The upside of this pattern is allowing a heavyweight object (memory usage, creation cost, etc.) to be used effeciently through the app. This pattern is used widely on iOS UIKit framework, e.g. UIFont's and UIColor's object from their factory methods. This pattern is also beneficial if you're making a inventory information app.
+
+The downside of this pattern is the flyweight objects should be immutable - or at least, has methods that only depends on external inputs. Having a shared object with ever-changing internal state is a recipe to bugs! 😉
+
+The book states that the Factory should return an object based by an abstract class - which is not implemented on current sample. It is possible to change the MonsterInvader to a protocol (and make subclasses out of it), but perhaps it wouldn't really fit on the sample. I'll update this comment / sample when I have a better idea as the sample.
+
