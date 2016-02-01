@@ -40,7 +40,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Composite
 - [x] Decorator
 - [ ] Facade
-- [ ] Flyweight
+- [x] Flyweight
 - [x] Proxy
 
 ##Behavioural
