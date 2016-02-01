@@ -28,6 +28,7 @@ class FlyweightSampleViewController: UICollectionViewController, FlyweightSample
         title = "Monster Invasion!"
         registerNibs()
         viewModel.addDelegate(self)
+        addCommentBarButton()
     }
 
     private func registerNibs() {
@@ -41,6 +42,14 @@ class FlyweightSampleViewController: UICollectionViewController, FlyweightSample
             FlyweightSampleCollectionViewCell.nib(),
             forCellWithReuseIdentifier: FlyweightSampleCollectionViewCell.identifier
         )
+    }
+    
+    private func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Flyweight)
     }
     
     // MARK: UICollectionViewDataSource
