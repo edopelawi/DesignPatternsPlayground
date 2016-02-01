@@ -60,6 +60,7 @@ Here's the list of patterns that currently implemented (and not).
 
 - [x] Create comments page functionality
 - [ ] Add comments on implemented patterns
+- [ ] Add short description about design pattern in top of README file
 
 # License
 
