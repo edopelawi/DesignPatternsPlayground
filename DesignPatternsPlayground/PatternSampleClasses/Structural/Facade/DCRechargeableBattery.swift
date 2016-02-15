@@ -8,16 +8,33 @@
 
 import Foundation
 
+protocol DCRechargeableBatteryDelegate: class {
+    
+    /// Called when passed `battery`'s `numberOfCurrents` updated.
+    func battery(battery: DCRechargeableBattery, numberOfCurrentsUpdated: Int)
+}
+
 class DCRechargeableBattery {
     
     internal let maximumCurrents = 100
-    
     internal private(set) var voltage: Int
-    private var currents = [DCCurrent]()
+    
+    weak internal var delegate: DCRechargeableBatteryDelegate?
+    
+    private var currents = [DCCurrent]() {
+        didSet {
+            delegate?.battery(self, numberOfCurrentsUpdated: currents.count)
+        }
+    }
+    
+    internal var numberOfCurrents: Int {
+        return currents.count
+    }
     
     init(voltage: Int) {
         self.voltage = voltage
     }
+    
     
     /// Returns array of `DCCurrent`s regarding with requested `numberOfCurrents`.
     /// If there's not enough current available, it will return the remaining
