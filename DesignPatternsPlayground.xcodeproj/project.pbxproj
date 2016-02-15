@@ -249,6 +249,8 @@
 		8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -440,6 +442,7 @@
 		8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
 		8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMemoryInfoFactory.swift; sourceTree = "<group>"; };
 		8DDC0B071C71950C008DBDCF /* DCCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCurrent.swift; sourceTree = "<group>"; };
+		8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCRechargeableBattery.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -846,6 +849,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDC0B071C71950C008DBDCF /* DCCurrent.swift */,
+				8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1326,6 +1330,7 @@
 				8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C8C1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
+				8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DC42CAA1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
@@ -1422,6 +1427,7 @@
 				8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C6B1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
+				8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DC42CAB1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
 				8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */,
