@@ -4,5 +4,5 @@ The upside of this pattern is allowing a heavyweight object (memory usage, creat
 
 The downside of this pattern is the flyweight objects should be immutable - or at least, has methods that only depends on external inputs. Having a shared object with ever-changing internal state is a recipe to bugs! 😉
 
-The book states that the Factory should return an object based by an abstract class - which is not implemented on current sample. It is possible to change the MonsterInvader to a protocol (and make subclasses out of it), but perhaps it wouldn't really fit on the sample. I'll update this comment / sample when I have a better idea as the sample.
+The book states that the Factory should return an object based by an abstract class - which is not implemented on current sample. It is possible to change the MonsterInvader to a protocol (and make subclasses out of it), but perhaps it wouldn't really fit on the sample. I'll update this comment / sample when I have a better idea!
 
