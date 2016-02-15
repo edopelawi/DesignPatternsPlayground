@@ -247,6 +247,8 @@
 		8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -437,6 +439,7 @@
 		8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
 		8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMemoryInfoFactory.swift; sourceTree = "<group>"; };
+		8DDC0B071C71950C008DBDCF /* DCCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCurrent.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -842,6 +845,7 @@
 		8DC42C2C1C58C4910061D5F3 /* Facade */ = {
 			isa = PBXGroup;
 			children = (
+				8DDC0B071C71950C008DBDCF /* DCCurrent.swift */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1382,6 +1386,7 @@
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DC42C641C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
@@ -1477,6 +1482,7 @@
 				8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8DFF67991C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DC42C651C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8D5524B81C58B72800D5A4B4 /* Diary.swift in Sources */,
