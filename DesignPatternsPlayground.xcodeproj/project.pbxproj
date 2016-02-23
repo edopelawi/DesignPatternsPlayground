@@ -251,6 +251,8 @@
 		8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
 		8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0F1C71B034008DBDCF /* ChristmasLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -443,6 +445,7 @@
 		8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMemoryInfoFactory.swift; sourceTree = "<group>"; };
 		8DDC0B071C71950C008DBDCF /* DCCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCurrent.swift; sourceTree = "<group>"; };
 		8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCRechargeableBattery.swift; sourceTree = "<group>"; };
+		8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasLights.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -850,6 +853,7 @@
 			children = (
 				8DDC0B071C71950C008DBDCF /* DCCurrent.swift */,
 				8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */,
+				8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1398,6 +1402,7 @@
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
+				8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
 				8D5524B71C58B72800D5A4B4 /* Diary.swift in Sources */,
 				8DC42C421C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
 				8D55248E1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
@@ -1495,6 +1500,7 @@
 				8DC42CB21C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8DC42C431C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
 				8D55248F1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
+				8DDC0B0F1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
 				8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D55245B1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
 				8DC42C521C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
