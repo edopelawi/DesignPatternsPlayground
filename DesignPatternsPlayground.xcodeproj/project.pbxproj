@@ -10,6 +10,8 @@
 		7648BD30926BAB06B270CE1A /* libPods-DesignPatternsPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */; };
 		8D0963F51C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
 		8D0963F61C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
+		8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */; settings = {ASSET_TAGS = (); }; };
+		8D1ED3121C7C765A00A6535B /* ChristmasDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AA81C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ASSET_TAGS = (); }; };
 		8D278AB31C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; };
 		8D278AB41C4F46C100E6CD4E /* JamesBondTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -321,6 +323,7 @@
 		0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		8D0963F41C460A4800173678 /* Singleton.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singleton.txt; sourceTree = "<group>"; };
+		8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasDecoration.swift; sourceTree = "<group>"; };
 		8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JamesBondTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D278AA71C4F46C100E6CD4E /* JamesBondToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamesBondToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondCarEngine.swift; sourceTree = "<group>"; };
@@ -854,6 +857,7 @@
 				8DDC0B071C71950C008DBDCF /* DCCurrent.swift */,
 				8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */,
 				8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */,
+				8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1346,6 +1350,7 @@
 				8DC42CD41C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
 				8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
+				8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8DC42C451C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
@@ -1444,6 +1449,7 @@
 				8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8DC42C461C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
+				8D1ED3121C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
