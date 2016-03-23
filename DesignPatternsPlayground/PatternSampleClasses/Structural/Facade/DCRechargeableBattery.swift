@@ -71,10 +71,13 @@ class DCRechargeableBattery {
             generatedCurrentsCount = numberOfCurrents
         }
         
+        var newCurrents = [DCCurrent]()
         for _ in 0 ..< generatedCurrentsCount  {
             let newCurrent = DCCurrent(voltage: voltage)
-            currents.append(newCurrent)
+            newCurrents.append(newCurrent)
         }
+        
+        currents.appendContentsOf(newCurrents)
     }
     
 }
