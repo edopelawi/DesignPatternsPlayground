@@ -137,6 +137,8 @@
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
+		8D8E67B81C96B70E0035D69A /* FacadeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01C1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
@@ -390,6 +392,8 @@
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
+		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
+		8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeSampleViewController.xib; sourceTree = "<group>"; };
 		8D8FF01B1C5F261400805FFB /* Flyweight.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flyweight.txt; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
@@ -858,6 +862,8 @@
 				8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */,
 				8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */,
 				8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */,
+				8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */,
+				8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1185,6 +1191,7 @@
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1349,6 +1356,7 @@
 				8DC42C8A1C58D1820061D5F3 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8DC42CD41C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
+				8D8E67B81C96B70E0035D69A /* FacadeSampleViewController.swift in Sources */,
 				8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
 				8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
