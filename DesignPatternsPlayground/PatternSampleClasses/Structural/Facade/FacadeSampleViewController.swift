@@ -78,8 +78,6 @@ class FacadeSampleViewController: UITableViewController {
         let christmasLight = christmasDecoration.christmasLights[indexPath.row]
         
         cell.textLabel?.text = christmasLight.lightEmojis
-
-        print("Christmas light for row \(indexPath.row): \(christmasLight.lightEmojis)")
         
         return cell
     }
