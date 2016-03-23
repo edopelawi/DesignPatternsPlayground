@@ -16,9 +16,9 @@ class ChristmasLights {
     /// Emojis that used to present this instance.
     internal var lightEmojis = ""
     
-    internal let minimumVoltage = 3
-    internal let preferredVoltage = 5
-    internal let maximumVoltage = 6
+    internal let minimumVoltage = 0.3
+    internal let preferredVoltage = 0.5
+    internal let maximumVoltage = 0.6
     
     internal let minimumDCCurrent = 5
     

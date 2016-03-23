@@ -17,7 +17,7 @@ protocol DCRechargeableBatteryDelegate: class {
 class DCRechargeableBattery {
     
     internal let maximumCurrents = 100
-    internal private(set) var voltage: Int
+    internal private(set) var voltage: Double
     
     weak internal var delegate: DCRechargeableBatteryDelegate?
     
@@ -31,7 +31,7 @@ class DCRechargeableBattery {
         return currents.count
     }
     
-    init(voltage: Int) {
+    init(voltage: Double) {
         self.voltage = voltage
     }
     

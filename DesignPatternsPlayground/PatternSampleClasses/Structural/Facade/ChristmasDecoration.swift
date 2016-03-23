@@ -12,7 +12,7 @@ import Foundation
 
 class ChristmasDecoration: DCRechargeableBatteryDelegate {
   
-    private var baseVoltage = 5
+    private var baseVoltage = 0.5
     
     internal var battery: DCRechargeableBattery!
     internal var christmasLights = [ChristmasLights]()
