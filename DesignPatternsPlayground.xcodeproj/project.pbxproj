@@ -143,6 +143,8 @@
 		8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA222A51CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
+		8DA222A61CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
@@ -398,6 +400,7 @@
 		8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeSampleViewController.xib; sourceTree = "<group>"; };
 		8D8FF01B1C5F261400805FFB /* Flyweight.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flyweight.txt; sourceTree = "<group>"; };
 		8DA222A11CA27EBF00931CF7 /* Facade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facade.txt; sourceTree = "<group>"; };
+		8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternType.swift; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
@@ -636,6 +639,7 @@
 			isa = PBXGroup;
 			children = (
 				8D5524301C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift */,
+				8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -1364,6 +1368,7 @@
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
 				8D8E67B81C96B70E0035D69A /* FacadeSampleViewController.swift in Sources */,
 				8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
+				8DA222A51CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */,
 				8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
@@ -1446,6 +1451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC42C871C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
+				8DA222A61CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */,
 				8D55246D1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
 				8DC42C8D1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
