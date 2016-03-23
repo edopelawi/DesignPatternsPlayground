@@ -85,7 +85,7 @@ class ChristmasLights {
         
         let availableCurrents = battery.retrieveCurrents(minimumDCCurrent)
         
-        if availableCurrents.count <= minimumDCCurrent {
+        if availableCurrents.count < minimumDCCurrent {
             return
         }
         
