@@ -1,1 +1,3 @@
-// TODO: Update this comments later
+The "Singleton" equivalent of Structural patterns, Facade pattern was the most straightforward compared to its peers - at least on how it is implemented. Its main purpose is to create a simplified interface to a larger body of code - there's no specific rule on how it should be implemented. And because of it, I found this pattern is the least interesting to be implemented in this sample project.
+
+The upside of this pattern is obvious - it hides complexity of a logic that might be deemed complicated. Its downside might be bigger - since creating a Facade class means we're creating a new abstraction. And, having a wrong abstraction hurts. That's why we should take a good consideration whether we creating a fitting abstraction - or whether another Facade class will help.
