@@ -55,7 +55,14 @@ class ChristmasLights {
     Periodically change this instance's `lightEmojis` as long as its `battery` has enough `DCCurrent` and matching voltage.
     */
     internal func turnOn() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(refreshEmojiInterval,
+        
+        if timer != nil {
+            return
+        }
+        
+        refreshLightEmoji()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(self.refreshEmojiInterval,
             target: self,
             selector: Selector("refreshLightEmoji"),
             userInfo: nil,
