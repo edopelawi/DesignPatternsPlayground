@@ -16,9 +16,9 @@ class ChristmasLights {
     /// Emojis that used to present this instance.
     internal var lightEmojis = ""
     
-    internal let minimumVoltage = 0.3
-    internal let preferredVoltage = 0.5
-    internal let maximumVoltage = 0.6
+    static internal let minimumVoltage = 0.3
+    static internal let preferredVoltage = 0.5
+    static internal let maximumVoltage = 0.6
     
     internal let minimumDCCurrent = 5
     
@@ -68,7 +68,7 @@ class ChristmasLights {
     
         lightEmojis = ""
         
-        let validVoltage = battery.voltage <= maximumVoltage && battery.voltage >= minimumVoltage
+        let validVoltage = (battery.voltage <= ChristmasLights.maximumVoltage) && (battery.voltage >= ChristmasLights.minimumVoltage)
         
         if !validVoltage {
             return
@@ -85,7 +85,7 @@ class ChristmasLights {
     
     private func retrieveRandomEmojis() -> String {
         
-        let voltageRatio = Double(battery.voltage / preferredVoltage)
+        let voltageRatio = Double(battery.voltage / ChristmasLights.preferredVoltage)
         let emojisLength = lightEmojisDefaultLength * Int(ceil(voltageRatio))
         
         var emojis = ""
