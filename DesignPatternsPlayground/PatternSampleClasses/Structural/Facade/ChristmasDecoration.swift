@@ -56,12 +56,12 @@ class ChristmasDecoration: DCRechargeableBatteryDelegate {
             
         };
         
-        newChristmasLight.turnOn();
-        
         christmasLights.append(newChristmasLight);
+        
+        newChristmasLight.turnOn();
     }
     
-    internal func rechargeBatteryVoltage() {
+    internal func rechargeBattery() {
         battery.rechargeCurrents(100);
     }
     

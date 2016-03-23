@@ -20,14 +20,13 @@ class FacadeSampleViewController: UITableViewController {
     // MARK: - Header button handler -
     
     @IBAction func rechargeBattery(sender: UIButton) {
-        christmasDecoration.rechargeBatteryVoltage()
+        christmasDecoration.rechargeBattery()
         christmasDecoration.turnAllLightsOn()
         tableView.reloadData()
     }
     
     @IBAction func addAnotherLight(sender: UIButton) {
         christmasDecoration.addChristmasLights()
-        christmasDecoration.turnAllLightsOn()
         tableView.reloadData()
     }
     
@@ -58,8 +57,8 @@ class FacadeSampleViewController: UITableViewController {
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         prepareChristmasDecorationHandlers()
-        christmasDecoration.turnAllLightsOn()
         
+        christmasDecoration.rechargeBattery()        
         
         tableView.tableHeaderView = headerView
     }
