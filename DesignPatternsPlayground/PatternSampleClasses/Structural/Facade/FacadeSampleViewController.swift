@@ -16,6 +16,27 @@ class FacadeSampleViewController: UITableViewController {
     @IBOutlet var headerView: UIView!
     @IBOutlet weak var batteryChargeLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        
+        prepareChristmasDecorationHandlers()
+        
+        christmasDecoration.rechargeBattery()
+        
+        tableView.tableHeaderView = headerView
+        
+        addCommentBarButton()
+    }
+    
+    private func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    }
+    
+    @objc private func pushCommentsPage(sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .Facade)
+    }
     
     // MARK: - Header button handler -
     
@@ -50,18 +71,6 @@ class FacadeSampleViewController: UITableViewController {
     }
     
     // MARK: - Table view data source -
-
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-        
-        prepareChristmasDecorationHandlers()
-        
-        christmasDecoration.rechargeBattery()        
-        
-        tableView.tableHeaderView = headerView
-    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
