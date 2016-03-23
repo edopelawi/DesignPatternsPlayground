@@ -25,7 +25,7 @@ class FacadeSampleViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    @IBAction func addAnotherLight(sender: UIButton) {        
+    @IBAction func addAnotherLight(sender: UIButton) {
         christmasDecoration.addChristmasLights()
         christmasDecoration.turnAllLightsOn()
         tableView.reloadData()
@@ -39,7 +39,15 @@ class FacadeSampleViewController: UITableViewController {
             [weak self] numberOfCharge in
             self?.batteryChargeLabel.text = "Battery Charge: \(numberOfCharge)%"
             self?.tableView.reloadData()
-        };
+        }
+        
+        christmasDecoration.christmasLightUpdatedBlock = {
+            [weak self] lightIndex, christmasLight in
+            
+            let indexPath = NSIndexPath(forItem: lightIndex, inSection: 0)
+            
+            self?.tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
     }
     
     // MARK: - Table view data source -
@@ -49,7 +57,9 @@ class FacadeSampleViewController: UITableViewController {
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
+        prepareChristmasDecorationHandlers()
         christmasDecoration.turnAllLightsOn()
+        
         
         tableView.tableHeaderView = headerView
     }
