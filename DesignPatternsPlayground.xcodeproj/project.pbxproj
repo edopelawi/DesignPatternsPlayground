@@ -141,6 +141,8 @@
 		8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01C1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
@@ -395,6 +397,7 @@
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
 		8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeSampleViewController.xib; sourceTree = "<group>"; };
 		8D8FF01B1C5F261400805FFB /* Flyweight.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flyweight.txt; sourceTree = "<group>"; };
+		8DA222A11CA27EBF00931CF7 /* Facade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facade.txt; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
@@ -754,6 +757,7 @@
 				8D2825A01C51FF2000EDF542 /* Decorator.txt */,
 				8D68A6B31C579A8700BEDC5C /* Proxy.txt */,
 				8D8FF01B1C5F261400805FFB /* Flyweight.txt */,
+				8DA222A11CA27EBF00931CF7 /* Facade.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -1210,6 +1214,7 @@
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8DC42C941C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
+				8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
@@ -1247,6 +1252,7 @@
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8DC42C3A1C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
 				8DC42C731C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
+				8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8DC42C851C58D1820061D5F3 /* CompositeSampleViewController.xib in Resources */,
 				8D5524191C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8D5524B51C58B70F00D5A4B4 /* SingletonSampleViewController.xib in Resources */,
