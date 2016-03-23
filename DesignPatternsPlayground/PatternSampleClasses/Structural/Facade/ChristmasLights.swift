@@ -74,18 +74,18 @@ class ChristmasLights {
     }
     
     @objc private func refreshLightEmoji() {
-    
-        lightEmojis = ""
         
         let validVoltage = (battery.voltage <= ChristmasLights.maximumVoltage) && (battery.voltage >= ChristmasLights.minimumVoltage)
         
         if !validVoltage {
+            turnOff()
             return
         }
         
         let availableCurrents = battery.retrieveCurrents(minimumDCCurrent)
         
         if availableCurrents.count < minimumDCCurrent {
+            turnOff()
             return
         }
         
