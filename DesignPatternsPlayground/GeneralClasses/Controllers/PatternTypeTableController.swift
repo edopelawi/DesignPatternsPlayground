@@ -11,6 +11,7 @@ import UIKit
 enum PatternTypeTableControllerGroupType {
     case Creational
     case Structural
+    case Behavioural
 }
 
 class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDelegate {
@@ -45,6 +46,7 @@ class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDe
         switch patternGroupType {
         case .Creational: return CreationalPatternType(rawValue: row)
         case .Structural: return StructuralPatternType(rawValue: row)
+        case .Behavioural: return BehaviouralPatternType(rawValue: row)
         }
     }
     
@@ -70,6 +72,7 @@ class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDe
         switch patternGroupType {
         case .Creational: return CreationalPatternType.numberOfTypes()
         case .Structural: return StructuralPatternType.numberOfTypes()
+        case .Behavioural: return BehaviouralPatternType.numberOfTypes()
         }
     }
     
@@ -88,14 +91,7 @@ class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDe
             return
         }
         
-        var optionalType: PatternType?
-        
-        switch patternGroupType {
-        case .Creational: optionalType = CreationalPatternType(rawValue: indexPath.row)
-        case .Structural: optionalType = StructuralPatternType(rawValue: indexPath.row)
-        }
-        
-        if let selectedType = optionalType {
+        if let selectedType = patternTypeForRow(indexPath.row) {
             patternSelectedClosure(selectedType)
         }        
     }
