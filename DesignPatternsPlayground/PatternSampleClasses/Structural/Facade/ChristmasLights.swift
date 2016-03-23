@@ -29,9 +29,9 @@ class ChristmasLights {
     static internal let preferredVoltage = 0.5
     static internal let maximumVoltage = 0.6
     
-    internal let minimumDCCurrent = 5
+    internal let minimumDCCurrent = 1
     
-    private let refreshEmojiInterval = NSTimeInterval(0.5)
+    private let refreshEmojiInterval = NSTimeInterval(1.5)
     
     private let lightEmojisDefaultLength = 12
     
@@ -74,6 +74,7 @@ class ChristmasLights {
     Resets this instance's `lightEmojis` and stops it from request `DCCurrent`s from its battery.
     */
     internal func turnOff() {
+        
         timer?.invalidate()
         timer = nil
         
