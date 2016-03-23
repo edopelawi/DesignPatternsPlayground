@@ -48,7 +48,7 @@ class StructuralPatternsViewController: UIViewController {
         case .Decorator: optionalViewController = DecoratorSampleViewController()
         case .Flyweight: optionalViewController = FlyweightSampleViewController()
         case .Proxy: optionalViewController = ProxySampleViewController()
-        default: break
+        case .Facade: optionalViewController = FacadeSampleViewController()
         }
         
         if let viewController = optionalViewController {

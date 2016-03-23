@@ -10,6 +10,8 @@
 		7648BD30926BAB06B270CE1A /* libPods-DesignPatternsPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A3714FF6C7B546BE9DC851 /* libPods-DesignPatternsPlayground.a */; };
 		8D0963F51C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
 		8D0963F61C460A4800173678 /* Singleton.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D0963F41C460A4800173678 /* Singleton.txt */; settings = {ASSET_TAGS = (); }; };
+		8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */; settings = {ASSET_TAGS = (); }; };
+		8D1ED3121C7C765A00A6535B /* ChristmasDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */; settings = {ASSET_TAGS = (); }; };
 		8D278AA81C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ASSET_TAGS = (); }; };
 		8D278AB31C4F46C100E6CD4E /* JamesBondTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; };
 		8D278AB41C4F46C100E6CD4E /* JamesBondTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -135,8 +137,12 @@
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; settings = {ASSET_TAGS = (); }; };
+		8D8E67B81C96B70E0035D69A /* FacadeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01C1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
 		8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
+		8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D71C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA659D61C50F06E00A97E87 /* Composite.txt */; settings = {ASSET_TAGS = (); }; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; settings = {ASSET_TAGS = (); }; };
@@ -247,6 +253,12 @@
 		8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
 		8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B071C71950C008DBDCF /* DCCurrent.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */; settings = {ASSET_TAGS = (); }; };
+		8DDC0B0F1C71B034008DBDCF /* ChristmasLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */; settings = {ASSET_TAGS = (); }; };
 		8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DED256F1C2292FF00462C0F /* AppDelegate.swift */; };
 		8DED25751C2292FF00462C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25731C2292FF00462C0F /* Main.storyboard */; };
 		8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DED25761C2292FF00462C0F /* Assets.xcassets */; };
@@ -315,6 +327,7 @@
 		0E1DE2C9BF7B27F5B63D49B5 /* Pods-DesignPatternsPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		61484F2AAC70C9757B64F98B /* Pods-DesignPatternsPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatternsPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesignPatternsPlayground/Pods-DesignPatternsPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		8D0963F41C460A4800173678 /* Singleton.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Singleton.txt; sourceTree = "<group>"; };
+		8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasDecoration.swift; sourceTree = "<group>"; };
 		8D278A9E1C4F46C100E6CD4E /* JamesBondTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JamesBondTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D278AA71C4F46C100E6CD4E /* JamesBondToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamesBondToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D278ADD1C4F51ED00E6CD4E /* JamesBondCarEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JamesBondCarEngine.swift; sourceTree = "<group>"; };
@@ -381,7 +394,10 @@
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
+		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
+		8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeSampleViewController.xib; sourceTree = "<group>"; };
 		8D8FF01B1C5F261400805FFB /* Flyweight.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flyweight.txt; sourceTree = "<group>"; };
+		8DA222A11CA27EBF00931CF7 /* Facade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facade.txt; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
@@ -437,6 +453,9 @@
 		8DC42CCD1C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureHuntRoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DC42CD31C58E2970061D5F3 /* PatternCommentaryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCommentaryFactory.swift; sourceTree = "<group>"; };
 		8DC42CDC1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceMemoryInfoFactory.swift; sourceTree = "<group>"; };
+		8DDC0B071C71950C008DBDCF /* DCCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCurrent.swift; sourceTree = "<group>"; };
+		8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCRechargeableBattery.swift; sourceTree = "<group>"; };
+		8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChristmasLights.swift; sourceTree = "<group>"; };
 		8DED256C1C2292FF00462C0F /* DesignPatternsPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternsPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DED256F1C2292FF00462C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DED25741C2292FF00462C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -738,6 +757,7 @@
 				8D2825A01C51FF2000EDF542 /* Decorator.txt */,
 				8D68A6B31C579A8700BEDC5C /* Proxy.txt */,
 				8D8FF01B1C5F261400805FFB /* Flyweight.txt */,
+				8DA222A11CA27EBF00931CF7 /* Facade.txt */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -842,6 +862,12 @@
 		8DC42C2C1C58C4910061D5F3 /* Facade */ = {
 			isa = PBXGroup;
 			children = (
+				8DDC0B071C71950C008DBDCF /* DCCurrent.swift */,
+				8DDC0B0A1C719578008DBDCF /* DCRechargeableBattery.swift */,
+				8DDC0B0D1C71B034008DBDCF /* ChristmasLights.swift */,
+				8D1ED3101C7C765A00A6535B /* ChristmasDecoration.swift */,
+				8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */,
+				8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -1169,6 +1195,7 @@
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1187,6 +1214,7 @@
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8DC42C941C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
+				8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
@@ -1224,6 +1252,7 @@
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8DC42C3A1C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
 				8DC42C731C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
+				8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8DC42C851C58D1820061D5F3 /* CompositeSampleViewController.xib in Resources */,
 				8D5524191C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8D5524B51C58B70F00D5A4B4 /* SingletonSampleViewController.xib in Resources */,
@@ -1322,6 +1351,7 @@
 				8DC42CDD1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C8C1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
+				8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DC42CAA1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
@@ -1332,7 +1362,9 @@
 				8DC42C8A1C58D1820061D5F3 /* TreasureHuntMonsterRoom.swift in Sources */,
 				8DC42CD41C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8D55248C1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
+				8D8E67B81C96B70E0035D69A /* FacadeSampleViewController.swift in Sources */,
 				8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
+				8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8DC42C451C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
@@ -1382,12 +1414,14 @@
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DC42C641C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
+				8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
 				8D5524B71C58B72800D5A4B4 /* Diary.swift in Sources */,
 				8DC42C421C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
 				8D55248E1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
@@ -1417,6 +1451,7 @@
 				8DC42CDE1C58FC360061D5F3 /* DeviceMemoryInfoFactory.swift in Sources */,
 				8DC42C6B1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
+				8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DC42CAB1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
 				8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */,
@@ -1428,6 +1463,7 @@
 				8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8DC42C461C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
+				8D1ED3121C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
@@ -1477,12 +1513,14 @@
 				8DC42C341C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8DFF67991C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DC42C651C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8D5524B81C58B72800D5A4B4 /* Diary.swift in Sources */,
 				8DC42CB21C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8DC42C431C58C7320061D5F3 /* AdapterSampleViewModel.swift in Sources */,
 				8D55248F1C58B3BE00D5A4B4 /* JungleParadeViewModel.swift in Sources */,
+				8DDC0B0F1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
 				8D55249A1C58B40E00D5A4B4 /* WhopperBurgerOrderBuilder.swift in Sources */,
 				8D55245B1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
 				8DC42C521C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
