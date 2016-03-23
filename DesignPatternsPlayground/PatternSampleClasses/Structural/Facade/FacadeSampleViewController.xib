@@ -43,36 +43,36 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="🎅🏼 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHT-nw-d6Q">
-                    <rect key="frame" x="0.0" y="56" width="64" height="69"/>
+                    <rect key="frame" x="0.0" y="56" width="64" height="68.5"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="50"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiya there, son! Would you help me to keep these christmas lights alive? Thank you!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0E-iU-4wu">
-                    <rect key="frame" x="72" y="64" width="520" height="50"/>
+                    <rect key="frame" x="72" y="64" width="520" height="41"/>
                     <animations/>
-                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1w7-Qy-JxO" userLabel="Control Panel View">
-                    <rect key="frame" x="0.0" y="134" width="600" height="108"/>
+                    <rect key="frame" x="0.0" y="125" width="600" height="117"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kT-GK-pa8">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="109"/>
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="117"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ujn-o9-kiC">
-                                    <rect key="frame" x="0.0" y="8" width="200" height="60"/>
+                                    <rect key="frame" x="0.0" y="8" width="200" height="48"/>
                                     <animations/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Charge: 100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukF-Oe-ABV">
-                                    <rect key="frame" x="0.0" y="68" width="200" height="24"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery Charge: 100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukF-Oe-ABV">
+                                    <rect key="frame" x="0.0" y="56" width="200" height="14"/>
                                     <animations/>
-                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="10"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -95,12 +95,12 @@
                             </variation>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rI1-IC-iha">
-                            <rect key="frame" x="200" y="0.0" width="200" height="109"/>
+                            <rect key="frame" x="200" y="0.0" width="200" height="117"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ciy-u7-dHd">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="109"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="117"/>
                                     <animations/>
-                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                     <state key="normal" title="Recharge Battery!">
                                         <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
@@ -119,12 +119,12 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="op5-C6-6b1">
-                            <rect key="frame" x="400" y="0.0" width="200" height="109"/>
+                            <rect key="frame" x="400" y="0.0" width="200" height="117"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5m-w4-V1L">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="109"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="117"/>
                                     <animations/>
-                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
                                     <state key="normal" title="Add a Light!">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
