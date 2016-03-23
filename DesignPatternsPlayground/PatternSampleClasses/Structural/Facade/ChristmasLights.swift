@@ -14,7 +14,16 @@ class ChristmasLights {
     private var timer: NSTimer?
     
     /// Emojis that used to present this instance.
-    internal var lightEmojis = ""
+    internal var lightEmojis = "" {
+        didSet {
+            if let validChangeBlock = lightEmojisChangedBlock {
+                validChangeBlock(lightEmojis: lightEmojis);
+            }
+        }
+    }
+    
+    /// Block that will be executed when this instace's `lightEmojis` changed.
+    internal var lightEmojisChangedBlock: ((lightEmojis: String) -> Void)?
     
     static internal let minimumVoltage = 0.3
     static internal let preferredVoltage = 0.5
