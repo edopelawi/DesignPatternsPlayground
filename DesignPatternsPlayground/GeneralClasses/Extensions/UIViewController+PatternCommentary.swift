@@ -44,4 +44,15 @@ extension UIViewController {
         
         self.navigationController?.pushViewController(commentPage, animated: true)
     }
+    
+    /// Push commentary page for passed `behaviouralPatternType`. Will only work if this instance has `navigationController`.
+    func pushCommentaryPage(behaviouralPatternType behaviouralPatternType: BehaviouralPatternType) {
+        
+        let commentaries = PatternCommentaryFactory.commentaryForBehaviouralPatternType(behaviouralPatternType)
+        
+        let commentPage = CommentaryViewController()
+        commentPage.setCommentaryText(commentaries)
+        
+        self.navigationController?.pushViewController(commentPage, animated: true)
+    }
 }
