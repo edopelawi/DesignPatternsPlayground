@@ -22,6 +22,12 @@ class PatternCommentaryFactory {
         return commentariesFromTextFile(fileName)
     }
     
+    /// Returns `String` instance of commentaries of passed `pattern`.
+    class func commentaryForBehaviouralPatternType(pattern: BehaviouralPatternType) -> String {
+        let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+        return commentariesFromTextFile(fileName)
+    }
+    
     private class func commentariesFromTextFile(fileName: String) -> String {
     
         var comments = ""

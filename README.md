@@ -52,7 +52,7 @@ Here's the list of patterns that currently implemented (and not).
 - [ ] Memento
 - [ ] Observer
 - [ ] State
-- [ ] Strategy
+- [x] Strategy
 - [ ] Template method
 - [ ] Visitor
 
