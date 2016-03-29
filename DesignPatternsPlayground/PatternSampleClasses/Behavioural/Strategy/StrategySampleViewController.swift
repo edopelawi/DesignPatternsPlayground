@@ -25,6 +25,8 @@ class StrategySampleViewController: UITableViewController {
         tableController.controlTableView(self.tableView)
         
         generateDummyProducts()
+        
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
     }
     
     private func generateDummyProducts() {
@@ -84,5 +86,9 @@ class StrategySampleViewController: UITableViewController {
         }
         
         return alertController
+    }
+    
+    @objc func pushCommentPage(sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .Strategy)
     }
 }
