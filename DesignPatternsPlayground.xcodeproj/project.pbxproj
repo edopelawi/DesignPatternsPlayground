@@ -137,6 +137,10 @@
 		8D59F08A1CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */; };
 		8D59F08C1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */; };
 		8D59F08D1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */; };
+		8D59F08F1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08E1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift */; };
+		8D59F0901CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08E1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift */; };
+		8D59F0951CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */; };
+		8D59F0961CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
@@ -404,6 +408,8 @@
 		8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSorter.swift; sourceTree = "<group>"; };
 		8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AscendingNameProductSorter.swift; sourceTree = "<group>"; };
 		8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescendingNameProductSorter.swift; sourceTree = "<group>"; };
+		8D59F08E1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AscendingPriceProductSorter.swift; sourceTree = "<group>"; };
+		8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescendingPriceProductSorter.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
@@ -780,6 +786,8 @@
 			children = (
 				8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */,
 				8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */,
+				8D59F08E1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift */,
+				8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */,
 			);
 			path = ProductSorters;
 			sourceTree = "<group>";
@@ -1413,6 +1421,7 @@
 				8DC42CA81C58E00E0061D5F3 /* IceFightingArmament.swift in Sources */,
 				8DC42C6C1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
 				8DC42C701C58C9BF0061D5F3 /* BridgeSampleViewController.swift in Sources */,
+				8D59F0951CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */,
 				8D5524901C58B3BE00D5A4B4 /* SeaParadeViewModel.swift in Sources */,
 				8DC42C921C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
@@ -1459,6 +1468,7 @@
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
+				8D59F08F1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
@@ -1494,6 +1504,7 @@
 				8DC42C6B1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
+				8D59F0961CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DC42CAB1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
 				8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */,
@@ -1559,6 +1570,7 @@
 				8DFF67991C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C831C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8DDC0B091C71950C008DBDCF /* DCCurrent.swift in Sources */,
+				8D59F0901CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */,
 				8DC42C651C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
 				8D5524B81C58B72800D5A4B4 /* Diary.swift in Sources */,
