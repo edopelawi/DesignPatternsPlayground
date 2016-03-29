@@ -133,6 +133,10 @@
 		8D59F0831CAA5C0B004CFFE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0811CAA5C0B004CFFE8 /* Product.swift */; };
 		8D59F0851CAA5F52004CFFE8 /* ProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */; };
 		8D59F0861CAA5F52004CFFE8 /* ProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */; };
+		8D59F0891CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */; };
+		8D59F08A1CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */; };
+		8D59F08C1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */; };
+		8D59F08D1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
@@ -398,6 +402,8 @@
 		8D5524B61C58B72800D5A4B4 /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		8D59F0811CAA5C0B004CFFE8 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSorter.swift; sourceTree = "<group>"; };
+		8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AscendingNameProductSorter.swift; sourceTree = "<group>"; };
+		8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescendingNameProductSorter.swift; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
@@ -762,10 +768,20 @@
 		8D59F0801CAA4F85004CFFE8 /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
+				8D59F0871CAA619B004CFFE8 /* ProductSorters */,
 				8D59F0811CAA5C0B004CFFE8 /* Product.swift */,
 				8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */,
 			);
 			path = Strategy;
+			sourceTree = "<group>";
+		};
+		8D59F0871CAA619B004CFFE8 /* ProductSorters */ = {
+			isa = PBXGroup;
+			children = (
+				8D59F0881CAA61D8004CFFE8 /* AscendingNameProductSorter.swift */,
+				8D59F08B1CAA637C004CFFE8 /* DescendingNameProductSorter.swift */,
+			);
+			path = ProductSorters;
 			sourceTree = "<group>";
 		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
@@ -1390,6 +1406,7 @@
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8DC42C451C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
+				8D59F0891CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */,
 				8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */,
 				8D5524AB1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8D5524351C58AD7B00D5A4B4 /* BehaviouralPatternsViewController.swift in Sources */,
@@ -1459,6 +1476,7 @@
 				8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67921C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524921C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
+				8D59F08C1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */,
 				8DC42C8E1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
 				8D5524A31C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
 			);
@@ -1498,6 +1516,7 @@
 				8D5524911C58B3BE00D5A4B4 /* SeaParadeViewModel.swift in Sources */,
 				8DC42C931C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8D55244E1C58AF5100D5A4B4 /* Food.swift in Sources */,
+				8D59F08D1CAA637C004CFFE8 /* DescendingNameProductSorter.swift in Sources */,
 				8D5524681C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8D5524491C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8DC42C501C58C77A0061D5F3 /* CatCulinaryTourGuide.swift in Sources */,
@@ -1516,6 +1535,7 @@
 				8D5524511C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
 				8DC42C381C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
 				8DC42CC51C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
+				8D59F08A1CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */,
 				8DC42CA71C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C671C58C7F70061D5F3 /* CatChef.swift in Sources */,
 				8DFCB58B1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
