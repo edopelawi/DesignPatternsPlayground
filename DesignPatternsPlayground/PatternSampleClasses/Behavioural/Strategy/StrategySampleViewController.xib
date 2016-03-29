@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StrategySampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="ezW-zC-qMj" id="iiM-Ny-fjC"/>
+                <outlet property="sortButton" destination="2lw-ih-jS0" id="dae-Fj-BbL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,5 +21,63 @@
                 <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
             </connections>
         </tableView>
+        <view contentMode="scaleToFill" id="ezW-zC-qMj" userLabel="Header View">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="107.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw4-6V-0Rh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="41"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="🎊🎊 New Spring Products! 🎊🎊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONy-tK-fCG">
+                            <rect key="frame" x="0.0" y="8" width="600" height="25"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ONy-tK-fCG" secondAttribute="bottom" constant="8" id="3NB-aw-vcR"/>
+                        <constraint firstAttribute="trailing" secondItem="ONy-tK-fCG" secondAttribute="trailing" id="GNM-Uz-CdS"/>
+                        <constraint firstItem="ONy-tK-fCG" firstAttribute="leading" secondItem="Tw4-6V-0Rh" secondAttribute="leading" id="IiC-kE-cWs"/>
+                        <constraint firstItem="ONy-tK-fCG" firstAttribute="top" secondItem="Tw4-6V-0Rh" secondAttribute="top" constant="8" id="rPt-UY-9wN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lw-ih-jS0">
+                    <rect key="frame" x="82" y="58" width="510" height="33"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <state key="normal" title="None"/>
+                    <connections>
+                        <action selector="showSortOptions:" destination="-1" eventType="touchUpInside" id="AsF-Vv-50T"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXt-t9-1BV">
+                    <rect key="frame" x="20" y="64" width="53.5" height="20.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZXt-t9-1BV" firstAttribute="top" secondItem="ONy-tK-fCG" secondAttribute="bottom" constant="28" id="3Vw-ou-MjZ"/>
+                <constraint firstItem="ZXt-t9-1BV" firstAttribute="top" secondItem="Tw4-6V-0Rh" secondAttribute="bottom" constant="23" id="C1I-DZ-diV"/>
+                <constraint firstItem="Tw4-6V-0Rh" firstAttribute="top" secondItem="ezW-zC-qMj" secondAttribute="top" id="Cd6-ad-hdp"/>
+                <constraint firstAttribute="trailing" secondItem="2lw-ih-jS0" secondAttribute="trailing" constant="8" id="DPZ-ge-jsR"/>
+                <constraint firstItem="2lw-ih-jS0" firstAttribute="leading" secondItem="ZXt-t9-1BV" secondAttribute="trailing" constant="8" id="SHl-De-f1l"/>
+                <constraint firstAttribute="bottom" secondItem="ZXt-t9-1BV" secondAttribute="bottom" constant="23" id="Uzz-zH-t1b"/>
+                <constraint firstItem="Tw4-6V-0Rh" firstAttribute="leading" secondItem="ezW-zC-qMj" secondAttribute="leading" id="XFe-Xz-wR7"/>
+                <constraint firstItem="ZXt-t9-1BV" firstAttribute="leading" secondItem="ezW-zC-qMj" secondAttribute="leading" constant="20" id="bEg-JJ-7Pc"/>
+                <constraint firstItem="2lw-ih-jS0" firstAttribute="centerY" secondItem="ZXt-t9-1BV" secondAttribute="centerY" id="bvK-MN-2BI"/>
+                <constraint firstAttribute="trailing" secondItem="Tw4-6V-0Rh" secondAttribute="trailing" id="uBa-WG-dux"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3Vw-ou-MjZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="486" y="-14.25"/>
+        </view>
     </objects>
 </document>
