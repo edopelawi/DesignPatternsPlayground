@@ -32,20 +32,21 @@ class BehaviouralPatternsViewController: UIViewController {
             
             print("Selected pattern: \(patternType)")
             
-            if let creationalType = patternType as? CreationalPatternType {
-                self?.pushPageForPatternType(creationalType)
+            if let behaviouralType = patternType as? BehaviouralPatternType {
+                self?.pushPageForPatternType(behaviouralType)
             }
         }
     }
 
     // MARK: - Private Methods -
     
-    private func pushPageForPatternType(patternType: CreationalPatternType) {
+    private func pushPageForPatternType(patternType: BehaviouralPatternType) {
         
         var viewController: UIViewController?
         
         // TODO: Push appropriate view controllers here
         switch patternType {
+        case .Strategy: viewController = StrategySampleViewController()
         default: break
         }
         
