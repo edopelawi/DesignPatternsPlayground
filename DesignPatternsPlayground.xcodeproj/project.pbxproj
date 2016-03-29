@@ -143,6 +143,10 @@
 		8D59F0961CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */; };
 		8D59F0981CAA6C1F004CFFE8 /* ProductTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0971CAA6C1F004CFFE8 /* ProductTableController.swift */; };
 		8D59F0991CAA6C1F004CFFE8 /* ProductTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F0971CAA6C1F004CFFE8 /* ProductTableController.swift */; };
+		8D59F09C1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */; };
+		8D59F09D1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */; };
+		8D59F09E1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */; };
+		8D59F09F1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
@@ -413,6 +417,8 @@
 		8D59F08E1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AscendingPriceProductSorter.swift; sourceTree = "<group>"; };
 		8D59F0941CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescendingPriceProductSorter.swift; sourceTree = "<group>"; };
 		8D59F0971CAA6C1F004CFFE8 /* ProductTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableController.swift; sourceTree = "<group>"; };
+		8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategySampleViewController.swift; sourceTree = "<group>"; };
+		8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrategySampleViewController.xib; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
@@ -781,6 +787,8 @@
 				8D59F0811CAA5C0B004CFFE8 /* Product.swift */,
 				8D59F0841CAA5F52004CFFE8 /* ProductSorter.swift */,
 				8D59F0971CAA6C1F004CFFE8 /* ProductTableController.swift */,
+				8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */,
+				8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -1257,6 +1265,7 @@
 				8D5524181C58A9F700D5A4B4 /* CommentaryViewController.xib in Resources */,
 				8DFCB58C1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */,
 				8D2D14AB1C44A48C001DDB2C /* FactoryMethod.txt in Resources */,
+				8D59F09E1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */,
 				8D0963F51C460A4800173678 /* Singleton.txt in Resources */,
 				8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
@@ -1287,6 +1296,7 @@
 				8DFF679B1C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.xib in Resources */,
 				8DC42CC31C58E1D40061D5F3 /* ProxySampleViewController.xib in Resources */,
 				8DC42C911C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
+				8D59F09F1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */,
 				8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */,
 				8DC42CD11C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
@@ -1430,6 +1440,7 @@
 				8DC42C921C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
+				8D59F09C1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D5524881C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
 				8DC42C4F1C58C77A0061D5F3 /* CatCulinaryTourGuide.swift in Sources */,
@@ -1598,6 +1609,7 @@
 				8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
 				8D5524381C58AD7B00D5A4B4 /* CreationalPatternsViewController.swift in Sources */,
+				8D59F09D1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */,
 				8DC42C8F1C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.swift in Sources */,
 				8D5524A41C58B64700D5A4B4 /* MessengerTableViewCell.swift in Sources */,
 				8D59F0831CAA5C0B004CFFE8 /* Product.swift in Sources */,
