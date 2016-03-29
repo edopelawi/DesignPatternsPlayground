@@ -147,6 +147,8 @@
 		8D59F09D1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */; };
 		8D59F09E1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */; };
 		8D59F09F1CAA7354004CFFE8 /* StrategySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */; };
+		8D59F0A21CAA8864004CFFE8 /* Strategy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F0A11CAA8864004CFFE8 /* Strategy.txt */; };
+		8D59F0A31CAA8864004CFFE8 /* Strategy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D59F0A11CAA8864004CFFE8 /* Strategy.txt */; };
 		8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
@@ -419,6 +421,7 @@
 		8D59F0971CAA6C1F004CFFE8 /* ProductTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableController.swift; sourceTree = "<group>"; };
 		8D59F09A1CAA7354004CFFE8 /* StrategySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategySampleViewController.swift; sourceTree = "<group>"; };
 		8D59F09B1CAA7354004CFFE8 /* StrategySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrategySampleViewController.xib; sourceTree = "<group>"; };
+		8D59F0A11CAA8864004CFFE8 /* Strategy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Strategy.txt; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
@@ -804,6 +807,14 @@
 			path = ProductSorters;
 			sourceTree = "<group>";
 		};
+		8D59F0A01CAA8832004CFFE8 /* Behavioural */ = {
+			isa = PBXGroup;
+			children = (
+				8D59F0A11CAA8864004CFFE8 /* Strategy.txt */,
+			);
+			path = Behavioural;
+			sourceTree = "<group>";
+		};
 		8D5D11291C4E1BFE003CA559 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +840,7 @@
 		8D8BD7261C43A43F00E71C88 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				8D59F0A01CAA8832004CFFE8 /* Behavioural */,
 				8D5D11291C4E1BFE003CA559 /* Structural */,
 				8D8BD7271C43A4DB00E71C88 /* Creational */,
 			);
@@ -1270,6 +1282,7 @@
 				8D55249F1C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8DC42C941C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
+				8D59F0A21CAA8864004CFFE8 /* Strategy.txt in Resources */,
 				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
@@ -1307,6 +1320,7 @@
 				8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DC42C951C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8DC42C991C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
+				8D59F0A31CAA8864004CFFE8 /* Strategy.txt in Resources */,
 				8D2825A21C51FF2000EDF542 /* Decorator.txt in Resources */,
 				8DC42C3A1C58C6FA0061D5F3 /* AdapterSampleViewController.xib in Resources */,
 				8DC42C731C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
