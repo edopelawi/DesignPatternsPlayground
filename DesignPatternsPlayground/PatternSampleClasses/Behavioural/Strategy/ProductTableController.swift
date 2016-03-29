@@ -38,6 +38,7 @@ class ProductTableController: NSObject, UITableViewDataSource {
      */
     func controlTableView(tableView: UITableView) {
         tableView.dataSource = self
+        tableView.reloadData()
         controlledTableView = tableView
     }
     
