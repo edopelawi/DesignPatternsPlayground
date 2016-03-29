@@ -38,7 +38,6 @@ class ProductTableController: NSObject, UITableViewDataSource {
      */
     func controlTableView(tableView: UITableView) {
         tableView.dataSource = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         controlledTableView = tableView
     }
     
@@ -59,7 +58,15 @@ class ProductTableController: NSObject, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = controlledTableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
+        var cell: UITableViewCell
+        
+        if let reusedCell = controlledTableView.dequeueReusableCellWithIdentifier(reuseIdentifier) {
+            cell = reusedCell
+        } else {
+            cell = UITableViewCell(style: .Subtitle, reuseIdentifier: reuseIdentifier)
+            cell.textLabel?.font = UIFont(name: "Avenir-Medium", size: CGFloat(15))
+            cell.detailTextLabel?.font = UIFont(name: "Avenir-Book", size:CGFloat(13))
+        }
         
         let product = products[indexPath.row]
         
