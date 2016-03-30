@@ -181,6 +181,8 @@
 		8DADC9F41CABA39000FA46B7 /* ObserverSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9F11CABA39000FA46B7 /* ObserverSampleViewController.swift */; };
 		8DADC9F51CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */; };
 		8DADC9F61CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */; };
+		8DADC9F81CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
+		8DADC9F91CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -453,6 +455,7 @@
 		8DADC9EE1CAB900F00FA46B7 /* AlienRepairShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlienRepairShip.swift; sourceTree = "<group>"; };
 		8DADC9F11CABA39000FA46B7 /* ObserverSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverSampleViewController.swift; sourceTree = "<group>"; };
 		8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObserverSampleViewController.xib; sourceTree = "<group>"; };
+		8DADC9F71CABC39A00FA46B7 /* Observer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observer.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -833,6 +836,7 @@
 			isa = PBXGroup;
 			children = (
 				8D59F0A11CAA8864004CFFE8 /* Strategy.txt */,
+				8DADC9F71CABC39A00FA46B7 /* Observer.txt */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -1311,6 +1315,7 @@
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
+				8DADC9F81CABC39A00FA46B7 /* Observer.txt in Resources */,
 				8D55244A1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
 				8D5524B41C58B70F00D5A4B4 /* SingletonSampleViewController.xib in Resources */,
 				8D2D14AE1C44B530001DDB2C /* Builder.txt in Resources */,
@@ -1377,6 +1382,7 @@
 				8DC42C9F1C58DF870061D5F3 /* DecoratorSampleViewController.xib in Resources */,
 				8D8BD72A1C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
 				8D0963F61C460A4800173678 /* Singleton.txt in Resources */,
+				8DADC9F91CABC39A00FA46B7 /* Observer.txt in Resources */,
 				8D2D14C21C450259001DDB2C /* Prototype.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
