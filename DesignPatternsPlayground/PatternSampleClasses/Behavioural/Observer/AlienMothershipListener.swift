@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AlienMothershipListener {
+protocol AlienMothershipListener: AnyObject {
     
     /**
      This method will be called when by this instance's `AlienMothership` it listened into
