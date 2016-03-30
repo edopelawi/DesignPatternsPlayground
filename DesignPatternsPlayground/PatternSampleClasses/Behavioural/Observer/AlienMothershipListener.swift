@@ -14,7 +14,14 @@ protocol AlienMothershipListener: AnyObject {
      This method will be called when by this instance's `AlienMothership` it listened into
      sends new message.
      
-     - parameter message: `String` instance.
+     - parameter message: `AlienMothershipMessage` instance.
      */
-    func handleMothershipMessage(message: String)
+    func handleMothershipMessage(message: AlienMothershipMessage)
+    
+    /**
+     Returns `String` representation of this `listener`. May be not unique.
+     
+     - returns: `String` instance.
+     */
+    func shipIdentifier() -> String
 }

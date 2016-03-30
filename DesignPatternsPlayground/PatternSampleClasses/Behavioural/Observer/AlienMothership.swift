@@ -13,7 +13,7 @@ class AlienMothership {
     private var listeners = [AlienMothershipListener]()
     
     /// Message of this instance. Will call its `listeners` `handleMothershipMessage:` method.
-    internal var message = "" {
+    internal var message = AlienMothershipMessage.StayInPosition {
         didSet {
             for listener in listeners {
                 listener.handleMothershipMessage(message)
