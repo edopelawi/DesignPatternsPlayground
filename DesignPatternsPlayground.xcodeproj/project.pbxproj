@@ -173,6 +173,8 @@
 		8DADC9E21CAB731500FA46B7 /* AlienMothershipListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9E01CAB731500FA46B7 /* AlienMothershipListener.swift */; };
 		8DADC9E81CAB872200FA46B7 /* AlienMothershipMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9E71CAB872200FA46B7 /* AlienMothershipMessage.swift */; };
 		8DADC9E91CAB872200FA46B7 /* AlienMothershipMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9E71CAB872200FA46B7 /* AlienMothershipMessage.swift */; };
+		8DADC9EC1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9EB1CAB8B4D00FA46B7 /* AlienAttackerShip.swift */; };
+		8DADC9ED1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9EB1CAB8B4D00FA46B7 /* AlienAttackerShip.swift */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -441,6 +443,7 @@
 		8DADC9DD1CAB717000FA46B7 /* AlienMothership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlienMothership.swift; sourceTree = "<group>"; };
 		8DADC9E01CAB731500FA46B7 /* AlienMothershipListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlienMothershipListener.swift; sourceTree = "<group>"; };
 		8DADC9E71CAB872200FA46B7 /* AlienMothershipMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlienMothershipMessage.swift; sourceTree = "<group>"; };
+		8DADC9EB1CAB8B4D00FA46B7 /* AlienAttackerShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlienAttackerShip.swift; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -875,8 +878,17 @@
 				8DADC9DD1CAB717000FA46B7 /* AlienMothership.swift */,
 				8DADC9E01CAB731500FA46B7 /* AlienMothershipListener.swift */,
 				8DADC9E71CAB872200FA46B7 /* AlienMothershipMessage.swift */,
+				8DADC9EA1CAB8AC800FA46B7 /* AlienMothershipListeners */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		8DADC9EA1CAB8AC800FA46B7 /* AlienMothershipListeners */ = {
+			isa = PBXGroup;
+			children = (
+				8DADC9EB1CAB8B4D00FA46B7 /* AlienAttackerShip.swift */,
+			);
+			path = AlienMothershipListeners;
 			sourceTree = "<group>";
 		};
 		8DC42C271C58C4910061D5F3 /* Structural */ = {
@@ -1515,6 +1527,7 @@
 				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
 				8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */,
+				8DADC9EC1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */,
 				8D59F0981CAA6C1F004CFFE8 /* ProductTableController.swift in Sources */,
 				8DC42C641C58C7F70061D5F3 /* BearChef.swift in Sources */,
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
@@ -1567,6 +1580,7 @@
 				8D55248D1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
 				8DC42CC91C58E1D40061D5F3 /* ThemeParkTicketVendingMachine.swift in Sources */,
 				8D55245F1C58AF9A00D5A4B4 /* OtherCuisineChef.swift in Sources */,
+				8DADC9ED1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */,
 				8DC42CD51C58E2970061D5F3 /* PatternCommentaryFactory.swift in Sources */,
 				8DC42C461C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */,
