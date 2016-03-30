@@ -46,6 +46,12 @@ class ObserverSampleViewController: UITableViewController {
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.tableHeaderView = headerView
+        
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .Observer)
     }
 
     // MARK: - IBActions -
