@@ -9,5 +9,47 @@
 import Foundation
 
 class AlienMothership {
-    // TODO: Add properties here later.
+
+    private var listeners = [AlienMothershipListener]()
+    
+    /// Message of this instance. Will call its `listeners` `handleMothershipMessage:` method.
+    internal var message = "" {
+        didSet {
+            for listener in listeners {
+                listener.handleMothershipMessage(message)
+            }
+        }
+    }
+    
+    /**
+     Adds passed `listener` to this instance. Will not do anything if the instance passed
+     already added before.
+    
+     - parameter listener: `AlienMothershipListener` compliant instance.
+     */
+    internal func addListener(listener: AlienMothershipListener) {
+        
+        if listeners.contains({ unsafeAddressOf($0) == unsafeAddressOf(listener)}) {
+            return
+        }
+        
+        listeners.append(listener)
+    }
+    
+    /**
+     Removes passed `listener` from this instance. Will not do anything if the instance passed
+     isn't added before.
+     
+     - parameter listener: `AlienMothershipListener` compliant instance.
+     */
+    internal func removeListener(listener: AlienMothershipListener) {
+        let optionalIndex = listeners.indexOf({ unsafeAddressOf($0) == unsafeAddressOf(listener) })
+        
+        guard let objectIndex = optionalIndex else {
+                
+            return
+        }
+        
+        listeners.removeAtIndex(objectIndex)
+    }
 }
