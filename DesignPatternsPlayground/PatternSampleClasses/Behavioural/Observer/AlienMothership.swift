@@ -34,6 +34,7 @@ class AlienMothership {
         }
         
         listeners.append(listener)
+        listener.handleMothershipMessage(message)
     }
     
     /**
