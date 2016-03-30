@@ -23,7 +23,7 @@ class AlienAttackerShip: AlienMothershipListener {
             case .Attack: currentStatus = "Commencing attack procedure."
             case .Retreat: currentStatus = "Falling back to mother ship."
             case .StayInPosition: currentStatus = "Waiting for command."
-            case .UnitsDown: break
+            case .UnitsDown: currentStatus = "Attacking while covering damaged units."
                 
             }                        
         }
