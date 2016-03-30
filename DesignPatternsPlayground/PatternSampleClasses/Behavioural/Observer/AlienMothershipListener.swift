@@ -19,9 +19,11 @@ protocol AlienMothershipListener: AnyObject {
     func handleMothershipMessage(message: AlienMothershipMessage)
     
     /**
-     Returns `String` representation of this `listener`. May be not unique.
+     Returns `String` representation of this instance's current status. 
+     
+     - note: This might return different results based on mothership's message this instance's listened into.
      
      - returns: `String` instance.
      */
-    func shipIdentifier() -> String
+    func shipCurrentStatus() -> String
 }
