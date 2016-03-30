@@ -50,22 +50,52 @@ class ObserverSampleViewController: UITableViewController {
 
     // MARK: - IBActions -
     
-    @IBAction func showMothershipMessageOption(sender: UIButton) {
-        // TODO: Show message options here
+    @IBAction private func showMothershipMessageOption(sender: UIButton) {
+        let alertController = createMessagesAlertController()
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func addAttackerShip(sender: UIButton) {
+    @IBAction private func addAttackerShip(sender: UIButton) {
         let attackerShip = AlienAttackerShip()
         
         motherShip.addListener(attackerShip)
         attackerShips.append(attackerShip)
     }
     
-    @IBAction func addMaintainerShip(sender: UIButton) {
+    @IBAction private func addMaintainerShip(sender: UIButton) {
         let maintainerShip = AlienRepairShip()
         
         motherShip.addListener(maintainerShip)
         maintainerShips.append(maintainerShip)
+    }
+    
+    // MARK: - Messages -
+    
+    private func createMessagesAlertController() -> UIAlertController {
+        let alertController = UIAlertController(title: "Mothership Messages", message: nil, preferredStyle: .ActionSheet)
+        
+        let messages = [
+            AlienMothershipMessage.Attack,
+            AlienMothershipMessage.Retreat,
+            AlienMothershipMessage.StayInPosition,
+            AlienMothershipMessage.UnitsDown
+        ]
+        
+        for message in messages {
+            let alertAction = UIAlertAction(
+                title: message.rawValue,
+                style: .Default,
+                handler: {
+                    [weak self] _ in
+                    self?.motherShip.message = message
+                    self?.mothershipMessageButton.setTitle(message.rawValue, forState: .Normal)
+                    self?.tableView.reloadData()
+            })
+            
+            alertController.addAction(alertAction)
+        }
+        
+        return alertController
     }
     
     // MARK: - Table view data source
