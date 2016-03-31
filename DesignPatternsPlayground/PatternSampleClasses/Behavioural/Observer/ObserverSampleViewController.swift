@@ -39,6 +39,17 @@ class ObserverSampleViewController: UITableViewController {
     
     private var cellReuseIdentifier = "alienCellReuseIdentifer"
     
+    deinit {
+            
+        for attackerShip in attackerShips {
+            motherShip.removeListener(attackerShip)
+        }
+        
+        for maintainerShip in maintainerShips {
+            motherShip.removeListener(maintainerShip)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
