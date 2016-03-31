@@ -197,6 +197,8 @@
 		8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
 		8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
 		8DADCA181CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
+		8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */; };
+		8DADCA1B1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -477,6 +479,7 @@
 		8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateMethodSampleViewController.xib; sourceTree = "<group>"; };
 		8DADCA131CAD3E3900FA46B7 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		8DADCA161CAD4E4100FA46B7 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
+		8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemplateMethod.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -859,6 +862,7 @@
 			children = (
 				8D59F0A11CAA8864004CFFE8 /* Strategy.txt */,
 				8DADC9F71CABC39A00FA46B7 /* Observer.txt */,
+				8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -1355,6 +1359,7 @@
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
@@ -1397,6 +1402,7 @@
 				8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */,
 				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8DFCB58D1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */,
+				8DADCA1B1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8DADC9F61CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
