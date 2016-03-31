@@ -36,7 +36,8 @@ class TemplateMethodSampleViewController: UIViewController {
             Feline(name: "Joe 🐱", gender: .Male),
             DomesticCat(name: "Martha 🐱", gender: .Female),
             DomesticCat(name: "Raplh 🐱", gender: .Male),
-            Lion(name: "Simba 🦁", gender: .Male)
+            Lion(name: "Simba 🦁", gender: .Male),
+            Tiger(name: "Jade 🐯", gender: .Female)
         ]
     }
     
