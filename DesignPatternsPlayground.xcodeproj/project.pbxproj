@@ -195,6 +195,8 @@
 		8DADCA121CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */; };
 		8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
 		8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
+		8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
+		8DADCA181CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -474,6 +476,7 @@
 		8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateMethodSampleViewController.xib; sourceTree = "<group>"; };
 		8DADCA131CAD3E3900FA46B7 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
+		8DADCA161CAD4E4100FA46B7 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -943,6 +946,7 @@
 			children = (
 				8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */,
 				8DADCA131CAD3E3900FA46B7 /* Lion.swift */,
+				8DADCA161CAD4E4100FA46B7 /* Tiger.swift */,
 			);
 			path = Felines;
 			sourceTree = "<group>";
@@ -1602,6 +1606,7 @@
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
+				8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */,
 				8D59F08F1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
@@ -1662,6 +1667,7 @@
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
 				8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */,
+				8DADCA181CAD4E4100FA46B7 /* Tiger.swift in Sources */,
 				8D66B20D1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */,
 				8DC42CA91C58E00E0061D5F3 /* IceFightingArmament.swift in Sources */,
 				8DC42C6D1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
