@@ -1,3 +1,3 @@
-I had fun implementing this pattern! It is straightforward to implement and has invaluable benefit: ability to choose algorithm (or strategy, you name it) on the fly.
+I had fun implementing this pattern! It is straightforward to implement and has invaluable benefit: ability to choose algorithm (or strategy, you name it) on the fly. In this sample, the Strategy objects are the ProductSorters - since they implement different algorthims for the sortProducts method.
 
 The upside of this patter is obvious - it encapsulates the algorithm-related code to the client, plus enables client to choose different algorithm on the fly! Plus, I don't think this pattern got any downside - I might add more later after revisiting this one.
