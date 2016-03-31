@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemplateMethodSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="diaryLabel" destination="OVw-f0-Waq" id="jbt-cZ-sYc"/>
+                <outlet property="felineSelectionButton" destination="Kc7-Cj-RpU" id="hgZ-MT-LBc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqM-dz-Bnt" userLabel="WrapperView">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Now-5J-n4l" userLabel="HeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one of our felines diary to read:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLZ-3f-dJd">
+                                    <rect key="frame" x="8" y="8" width="584" height="24"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc7-Cj-RpU">
+                                    <rect key="frame" x="8" y="39" width="584" height="40"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                    <state key="normal" title="None"/>
+                                    <connections>
+                                        <action selector="showFelineOptions:" destination="-1" eventType="touchUpInside" id="dAF-Q2-YPa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Kc7-Cj-RpU" secondAttribute="bottom" constant="8" id="7xh-xR-eW8"/>
+                                <constraint firstItem="Kc7-Cj-RpU" firstAttribute="top" secondItem="XLZ-3f-dJd" secondAttribute="bottom" constant="7.5" id="A0O-5w-Fgp"/>
+                                <constraint firstAttribute="trailing" secondItem="XLZ-3f-dJd" secondAttribute="trailing" constant="8" id="G0U-Ez-eX3"/>
+                                <constraint firstItem="Kc7-Cj-RpU" firstAttribute="leading" secondItem="XLZ-3f-dJd" secondAttribute="leading" id="O9g-Wo-1K9"/>
+                                <constraint firstItem="XLZ-3f-dJd" firstAttribute="top" secondItem="Now-5J-n4l" secondAttribute="top" constant="8" id="XKT-oF-ZTU"/>
+                                <constraint firstItem="Kc7-Cj-RpU" firstAttribute="trailing" secondItem="XLZ-3f-dJd" secondAttribute="trailing" id="XxR-Fp-hTP"/>
+                                <constraint firstItem="XLZ-3f-dJd" firstAttribute="leading" secondItem="Now-5J-n4l" secondAttribute="leading" constant="8" id="Zvf-XT-y96"/>
+                            </constraints>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJZ-8D-REm">
+                            <rect key="frame" x="0.0" y="86" width="600" height="454"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the diary here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVw-f0-Waq">
+                                    <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="OVw-f0-Waq" firstAttribute="top" secondItem="cJZ-8D-REm" secondAttribute="top" constant="8" id="7V7-fm-zid"/>
+                                <constraint firstAttribute="trailing" secondItem="OVw-f0-Waq" secondAttribute="trailing" constant="8" id="h7J-ei-wC1"/>
+                                <constraint firstItem="OVw-f0-Waq" firstAttribute="leading" secondItem="cJZ-8D-REm" secondAttribute="leading" constant="8" id="tDz-Yw-4UU"/>
+                                <constraint firstAttribute="bottom" secondItem="OVw-f0-Waq" secondAttribute="bottom" constant="8" id="uKx-tj-146"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cJZ-8D-REm" firstAttribute="leading" secondItem="sqM-dz-Bnt" secondAttribute="leading" id="DHc-Qy-XxS"/>
+                        <constraint firstAttribute="trailing" secondItem="cJZ-8D-REm" secondAttribute="trailing" id="GdM-su-CiY"/>
+                        <constraint firstAttribute="bottom" secondItem="cJZ-8D-REm" secondAttribute="bottom" id="PPj-zX-LsH"/>
+                        <constraint firstItem="cJZ-8D-REm" firstAttribute="top" secondItem="Now-5J-n4l" secondAttribute="bottom" constant="-1" id="TJn-V8-sj3"/>
+                        <constraint firstAttribute="trailing" secondItem="Now-5J-n4l" secondAttribute="trailing" id="aEf-Lr-Zcg"/>
+                        <constraint firstItem="OVw-f0-Waq" firstAttribute="width" secondItem="XLZ-3f-dJd" secondAttribute="width" id="anm-cc-UqX"/>
+                        <constraint firstItem="Now-5J-n4l" firstAttribute="top" secondItem="sqM-dz-Bnt" secondAttribute="top" id="hnE-Ot-arb"/>
+                        <constraint firstItem="Now-5J-n4l" firstAttribute="leading" secondItem="sqM-dz-Bnt" secondAttribute="leading" id="zpR-lZ-YFH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sqM-dz-Bnt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="egk-ch-cam"/>
+                <constraint firstAttribute="bottom" secondItem="sqM-dz-Bnt" secondAttribute="bottom" id="etW-ew-PJH"/>
+                <constraint firstAttribute="trailing" secondItem="sqM-dz-Bnt" secondAttribute="trailing" id="sUF-KN-553"/>
+                <constraint firstItem="sqM-dz-Bnt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xjS-36-OxQ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -183,6 +183,22 @@
 		8DADC9F61CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */; };
 		8DADC9F81CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
 		8DADC9F91CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
+		8DADC9FE1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
+		8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
+		8DADCA011CACF31700FA46B7 /* Feline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA001CACF31700FA46B7 /* Feline.swift */; };
+		8DADCA021CACF31700FA46B7 /* Feline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA001CACF31700FA46B7 /* Feline.swift */; };
+		8DADCA051CAD030A00FA46B7 /* DomesticCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */; };
+		8DADCA061CAD030A00FA46B7 /* DomesticCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */; };
+		8DADCA0F1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */; };
+		8DADCA101CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */; };
+		8DADCA111CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */; };
+		8DADCA121CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */; };
+		8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
+		8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
+		8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
+		8DADCA181CAD4E4100FA46B7 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA161CAD4E4100FA46B7 /* Tiger.swift */; };
+		8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */; };
+		8DADCA1B1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -456,6 +472,14 @@
 		8DADC9F11CABA39000FA46B7 /* ObserverSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverSampleViewController.swift; sourceTree = "<group>"; };
 		8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObserverSampleViewController.xib; sourceTree = "<group>"; };
 		8DADC9F71CABC39A00FA46B7 /* Observer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observer.txt; sourceTree = "<group>"; };
+		8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FelineDailyActivity.swift; sourceTree = "<group>"; };
+		8DADCA001CACF31700FA46B7 /* Feline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feline.swift; sourceTree = "<group>"; };
+		8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomesticCat.swift; sourceTree = "<group>"; };
+		8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateMethodSampleViewController.swift; sourceTree = "<group>"; };
+		8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateMethodSampleViewController.xib; sourceTree = "<group>"; };
+		8DADCA131CAD3E3900FA46B7 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
+		8DADCA161CAD4E4100FA46B7 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
+		8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemplateMethod.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -696,6 +720,7 @@
 				8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */,
 				8D59F0801CAA4F85004CFFE8 /* Strategy */,
 				8DADC9DC1CAB70F300FA46B7 /* Observer */,
+				8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -837,6 +862,7 @@
 			children = (
 				8D59F0A11CAA8864004CFFE8 /* Strategy.txt */,
 				8DADC9F71CABC39A00FA46B7 /* Observer.txt */,
+				8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -905,6 +931,28 @@
 				8DADC9EE1CAB900F00FA46B7 /* AlienRepairShip.swift */,
 			);
 			path = AlienMothershipListeners;
+			sourceTree = "<group>";
+		};
+		8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */,
+				8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */,
+				8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */,
+				8DADCA001CACF31700FA46B7 /* Feline.swift */,
+				8DADCA031CAD02E600FA46B7 /* Felines */,
+			);
+			path = TemplateMethod;
+			sourceTree = "<group>";
+		};
+		8DADCA031CAD02E600FA46B7 /* Felines */ = {
+			isa = PBXGroup;
+			children = (
+				8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */,
+				8DADCA131CAD3E3900FA46B7 /* Lion.swift */,
+				8DADCA161CAD4E4100FA46B7 /* Tiger.swift */,
+			);
+			path = Felines;
 			sourceTree = "<group>";
 		};
 		8DC42C271C58C4910061D5F3 /* Structural */ = {
@@ -1311,6 +1359,7 @@
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
+				8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
@@ -1332,6 +1381,7 @@
 				8D2D14C11C450259001DDB2C /* Prototype.txt in Resources */,
 				8DC42C941C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.xib in Resources */,
 				8D59F0A21CAA8864004CFFE8 /* Strategy.txt in Resources */,
+				8DADCA111CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */,
 				8D5524A51C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */,
 				8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */,
@@ -1352,6 +1402,7 @@
 				8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */,
 				8D55246A1C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8DFCB58D1C5B577000272165 /* FlyweightSampleCollectionViewCell.xib in Resources */,
+				8DADCA1B1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8DADC9F61CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */,
 				8DA659D81C50F06E00A97E87 /* Composite.txt in Resources */,
 				8D2D14AF1C44B530001DDB2C /* Builder.txt in Resources */,
@@ -1366,6 +1417,7 @@
 				8D278B091C4F826100E6CD4E /* Bridge.txt in Resources */,
 				8D5524A61C58B64700D5A4B4 /* MessengerTableViewCell.xib in Resources */,
 				8D55244B1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */,
+				8DADCA121CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */,
 				8D5524A01C58B61F00D5A4B4 /* PrototypeSampleViewController.xib in Resources */,
 				8D55247D1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */,
@@ -1469,6 +1521,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DADCA011CACF31700FA46B7 /* Feline.swift in Sources */,
+				8DADCA0F1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */,
 				8DC42C861C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
 				8DADC9EF1CAB900F00FA46B7 /* AlienRepairShip.swift in Sources */,
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
@@ -1477,6 +1531,7 @@
 				8DC42C8C1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
+				8DADCA051CAD030A00FA46B7 /* DomesticCat.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
 				8DC42CAA1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
@@ -1521,10 +1576,12 @@
 				8D5524761C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */,
 				8D55241F1C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
 				8D55247A1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift in Sources */,
+				8DADC9FE1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */,
 				8D5524251C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8DC42CC41C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42C371C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
 				8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
+				8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */,
 				8DFCB58A1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
 				8DC42CA61C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
@@ -1555,6 +1612,7 @@
 				8DC42C551C58C77A0061D5F3 /* PandaCulinaryTourGuide.swift in Sources */,
 				8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */,
 				8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */,
+				8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */,
 				8D59F08F1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
@@ -1594,10 +1652,13 @@
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8D59F0961CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */,
+				8DADCA021CACF31700FA46B7 /* Feline.swift in Sources */,
+				8DADCA061CAD030A00FA46B7 /* DomesticCat.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DC42CAB1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
 				8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */,
 				8DC42C8B1C58D1820061D5F3 /* TreasureHuntMonsterRoom.swift in Sources */,
+				8DADCA101CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */,
 				8D5524221C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8D55248D1C58B3BE00D5A4B4 /* DesertParadeViewModel.swift in Sources */,
 				8DC42CC91C58E1D40061D5F3 /* ThemeParkTicketVendingMachine.swift in Sources */,
@@ -1611,6 +1672,8 @@
 				8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
+				8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */,
+				8DADCA181CAD4E4100FA46B7 /* Tiger.swift in Sources */,
 				8D66B20D1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */,
 				8DC42CA91C58E00E0061D5F3 /* IceFightingArmament.swift in Sources */,
 				8DC42C6D1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
@@ -1683,6 +1746,7 @@
 				8D5524871C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
 				8DC42CC11C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
+				8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
@@ -1893,6 +1957,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.DesignPatternsPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1906,6 +1971,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.edopelawi.DesignPatternsPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
