@@ -936,11 +936,11 @@
 		8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */ = {
 			isa = PBXGroup;
 			children = (
+				8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */,
+				8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */,
 				8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */,
 				8DADCA001CACF31700FA46B7 /* Feline.swift */,
 				8DADCA031CAD02E600FA46B7 /* Felines */,
-				8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */,
-				8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */,
 			);
 			path = TemplateMethod;
 			sourceTree = "<group>";
