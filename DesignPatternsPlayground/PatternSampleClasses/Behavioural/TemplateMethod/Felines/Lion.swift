@@ -35,7 +35,7 @@ class Lion: Feline {
         switch activity {
         case .Eat: return "Chew the giraffe from \(gender.possesivePronoun()) last hunt."
         case .Hunt: return "Lurks on the savannah and hunt some giraffes."
-        case .Bath: return "Licks \(gender.possesivePronoun()) whole body"
+        case .Bath: return "Licks \(gender.possesivePronoun()) whole body."
         case .Play: return "Play hunter and hunted with other Lions."            
         default: return super.stringForFelineActivity(activity)
         }
