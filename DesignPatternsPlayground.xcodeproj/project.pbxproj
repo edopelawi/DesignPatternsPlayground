@@ -185,6 +185,8 @@
 		8DADC9F91CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
 		8DADC9FE1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
 		8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
+		8DADCA011CACF31700FA46B7 /* Feline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA001CACF31700FA46B7 /* Feline.swift */; };
+		8DADCA021CACF31700FA46B7 /* Feline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA001CACF31700FA46B7 /* Feline.swift */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -459,6 +461,7 @@
 		8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObserverSampleViewController.xib; sourceTree = "<group>"; };
 		8DADC9F71CABC39A00FA46B7 /* Observer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observer.txt; sourceTree = "<group>"; };
 		8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FelineDailyActivity.swift; sourceTree = "<group>"; };
+		8DADCA001CACF31700FA46B7 /* Feline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feline.swift; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -915,6 +918,7 @@
 			isa = PBXGroup;
 			children = (
 				8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */,
+				8DADCA001CACF31700FA46B7 /* Feline.swift */,
 			);
 			path = TemplateMethod;
 			sourceTree = "<group>";
@@ -1481,6 +1485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DADCA011CACF31700FA46B7 /* Feline.swift in Sources */,
 				8DC42C861C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
 				8DADC9EF1CAB900F00FA46B7 /* AlienRepairShip.swift in Sources */,
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
@@ -1607,6 +1612,7 @@
 				8D5524AF1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8DDC0B0C1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
 				8D59F0961CAA6AFF004CFFE8 /* DescendingPriceProductSorter.swift in Sources */,
+				8DADCA021CACF31700FA46B7 /* Feline.swift in Sources */,
 				8DC42C971C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.swift in Sources */,
 				8DC42CAB1C58E00E0061D5F3 /* ThunderFightingArmament.swift in Sources */,
 				8DC42CAD1C58E00E0061D5F3 /* FightingMoves.swift in Sources */,
