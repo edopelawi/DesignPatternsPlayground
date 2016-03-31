@@ -19,6 +19,11 @@ class TemplateMethodSampleViewController: UIViewController {
         super.viewDidLoad()
         title =  "🐾 Feline's Diaries 🐾"
         prepareFelines()
+        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    }
+    
+    @objc private func pushCommentPage(sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .TemplateMethod)
     }
 
     // MARK: - IBAction -
