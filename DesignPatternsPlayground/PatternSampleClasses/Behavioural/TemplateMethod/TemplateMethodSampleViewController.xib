@@ -52,7 +52,7 @@
                             <rect key="frame" x="0.0" y="86" width="600" height="454"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the diary here." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVw-f0-Waq">
-                                    <rect key="frame" x="8" y="8" width="126" height="21"/>
+                                    <rect key="frame" x="8" y="8" width="584" height="21"/>
                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -73,6 +73,7 @@
                         <constraint firstAttribute="bottom" secondItem="cJZ-8D-REm" secondAttribute="bottom" id="PPj-zX-LsH"/>
                         <constraint firstItem="cJZ-8D-REm" firstAttribute="top" secondItem="Now-5J-n4l" secondAttribute="bottom" constant="-1" id="TJn-V8-sj3"/>
                         <constraint firstAttribute="trailing" secondItem="Now-5J-n4l" secondAttribute="trailing" id="aEf-Lr-Zcg"/>
+                        <constraint firstItem="OVw-f0-Waq" firstAttribute="width" secondItem="XLZ-3f-dJd" secondAttribute="width" id="anm-cc-UqX"/>
                         <constraint firstItem="Now-5J-n4l" firstAttribute="top" secondItem="sqM-dz-Bnt" secondAttribute="top" id="hnE-Ot-arb"/>
                         <constraint firstItem="Now-5J-n4l" firstAttribute="leading" secondItem="sqM-dz-Bnt" secondAttribute="leading" id="zpR-lZ-YFH"/>
                     </constraints>
