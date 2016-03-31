@@ -193,6 +193,8 @@
 		8DADCA101CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */; };
 		8DADCA111CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */; };
 		8DADCA121CAD316000FA46B7 /* TemplateMethodSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */; };
+		8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
+		8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCA131CAD3E3900FA46B7 /* Lion.swift */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -471,6 +473,7 @@
 		8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomesticCat.swift; sourceTree = "<group>"; };
 		8DADCA0D1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateMethodSampleViewController.swift; sourceTree = "<group>"; };
 		8DADCA0E1CAD316000FA46B7 /* TemplateMethodSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateMethodSampleViewController.xib; sourceTree = "<group>"; };
+		8DADCA131CAD3E3900FA46B7 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -939,6 +942,7 @@
 			isa = PBXGroup;
 			children = (
 				8DADCA041CAD030A00FA46B7 /* DomesticCat.swift */,
+				8DADCA131CAD3E3900FA46B7 /* Lion.swift */,
 			);
 			path = Felines;
 			sourceTree = "<group>";
@@ -1567,6 +1571,7 @@
 				8DC42CC41C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42C371C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
 				8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
+				8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */,
 				8DFCB58A1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
 				8DC42CA61C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
 				8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */,
@@ -1729,6 +1734,7 @@
 				8D5524871C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
 				8DC42CC11C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524931C58B3BE00D5A4B4 /* SkyParadeViewModel.swift in Sources */,
+				8DADCA151CAD3E3900FA46B7 /* Lion.swift in Sources */,
 				8D5524261C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
 				8DFF67931C59FBF40095B7D7 /* FlyweightSampleViewController.swift in Sources */,
