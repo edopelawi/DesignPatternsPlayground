@@ -1,1 +1,8 @@
-// TODO: Add comments here later.
+Simple and straightforward, Template Method could have been used anywhere we know. To say a few, this pattern is implemented on UIViewController's viewDidLoad, viewDidAppear, viewDidDisappear, etc. Plus, how this pattern's implemented reminds me a lot of Factory Method.
+
+In this sample, the Template Method was Feline's liveAnotherDay method. It calls primitive methods (planDailyActivity) and a factory method (stringForFelineActivity). Still, this pattern can't be implemented "the right way" in Swift, since it doesn't support Abstract Clasess.
+
+The upside of this pattern is quite clear - it lets the subclasses handle the important part, while the parent class implementation handles the detail bits. It implements the "Hollywod principle": "Don't call us, we'll call you".
+
+I don't find any striking downside in this pattern. I might add more when revisiting this pattern once more, though.
+
