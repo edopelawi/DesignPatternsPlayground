@@ -42,9 +42,9 @@ enum FelineGender {
 class Feline: AnyObject {
     
     /// Name of this instance.
-    internal var name = ""
+    internal var name: String
     
-    internal var gender = FelineGender.Female
+    internal var gender: FelineGender
     
     /// Array of `FelineDailyActivity` that this instance do in morning.
     internal var morningActivity = [FelineDailyActivity]()
@@ -54,6 +54,11 @@ class Feline: AnyObject {
     
     /// Array of `FelineDailyActivity` that this instance do in evening.
     internal var eveningActivity = [FelineDailyActivity]()
+    
+    required init(name: String, gender: FelineGender) {
+        self.name = name
+        self.gender = gender
+    }
     
     /**
      This method will be called before the daily activities is executed in the `liveAnotherDay` method.
