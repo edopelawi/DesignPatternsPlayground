@@ -50,7 +50,7 @@ Here's the list of patterns that currently implemented (and not).
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento
-- [ ] Observer
+- [x] Observer
 - [ ] State
 - [x] Strategy
 - [ ] Template method

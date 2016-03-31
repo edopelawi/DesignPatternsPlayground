@@ -47,6 +47,7 @@ class BehaviouralPatternsViewController: UIViewController {
         // TODO: Push appropriate view controllers here
         switch patternType {
         case .Strategy: viewController = StrategySampleViewController()
+        case .Observer: viewController = ObserverSampleViewController()
         default: break
         }
         

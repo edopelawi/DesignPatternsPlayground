@@ -1,0 +1,9 @@
+One of the most commonly used pattern, Observer pattern is quite straight forward to implement. Even Apple provides NSNotification (and its Center) and Key-Value Observing features out of the box.
+
+In this sample, the Observer objects are the classes that conforms to AlienMothershipListener protocol, and the Subject (or the one Observer listens to) is the AlienMothership object. Although not explictly declared as a method, the notifyObservers() method for AlienMothership is wrapped in its message's "didSet:", which notifies all listeners with its message.
+
+The upside of this pattern is obvious: enables one-to-many communications! This will enable us to decouple code that used to react upon a change. For example, we could add an observer that updates the UI and another one that sends data to server each time the AlienMothership's message is updated - instead of wrapping all the calls in one place.
+
+Plus, with Dependency Inversion, we could add more type of observers later on, without changing the Subject class implementation. This principle is implemented by using AlienMothershipListener protocol for the input, instead of hard, concrete classes.
+
+The downside is pattern is obscure - it could create a circular reference, which prevents either the Subject or Observers from being deallocated. This might happen if the Observers hold a reference to the Subject (e.g. using KVO to an property with "self" as the observer). To prevent this from happening, always remember to detach the observers we finished using it.
