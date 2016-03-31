@@ -82,11 +82,11 @@ class Feline: AnyObject {
         
         switch activity {
         case .Bath: return "Takes a bath."
-        case .Bored: return "Licks \(gender.subjectPronoun()) paw and yawn."
+        case .Bored: return "Licks \(gender.possesivePronoun()) paw and yawn."
         case .Eat: return "Drinks \((gender.subjectPronoun())) milk."
         case .Hunt: return "Looks for a mice and eat it as a snack."
         case .Play: return "Chase around \((gender.subjectPronoun())) wool ball."
-        case .Sleep: return "Folds \((gender.subjectPronoun())) feet, sleep, and purrs."
+        case .Sleep: return "Folds \(gender.possesivePronoun()) feet, sleep, and purrs."
             
         }
     }
@@ -157,7 +157,7 @@ class Feline: AnyObject {
         var summary = "\n"
         summary += "When the sun was high, \(gender.subjectPronoun()):\n"
         
-        for (index, activity) in morningActivity.enumerate() {
+        for (index, activity) in afternoonActivity.enumerate() {
             let activityString = stringForFelineActivity(activity)
             summary += "\(index+1). \(activityString)\n"
         }
@@ -170,7 +170,7 @@ class Feline: AnyObject {
         var summary = "\n"
         summary += "Later in the evening, \(gender.subjectPronoun()):\n"
         
-        for (index, activity) in morningActivity.enumerate() {
+        for (index, activity) in eveningActivity.enumerate() {
             let activityString = stringForFelineActivity(activity)
             summary += "\(index+1). \(activityString)\n"
         }
