@@ -183,6 +183,8 @@
 		8DADC9F61CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */; };
 		8DADC9F81CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
 		8DADC9F91CABC39A00FA46B7 /* Observer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DADC9F71CABC39A00FA46B7 /* Observer.txt */; };
+		8DADC9FE1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
+		8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */; };
 		8DBADAAD1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
@@ -456,6 +458,7 @@
 		8DADC9F11CABA39000FA46B7 /* ObserverSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverSampleViewController.swift; sourceTree = "<group>"; };
 		8DADC9F21CABA39000FA46B7 /* ObserverSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ObserverSampleViewController.xib; sourceTree = "<group>"; };
 		8DADC9F71CABC39A00FA46B7 /* Observer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Observer.txt; sourceTree = "<group>"; };
+		8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FelineDailyActivity.swift; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
@@ -696,6 +699,7 @@
 				8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */,
 				8D59F0801CAA4F85004CFFE8 /* Strategy */,
 				8DADC9DC1CAB70F300FA46B7 /* Observer */,
+				8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -905,6 +909,14 @@
 				8DADC9EE1CAB900F00FA46B7 /* AlienRepairShip.swift */,
 			);
 			path = AlienMothershipListeners;
+			sourceTree = "<group>";
+		};
+		8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				8DADC9FD1CACF24200FA46B7 /* FelineDailyActivity.swift */,
+			);
+			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
 		8DC42C271C58C4910061D5F3 /* Structural */ = {
@@ -1521,6 +1533,7 @@
 				8D5524761C58B21000D5A4B4 /* BurgerOrderBuilder.swift in Sources */,
 				8D55241F1C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
 				8D55247A1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift in Sources */,
+				8DADC9FE1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */,
 				8D5524251C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8DC42CC41C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42C371C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
@@ -1611,6 +1624,7 @@
 				8DC42CCB1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248B1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
 				8D5524AC1C58B6A900D5A4B4 /* Parade.swift in Sources */,
+				8DADC9FF1CACF24200FA46B7 /* FelineDailyActivity.swift in Sources */,
 				8D66B20D1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */,
 				8DC42CA91C58E00E0061D5F3 /* IceFightingArmament.swift in Sources */,
 				8DC42C6D1C58C7F70061D5F3 /* PandaChef.swift in Sources */,
