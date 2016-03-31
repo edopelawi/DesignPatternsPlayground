@@ -53,7 +53,7 @@ Here's the list of patterns that currently implemented (and not).
 - [x] Observer
 - [ ] State
 - [x] Strategy
-- [ ] Template method
+- [x] Template method
 - [ ] Visitor
 
 # Other TODOs
