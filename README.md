@@ -19,9 +19,10 @@ I tried my best to add UI representations on how the patterns are used (instead 
 
 ![Home page](/screenshots/home_page.png)
 ![List of creational patterns](/screenshots/list_of_creational_patterns.png)
-![Factory method sample](/screenshots/factory_method_sample.png)
-![Factory method comments](/screenshots/factory_method_comments.png)
-![Adapter method sample](/screenshots/adapter_method_sample.png)
+![Factory method pattern sample](/screenshots/factory_method_pattern_sample.png)
+![Factory method pattern comments](/screenshots/factory_method_pattern_comments.png)
+![Adapter pattern sample](/screenshots/adapter_pattern_sample.png)
+![Decorator pattern sample](/screenshots/decorator_pattern_sample.png)
 
 #Patterns Checklist
 
