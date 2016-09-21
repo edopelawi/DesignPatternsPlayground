@@ -65,8 +65,6 @@
 		8D55244B1C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */; };
 		8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55244C1C58AF5100D5A4B4 /* Food.swift */; };
 		8D55244E1C58AF5100D5A4B4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55244C1C58AF5100D5A4B4 /* Food.swift */; };
-		8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55244F1C58AF7F00D5A4B4 /* AbstractChefFactory.swift */; };
-		8D5524511C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55244F1C58AF7F00D5A4B4 /* AbstractChefFactory.swift */; };
 		8D5524581C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524531C58AF9A00D5A4B4 /* ChineseChef.swift */; };
 		8D5524591C58AF9A00D5A4B4 /* ChineseChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524531C58AF9A00D5A4B4 /* ChineseChef.swift */; };
 		8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5524541C58AF9A00D5A4B4 /* IndonesianChef.swift */; };
@@ -419,7 +417,6 @@
 		8D5524461C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactorySampleViewController.swift; sourceTree = "<group>"; };
 		8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractFactorySampleViewController.xib; sourceTree = "<group>"; };
 		8D55244C1C58AF5100D5A4B4 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		8D55244F1C58AF7F00D5A4B4 /* AbstractChefFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractChefFactory.swift; sourceTree = "<group>"; };
 		8D5524531C58AF9A00D5A4B4 /* ChineseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChineseChef.swift; sourceTree = "<group>"; };
 		8D5524541C58AF9A00D5A4B4 /* IndonesianChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndonesianChef.swift; sourceTree = "<group>"; };
 		8D5524551C58AF9A00D5A4B4 /* JapaneseChef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChef.swift; sourceTree = "<group>"; };
@@ -758,7 +755,6 @@
 			children = (
 				8D5524461C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift */,
 				8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */,
-				8D55244F1C58AF7F00D5A4B4 /* AbstractChefFactory.swift */,
 				8DA0717A1D92892D007FA320 /* ChefAcademy.swift */,
 				8D5524621C58AFC200D5A4B4 /* Chef.swift */,
 				8DA071781D9288DE007FA320 /* FoodType.swift */,
@@ -1612,7 +1608,6 @@
 				8D5524251C58AB3800D5A4B4 /* PatternTypeTableController.swift in Sources */,
 				8DC42CC41C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8DC42C371C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
-				8D5524501C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
 				8DADCA141CAD3E3900FA46B7 /* Lion.swift in Sources */,
 				8DFCB58A1C5B577000272165 /* FlyweightSampleCollectionViewCell.swift in Sources */,
 				8DC42CA61C58E00E0061D5F3 /* FireFightingArmament.swift in Sources */,
@@ -1734,7 +1729,6 @@
 				8DED25851C2292FF00462C0F /* DesignPatternsPlaygroundTests.swift in Sources */,
 				8D55247B1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.swift in Sources */,
 				8D5524201C58AABC00D5A4B4 /* Array+Randomiser.swift in Sources */,
-				8D5524511C58AF7F00D5A4B4 /* AbstractChefFactory.swift in Sources */,
 				8DC42C381C58C6FA0061D5F3 /* AdapterSampleViewController.swift in Sources */,
 				8DC42CC51C58E1D40061D5F3 /* ThemeParkTicketProvider.swift in Sources */,
 				8D59F08A1CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */,
