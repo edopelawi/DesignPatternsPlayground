@@ -39,17 +39,25 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
-        
+		
+		var cell: UITableViewCell
+		
+		if let dequeuedCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) {
+			cell = dequeuedCell
+		} else {
+			cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+		}
+		
         if let foodType = FoodType(rawValue: indexPath.row) {
         
             let foodTypeText = FoodType.stringForType(foodType)
-            
-            let chef = AbstractChefFactory.chefForFoodType(foodType)
+			
+			let academy = ChefAcademyAgency.getAcademyForFoodType(foodType)
+            let chef = academy.createChef()
             let foodName = chef.cook().name
             
-            cell.textLabel?.text = "\(foodTypeText): \(foodName)"
+            cell.textLabel?.text = "\(chef.name)'s \(foodName)"
+			cell.detailTextLabel?.text = foodTypeText
         }
         
         return cell
@@ -60,8 +68,7 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     private func prepareTableView() {
         
         tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.dataSource = self        
     }
 
     private func prepareCommentBarButton() {
