@@ -166,6 +166,7 @@
 		8DA071821D9289EB007FA320 /* JapaneseChefAcademy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA071811D9289EB007FA320 /* JapaneseChefAcademy.swift */; };
 		8DA071841D928A1D007FA320 /* OtherCuisineChefAcademy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA071831D928A1D007FA320 /* OtherCuisineChefAcademy.swift */; };
 		8DA071881D928A46007FA320 /* WesternChefAcademy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA071871D928A46007FA320 /* WesternChefAcademy.swift */; };
+		8DA0718A1D928F63007FA320 /* ChefAcademyAgency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA071891D928F63007FA320 /* ChefAcademyAgency.swift */; };
 		8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; };
 		8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; };
 		8DA222A51CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */; };
@@ -472,6 +473,7 @@
 		8DA071811D9289EB007FA320 /* JapaneseChefAcademy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseChefAcademy.swift; sourceTree = "<group>"; };
 		8DA071831D928A1D007FA320 /* OtherCuisineChefAcademy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherCuisineChefAcademy.swift; sourceTree = "<group>"; };
 		8DA071871D928A46007FA320 /* WesternChefAcademy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WesternChefAcademy.swift; sourceTree = "<group>"; };
+		8DA071891D928F63007FA320 /* ChefAcademyAgency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefAcademyAgency.swift; sourceTree = "<group>"; };
 		8DA222A11CA27EBF00931CF7 /* Facade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facade.txt; sourceTree = "<group>"; };
 		8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternType.swift; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
@@ -755,6 +757,7 @@
 			children = (
 				8D5524461C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift */,
 				8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */,
+				8DA071891D928F63007FA320 /* ChefAcademyAgency.swift */,
 				8DA0717A1D92892D007FA320 /* ChefAcademy.swift */,
 				8D5524621C58AFC200D5A4B4 /* Chef.swift */,
 				8DA071781D9288DE007FA320 /* FoodType.swift */,
@@ -1591,6 +1594,7 @@
 				8DC42C921C58D1820061D5F3 /* TreasureHuntMonsterRoomViewController.swift in Sources */,
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
+				8DA0718A1D928F63007FA320 /* ChefAcademyAgency.swift in Sources */,
 				8D59F09C1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D5524881C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
