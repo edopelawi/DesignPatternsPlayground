@@ -10,7 +10,20 @@ import Foundation
 
 class JapaneseChefAcademy: ChefAcademy {
 	
+	
+	let chefNames = [
+		"Chen Kenichi",
+		"Hanaya Yohei",
+		"Harumi Kurihara",
+		"Hiroyuki Sakai",
+		"Masaharu Morimoto",
+		"Nobu Matsuhisa",
+		"Rokusaburo Michiba"
+	]
+	
 	func createChef() -> Chef {
-		return JapaneseChef()
+		
+		let name = chefNames.randomElement() ?? ""
+		return JapaneseChef(name: name)
 	}
 }

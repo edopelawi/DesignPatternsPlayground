@@ -10,7 +10,16 @@ import Foundation
 
 class IndonesianChefAcademy: ChefAcademy {
 	
+	let chefNames = [
+		"Felix Budisetiawan",
+		"Arnold Poernomo",
+		"Zulkarnaini ‘Zul’ Dahlan",
+		"Chandra Yudaswara"
+	]
+	
 	func createChef() -> Chef {
-		return IndonesianChef()
+		
+		let name = chefNames.randomElement() ?? ""
+		return IndonesianChef(name: name)
 	}
 }

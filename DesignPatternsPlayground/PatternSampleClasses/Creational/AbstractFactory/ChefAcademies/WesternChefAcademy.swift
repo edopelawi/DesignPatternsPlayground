@@ -10,7 +10,19 @@ import Foundation
 
 class WesternChefAcademy: ChefAcademy {
 	
+	let chefNames = [
+		"Jennifer Jasinski",
+		"Jeff Drew",
+		"Daniel Patterson",
+		"Corey Lee",
+		"Gary Kucy",
+		"Jon Shook",
+		"Vinny Dotolo"
+	]
+	
 	func createChef() -> Chef {
-		return WesternChef()
+		
+		let name = chefNames.randomElement() ?? ""
+		return WesternChef(name: name)
 	}
 }

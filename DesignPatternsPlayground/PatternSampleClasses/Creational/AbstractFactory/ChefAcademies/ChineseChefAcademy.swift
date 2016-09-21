@@ -10,7 +10,16 @@ import Foundation
 
 class ChineseChefAcademy: ChefAcademy {
 	
+	let chefNames = [
+		"Wong Wing-chee",
+		"Chan Yan-tak",
+		"Mok Kit-keung",
+		"Dong Zhenxiang"
+	]
+	
 	func createChef() -> Chef {
-		return ChineseChef()
+		
+		let name = chefNames.randomElement() ?? ""
+		return ChineseChef(name: name)
 	}	
 }

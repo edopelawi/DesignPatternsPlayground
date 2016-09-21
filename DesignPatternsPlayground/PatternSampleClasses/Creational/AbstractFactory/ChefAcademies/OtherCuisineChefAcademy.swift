@@ -11,6 +11,6 @@ import Foundation
 class OtherCuisineChefAcademy: ChefAcademy {
 	
 	func createChef() -> Chef {
-		return OtherCuisineChef()
+		return OtherCuisineChef(name: "Unknown Newcomer Chef")
 	}
 }
