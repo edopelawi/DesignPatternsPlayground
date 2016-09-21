@@ -8,9 +8,10 @@
 
 import Foundation
 
+struct WesternChef: Chef {
 
-class WesternChef: Chef {
-
+	let name: String
+	
     let foodNames = [
         "Carbonade flamande", "Slavink", "Guotie",
         "Mille-feuille", "Gromperekichelcher", "Kalberwurst",

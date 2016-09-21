@@ -8,8 +8,10 @@
 
 import Foundation
 
-class JapaneseChef: Chef {
-    
+struct JapaneseChef: Chef {
+	
+	let name: String
+	
     let foodNames = [
         "Genmai gohan", "Kamameshi", "Mochi",
         "Onigiri", "Ochazuke", "Zosui",

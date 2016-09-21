@@ -8,14 +8,16 @@
 
 import Foundation
 
-class ChineseChef: Chef {
-    
+struct ChineseChef: Chef {
+	
+	let name: String
+	
     let foodNames = [
         "Baozi", "Dim Sum", "Guotie",
         "Jiaozi", "Mantou", "Wonton",
         "Xiaolongbao", "Shaobing", "Yuotiao"
     ]
-    
+	
     /// Returns `Chinese` Food with random name.
     func cook() -> Food {
         var selectedFoodName = ""
