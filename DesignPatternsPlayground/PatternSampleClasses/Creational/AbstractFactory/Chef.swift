@@ -12,7 +12,10 @@ import Foundation
 This class is created for Abstract Factory sample.
 */
 protocol Chef {
-    
+	
+	/// Name of this `Chef`.
+	var name: String { get }
+	
     /// Returns `Food` that suits this `Chef`.
     func cook() -> Food
 }
