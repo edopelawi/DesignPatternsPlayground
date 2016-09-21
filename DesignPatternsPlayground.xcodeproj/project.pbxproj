@@ -161,6 +161,7 @@
 		8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */; };
 		8D8FF01C1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; };
 		8D8FF01D1C5F261400805FFB /* Flyweight.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8FF01B1C5F261400805FFB /* Flyweight.txt */; };
+		8DA071791D9288DE007FA320 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA071781D9288DE007FA320 /* FoodType.swift */; };
 		8DA222A21CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; };
 		8DA222A31CA27EBF00931CF7 /* Facade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DA222A11CA27EBF00931CF7 /* Facade.txt */; };
 		8DA222A51CA291E300931CF7 /* BehaviouralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */; };
@@ -461,6 +462,7 @@
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
 		8D8E67B71C96B70E0035D69A /* FacadeSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacadeSampleViewController.xib; sourceTree = "<group>"; };
 		8D8FF01B1C5F261400805FFB /* Flyweight.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flyweight.txt; sourceTree = "<group>"; };
+		8DA071781D9288DE007FA320 /* FoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 		8DA222A11CA27EBF00931CF7 /* Facade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facade.txt; sourceTree = "<group>"; };
 		8DA222A41CA291E300931CF7 /* BehaviouralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviouralPatternType.swift; sourceTree = "<group>"; };
 		8DA659D61C50F06E00A97E87 /* Composite.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composite.txt; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 				8D5524471C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.xib */,
 				8D55244F1C58AF7F00D5A4B4 /* AbstractChefFactory.swift */,
 				8D5524621C58AFC200D5A4B4 /* Chef.swift */,
+				8DA071781D9288DE007FA320 /* FoodType.swift */,
 				8D55244C1C58AF5100D5A4B4 /* Food.swift */,
 				8D5524521C58AF9A00D5A4B4 /* Chefs */,
 			);
@@ -1531,6 +1534,7 @@
 				8DC42C8C1C58D1820061D5F3 /* TreasureHuntTreasureRoom.swift in Sources */,
 				8DC42C6A1C58C7F70061D5F3 /* MonkeyChef.swift in Sources */,
 				8DDC0B0B1C719578008DBDCF /* DCRechargeableBattery.swift in Sources */,
+				8DA071791D9288DE007FA320 /* FoodType.swift in Sources */,
 				8DADCA051CAD030A00FA46B7 /* DomesticCat.swift in Sources */,
 				8D5524AE1C58B6D200D5A4B4 /* BurgerOrder.swift in Sources */,
 				8D5524161C58A9F700D5A4B4 /* CommentaryViewController.swift in Sources */,
