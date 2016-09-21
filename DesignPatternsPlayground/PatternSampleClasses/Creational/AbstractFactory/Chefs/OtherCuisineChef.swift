@@ -8,8 +8,10 @@
 
 import Foundation
 
-class OtherCuisineChef: Chef {
+struct OtherCuisineChef: Chef {
  
+	let name: String
+	
     let foodNames = [
         "Dry-Roasted Peanuts & Pork",
         "Oven-Grilled Blackberry & Ginger Shrimps",
