@@ -112,11 +112,20 @@ class BuilderSampleViewModel {
             if let row = BurgerOrderRows(rawValue: index), selected {
                 
                 switch row {
-                case .burger: builder.addBurger()
-                case .drinks: builder.addDrinks()
-                case .fries: builder.addFries()
-                case .salads: builder.addSalad()
-                case .sweets: builder.addSweets()
+                case .burger:
+					let _ = builder.addBurger()
+					
+                case .drinks:
+					let _ = builder.addDrinks()
+					
+				case .fries:
+					let _ = builder.addFries()
+					
+                case .salads:
+					let _ = builder.addSalad()
+					
+                case .sweets:
+					let _ = builder.addSweets()
                 }
             }
         }
