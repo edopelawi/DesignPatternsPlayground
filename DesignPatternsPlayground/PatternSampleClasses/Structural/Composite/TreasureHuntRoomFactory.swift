@@ -17,7 +17,7 @@ class TreasureHuntRoomFactory {
     ///
     /// - note: Returned `TreasureHuntAlleyRoom` will have a `TreasureHuntTreasureRoom` on maximum depth. On other level of depth, there will be only a single `TreasureHuntAlleyRoom`. Others will be `TreasureHuntMonsterRoom`.
     
-    static func treasureHuntRoomsWithDepth(depth: Int) -> TreasureHuntRoom {
+    static func treasureHuntRoomsWithDepth(_ depth: Int) -> TreasureHuntRoom {
         
         if depth <= 1 {
             return TreasureHuntTreasureRoom(roomNumber: 1)
@@ -29,7 +29,7 @@ class TreasureHuntRoomFactory {
         for index in 1...depth {
             
             let lastDepth = index == depth
-            let numberOfRooms = (random() % 5) + 2
+            let numberOfRooms = Int(arc4random() % 5) + 2
             
             populateAlleyRoom(
                 processedAlleyRoom,
@@ -45,7 +45,7 @@ class TreasureHuntRoomFactory {
 
                 let populatedRoom = processedAlleyRoom.retrieveTreasureHuntRoomAtIndex(populatedRoomIndex)
                 
-                if populatedRoom?.roomContentType() == .MoreRooms {
+                if populatedRoom?.roomContentType() == .moreRooms {
                     processedAlleyRoom = populatedRoom as! TreasureHuntAlleyRoom
                     break
                 }
@@ -58,7 +58,7 @@ class TreasureHuntRoomFactory {
     /// Populates passed `room` with a single `TreasureHuntAlleyRoom` and `TreasureHuntMonsterRoom`s.
     /// The alley room will be replaced with `TreasureHuntTreasureRoom` if `containsTreasureRoom` is true.
     
-    static private func populateAlleyRoom(room: TreasureHuntAlleyRoom, numberOfRooms: Int, containsTreasureRoom: Bool) {
+    static fileprivate func populateAlleyRoom(_ room: TreasureHuntAlleyRoom, numberOfRooms: Int, containsTreasureRoom: Bool) {
         
         var specialRoomAdded = false
         let baseRoomNumber = (room.roomNumber * 10)
@@ -68,7 +68,7 @@ class TreasureHuntRoomFactory {
             var newRoom: TreasureHuntRoom
             let newRoomNumber = baseRoomNumber + index
             
-            let shouldAddMonsterRoom = (random() % 4) > 0
+            let shouldAddMonsterRoom = (arc4random() % 4) > 0
             let lastRoom = index == numberOfRooms-1
             
             switch (shouldAddMonsterRoom, specialRoomAdded, lastRoom) {

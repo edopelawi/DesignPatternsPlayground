@@ -12,11 +12,11 @@ class FlyweightSampleCollectionViewCell: UICollectionViewCell {
 
     static let identifier = "FlyweightSampleCollectionViewCellIdentifier"
     
-    @IBOutlet private weak var iconLabel: UILabel!
-    @IBOutlet private weak var numberLabel: UILabel!
+    @IBOutlet fileprivate weak var iconLabel: UILabel!
+    @IBOutlet fileprivate weak var numberLabel: UILabel!
     
-    private var iconBuffer: String?
-    private var numberBuffer: String?
+    fileprivate var iconBuffer: String?
+    fileprivate var numberBuffer: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,10 +38,10 @@ class FlyweightSampleCollectionViewCell: UICollectionViewCell {
     }
     
     static func preferredSize() -> CGSize {
-        return CGSizeMake(40, 70)
+        return CGSize(width: 40, height: 70)
     }
     
-    internal func configureForIcon(icon: String, numberString: String) {
+    internal func configureForIcon(_ icon: String, numberString: String) {
 
         if iconLabel == nil {
             iconBuffer = icon

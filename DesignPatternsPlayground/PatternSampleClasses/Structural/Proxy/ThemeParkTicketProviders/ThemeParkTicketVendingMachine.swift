@@ -10,10 +10,10 @@ import Foundation
 
 class ThemeParkTicketVendingMachine: ThemeParkTicketProvider {
     
-    func retrieveTicketForVisitor(visitor: ThemeParkVisitor) -> String {
+    func retrieveTicketForVisitor(_ visitor: ThemeParkVisitor) -> String {
         
-        let visitorAddress = unsafeAddressOf(visitor)
-        let ticketCode = "\(visitorAddress)".uppercaseString
+        let visitorAddress = Unmanaged.passUnretained(visitor).toOpaque()
+        let ticketCode = "\(visitorAddress)".uppercased()
         
         return ticketCode
     }

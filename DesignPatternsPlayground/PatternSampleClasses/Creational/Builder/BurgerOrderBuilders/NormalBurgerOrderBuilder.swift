@@ -12,11 +12,11 @@ class NormalBurgerOrderBuilder: BurgerOrderBuilder {
     
     // TODO: These properties are getting duplicated. Optimise later.
     
-    private var burger = ""
-    private var drinks = ""
-    private var fries = ""
-    private var salad = ""
-    private var sweets = ""
+    fileprivate var burger = ""
+    fileprivate var drinks = ""
+    fileprivate var fries = ""
+    fileprivate var salad = ""
+    fileprivate var sweets = ""
     
     func addBurger() -> BurgerOrderBuilder {
         burger = "Normal-sized Cheeseburger"

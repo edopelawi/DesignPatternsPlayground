@@ -10,52 +10,52 @@ import UIKit
 
 class TemplateMethodSampleViewController: UIViewController {
     
-    @IBOutlet private weak var felineSelectionButton: UIButton!
-    @IBOutlet private weak var diaryLabel: UILabel!
+    @IBOutlet fileprivate weak var felineSelectionButton: UIButton!
+    @IBOutlet fileprivate weak var diaryLabel: UILabel!
     
-    private var felines = [Feline]()
+    fileprivate var felines = [Feline]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title =  "🐾 Feline's Diaries 🐾"
         prepareFelines()
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+        addCommentsRightBarButton(target: self, action: #selector(TemplateMethodSampleViewController.pushCommentPage(_:)))
     }
     
-    @objc private func pushCommentPage(sender: AnyObject) {
-        self.pushCommentaryPage(behaviouralPatternType: .TemplateMethod)
+    @objc fileprivate func pushCommentPage(_ sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .templateMethod)
     }
 
     // MARK: - IBAction -
     
-    @IBAction func showFelineOptions(sender: UIButton) {
+    @IBAction func showFelineOptions(_ sender: UIButton) {
         let alert = createOptionsAlertController()
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
     // MARK: - Private methods -
-    private func prepareFelines() {
+    fileprivate func prepareFelines() {
         
         felines = [
-            Feline(name: "Joe 🐱", gender: .Male),
-            DomesticCat(name: "Martha 🐱", gender: .Female),
-            DomesticCat(name: "Raplh 🐱", gender: .Male),
-            Lion(name: "Simba 🦁", gender: .Male),
-            Tiger(name: "Jade 🐯", gender: .Female)
+            Feline(name: "Joe 🐱", gender: .male),
+            DomesticCat(name: "Martha 🐱", gender: .female),
+            DomesticCat(name: "Raplh 🐱", gender: .male),
+            Lion(name: "Simba 🦁", gender: .male),
+            Tiger(name: "Jade 🐯", gender: .female)
         ]
     }
     
-    private func createOptionsAlertController() -> UIAlertController {
-        let alertController = UIAlertController(title: "Felines!", message: nil, preferredStyle: .ActionSheet)
+    fileprivate func createOptionsAlertController() -> UIAlertController {
+        let alertController = UIAlertController(title: "Felines!", message: nil, preferredStyle: .actionSheet)
         
         for feline in felines {
             let action = UIAlertAction(
                 title: feline.name,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
-                    self?.felineSelectionButton.setTitle(feline.name, forState: .Normal)
+                    self?.felineSelectionButton.setTitle(feline.name, for: UIControlState())
                     self?.diaryLabel.text = feline.liveAnotherDay()
                 }
             )

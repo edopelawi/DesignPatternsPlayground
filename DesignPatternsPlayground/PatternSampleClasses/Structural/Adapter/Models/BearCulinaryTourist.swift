@@ -13,10 +13,10 @@ class BearCulinaryTourist {
     typealias BearActionClosure = (AnimalCulinaryTourDialogue) -> (Void)
     
     internal var tourGuide: AnimalCulinaryTourGuide?
-    private let bearName = "Rotana(🐻)"
+    fileprivate let bearName = "Rotana(🐻)"
     
     /// Requests food to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
-    internal func requestFood(closure: BearActionClosure) {
+    internal func requestFood(_ closure: @escaping BearActionClosure) {
         
         guard let validGuide = tourGuide else {
             closure(noTourGuideDialogue())
@@ -40,7 +40,7 @@ class BearCulinaryTourist {
     }
     
     /// Requests drink to this instance's `tourGuide`. Returns `AnimalCulinaryTourDialogue` to passed `closure`.
-    internal func requestDrinks(closure: BearActionClosure) {
+    internal func requestDrinks(_ closure: @escaping BearActionClosure) {
         guard let validGuide = tourGuide else {
             closure(noTourGuideDialogue())
             return
@@ -64,7 +64,7 @@ class BearCulinaryTourist {
     
     // MARK: Private methods
     
-    private func noTourGuideDialogue() -> AnimalCulinaryTourDialogue {
+    fileprivate func noTourGuideDialogue() -> AnimalCulinaryTourDialogue {
         var dialogue = AnimalCulinaryTourDialogue()
         
         dialogue.touristName = bearName

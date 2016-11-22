@@ -10,19 +10,19 @@ import UIKit
 
 class StructuralPatternsViewController: UIViewController {
 
-    @IBOutlet private weak var tableView: UITableView!
-    private var tableController: PatternTypeTableController!
+    @IBOutlet fileprivate weak var tableView: UITableView!
+    fileprivate var tableController: PatternTypeTableController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBarHidden = false
+        navigationController?.isNavigationBarHidden = false
         title = "Structural Design Patterns"
         
         tableView.backgroundColor = view.backgroundColor
         
         tableController = PatternTypeTableController(
             tableView: tableView,
-            patternGroupType: .Structural
+            patternGroupType: .structural
         )
         
         tableController.patternTypeSelectedClosure = {
@@ -37,18 +37,18 @@ class StructuralPatternsViewController: UIViewController {
         }
     }
     
-    private func pushPageForPatternType(patternType: StructuralPatternType) {
+    fileprivate func pushPageForPatternType(_ patternType: StructuralPatternType) {
 
         var optionalViewController: UIViewController?
         
         switch patternType {
-        case .Adapter: optionalViewController = AdapterSampleViewController()
-        case .Bridge: optionalViewController = BridgeSampleViewController()
-        case .Composite: optionalViewController = CompositeSampleViewController()
-        case .Decorator: optionalViewController = DecoratorSampleViewController()
-        case .Flyweight: optionalViewController = FlyweightSampleViewController()
-        case .Proxy: optionalViewController = ProxySampleViewController()
-        case .Facade: optionalViewController = FacadeSampleViewController()
+        case .adapter: optionalViewController = AdapterSampleViewController()
+        case .bridge: optionalViewController = BridgeSampleViewController()
+        case .composite: optionalViewController = CompositeSampleViewController()
+        case .decorator: optionalViewController = DecoratorSampleViewController()
+        case .flyweight: optionalViewController = FlyweightSampleViewController()
+        case .proxy: optionalViewController = ProxySampleViewController()
+        case .facade: optionalViewController = FacadeSampleViewController()
         }
         
         if let viewController = optionalViewController {

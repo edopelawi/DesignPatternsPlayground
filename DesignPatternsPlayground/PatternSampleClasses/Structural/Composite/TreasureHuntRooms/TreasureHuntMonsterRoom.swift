@@ -12,7 +12,7 @@ class TreasureHuntMonsterRoom: TreasureHuntRoom {
     
     var roomNumber: Int
     
-    private let possibleMonsters = [
+    fileprivate let possibleMonsters = [
         "👻", "👹", "👺",
         "💀", "👽", "👾",
         "🐲"
@@ -23,7 +23,7 @@ class TreasureHuntMonsterRoom: TreasureHuntRoom {
     }
     
     func roomContentType() -> TreasureHuntRoomContentType {
-        return .Monster
+        return .monster
     }
     
     /// Returns emoji representation of current monster in the room.

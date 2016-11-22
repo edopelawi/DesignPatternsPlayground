@@ -10,13 +10,13 @@ import Foundation
 
 class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
-    private var chef: KoalaChef
+    fileprivate var chef: KoalaChef
  
     init(chef: KoalaChef) {
         self.chef = chef
     }
     
-    func requestFood(closure: AnimalCulinaryRequestClosure) {
+    func requestFood(_ closure: AnimalCulinaryRequestClosure) {
         
         var dialogue = basicDialogue()
         
@@ -26,7 +26,7 @@ class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
         closure(dialogue)
     }
     
-    func requestDrinks(closure: AnimalCulinaryRequestClosure) {
+    func requestDrinks(_ closure: AnimalCulinaryRequestClosure) {
         
         var dialogue = basicDialogue()
         
@@ -38,7 +38,7 @@ class KoalaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
     // MARK: Private methods
     
-    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+    fileprivate func basicDialogue() -> AnimalCulinaryTourDialogue {
         var dialogue = AnimalCulinaryTourDialogue()
         
         dialogue.tourGuideName = "Yabbra(🐨)"

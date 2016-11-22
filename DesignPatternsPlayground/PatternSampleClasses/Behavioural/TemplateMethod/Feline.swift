@@ -9,8 +9,8 @@
 import Foundation
 
 enum FelineGender {
-    case Male
-    case Female
+    case male
+    case female
     
     /**
      Returns lowercased subject pronoun for this gender.
@@ -19,22 +19,22 @@ enum FelineGender {
      */
     func subjectPronoun() -> String {
         switch self {
-        case .Female: return "she"
-        case .Male: return "he"
+        case .female: return "she"
+        case .male: return "he"
         }
     }
     
     func possesivePronoun() -> String {
         switch self {
-        case .Female: return "her"
-        case .Male: return "his"
+        case .female: return "her"
+        case .male: return "his"
         }
     }
     
     func objectPronoun() -> String {
         switch self {
-        case .Female: return "her"
-        case .Male: return "him"
+        case .female: return "her"
+        case .male: return "him"
         }
     }
 }
@@ -78,15 +78,15 @@ class Feline: AnyObject {
      
      - returns: `String` instance.
      */
-    internal func stringForFelineActivity(activity: FelineDailyActivity) -> String {
+    internal func stringForFelineActivity(_ activity: FelineDailyActivity) -> String {
         
         switch activity {
-        case .Bath: return "Takes a bath."
-        case .Bored: return "Licks \(gender.possesivePronoun()) paw and yawn."
-        case .Eat: return "Drinks \((gender.subjectPronoun())) milk."
-        case .Hunt: return "Looks for a mice and eat it as a snack."
-        case .Play: return "Chase around \((gender.subjectPronoun())) wool ball."
-        case .Sleep: return "Folds \(gender.possesivePronoun()) feet, sleep, and purrs."
+        case .bath: return "Takes a bath."
+        case .bored: return "Licks \(gender.possesivePronoun()) paw and yawn."
+        case .eat: return "Drinks \((gender.subjectPronoun())) milk."
+        case .hunt: return "Looks for a mice and eat it as a snack."
+        case .play: return "Chase around \((gender.subjectPronoun())) wool ball."
+        case .sleep: return "Folds \(gender.possesivePronoun()) feet, sleep, and purrs."
             
         }
     }
@@ -128,10 +128,10 @@ class Feline: AnyObject {
     
     // MARK: - Private methods -
     
-    private func isOnlySleeping(activities: [FelineDailyActivity]) -> Bool {
+    fileprivate func isOnlySleeping(_ activities: [FelineDailyActivity]) -> Bool {
         
         for activity in activities {
-            if activity != .Sleep {
+            if activity != .sleep {
                 return false
             }
         }
@@ -139,12 +139,12 @@ class Feline: AnyObject {
         return true
     }
     
-    private func morningActivitySummary() -> String {
+    fileprivate func morningActivitySummary() -> String {
         
         var summary = "\n"
         summary += "In the morning, \(gender.subjectPronoun()):\n"
         
-        for (index, activity) in morningActivity.enumerate() {
+        for (index, activity) in morningActivity.enumerated() {
             let activityString = stringForFelineActivity(activity)
             summary += "\(index+1). \(activityString)\n"
         }
@@ -152,12 +152,12 @@ class Feline: AnyObject {
         return summary
     }
     
-    private func afternoonActivitySummary() -> String {
+    fileprivate func afternoonActivitySummary() -> String {
         
         var summary = "\n"
         summary += "When the sun was high, \(gender.subjectPronoun()):\n"
         
-        for (index, activity) in afternoonActivity.enumerate() {
+        for (index, activity) in afternoonActivity.enumerated() {
             let activityString = stringForFelineActivity(activity)
             summary += "\(index+1). \(activityString)\n"
         }
@@ -165,12 +165,12 @@ class Feline: AnyObject {
         return summary
     }
     
-    private func eveningActivitySummary() -> String {
+    fileprivate func eveningActivitySummary() -> String {
         
         var summary = "\n"
         summary += "Later in the evening, \(gender.subjectPronoun()):\n"
         
-        for (index, activity) in eveningActivity.enumerate() {
+        for (index, activity) in eveningActivity.enumerated() {
             let activityString = stringForFelineActivity(activity)
             summary += "\(index+1). \(activityString)\n"
         }

@@ -10,16 +10,16 @@ import UIKit
 
 class ProxySampleViewController: UIViewController {
 
-    @IBOutlet private weak var minimumHeightLabel: UILabel!
-    @IBOutlet private weak var responseLabel: UILabel!
+    @IBOutlet fileprivate weak var minimumHeightLabel: UILabel!
+    @IBOutlet fileprivate weak var responseLabel: UILabel!
     
-    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet fileprivate weak var scrollView: UIScrollView!
     
-    private var initialScrollViewInset: UIEdgeInsets?
-    private var initialScrollViewIndicatorInset: UIEdgeInsets?
+    fileprivate var initialScrollViewInset: UIEdgeInsets?
+    fileprivate var initialScrollViewIndicatorInset: UIEdgeInsets?
     
-    private var ticketSalesPerson = ThemeParkTicketSalesPerson()
-    private var visitor = ThemeParkVisitor()
+    fileprivate var ticketSalesPerson = ThemeParkTicketSalesPerson()
+    fileprivate var visitor = ThemeParkVisitor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ class ProxySampleViewController: UIViewController {
     }
     
     // IBActions
-    @IBAction func visitorHeightChanged(sender: UITextField) {
+    @IBAction func visitorHeightChanged(_ sender: UITextField) {
         if let textInput = sender.text,
            let validHeight = Int(textInput) {
             
@@ -43,15 +43,15 @@ class ProxySampleViewController: UIViewController {
     
     // MARK: Private methods
     
-    private func configureCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(ProxySampleViewController.pushCommentsPage(_:)))
     }
     
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        pushCommentaryPage(structuralPatternType: .Proxy)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .proxy)
     }
     
-    private func updateResponseLabel() {
+    fileprivate func updateResponseLabel() {
 
         let ticketCode = ticketSalesPerson.retrieveTicketForVisitor(visitor)
         

@@ -10,10 +10,10 @@ import Foundation
 
 class MonsterInvaderFlyweightFactory {
     
-    private var invaderHashMap = [String: MonsterInvader]()
+    fileprivate var invaderHashMap = [String: MonsterInvader]()
     
     /// Returns `MonsterInvader` instance with passed `icon`.
-    internal func retrieveInvaderWithIcon(icon: String) -> MonsterInvader {
+    internal func retrieveInvaderWithIcon(_ icon: String) -> MonsterInvader {
         
         if let invader = invaderHashMap[icon] {
             return invader

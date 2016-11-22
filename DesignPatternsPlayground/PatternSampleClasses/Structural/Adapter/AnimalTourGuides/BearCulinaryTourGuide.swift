@@ -10,19 +10,19 @@ import Foundation
 
 class BearCulinaryTourGuide: BearChef, AnimalCulinaryTourGuide {
     
-    func requestDrinks(closure: AnimalCulinaryRequestClosure) {
+    func requestDrinks(_ closure: AnimalCulinaryRequestClosure) {
         var dialogue = basicDialogue()
         dialogue.tourChefDialogue = sake()
         closure(dialogue)
     }
     
-    func requestFood(closure: AnimalCulinaryRequestClosure) {
+    func requestFood(_ closure: AnimalCulinaryRequestClosure) {
         var dialogue = basicDialogue()
         dialogue.tourChefDialogue = honey()
         closure(dialogue)
     }
     
-    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+    fileprivate func basicDialogue() -> AnimalCulinaryTourDialogue {
         var dialogue = AnimalCulinaryTourDialogue()
         
         dialogue.tourChefName = "Kuma(🐻🍯)"

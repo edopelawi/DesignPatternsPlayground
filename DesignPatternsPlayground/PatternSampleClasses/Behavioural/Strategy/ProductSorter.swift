@@ -17,5 +17,5 @@ protocol ProductSorter {
      
      - returns: array of sorted `Product` instances.
      */
-    func sortProducts(products: [Product]) -> [Product]
+    func sortProducts(_ products: [Product]) -> [Product]
 }

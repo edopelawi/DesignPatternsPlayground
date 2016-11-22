@@ -13,15 +13,15 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
     static let identifier = "TreasureHuntRoomCollectionViewCellIdentifier"
     
     static func preferredSize() -> CGSize {
-        let screenWidth = UIScreen.mainScreen().bounds.width
-        return CGSizeMake(screenWidth/2, screenWidth/2)
+        let screenWidth = UIScreen.main.bounds.width
+        return CGSize(width: screenWidth/2, height: screenWidth/2)
     }
     
     static func nib() -> UINib? {
         return UINib(nibName: "TreasureHuntRoomCollectionViewCell", bundle: nil)
     }
     
-    @IBOutlet private weak var roomNumberLabel: UILabel!
+    @IBOutlet fileprivate weak var roomNumberLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,11 +29,11 @@ class TreasureHuntRoomCollectionViewCell: UICollectionViewCell {
     
     // MARK: Public method
     
-    internal func configureForTreasureHuntRoom(room: TreasureHuntRoom) {
+    internal func configureForTreasureHuntRoom(_ room: TreasureHuntRoom) {
         roomNumberLabel.text = "Room #\(room.roomNumber)"
     }
     
-    internal func setLabelColor(color: UIColor) {
+    internal func setLabelColor(_ color: UIColor) {
         roomNumberLabel.textColor = color
     }
 }

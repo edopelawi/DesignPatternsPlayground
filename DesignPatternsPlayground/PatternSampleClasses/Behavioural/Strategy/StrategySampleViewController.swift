@@ -10,9 +10,9 @@ import UIKit
 
 class StrategySampleViewController: UITableViewController {
     
-    private let tableController = ProductTableController()
-    @IBOutlet private var headerView: UIView!
-    @IBOutlet private weak var sortButton: UIButton!
+    fileprivate let tableController = ProductTableController()
+    @IBOutlet fileprivate var headerView: UIView!
+    @IBOutlet fileprivate weak var sortButton: UIButton!
     
     override func viewDidLoad() {
         
@@ -26,10 +26,10 @@ class StrategySampleViewController: UITableViewController {
         
         generateDummyProducts()
         
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+        addCommentsRightBarButton(target: self, action: #selector(StrategySampleViewController.pushCommentPage(_:)))
     }
     
-    private func generateDummyProducts() {
+    fileprivate func generateDummyProducts() {
         
         tableController.products = [
             Product(name: "Pricy Shoes 👠", price: 50000),
@@ -40,24 +40,24 @@ class StrategySampleViewController: UITableViewController {
         ]
     }
     
-    @IBAction func showSortOptions(sender: UIButton) {
+    @IBAction func showSortOptions(_ sender: UIButton) {
         
         let alertController = createOptionsAlertController()
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
         
     }
     
     func createOptionsAlertController() -> UIAlertController {
         
-        let alertController = UIAlertController(title: "Sort Options", message: nil, preferredStyle: .ActionSheet)
+        let alertController = UIAlertController(title: "Sort Options", message: nil, preferredStyle: .actionSheet)
         
         let defaultAction = UIAlertAction(
             title: "None",
-            style: .Default,
+            style: .default,
             handler: {
                 [weak self] _ in
-                self?.sortButton.setTitle("None", forState: .Normal)
+                self?.sortButton.setTitle("None", for: UIControlState())
                 self?.generateDummyProducts()
             }
         )
@@ -75,10 +75,10 @@ class StrategySampleViewController: UITableViewController {
             
             let action = UIAlertAction(
                 title: name,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
-                    self?.sortButton.setTitle(name, forState: .Normal)
+                    self?.sortButton.setTitle(name, for: UIControlState())
                     self?.tableController.sortProductsWithSorter(sorter)
                 })
             
@@ -88,7 +88,7 @@ class StrategySampleViewController: UITableViewController {
         return alertController
     }
     
-    @objc func pushCommentPage(sender: AnyObject) {
-        self.pushCommentaryPage(behaviouralPatternType: .Strategy)
+    @objc func pushCommentPage(_ sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .strategy)
     }
 }

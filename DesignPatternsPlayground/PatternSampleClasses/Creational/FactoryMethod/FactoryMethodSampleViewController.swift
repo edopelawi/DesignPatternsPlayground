@@ -10,8 +10,8 @@ import UIKit
 
 class FactoryMethodSampleViewController: UITableViewController {
     
-    private var viewModels: [ ParadeViewModel ] = []
-    private let reuseIdentifier = "reuseIdentifier"
+    fileprivate var viewModels: [ ParadeViewModel ] = []
+    fileprivate let reuseIdentifier = "reuseIdentifier"
     
     convenience init() {
         self.init(nibName: "FactoryMethodSampleViewController", bundle: nil)
@@ -28,15 +28,15 @@ class FactoryMethodSampleViewController: UITableViewController {
         registerCells()
     }
 
-    private func prepareCommentBarButton() {
-        self.addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func prepareCommentBarButton() {
+        self.addCommentsRightBarButton(target: self, action: #selector(FactoryMethodSampleViewController.pushCommentsPage(_:)))
     }
 
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        self.pushCommentaryPage(creationalPatternType: .FactoryMethod)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        self.pushCommentaryPage(creationalPatternType: .factoryMethod)
     }
     
-    private func prepareViewModels() {
+    fileprivate func prepareViewModels() {
         viewModels = [
             DesertParadeViewModel(),
             SeaParadeViewModel(),
@@ -47,21 +47,21 @@ class FactoryMethodSampleViewController: UITableViewController {
         ]
     }
     
-    private func registerCells() {
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+    fileprivate func registerCells() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return viewModels.count
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         var title = ""
         
@@ -73,8 +73,8 @@ class FactoryMethodSampleViewController: UITableViewController {
         return title
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 
         cell.textLabel?.text = ""
         

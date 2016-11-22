@@ -10,12 +10,12 @@ import UIKit
 
 class TreasureHuntMonsterRoomViewController: UIViewController {
 
-    @IBOutlet private weak var monsterLabel: UILabel!
+    @IBOutlet fileprivate weak var monsterLabel: UILabel!
 
-    private var monsterRoom: TreasureHuntMonsterRoom?
-    private var backButtonActionClosure: ((Void) -> (Void))?
+    fileprivate var monsterRoom: TreasureHuntMonsterRoom?
+    fileprivate var backButtonActionClosure: ((Void) -> (Void))?
     
-    init(monsterRoom: TreasureHuntMonsterRoom, backButtonTappedClosure: (Void) -> (Void)) {
+    init(monsterRoom: TreasureHuntMonsterRoom, backButtonTappedClosure: @escaping (Void) -> (Void)) {
         super.init(nibName: "TreasureHuntMonsterRoomViewController", bundle: nil)
         
         self.monsterRoom = monsterRoom
@@ -28,14 +28,14 @@ class TreasureHuntMonsterRoomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBarHidden = true
+        navigationController?.isNavigationBarHidden = true
         
         if let validRoom = monsterRoom {
             monsterLabel.text = validRoom.roomContent()
         }
     }
 
-    @IBAction func executeAction(sender: UIButton) {        
+    @IBAction func executeAction(_ sender: UIButton) {        
         if let validClosure = backButtonActionClosure {
             validClosure()
         }

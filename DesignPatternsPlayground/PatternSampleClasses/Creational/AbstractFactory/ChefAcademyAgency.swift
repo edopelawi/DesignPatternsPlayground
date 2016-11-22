@@ -18,14 +18,14 @@ class ChefAcademyAgency {
 	
 	- returns: `ChefAcademy`-compliant instance.
 	*/
-	static func getAcademyForFoodType(foodType: FoodType) -> ChefAcademy {
+	static func getAcademyForFoodType(_ foodType: FoodType) -> ChefAcademy {
 	
 		switch foodType {
-		case .Chinese: return ChineseChefAcademy()
-		case .Indonesian: return IndonesianChefAcademy()
-		case .Japanese: return JapaneseChefAcademy()
-		case .Others: return OtherCuisineChefAcademy()
-		case .Western: return WesternChefAcademy()
+		case .chinese: return ChineseChefAcademy()
+		case .indonesian: return IndonesianChefAcademy()
+		case .japanese: return JapaneseChefAcademy()
+		case .others: return OtherCuisineChefAcademy()
+		case .western: return WesternChefAcademy()
 		}
 	}
 }

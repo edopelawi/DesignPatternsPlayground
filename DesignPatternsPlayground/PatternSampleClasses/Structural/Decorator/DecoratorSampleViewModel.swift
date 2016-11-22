@@ -29,18 +29,18 @@ enum DecoratorSampleViewModelArmaments: String {
 protocol DecoratorSampleViewModelDelegate: class {
     
     /// Executed when `viewModel`'s `selectedFightingMove` is updated.
-    func selectedFightingMoveUpdated(viewModel: DecoratorSampleViewModel, selectedFightingMove: DecoratorSampleViewModelMoves)
+    func selectedFightingMoveUpdated(_ viewModel: DecoratorSampleViewModel, selectedFightingMove: DecoratorSampleViewModelMoves)
     
     /// Executed when `viewModel`'s `selectedArmament` is updated.
-    func selectedArmamentUpdated(viewModel: DecoratorSampleViewModel, selectedArmament: DecoratorSampleViewModelArmaments)
+    func selectedArmamentUpdated(_ viewModel: DecoratorSampleViewModel, selectedArmament: DecoratorSampleViewModelArmaments)
     
     /// Executed when `viewModel`'s `resultMove` is updated.
-    func resultMoveUpdated(viewModel: DecoratorSampleViewModel, resultMove: String)
+    func resultMoveUpdated(_ viewModel: DecoratorSampleViewModel, resultMove: String)
 }
 
 class DecoratorSampleViewModel {
     
-    private var fighter: FightingMoves! {
+    fileprivate var fighter: FightingMoves! {
         didSet {
             updateResultMove()
         }
@@ -90,7 +90,7 @@ class DecoratorSampleViewModel {
     
     // MARK: Private methods
     
-    private func updateFighter() {
+    fileprivate func updateFighter() {
         
         var temporaryFighter: FightingMoves = StreetFighter()
         
@@ -115,7 +115,7 @@ class DecoratorSampleViewModel {
         fighter = temporaryFighter
     }
     
-    private func updateResultMove() {
+    fileprivate func updateResultMove() {
         switch selectedFightingMove {
         case .Punch: resultMove = fighter.punch()
         case .Kick: resultMove = fighter.kick()

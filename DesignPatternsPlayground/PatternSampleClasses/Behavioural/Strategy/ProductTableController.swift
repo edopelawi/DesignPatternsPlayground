@@ -19,9 +19,9 @@ class ProductTableController: NSObject, UITableViewDataSource {
         }
     }
     
-    private let reuseIdentifier = "productCellReuseIdentifier"
+    fileprivate let reuseIdentifier = "productCellReuseIdentifier"
     
-    private var controlledTableView: UITableView! {
+    fileprivate var controlledTableView: UITableView! {
         didSet {
             if (oldValue != nil && oldValue != controlledTableView) {
                 oldValue.dataSource = nil
@@ -36,7 +36,7 @@ class ProductTableController: NSObject, UITableViewDataSource {
      
      - parameter tableView: `UITableView` instance
      */
-    func controlTableView(tableView: UITableView) {
+    func controlTableView(_ tableView: UITableView) {
         tableView.dataSource = self
         tableView.reloadData()
         controlledTableView = tableView
@@ -47,24 +47,24 @@ class ProductTableController: NSObject, UITableViewDataSource {
      
      - parameter productSorter: `ProductSorder` instance
      */
-    func sortProductsWithSorter(productSorter: ProductSorter) {
+    func sortProductsWithSorter(_ productSorter: ProductSorter) {
         products = productSorter.sortProducts(products)
     }
     
     // MARK: - UITableViewDataSource -
         
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell: UITableViewCell
         
-        if let reusedCell = controlledTableView.dequeueReusableCellWithIdentifier(reuseIdentifier) {
+        if let reusedCell = controlledTableView.dequeueReusableCell(withIdentifier: reuseIdentifier) {
             cell = reusedCell
         } else {
-            cell = UITableViewCell(style: .Subtitle, reuseIdentifier: reuseIdentifier)
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: reuseIdentifier)
             cell.textLabel?.font = UIFont(name: "Avenir-Medium", size: CGFloat(15))
             cell.detailTextLabel?.font = UIFont(name: "Avenir-Book", size:CGFloat(13))
         }

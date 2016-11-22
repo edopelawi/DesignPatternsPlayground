@@ -16,7 +16,7 @@ protocol AlienMothershipListener: AnyObject {
      
      - parameter message: `AlienMothershipMessage` instance.
      */
-    func handleMothershipMessage(message: AlienMothershipMessage)
+    func handleMothershipMessage(_ message: AlienMothershipMessage)
     
     /**
      Returns `String` representation of this instance's current status. 

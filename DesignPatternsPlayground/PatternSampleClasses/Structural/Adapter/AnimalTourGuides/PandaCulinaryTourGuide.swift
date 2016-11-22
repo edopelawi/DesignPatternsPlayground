@@ -10,13 +10,13 @@ import Foundation
 
 class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
-    private var chef: PandaChef
+    fileprivate var chef: PandaChef
     
     init(chef: PandaChef) {
         self.chef = chef
     }
     
-    func requestDrinks(closure: AnimalCulinaryRequestClosure) {
+    func requestDrinks(_ closure: AnimalCulinaryRequestClosure) {
         
         var dialogue = basicDialogue()
         
@@ -26,7 +26,7 @@ class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
         closure(dialogue)
     }
     
-    func requestFood(closure: AnimalCulinaryRequestClosure) {
+    func requestFood(_ closure: AnimalCulinaryRequestClosure) {
         
         var dialogue = basicDialogue()
         
@@ -38,7 +38,7 @@ class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
     
     // MARK: Private methods
     
-    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+    fileprivate func basicDialogue() -> AnimalCulinaryTourDialogue {
         var dialogue = AnimalCulinaryTourDialogue()
 
         dialogue.tourGuideName = "Tian Tian(🐼)"
@@ -47,15 +47,15 @@ class PandaCulinaryTourGuide: AnimalCulinaryTourGuide {
         return dialogue
     }
     
-    private func getDrinkFromChef() -> String {
+    fileprivate func getDrinkFromChef() -> String {
         var beverageType: PandaBeverage
         
-        let randomInt = random() % 2
+        let randomInt = arc4random() % 2
         
         if randomInt > 0 {
-            beverageType = .Beer
+            beverageType = .beer
         } else {
-            beverageType = .GreenTea
+            beverageType = .greenTea
         }
         
         return chef.beverage(beverageType)

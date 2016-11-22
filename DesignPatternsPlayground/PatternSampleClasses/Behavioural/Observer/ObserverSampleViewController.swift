@@ -10,8 +10,8 @@ import UIKit
 
 
 enum ObserverSampleTableSection: Int {
-    case AttackerAliens = 0
-    case MaintainerAliens = 1
+    case attackerAliens = 0
+    case maintainerAliens = 1
     
     static func numberOfSections() -> Int {
         return 2
@@ -20,24 +20,24 @@ enum ObserverSampleTableSection: Int {
 
 class ObserverSampleViewController: UITableViewController {
         
-    @IBOutlet private var headerView: UIView!
-    @IBOutlet private weak var mothershipMessageButton: UIButton!
+    @IBOutlet fileprivate var headerView: UIView!
+    @IBOutlet fileprivate weak var mothershipMessageButton: UIButton!
     
-    private var motherShip = AlienMothership()
+    fileprivate var motherShip = AlienMothership()
     
-    private var attackerShips = [AlienAttackerShip]() {
+    fileprivate var attackerShips = [AlienAttackerShip]() {
         didSet {
             tableView.reloadData()
         }
     }
     
-    private var maintainerShips = [AlienRepairShip]() {
+    fileprivate var maintainerShips = [AlienRepairShip]() {
         didSet {
             tableView.reloadData()
         }
     }
     
-    private var cellReuseIdentifier = "alienCellReuseIdentifer"
+    fileprivate var cellReuseIdentifier = "alienCellReuseIdentifer"
     
     deinit {
             
@@ -55,31 +55,31 @@ class ObserverSampleViewController: UITableViewController {
         
         title = "Alien's Super-fast Comms"
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.tableHeaderView = headerView
         
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+        addCommentsRightBarButton(target: self, action: #selector(ObserverSampleViewController.pushCommentPage(_:)))
     }
     
-    @objc private func pushCommentPage(sender: AnyObject) {
-        self.pushCommentaryPage(behaviouralPatternType: .Observer)
+    @objc fileprivate func pushCommentPage(_ sender: AnyObject) {
+        self.pushCommentaryPage(behaviouralPatternType: .observer)
     }
 
     // MARK: - IBActions -
     
-    @IBAction private func showMothershipMessageOption(sender: UIButton) {
+    @IBAction fileprivate func showMothershipMessageOption(_ sender: UIButton) {
         let alertController = createMessagesAlertController()
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
     
-    @IBAction private func addAttackerShip(sender: UIButton) {
+    @IBAction fileprivate func addAttackerShip(_ sender: UIButton) {
         let attackerShip = AlienAttackerShip()
         
         motherShip.addListener(attackerShip)
         attackerShips.append(attackerShip)
     }
     
-    @IBAction private func addMaintainerShip(sender: UIButton) {
+    @IBAction fileprivate func addMaintainerShip(_ sender: UIButton) {
         let maintainerShip = AlienRepairShip()
         
         motherShip.addListener(maintainerShip)
@@ -88,8 +88,8 @@ class ObserverSampleViewController: UITableViewController {
     
     // MARK: - Messages -
     
-    private func createMessagesAlertController() -> UIAlertController {
-        let alertController = UIAlertController(title: "Mothership Messages", message: nil, preferredStyle: .ActionSheet)
+    fileprivate func createMessagesAlertController() -> UIAlertController {
+        let alertController = UIAlertController(title: "Mothership Messages", message: nil, preferredStyle: .actionSheet)
         
         let messages = [
             AlienMothershipMessage.Attack,
@@ -101,11 +101,11 @@ class ObserverSampleViewController: UITableViewController {
         for message in messages {
             let alertAction = UIAlertAction(
                 title: message.rawValue,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
                     self?.motherShip.message = message
-                    self?.mothershipMessageButton.setTitle(message.rawValue, forState: .Normal)
+                    self?.mothershipMessageButton.setTitle(message.rawValue, for: UIControlState())
                     self?.tableView.reloadData()
             })
             
@@ -117,36 +117,36 @@ class ObserverSampleViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return ObserverSampleTableSection.numberOfSections()
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         guard let validSection = ObserverSampleTableSection(rawValue: section) else {
             return nil
         }
         
         switch validSection {
-        case .AttackerAliens: return "Attacker Ships"
-        case .MaintainerAliens: return "Maintainer Ships"
+        case .attackerAliens: return "Attacker Ships"
+        case .maintainerAliens: return "Maintainer Ships"
         }
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let validSection = ObserverSampleTableSection(rawValue: section) else {
             return 0
         }
         
         switch validSection {
-        case .AttackerAliens: return attackerShips.count
-        case .MaintainerAliens: return maintainerShips.count
+        case .attackerAliens: return attackerShips.count
+        case .maintainerAliens: return maintainerShips.count
         }
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
         
         cell.textLabel?.font = UIFont(name: "Avenir-Medium", size: CGFloat(14))
         cell.textLabel?.text = ""
@@ -159,11 +159,11 @@ class ObserverSampleViewController: UITableViewController {
         var listenerIcon = ""
         
         switch validSection {
-        case .AttackerAliens:
+        case .attackerAliens:
             mothershipListener = attackerShips[indexPath.row]
             listenerIcon = "👾"
             
-        case .MaintainerAliens:
+        case .maintainerAliens:
             mothershipListener = maintainerShips[indexPath.row]
             listenerIcon = "👽"
         }

@@ -10,7 +10,7 @@ import Foundation
 
 class Diary {
     
-    static private var privateSingletonDiary: Diary = {
+    static fileprivate var privateSingletonDiary: Diary = {
 
         // Added delay to simulate long-running instance construction        
         sleep(3)
@@ -34,7 +34,7 @@ class Diary {
     internal var diaryText: String
     
     /// Private initializer, because Singleton!
-    private init(name: String, diaryText: String) {
+    fileprivate init(name: String, diaryText: String) {
         self.name = name
         self.diaryText = diaryText
     }

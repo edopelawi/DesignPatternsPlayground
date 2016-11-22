@@ -12,13 +12,13 @@ import JamesBondTools
 protocol BridgeSampleViewModelDelegate: class {
     
     /// Executed when `viewModel`'s `selectedTerrain` property is updated.
-    func selectedTerrainUpdated(viewModel: BridgeSampleViewModel, selectedTerrain: JamesBondTerrainType)
+    func selectedTerrainUpdated(_ viewModel: BridgeSampleViewModel, selectedTerrain: JamesBondTerrainType)
     
     /// Executed when `viewModel`'s `terrainEmojis` property is updated.
-    func terrainEmojisUpdated(viewModel: BridgeSampleViewModel, terrainEmojis: String)
+    func terrainEmojisUpdated(_ viewModel: BridgeSampleViewModel, terrainEmojis: String)
     
     /// Executed when `viewModel`'s `bondCarWithEffects` property is updated
-    func bondCarWithEffectsUpdated(viewModel: BridgeSampleViewModel, bondCarWithEffects: String)
+    func bondCarWithEffectsUpdated(_ viewModel: BridgeSampleViewModel, bondCarWithEffects: String)
 }
 
 class BridgeSampleViewModel {
@@ -56,7 +56,7 @@ class BridgeSampleViewModel {
     
     weak internal var delegate: BridgeSampleViewModelDelegate?
     
-    private var bondCar: JamesBondCar! {
+    fileprivate var bondCar: JamesBondCar! {
         didSet {
             updateBondCarWithEffects()
         }
@@ -69,19 +69,19 @@ class BridgeSampleViewModel {
     
     // MARK: Private methods
     
-    private func updateBondCarForCurrentTerrain() {
+    fileprivate func updateBondCarForCurrentTerrain() {
         bondCar = JamesBondCar(terrainType: selectedTerrain)
     }
     
-    private func updateBondCarWithEffects() {
+    fileprivate func updateBondCarWithEffects() {
         bondCarWithEffects = "\(bondCar.carIcon())💨 \(bondCar.engineSound())"
     }
     
-    private func updateTerrainEmojis() {
+    fileprivate func updateTerrainEmojis() {
 
         let repeatCount = 40
         let terrainIconCharacter = Character(selectedTerrain.terrainIcon())
         
-        terrainEmojis = String(count: repeatCount, repeatedValue: terrainIconCharacter)
+        terrainEmojis = String(repeating: String(terrainIconCharacter), count: repeatCount)
     }
 }

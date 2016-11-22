@@ -13,7 +13,7 @@ class TreasureHuntAlleyRoom: TreasureHuntRoom {
     
     var roomNumber: Int
     
-    private var nextRooms: [ TreasureHuntRoom ] = []
+    fileprivate var nextRooms: [ TreasureHuntRoom ] = []
     
     init(roomNumber: Int) {
         self.roomNumber = roomNumber
@@ -22,7 +22,7 @@ class TreasureHuntAlleyRoom: TreasureHuntRoom {
     /// MARK: TreasureHuntRoom
     
     func roomContentType() -> TreasureHuntRoomContentType {
-        return .MoreRooms
+        return .moreRooms
     }
     
     func roomContent() -> String {
@@ -38,7 +38,7 @@ class TreasureHuntAlleyRoom: TreasureHuntRoom {
     
     /// Retrieve this instance's  next `TreasureHuntRoom` on passed index. Will return
     /// nil for invalid index.
-    internal func retrieveTreasureHuntRoomAtIndex(index: Int) -> TreasureHuntRoom? {
+    internal func retrieveTreasureHuntRoomAtIndex(_ index: Int) -> TreasureHuntRoom? {
         if index < 0 || index >= nextRooms.count {
             return nil
         }
@@ -47,18 +47,18 @@ class TreasureHuntAlleyRoom: TreasureHuntRoom {
     }
     
     /// Add passed `room` in list of next rooms
-    internal func addTreasureHuntRoom(room: TreasureHuntRoom) {
+    internal func addTreasureHuntRoom(_ room: TreasureHuntRoom) {
         nextRooms.append(room)
     }
     
     /// Remove this instance's next room at passed `index`. Will do nothing
     /// if invalid index is passed.
-    internal func removeTreasureHuntRoomAtIndex(index: Int) {
+    internal func removeTreasureHuntRoomAtIndex(_ index: Int) {
         if index < 0 || index >= nextRooms.count {
             return
         }
         
-        nextRooms.removeAtIndex(index)
+        nextRooms.remove(at: index)
     }
     
 }

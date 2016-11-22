@@ -10,8 +10,8 @@ import UIKit
 
 class FacadeSampleViewController: UITableViewController {
     
-    private let christmasDecoration = ChristmasDecoration();
-    private let cellReuseIdentifier = "reuseIdentifier";
+    fileprivate let christmasDecoration = ChristmasDecoration();
+    fileprivate let cellReuseIdentifier = "reuseIdentifier";
 
     @IBOutlet var headerView: UIView!
     @IBOutlet weak var batteryChargeLabel: UILabel!
@@ -19,7 +19,7 @@ class FacadeSampleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         prepareChristmasDecorationHandlers()
         
@@ -30,30 +30,30 @@ class FacadeSampleViewController: UITableViewController {
         addCommentBarButton()
     }
     
-    private func addCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(FacadeSampleViewController.pushCommentsPage(_:)))
     }
     
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        pushCommentaryPage(structuralPatternType: .Facade)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .facade)
     }
     
     // MARK: - Header button handler -
     
-    @IBAction func rechargeBattery(sender: UIButton) {
+    @IBAction func rechargeBattery(_ sender: UIButton) {
         christmasDecoration.rechargeBattery()
         christmasDecoration.turnAllLightsOn()
         tableView.reloadData()
     }
     
-    @IBAction func addAnotherLight(sender: UIButton) {
+    @IBAction func addAnotherLight(_ sender: UIButton) {
         christmasDecoration.addChristmasLights()
         tableView.reloadData()
     }
     
     // MARK: - Christmas Decoration handlers -
     
-    private func prepareChristmasDecorationHandlers() {
+    fileprivate func prepareChristmasDecorationHandlers() {
         
         christmasDecoration.batteryChargeUpdatedBlock = {
             [weak self] numberOfCharge in
@@ -64,25 +64,25 @@ class FacadeSampleViewController: UITableViewController {
         christmasDecoration.christmasLightUpdatedBlock = {
             [weak self] lightIndex, christmasLight in
             
-            let indexPath = NSIndexPath(forItem: lightIndex, inSection: 0)
+            let indexPath = IndexPath(item: lightIndex, section: 0)
             
-            self?.tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: UITableViewRowAnimation.Automatic)
+            self?.tableView.reloadRows(at: [ indexPath ], with: UITableViewRowAnimation.automatic)
         }
     }
     
     // MARK: - Table view data source -
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return christmasDecoration.christmasLights.count;
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
 
         let christmasLight = christmasDecoration.christmasLights[indexPath.row]
         

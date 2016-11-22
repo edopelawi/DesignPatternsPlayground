@@ -16,16 +16,16 @@ enum FlyweightSampleDuplicationMethod: String {
 protocol FlyweightSampleViewModelDelegate: class {
     
     /// Called when viewModel's `monsterInvaders` property is being updated.
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void)
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void)
     
     /// Called when `viewModel`'s `monsterInvaders` property is updated.
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader])
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader])
     
     /// Called when `viewModel`'s `usedMemoryString` property is updated.
-    func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String)
+    func viewModel(_ viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String)
     
     /// Called when `viewModel`'s `selectedDuplicationMethod` property is updated.
-    func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod)
+    func viewModel(_ viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod)
 }
 
 class FlyweightSampleViewModel {    
@@ -47,7 +47,7 @@ class FlyweightSampleViewModel {
     /// Number of monsters that will be spawned for each `MonsterInvader` in `monsterInvaders` property.
     internal var numberPerType = 0
     
-    internal private(set) var usedMemoryString = "0 byte" {
+    internal fileprivate(set) var usedMemoryString = "0 byte" {
         didSet {
             for (_, delegate) in delegates {
                 delegate.viewModel(self, usedMemoryStringUpdated: usedMemoryString)
@@ -55,7 +55,7 @@ class FlyweightSampleViewModel {
         }
     }
     
-    internal private(set) var monsterInvaders = [MonsterInvader]() {
+    internal fileprivate(set) var monsterInvaders = [MonsterInvader]() {
         didSet {
             updateUsedMemoryString()
             for (_, delegate) in delegates {
@@ -65,22 +65,22 @@ class FlyweightSampleViewModel {
     }
     
     // MARK: Private properties
-    private var selectedMonsterIcons = Set<String>()
-    private var invaderFlyweightFactory = MonsterInvaderFlyweightFactory()
+    fileprivate var selectedMonsterIcons = Set<String>()
+    fileprivate var invaderFlyweightFactory = MonsterInvaderFlyweightFactory()
     
-    private var delegates = [String: FlyweightSampleViewModelDelegate]()
+    fileprivate var delegates = [String: FlyweightSampleViewModelDelegate]()
     
     // MARK: Public methods
     
     /// Add passed `icon` to list of generated monster types during invasion.
     /// - note: If a same `icon` found, nothing will be happened.
-    internal func addMonsterIcon(icon: String) {
+    internal func addMonsterIcon(_ icon: String) {
         selectedMonsterIcons.insert(icon)
     }
     
     /// Remove passed `icon` from list of generated monster types during invasion.
     /// - note: If there's no `icon` found, nothing will be happened.
-    internal func removeMonsterIcon(icon: String) {
+    internal func removeMonsterIcon(_ icon: String) {
         selectedMonsterIcons.remove(icon)
     }
     
@@ -91,9 +91,9 @@ class FlyweightSampleViewModel {
             delegate.viewModel(self, monsterInvadersStartUpdating: Void() )
         }
         
-        let queuePriority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        let queuePriority = DispatchQueue.GlobalQueuePriority.default
         
-        dispatch_async(dispatch_get_global_queue(queuePriority, 0)) {
+        DispatchQueue.global(priority: queuePriority).async {
             [weak self] in
             
             guard let strongSelf = self else {
@@ -102,7 +102,7 @@ class FlyweightSampleViewModel {
             
             let newInvaders = strongSelf.generateNewMonsterInvadersWithCurrentSettings()
             
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 _ in
                 
                 strongSelf.monsterInvaders = newInvaders
@@ -113,9 +113,9 @@ class FlyweightSampleViewModel {
     }
     
     /// Add passed `delegate` to this instance's delegates. Nothing will happen if it's already as a delegate.
-    internal func addDelegate(delegate: FlyweightSampleViewModelDelegate) {
+    internal func addDelegate(_ delegate: FlyweightSampleViewModelDelegate) {
 
-        let delegateAddress = "\(unsafeAddressOf(delegate))"
+        let delegateAddress = "\(Unmanaged<AnyObject>.passUnretained(delegate).toOpaque())"
         let delegateAdded = delegates[delegateAddress] != nil
         
         if delegateAdded {
@@ -126,15 +126,15 @@ class FlyweightSampleViewModel {
     }
     
     /// Remove passed `delegate` from this instance's delegates. Nothing will happen if it's not added as delegate yet.
-    internal func removeDelegate(delegate: FlyweightSampleViewModelDelegate) {
+    internal func removeDelegate(_ delegate: FlyweightSampleViewModelDelegate) {
         
-        let delegateAddress = "\(unsafeAddressOf(delegate))"
+        let delegateAddress = "\(Unmanaged<AnyObject>.passUnretained(delegate).toOpaque())"
         delegates[delegateAddress] = nil
     }
     
     // MARK: Private methods 
     
-    private func generateNewMonsterInvadersWithCurrentSettings() -> [MonsterInvader] {
+    fileprivate func generateNewMonsterInvadersWithCurrentSettings() -> [MonsterInvader] {
     
         if numberPerType <= 0 {
             return []
@@ -154,7 +154,7 @@ class FlyweightSampleViewModel {
         return newMonsterInvaders
     }
     
-    private func generateMonsterInvaderWithCurrentMethod(monsterIcon monsterIcon: String) -> MonsterInvader {
+    fileprivate func generateMonsterInvaderWithCurrentMethod(monsterIcon: String) -> MonsterInvader {
         
         switch selectedDuplicationMethod {
         case .Clone:
@@ -167,13 +167,13 @@ class FlyweightSampleViewModel {
         }
     }
     
-    private func updateUsedMemoryString() {
+    fileprivate func updateUsedMemoryString() {
         
         usedMemoryString = "Calculating..."
         
-        let queuePriority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        let queuePriority = DispatchQueue.GlobalQueuePriority.default
         
-        dispatch_async(dispatch_get_global_queue(queuePriority, 0), {
+        DispatchQueue.global(priority: queuePriority).async(execute: {
             [weak self] _ in
             
             guard let strongSelf = self else {
@@ -182,7 +182,7 @@ class FlyweightSampleViewModel {
             
             let totalSize = strongSelf.calculateUsedMemoryForCurrentInvaders()
             
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 _ in
 
                 // TODO: Refactor this assignment below to add conversion to KB, MB, etc.
@@ -192,13 +192,13 @@ class FlyweightSampleViewModel {
         })
     }
     
-    private func calculateUsedMemoryForCurrentInvaders() -> Int {
+    fileprivate func calculateUsedMemoryForCurrentInvaders() -> Int {
         
         var sizePerMemory = [String: Int]()
         
         for invader in monsterInvaders {
             
-            let invaderMemoryAddress = unsafeAddressOf(invader)
+            let invaderMemoryAddress = Unmanaged.passUnretained(invader).toOpaque()
             let addressKey = "\(invaderMemoryAddress)"
             let addressCounted = sizePerMemory[addressKey] != nil
             

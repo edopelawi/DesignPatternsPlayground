@@ -12,10 +12,10 @@ class TreasureHuntTreasureRoomViewController: UIViewController {
 
     @IBOutlet weak var treasureLabel: UILabel!
     
-    private var treasureRoom: TreasureHuntTreasureRoom?
-    private var takeHomeActionClosure: ((Void) -> (Void))?
+    fileprivate var treasureRoom: TreasureHuntTreasureRoom?
+    fileprivate var takeHomeActionClosure: ((Void) -> (Void))?
     
-    init(treasureRoom: TreasureHuntTreasureRoom, takeHomeActionClosure: (Void) -> (Void)) {
+    init(treasureRoom: TreasureHuntTreasureRoom, takeHomeActionClosure: @escaping (Void) -> (Void)) {
         
         super.init(nibName: "TreasureHuntTreasureRoomViewController", bundle: nil)
         
@@ -36,7 +36,7 @@ class TreasureHuntTreasureRoomViewController: UIViewController {
         
     }
 
-    @IBAction func takeHomeAction(sender: UIButton) {
+    @IBAction func takeHomeAction(_ sender: UIButton) {
         if let validClosure = takeHomeActionClosure {
             validClosure()
         }

@@ -10,8 +10,8 @@ import Foundation
 
 class AscendingNameProductSorter: ProductSorter {
     
-    func sortProducts(products: [Product]) -> [Product] {
+    func sortProducts(_ products: [Product]) -> [Product] {
         
-        return products.sort{ $0.name < $1.name }
+        return products.sorted{ $0.name < $1.name }
     }
 }

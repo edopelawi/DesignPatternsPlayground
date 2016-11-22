@@ -10,13 +10,13 @@ import Foundation
 
 enum StructuralPatternType: Int, PatternType {
     
-    case Adapter = 0
-    case Bridge = 1
-    case Composite = 2
-    case Decorator = 3
-    case Facade = 4
-    case Flyweight = 5
-    case Proxy = 6
+    case adapter = 0
+    case bridge = 1
+    case composite = 2
+    case decorator = 3
+    case facade = 4
+    case flyweight = 5
+    case proxy = 6
     
     static func numberOfTypes() -> Int {
         return 7
@@ -24,13 +24,13 @@ enum StructuralPatternType: Int, PatternType {
     
     func toString() -> String {
         switch self {
-        case .Adapter: return "Adapter"
-        case .Bridge: return "Bridge"
-        case .Composite: return "Composite"
-        case . Decorator: return "Decorator"
-        case .Facade: return "Facade"
-        case .Flyweight: return "Flyweight"
-        case .Proxy: return "Proxy"
+        case .adapter: return "Adapter"
+        case .bridge: return "Bridge"
+        case .composite: return "Composite"
+        case . decorator: return "Decorator"
+        case .facade: return "Facade"
+        case .flyweight: return "Flyweight"
+        case .proxy: return "Proxy"
         }
     }
     

@@ -10,14 +10,14 @@ import UIKit
 
 class BuilderSampleViewController: UITableViewController, BuilderSampleViewModelDelegate {
         
-    @IBOutlet private var headerView: UIView!
-    @IBOutlet private var footerView: UIView!
+    @IBOutlet fileprivate var headerView: UIView!
+    @IBOutlet fileprivate var footerView: UIView!
     
     @IBOutlet weak var packageSelectionButton: UIButton!
     
-    private let reuseIdentifier = "reuseIdentifier"
+    fileprivate let reuseIdentifier = "reuseIdentifier"
     
-    private let viewModel = BuilderSampleViewModel()
+    fileprivate let viewModel = BuilderSampleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,124 +33,124 @@ class BuilderSampleViewController: UITableViewController, BuilderSampleViewModel
 
     }
     
-    private func prepareCommentBarButtons() {
-        self.addCommentsRightBarButton(target: self, action: Selector("pushCommentButton:"))
+    fileprivate func prepareCommentBarButtons() {
+        self.addCommentsRightBarButton(target: self, action: #selector(BuilderSampleViewController.pushCommentButton(_:)))
     }
     
-    @objc private func pushCommentButton(sender: AnyObject) {
-        self.pushCommentaryPage(creationalPatternType: .Builder);
+    @objc fileprivate func pushCommentButton(_ sender: AnyObject) {
+        self.pushCommentaryPage(creationalPatternType: .builder);
     }
     
     // MARK: headerView and footerView's button actions
 
-    @IBAction func clearOrderPartSelections(sender: AnyObject) {
+    @IBAction func clearOrderPartSelections(_ sender: AnyObject) {
         viewModel.resetOrderPartSelections()
         tableView.reloadData()
     }
 
-    @IBAction func showPackageOptions(sender: AnyObject) {
+    @IBAction func showPackageOptions(_ sender: AnyObject) {
         
         let actionController = packageSelectionAlertController()
-        self.presentViewController(actionController, animated: true, completion: nil)
+        self.present(actionController, animated: true, completion: nil)
     }
     
-    @IBAction func sendOrder(sender: AnyObject) {
+    @IBAction func sendOrder(_ sender: AnyObject) {
         
         let order = viewModel.createBurderOrder()
         
         let alert = UIAlertController(
             title: "Order sent!",
             message: order.description(),
-            preferredStyle: .Alert
+            preferredStyle: .alert
         )
         
-        let dismissAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let dismissAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(dismissAction)
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.orderPartNames.count
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Select your order!"
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 
-        cell.selectionStyle = .None
+        cell.selectionStyle = .none
         cell.textLabel?.text = viewModel.orderPartNames[indexPath.row]
 
         let cellSelected = viewModel.orderPartSelectedMarker[indexPath.row]
-        cell.accessoryType = cellSelected ? .Checkmark : .None
+        cell.accessoryType = cellSelected ? .checkmark : .none
 
         return cell
     }
     
 
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-            cell.accessoryType = .None
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .none
         }
         
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         viewModel.orderPartSelectedMarker[indexPath.row] = true
-        tableView.reloadRowsAtIndexPaths([ indexPath ], withRowAnimation: .Fade)
+        tableView.reloadRows(at: [ indexPath ], with: .fade)
     }
     
     
     // MARK: - BuilderSampleViewModel delegate
     
-    func viewModel(viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage) {
+    func viewModel(_ viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage) {
         
-        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, forState: .Normal);
-        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, forState: .Highlighted);
+        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, for: UIControlState());
+        packageSelectionButton.setTitle(selectedPackageChanged.rawValue, for: .highlighted);
     }
     
     // MARK: - Private methods
     
-    private func prepareTableView() {
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+    fileprivate func prepareTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.tableHeaderView = headerView
         tableView.tableFooterView = footerView
     }
     
-    private func preparePackageButton() {
+    fileprivate func preparePackageButton() {
         
         let initialTitle = viewModel.selectedPackage.rawValue
         
-        packageSelectionButton.setTitle(initialTitle, forState: .Normal)
-        packageSelectionButton.setTitle(initialTitle, forState: .Highlighted)
+        packageSelectionButton.setTitle(initialTitle, for: UIControlState())
+        packageSelectionButton.setTitle(initialTitle, for: .highlighted)
     }
     
-    private func packageSelectionAlertController() -> UIAlertController {
+    fileprivate func packageSelectionAlertController() -> UIAlertController {
         
         let alertController = UIAlertController(
             title: nil,
             message: "Choose package!",
-            preferredStyle: .ActionSheet
+            preferredStyle: .actionSheet
         )
         
         for orderPackage in viewModel.orderPackages {
             
             let action = UIAlertAction(
                 title: orderPackage,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] alert in
                     

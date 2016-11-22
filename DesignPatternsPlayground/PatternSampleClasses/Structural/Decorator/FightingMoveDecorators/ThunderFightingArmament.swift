@@ -11,7 +11,7 @@ import Foundation
 class ThunderFightingArmament: FightingMoves {
     
     /// In a sense, an object that implements `FightingMoves` could be called as a `fighter`, no?
-    private var fighter: FightingMoves
+    fileprivate var fighter: FightingMoves
     
     init(fighter: FightingMoves) {
         self.fighter = fighter

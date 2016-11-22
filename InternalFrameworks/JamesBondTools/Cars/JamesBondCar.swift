@@ -26,9 +26,9 @@ public enum JamesBondTerrainType: String {
     }
 }
 
-public class JamesBondCar {
+open class JamesBondCar {
     
-    private var engine: JamesBondCarEngine
+    fileprivate var engine: JamesBondCarEngine
     
     public init(terrainType: JamesBondTerrainType) {
 
@@ -41,12 +41,12 @@ public class JamesBondCar {
     }
     
     /// Returns this car's icon as `String` instance. Mostly emojis.
-    public func carIcon() -> String {
+    open func carIcon() -> String {
         return engine.carIcon()
     }
     
     /// Returns this car's sound as `String` instance.
-    public func engineSound() -> String {
+    open func engineSound() -> String {
         return engine.engineSound()
     }
     

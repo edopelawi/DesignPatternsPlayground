@@ -16,10 +16,10 @@ protocol MessengerObserver: AnyObject {
     // instance is a clone or not.
     
     /// This method will be called if corresponding `Messenger` instance's name is changed.
-    func messenger(messenger: Messenger, nameChanged name: String)
+    func messenger(_ messenger: Messenger, nameChanged name: String)
     
     /// This method will be called if corresponding `Messenger` instance's message is changed.
-    func messenger(messenger: Messenger, messageChanged message: String)
+    func messenger(_ messenger: Messenger, messageChanged message: String)
 }
 
 class Messenger: NSObject, NSCopying {
@@ -41,7 +41,7 @@ class Messenger: NSObject, NSCopying {
     }
     
     /// Observers of this instance. Copying this instance won't copy the observers.
-    private var observers: [ MessengerObserver ]
+    fileprivate var observers: [ MessengerObserver ]
     
     required init(name: String, message: String){
         self.name = name
@@ -50,8 +50,8 @@ class Messenger: NSObject, NSCopying {
     }
     
     /// Adds passed `MessengerObserver` as this instance's observer. Nothing will happen if it's already in the list of observers.
-    internal func addObserver(newObserver: MessengerObserver) {
-        if observers.contains({ unsafeAddressOf($0) == unsafeAddressOf(newObserver) }) {
+    internal func addObserver(_ newObserver: MessengerObserver) {
+        if observers.contains(where: { Unmanaged<AnyObject>.passUnretained($0).toOpaque() == Unmanaged<AnyObject>.passUnretained(newObserver).toOpaque() }) {
             return
         }
         
@@ -59,15 +59,15 @@ class Messenger: NSObject, NSCopying {
     }
     
     /// Removes passed `MessengerObserver` as this instance's observer.  Nothing will happen if it's not in the list of observers.
-    internal func removeObserver(oldObserver: MessengerObserver) {
-        if let observerIndex = observers.indexOf({ unsafeAddressOf($0) == unsafeAddressOf(oldObserver) }) {
-            observers.removeAtIndex(observerIndex)
+    internal func removeObserver(_ oldObserver: MessengerObserver) {
+        if let observerIndex = observers.index(where: { $0 === oldObserver }) {
+            observers.remove(at: observerIndex)
         }
     }
     
     // MARK: NSCopying
     
-    func copyWithZone(zone: NSZone) -> AnyObject {
+    func copy(with zone: NSZone?) -> Any {
         return Messenger(name: self.name, message: self.message)
     }
 }

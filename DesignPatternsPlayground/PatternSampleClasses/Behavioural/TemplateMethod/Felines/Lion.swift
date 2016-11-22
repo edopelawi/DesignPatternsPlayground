@@ -13,30 +13,30 @@ class Lion: Feline {
     override func planDailyActivity() {
         
         morningActivity = [
-            FelineDailyActivity.Hunt,
-            FelineDailyActivity.Hunt,
-            FelineDailyActivity.Eat,
+            FelineDailyActivity.hunt,
+            FelineDailyActivity.hunt,
+            FelineDailyActivity.eat,
         ]
         
         afternoonActivity = [
-            FelineDailyActivity.Play,
-            FelineDailyActivity.Play,
-            FelineDailyActivity.Bath
+            FelineDailyActivity.play,
+            FelineDailyActivity.play,
+            FelineDailyActivity.bath
         ]
         
         eveningActivity = [
-            FelineDailyActivity.Bored,
-            FelineDailyActivity.Sleep
+            FelineDailyActivity.bored,
+            FelineDailyActivity.sleep
         ]
         
     }
     
-    override func stringForFelineActivity(activity: FelineDailyActivity) -> String {
+    override func stringForFelineActivity(_ activity: FelineDailyActivity) -> String {
         switch activity {
-        case .Eat: return "Chew the giraffe from \(gender.possesivePronoun()) last hunt."
-        case .Hunt: return "Lurks on the savannah and hunt some giraffes."
-        case .Bath: return "Licks \(gender.possesivePronoun()) whole body."
-        case .Play: return "Play hunter and hunted with other Lions."            
+        case .eat: return "Chew the giraffe from \(gender.possesivePronoun()) last hunt."
+        case .hunt: return "Lurks on the savannah and hunt some giraffes."
+        case .bath: return "Licks \(gender.possesivePronoun()) whole body."
+        case .play: return "Play hunter and hunted with other Lions."            
         default: return super.stringForFelineActivity(activity)
         }
     }

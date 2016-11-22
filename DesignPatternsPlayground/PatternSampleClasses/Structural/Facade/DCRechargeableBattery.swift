@@ -11,17 +11,17 @@ import Foundation
 protocol DCRechargeableBatteryDelegate: class {
     
     /// Called when passed `battery`'s `numberOfCurrents` updated.
-    func battery(battery: DCRechargeableBattery, numberOfCurrentsUpdated: Int)
+    func battery(_ battery: DCRechargeableBattery, numberOfCurrentsUpdated: Int)
 }
 
 class DCRechargeableBattery {
     
     internal let maximumCurrents = 100
-    internal private(set) var voltage: Double
+    internal fileprivate(set) var voltage: Double
     
     weak internal var delegate: DCRechargeableBatteryDelegate?
     
-    private var currents = [DCCurrent]() {
+    fileprivate var currents = [DCCurrent]() {
         didSet {
             delegate?.battery(self, numberOfCurrentsUpdated: currents.count)
         }
@@ -39,7 +39,7 @@ class DCRechargeableBattery {
     /// Returns array of `DCCurrent`s regarding with requested `numberOfCurrents`.
     /// If there's not enough current available, it will return the remaining
     /// `DCCurrent`s.
-    internal func retrieveCurrents(numberOfCurrents: Int) -> [DCCurrent] {
+    internal func retrieveCurrents(_ numberOfCurrents: Int) -> [DCCurrent] {
         
         var passedCurrents = [DCCurrent]()
         var remainingCurrents = [DCCurrent]()
@@ -61,7 +61,7 @@ class DCRechargeableBattery {
     }
     
     /// Recharge this battery with passed `numberOfCurrents`. It wont charge battery past its `maximumCurrents`.
-    internal func rechargeCurrents(numberOfCurrents: Int) {
+    internal func rechargeCurrents(_ numberOfCurrents: Int) {
         
         var generatedCurrentsCount = 0
         
@@ -77,7 +77,7 @@ class DCRechargeableBattery {
             newCurrents.append(newCurrent)
         }
         
-        currents.appendContentsOf(newCurrents)
+        currents.append(contentsOf: newCurrents)
     }
     
 }

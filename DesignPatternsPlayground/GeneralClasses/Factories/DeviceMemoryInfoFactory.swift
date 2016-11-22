@@ -9,30 +9,38 @@
 import Foundation
 
 enum DeviceMemoryInfoUsageType {
-    case VirtualMemory
-    case ResidentMemory
+    case virtualMemory
+    case residentMemory
 }
 
 class DeviceMemoryInfoFactory {
     
     /// Retrieves currently used memory with passed `usageType`. Returns `Int64` value.
     /// - note: Will return -1 if fails.
-    static func currentUsedMemory(usageType: DeviceMemoryInfoUsageType) -> Int64 {
+    static func currentUsedMemory(_ usageType: DeviceMemoryInfoUsageType) -> Int64 {
         
         var info = task_basic_info()
-        let infoSize = sizeofValue(info)
+        let infoSize = MemoryLayout.size(ofValue: info)
 
         // TODO: Research on why it should be divided by 4.
         var count = mach_msg_type_number_t(infoSize)/4
         
-        let kerr: kern_return_t = withUnsafeMutablePointer(&info) {
-            
-            task_info(
-                mach_task_self_,
-                task_flavor_t(TASK_BASIC_INFO),
-                task_info_t($0),
-                &count
-            )
+        let kerr: kern_return_t = withUnsafeMutablePointer(to: &info) {
+			
+			$0.withMemoryRebound(to: integer_t.self, capacity: 1) {
+				task_info(mach_task_self_,
+				          task_flavor_t(MACH_TASK_BASIC_INFO),
+				          $0,
+				          &count)
+			}
+			
+			
+//            task_info(
+//                mach_task_self_,
+//                task_flavor_t(TASK_BASIC_INFO),
+//                task_info_t($0),
+//                &count
+//            )
             
         }
         
@@ -43,8 +51,8 @@ class DeviceMemoryInfoFactory {
         var usedMemory: vm_size_t
         
         switch usageType {
-        case .VirtualMemory: usedMemory = info.virtual_size
-        case .ResidentMemory: usedMemory = info.resident_size
+        case .virtualMemory: usedMemory = info.virtual_size
+        case .residentMemory: usedMemory = info.resident_size
         }
         
         return Int64(usedMemory)
@@ -56,7 +64,7 @@ class DeviceMemoryInfoFactory {
         
         var requestedInfo = [CTL_HW, HW_MEMSIZE]
         var size = Int64(0)
-        var len = sizeof(size.dynamicType)
+        var len = MemoryLayout<Int64>.size
         
         let result = sysctl(&requestedInfo, 2, &size, &len, nil, 0)
         let resultRetrieved = result == 0

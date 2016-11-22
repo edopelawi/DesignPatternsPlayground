@@ -11,11 +11,11 @@ import UIKit
 extension UIViewController {
     
     /// Adds "Comments" right bar button with passed parameters.
-    func addCommentsRightBarButton(target target: AnyObject, action: Selector) {
+    func addCommentsRightBarButton(target: AnyObject, action: Selector) {
         
         let button = UIBarButtonItem(
             title: "Comments",
-            style: .Plain,
+            style: .plain,
             target: target,
             action: action
         )
@@ -24,7 +24,7 @@ extension UIViewController {
     }
     
     /// Push commentary page for passed `creationalPatternType`. Will only work if this instance has `navigationController`.
-    func pushCommentaryPage(creationalPatternType creationalPatternType: CreationalPatternType) {
+    func pushCommentaryPage(creationalPatternType: CreationalPatternType) {
         
         let commentaries = PatternCommentaryFactory.commentaryForCreationalPatternType(creationalPatternType)
         
@@ -35,7 +35,7 @@ extension UIViewController {
     }    
     
     /// Push commentary page for passed `structuralPatternType`. Will only work if this instance has `navigationController`.
-    func pushCommentaryPage(structuralPatternType structuralPatternType: StructuralPatternType) {
+    func pushCommentaryPage(structuralPatternType: StructuralPatternType) {
         
         let commentaries = PatternCommentaryFactory.commentaryForStructuralPatternType(structuralPatternType)
         
@@ -46,7 +46,7 @@ extension UIViewController {
     }
     
     /// Push commentary page for passed `behaviouralPatternType`. Will only work if this instance has `navigationController`.
-    func pushCommentaryPage(behaviouralPatternType behaviouralPatternType: BehaviouralPatternType) {
+    func pushCommentaryPage(behaviouralPatternType: BehaviouralPatternType) {
         
         let commentaries = PatternCommentaryFactory.commentaryForBehaviouralPatternType(behaviouralPatternType)
         

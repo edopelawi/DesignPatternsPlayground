@@ -9,17 +9,17 @@
 import UIKit
 
 enum PatternTypeTableControllerGroupType {
-    case Creational
-    case Structural
-    case Behavioural
+    case creational
+    case structural
+    case behavioural
 }
 
 class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    private var tableView: UITableView
-    private var patternGroupType: PatternTypeTableControllerGroupType
+    fileprivate var tableView: UITableView
+    fileprivate var patternGroupType: PatternTypeTableControllerGroupType
     
-    private let cellReuseIdentifier = "PatternCellIdentifier"
+    fileprivate let cellReuseIdentifier = "PatternCellIdentifier"
     
     /// Executed when a `PatternType` is selected.
     internal var patternTypeSelectedClosure: ((PatternType) -> Void)?
@@ -34,23 +34,23 @@ class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDe
         configureCurrentTableView()
     }
     
-    private func configureCurrentTableView() {
+    fileprivate func configureCurrentTableView() {
         
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
     }
     
-    private func patternTypeForRow(row: Int) -> PatternType? {
+    fileprivate func patternTypeForRow(_ row: Int) -> PatternType? {
         switch patternGroupType {
-        case .Creational: return CreationalPatternType(rawValue: row)
-        case .Structural: return StructuralPatternType(rawValue: row)
-        case .Behavioural: return BehaviouralPatternType(rawValue: row)
+        case .creational: return CreationalPatternType(rawValue: row)
+        case .structural: return StructuralPatternType(rawValue: row)
+        case .behavioural: return BehaviouralPatternType(rawValue: row)
         }
     }
     
-    private func configureCell(cell: UITableViewCell, forRow row: Int) {
+    fileprivate func configureCell(_ cell: UITableViewCell, forRow row: Int) {
         
         var text = ""
         
@@ -61,31 +61,31 @@ class PatternTypeTableController: NSObject, UITableViewDataSource, UITableViewDe
         cell.textLabel?.text = text
         
         cell.backgroundColor = tableView.backgroundColor
-        cell.accessoryType = .DisclosureIndicator
+        cell.accessoryType = .disclosureIndicator
         
-        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.textColor = UIColor.white
     }
     
     // MARK: - UITableView Delegate and Datasource -
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch patternGroupType {
-        case .Creational: return CreationalPatternType.numberOfTypes()
-        case .Structural: return StructuralPatternType.numberOfTypes()
-        case .Behavioural: return BehaviouralPatternType.numberOfTypes()
+        case .creational: return CreationalPatternType.numberOfTypes()
+        case .structural: return StructuralPatternType.numberOfTypes()
+        case .behavioural: return BehaviouralPatternType.numberOfTypes()
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
         
         self.configureCell(cell, forRow: indexPath.row)
         
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let patternSelectedClosure = patternTypeSelectedClosure else {
             return

@@ -13,10 +13,10 @@ class MessengerTableViewCell: UITableViewCell, MessengerObserver {
     static let identifier = "MessengerCellIdentifier"
     static let preferredHeight = CGFloat(96)
     
-    @IBOutlet private weak var nameTextField: UITextField!
-    @IBOutlet private weak var messageTextField: UITextField!
+    @IBOutlet fileprivate weak var nameTextField: UITextField!
+    @IBOutlet fileprivate weak var messageTextField: UITextField!
     
-    private var currentMessenger: Messenger? {
+    fileprivate var currentMessenger: Messenger? {
         didSet {
             if let validOldMessenger = oldValue {
                 validOldMessenger.removeObserver(self)
@@ -37,18 +37,18 @@ class MessengerTableViewCell: UITableViewCell, MessengerObserver {
         return UINib(nibName: "MessengerTableViewCell", bundle: nil)
     }
     
-    internal func configureForMessenger(messenger: Messenger) {
+    internal func configureForMessenger(_ messenger: Messenger) {
         currentMessenger = messenger
     }
     
-    @IBAction func nameTextEdited(sender: UITextField) {
+    @IBAction func nameTextEdited(_ sender: UITextField) {
         
         if let validText = sender.text {
             currentMessenger?.name = validText
         }
     }
     
-    @IBAction func messageTextEdited(sender: UITextField) {
+    @IBAction func messageTextEdited(_ sender: UITextField) {
         
         if let validText = sender.text {
             currentMessenger?.message = validText
@@ -57,7 +57,7 @@ class MessengerTableViewCell: UITableViewCell, MessengerObserver {
     
     // MARK: UITextField delegate
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         
         guard let messenger = currentMessenger else {
             return
@@ -76,11 +76,11 @@ class MessengerTableViewCell: UITableViewCell, MessengerObserver {
     
     // MARK: MessengerObserver methods
     
-    func messenger(messenger: Messenger, messageChanged message: String) {
+    func messenger(_ messenger: Messenger, messageChanged message: String) {
         messageTextField.text = message
     }
     
-    func messenger(messenger: Messenger, nameChanged name: String) {
+    func messenger(_ messenger: Messenger, nameChanged name: String) {
         nameTextField.text = name
     }
     

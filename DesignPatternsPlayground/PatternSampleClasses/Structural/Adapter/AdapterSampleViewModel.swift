@@ -26,13 +26,13 @@ enum AdapterSampleOrder: String {
 protocol AdapterSampleViewModelDelegate: class {
     
     /// Executed when passed `viewModel`'s `currentDialogue` is updated.
-    func currentDialogueUpdated(viewModel: AdapterSampleViewModel, currentDialogue: String)
+    func currentDialogueUpdated(_ viewModel: AdapterSampleViewModel, currentDialogue: String)
 
     /// Executed when passed `viewModel`'s `selectedPlace` is updated.
-    func selectedPlaceUpdated(viewModel: AdapterSampleViewModel, selectedPlace: AdapterSamplePlace)
+    func selectedPlaceUpdated(_ viewModel: AdapterSampleViewModel, selectedPlace: AdapterSamplePlace)
     
     /// Executed when passed `viewModel`'s `selectedOrder` is updated.
-    func selectedOrderUpdated(viewModel: AdapterSampleViewModel, selectedOrder: AdapterSampleOrder)
+    func selectedOrderUpdated(_ viewModel: AdapterSampleViewModel, selectedOrder: AdapterSampleOrder)
 }
 
 class AdapterSampleViewModel {
@@ -87,22 +87,22 @@ class AdapterSampleViewModel {
     
     // MARK: Animal Chefs
     
-    private let catChef = CatChef()
-    private let koalaChef = KoalaChef()
-    private let monkeyChef = MonkeyChef()
-    private let pandaChef = PandaChef()
+    fileprivate let catChef = CatChef()
+    fileprivate let koalaChef = KoalaChef()
+    fileprivate let monkeyChef = MonkeyChef()
+    fileprivate let pandaChef = PandaChef()
     
     // MARK: Tour Guides
     
-    private var catTourGuide: CatCulinaryTourGuide!
-    private var koalaTourGuide: KoalaCulinaryTourGuide!
-    private var monkeyTourGuide: MonkeyCulinaryTourGuide!
-    private var pandaTourGuide: PandaCulinaryTourGuide!
-    private var bearTourGuide: BearCulinaryTourGuide!
+    fileprivate var catTourGuide: CatCulinaryTourGuide!
+    fileprivate var koalaTourGuide: KoalaCulinaryTourGuide!
+    fileprivate var monkeyTourGuide: MonkeyCulinaryTourGuide!
+    fileprivate var pandaTourGuide: PandaCulinaryTourGuide!
+    fileprivate var bearTourGuide: BearCulinaryTourGuide!
     
     // MARK: Bear Tourist
     
-    private var bearTourist = BearCulinaryTourist()
+    fileprivate var bearTourist = BearCulinaryTourist()
     
     init() {
         prepareTourGuides()
@@ -111,7 +111,7 @@ class AdapterSampleViewModel {
     
     // MARK: Private methods
     
-    private func prepareTourGuides() {
+    fileprivate func prepareTourGuides() {
         catTourGuide = CatCulinaryTourGuide(chef: catChef)
         koalaTourGuide = KoalaCulinaryTourGuide(chef: koalaChef)
         monkeyTourGuide = MonkeyCulinaryTourGuide(chef: monkeyChef)
@@ -119,7 +119,7 @@ class AdapterSampleViewModel {
         bearTourGuide = BearCulinaryTourGuide()
     }
     
-    private func tourGuideForPlace(place: AdapterSamplePlace) -> AnimalCulinaryTourGuide? {
+    fileprivate func tourGuideForPlace(_ place: AdapterSamplePlace) -> AnimalCulinaryTourGuide? {
         switch place {
         case .None: return nil
         case .AntipodeanTrees: return koalaTourGuide
@@ -130,7 +130,7 @@ class AdapterSampleViewModel {
         }
     }
     
-    private func updateCurrentDialogue() {
+    fileprivate func updateCurrentDialogue() {
         currentDialogue = ""
         
         switch selectedOrder {

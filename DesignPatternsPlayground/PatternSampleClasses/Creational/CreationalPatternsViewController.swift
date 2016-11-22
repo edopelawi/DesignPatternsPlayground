@@ -12,23 +12,23 @@ class CreationalPatternsViewController: UIViewController {
 
     // MARK: Properties
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
-    private var tableController: PatternTypeTableController!
+    fileprivate var tableController: PatternTypeTableController!
     
     // MARK: - UIViewController -
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBarHidden = false
+        navigationController?.isNavigationBarHidden = false
         title = "Creational Design Patterns"
         
         tableView.backgroundColor = view.backgroundColor
         
         tableController = PatternTypeTableController(
             tableView: tableView,
-            patternGroupType: .Creational
+            patternGroupType: .creational
         )
         
         tableController.patternTypeSelectedClosure = {
@@ -45,16 +45,16 @@ class CreationalPatternsViewController: UIViewController {
     
     // MARK: - Private Methods -
     
-    private func pushPageForPatternType(patternType: CreationalPatternType) {
+    fileprivate func pushPageForPatternType(_ patternType: CreationalPatternType) {
 
         var viewController: UIViewController?
         
         switch patternType {
-        case .AbstractFactory: viewController = AbstractFactorySampleViewController()
-        case .FactoryMethod: viewController = FactoryMethodSampleViewController()
-        case .Builder: viewController = BuilderSampleViewController()
-        case .Prototype: viewController = PrototypeSampleViewController()
-        case .Singleton: viewController = SingletonSampleViewController()
+        case .abstractFactory: viewController = AbstractFactorySampleViewController()
+        case .factoryMethod: viewController = FactoryMethodSampleViewController()
+        case .builder: viewController = BuilderSampleViewController()
+        case .prototype: viewController = PrototypeSampleViewController()
+        case .singleton: viewController = SingletonSampleViewController()
         }
         
         if let viewController = viewController {
