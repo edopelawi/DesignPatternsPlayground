@@ -115,7 +115,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                         return
                     }
                     
-                    strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
+                    let _ = strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
                     
             })
             
@@ -136,7 +136,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                     for viewController in viewControllers {
                         
                         if let firstPage = viewController as? CompositeSampleViewController {
-                            strongSelf.navigationController?.popToViewController(firstPage, animated: true)
+                            let _ = strongSelf.navigationController?.popToViewController(firstPage, animated: true)
                             break
                         }
                     }                    
