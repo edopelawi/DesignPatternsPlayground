@@ -91,10 +91,7 @@ class FlyweightSampleViewModel {
             delegate.viewModel(self, monsterInvadersStartUpdating: Void() )
         }
         
-        let queuePriority = DispatchQueue.GlobalQueuePriority.default
-        
-        DispatchQueue.global(priority: queuePriority).async {
-            [weak self] in
+		DispatchQueue.global(qos: .default).async { [weak self] in
             
             guard let strongSelf = self else {
                 return
@@ -102,12 +99,11 @@ class FlyweightSampleViewModel {
             
             let newInvaders = strongSelf.generateNewMonsterInvadersWithCurrentSettings()
             
-            DispatchQueue.main.async(execute: {
-                _ in
+            DispatchQueue.main.async { _ in
                 
                 strongSelf.monsterInvaders = newInvaders
-                
-            })
+				
+            }
         }
         
     }
@@ -171,10 +167,7 @@ class FlyweightSampleViewModel {
         
         usedMemoryString = "Calculating..."
         
-        let queuePriority = DispatchQueue.GlobalQueuePriority.default
-        
-        DispatchQueue.global(priority: queuePriority).async(execute: {
-            [weak self] _ in
+        DispatchQueue.global(qos: .default).async { [weak self] _ in
             
             guard let strongSelf = self else {
                 return
@@ -182,14 +175,13 @@ class FlyweightSampleViewModel {
             
             let totalSize = strongSelf.calculateUsedMemoryForCurrentInvaders()
             
-            DispatchQueue.main.async(execute: {
-                _ in
+            DispatchQueue.main.async { _ in
 
                 // TODO: Refactor this assignment below to add conversion to KB, MB, etc.
                 
                 self?.usedMemoryString = "\(totalSize) bytes"
-            })
-        })
+            }
+        }
     }
     
     fileprivate func calculateUsedMemoryForCurrentInvaders() -> Int {

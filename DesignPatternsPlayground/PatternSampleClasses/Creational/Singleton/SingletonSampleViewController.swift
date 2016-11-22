@@ -51,18 +51,17 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
     
     fileprivate func loadDiaryData() {
         
-        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async {
-            [weak self] _ in
+        DispatchQueue.global(qos: .default).async { [weak self] _ in
 
             self?.diary = Diary.sharedDiary
             
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 _ in
                 
                 self?.titleTextField.text = self?.diary.name
                 self?.diaryTextView.text = self?.diary.diaryText
                 self?.activityIndicator.stopAnimating()
-            })
+            }
         }
         
     }
