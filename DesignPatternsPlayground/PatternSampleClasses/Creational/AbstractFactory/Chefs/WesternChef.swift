@@ -26,7 +26,7 @@ struct WesternChef: Chef {
             selectedFoodName = foodName
         }
         
-        return Food(type: .Western, name: selectedFoodName)
+        return Food(type: .western, name: selectedFoodName)
     }
 
 }

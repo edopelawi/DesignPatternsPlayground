@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class FlyweightSampleViewController: UICollectionViewController, FlyweightSampleCollectionHeaderViewDelegate, FlyweightSampleViewModelDelegate {
     
-    private var viewModel = FlyweightSampleViewModel()
+    fileprivate var viewModel = FlyweightSampleViewModel()
     
     convenience init() {
         self.init(nibName:"FlyweightSampleViewController", bundle:nil)
@@ -31,39 +31,39 @@ class FlyweightSampleViewController: UICollectionViewController, FlyweightSample
         addCommentBarButton()
     }
 
-    private func registerNibs() {
-        collectionView?.registerNib(
+    fileprivate func registerNibs() {
+        collectionView?.register(
             FlyweightSampleCollectionHeaderView.nib(),
             forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
             withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier
         )
         
-        collectionView?.registerNib(
+        collectionView?.register(
             FlyweightSampleCollectionViewCell.nib(),
             forCellWithReuseIdentifier: FlyweightSampleCollectionViewCell.identifier
         )
     }
     
-    private func addCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(FlyweightSampleViewController.pushCommentsPage(_:)))
     }
     
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        pushCommentaryPage(structuralPatternType: .Flyweight)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .flyweight)
     }
     
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(
-            UICollectionElementKindSectionHeader,
+        let headerView = collectionView.dequeueReusableSupplementaryView(
+            ofKind: UICollectionElementKindSectionHeader,
             withReuseIdentifier: FlyweightSampleCollectionHeaderView.identifier,
-            forIndexPath: indexPath
+            for: indexPath
         ) as! FlyweightSampleCollectionHeaderView
         
         headerView.configureForViewModel(viewModel)
@@ -71,18 +71,18 @@ class FlyweightSampleViewController: UICollectionViewController, FlyweightSample
         return headerView
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return FlyweightSampleCollectionHeaderView.preferredSize()
     }    
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.monsterInvaders.count
     }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let identifier = FlyweightSampleCollectionViewCell.identifier
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! FlyweightSampleCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! FlyweightSampleCollectionViewCell
     
         let monster = viewModel.monsterInvaders[indexPath.row]
         let monsterNumber = "#\(indexPath.row)"
@@ -95,26 +95,26 @@ class FlyweightSampleViewController: UICollectionViewController, FlyweightSample
 
     // MARK: FlyweightSampleCollectionHeaderViewDelegate 
     
-    func headerView(headerView: FlyweightSampleCollectionHeaderView, shouldPresentAlertController: UIAlertController) {
+    func headerView(_ headerView: FlyweightSampleCollectionHeaderView, shouldPresentAlertController: UIAlertController) {
         
-        presentViewController(shouldPresentAlertController, animated: true, completion: nil)
+        present(shouldPresentAlertController, animated: true, completion: nil)
     }
     
     // MARK: FlyweightSampleViewModelDelegate
     
-    func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
         
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
         
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader]) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader]) {
         collectionView?.reloadData()
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
         
     }
     

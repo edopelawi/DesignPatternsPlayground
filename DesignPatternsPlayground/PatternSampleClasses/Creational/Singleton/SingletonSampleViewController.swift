@@ -10,13 +10,13 @@ import UIKit
 
 class SingletonSampleViewController: UIViewController, UITextViewDelegate {
 
-    @IBOutlet private weak var titleTextField: UITextField!
-    @IBOutlet private weak var diaryTextView: UITextView!
+    @IBOutlet fileprivate weak var titleTextField: UITextField!
+    @IBOutlet fileprivate weak var diaryTextView: UITextView!
     
-    @IBOutlet private weak var topSpaceConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var topSpaceConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private var diary: Diary!
+    fileprivate var diary: Diary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,15 +32,15 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
         
     }
     
-    private func configureCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(SingletonSampleViewController.pushCommentsPage(_:)))
     }
     
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        pushCommentaryPage(creationalPatternType: .Singleton)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        pushCommentaryPage(creationalPatternType: .singleton)
     }
     
-    private func configureTopSpaceConstraint() {
+    fileprivate func configureTopSpaceConstraint() {
         if let navigationBarHeight = navigationController?.navigationBar.frame.height {
             let statusBarHeight = CGFloat(20)
             let topPadding = CGFloat(8)
@@ -49,40 +49,39 @@ class SingletonSampleViewController: UIViewController, UITextViewDelegate {
         }
     }
     
-    private func loadDiaryData() {
+    fileprivate func loadDiaryData() {
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            [weak self] _ in
+        DispatchQueue.global(qos: .default).async { [weak self] _ in
 
             self?.diary = Diary.sharedDiary
             
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async {
                 _ in
                 
                 self?.titleTextField.text = self?.diary.name
                 self?.diaryTextView.text = self?.diary.diaryText
                 self?.activityIndicator.stopAnimating()
-            })
+            }
         }
         
     }
     
     // MARK: IBActions
 
-    @IBAction func diaryTitleChanged(sender: UITextField) {
+    @IBAction func diaryTitleChanged(_ sender: UITextField) {
         
         if let diaryTitle = sender.text {
             diary.name = diaryTitle
         }
     }
     
-    @IBAction func mainViewTapped(sender: UITapGestureRecognizer) {
+    @IBAction func mainViewTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
     // MARK: UITextView delegate
     
-    func textViewDidChange(textView: UITextView) {        
+    func textViewDidChange(_ textView: UITextView) {        
         diary.diaryText = textView.text
     }
     

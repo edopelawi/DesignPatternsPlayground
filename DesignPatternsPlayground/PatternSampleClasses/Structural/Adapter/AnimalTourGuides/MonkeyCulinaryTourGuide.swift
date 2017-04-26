@@ -18,13 +18,13 @@ class MonkeyCulinaryTourGuide: AnimalCulinaryTourGuide {
         return "🐵🍌"
     }
     
-    private var chef: MonkeyChef
+    fileprivate var chef: MonkeyChef
     
     init(chef: MonkeyChef) {
         self.chef = chef
     }
     
-    func requestDrinks(closure: AnimalCulinaryRequestClosure) {
+    func requestDrinks(_ closure: AnimalCulinaryRequestClosure) {
         var dialogue = basicDialogue()
 
         dialogue.tourGuideDialogue = "Chef, may I have a drink for this good man, ooh aah?"
@@ -33,7 +33,7 @@ class MonkeyCulinaryTourGuide: AnimalCulinaryTourGuide {
         closure(dialogue)
     }
     
-    func requestFood(closure: AnimalCulinaryRequestClosure) {
+    func requestFood(_ closure: AnimalCulinaryRequestClosure) {
         
         var dialogue = basicDialogue()
         
@@ -45,7 +45,7 @@ class MonkeyCulinaryTourGuide: AnimalCulinaryTourGuide {
     
     // MARK: Private methods
     
-    private func basicDialogue() -> AnimalCulinaryTourDialogue {
+    fileprivate func basicDialogue() -> AnimalCulinaryTourDialogue {
         var dialogue = AnimalCulinaryTourDialogue()
         
         dialogue.tourGuideName = "Ganteng(🐵)"
@@ -54,9 +54,9 @@ class MonkeyCulinaryTourGuide: AnimalCulinaryTourGuide {
         return dialogue
     }
     
-    private func getFoodFromChef() -> String {
+    fileprivate func getFoodFromChef() -> String {
         
-        let randomInt = random() % 2
+        let randomInt = arc4random() % 2
         
         if randomInt > 0 {
             return chef.apple()

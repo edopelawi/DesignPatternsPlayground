@@ -10,12 +10,12 @@ import UIKit
 
 class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelDelegate {
 
-    @IBOutlet private weak var fightingMoveButton: UIButton!
-    @IBOutlet private weak var armamentButton: UIButton!
+    @IBOutlet fileprivate weak var fightingMoveButton: UIButton!
+    @IBOutlet fileprivate weak var armamentButton: UIButton!
     
-    @IBOutlet private weak var resultLabel: UILabel!
+    @IBOutlet fileprivate weak var resultLabel: UILabel!
     
-    private var viewModel = DecoratorSampleViewModel()
+    fileprivate var viewModel = DecoratorSampleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +25,15 @@ class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelD
         addCommentBarButton()
     }
     
-    @IBAction func showFightingMoveOptions(sender: UIButton) {
+    @IBAction func showFightingMoveOptions(_ sender: UIButton) {
         
-        let actionSheet = UIAlertController(title: "Fighting Moves", message: "", preferredStyle: .ActionSheet)
+        let actionSheet = UIAlertController(title: "Fighting Moves", message: "", preferredStyle: .actionSheet)
         
         for fightingMove in viewModel.fightingMoveOptions {
             
             let action = UIAlertAction(
                 title: fightingMove.rawValue,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
                     self?.viewModel.selectedFightingMove = fightingMove
@@ -43,18 +43,18 @@ class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelD
             actionSheet.addAction(action)
         }
         
-        self.presentViewController(actionSheet, animated: true, completion: nil)
+        self.present(actionSheet, animated: true, completion: nil)
     }
 
-    @IBAction func showArmamentOptions(sender: UIButton) {
+    @IBAction func showArmamentOptions(_ sender: UIButton) {
         
-        let actionSheet = UIAlertController(title: "Fighting Armaments", message: "", preferredStyle: .ActionSheet)
+        let actionSheet = UIAlertController(title: "Fighting Armaments", message: "", preferredStyle: .actionSheet)
         
         for armament in viewModel.armamentOptions {
             
             let action = UIAlertAction(
                 title: armament.rawValue,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
                     self?.viewModel.selectedArmament = armament
@@ -64,44 +64,44 @@ class DecoratorSampleViewController: UIViewController, DecoratorSampleViewModelD
             actionSheet.addAction(action)
         }
         
-        self.presentViewController(actionSheet, animated: true, completion: nil)
+        self.present(actionSheet, animated: true, completion: nil)
     }
     
     // MARK: DecoratorSampleViewModelDelegate
     
-    func selectedArmamentUpdated(viewModel: DecoratorSampleViewModel, selectedArmament: DecoratorSampleViewModelArmaments) {
-        armamentButton.setTitle(selectedArmament.rawValue, forState: .Normal)
-        armamentButton.setTitle(selectedArmament.rawValue, forState: .Highlighted)
+    func selectedArmamentUpdated(_ viewModel: DecoratorSampleViewModel, selectedArmament: DecoratorSampleViewModelArmaments) {
+        armamentButton.setTitle(selectedArmament.rawValue, for: UIControlState())
+        armamentButton.setTitle(selectedArmament.rawValue, for: .highlighted)
     }
     
-    func selectedFightingMoveUpdated(viewModel: DecoratorSampleViewModel, selectedFightingMove: DecoratorSampleViewModelMoves) {
-        fightingMoveButton.setTitle(selectedFightingMove.rawValue, forState: .Normal)
-        fightingMoveButton.setTitle(selectedFightingMove.rawValue, forState: .Highlighted)
+    func selectedFightingMoveUpdated(_ viewModel: DecoratorSampleViewModel, selectedFightingMove: DecoratorSampleViewModelMoves) {
+        fightingMoveButton.setTitle(selectedFightingMove.rawValue, for: UIControlState())
+        fightingMoveButton.setTitle(selectedFightingMove.rawValue, for: .highlighted)
     }
     
-    func resultMoveUpdated(viewModel: DecoratorSampleViewModel, resultMove: String) {
+    func resultMoveUpdated(_ viewModel: DecoratorSampleViewModel, resultMove: String) {
         resultLabel.text = resultMove
     }
     
     // MARK: Private methods
     
-    private func loadInitialViewModelValue() {
+    fileprivate func loadInitialViewModelValue() {
         let selectedArmamentString = viewModel.selectedArmament.rawValue
-        armamentButton.setTitle(selectedArmamentString, forState: .Normal)
-        armamentButton.setTitle(selectedArmamentString, forState: .Highlighted)
+        armamentButton.setTitle(selectedArmamentString, for: UIControlState())
+        armamentButton.setTitle(selectedArmamentString, for: .highlighted)
         
         let selectedMoveString = viewModel.selectedFightingMove.rawValue
-        fightingMoveButton.setTitle(selectedMoveString, forState: .Normal)
-        fightingMoveButton.setTitle(selectedMoveString, forState: .Highlighted)
+        fightingMoveButton.setTitle(selectedMoveString, for: UIControlState())
+        fightingMoveButton.setTitle(selectedMoveString, for: .highlighted)
         
         resultLabel.text = viewModel.resultMove
     }
     
-    private func addCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    fileprivate func addCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(DecoratorSampleViewController.pushCommentPage(_:)))
     }
     
-    @objc private func pushCommentPage(sender: AnyObject) {
-        pushCommentaryPage(structuralPatternType: .Decorator)
+    @objc fileprivate func pushCommentPage(_ sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .decorator)
     }
 }

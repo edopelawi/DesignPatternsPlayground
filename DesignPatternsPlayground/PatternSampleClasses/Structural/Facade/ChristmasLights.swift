@@ -10,20 +10,20 @@ import Foundation
 
 class ChristmasLights {
     
-    private var battery: DCRechargeableBattery
-    private var timer: NSTimer?
+    fileprivate var battery: DCRechargeableBattery
+    fileprivate var timer: Timer?
     
     /// Emojis that used to present this instance.
     internal var lightEmojis = "" {
         didSet {
             if let validChangeBlock = lightEmojisChangedBlock {
-                validChangeBlock(lightEmojis: lightEmojis);
+                validChangeBlock(lightEmojis);
             }
         }
     }
     
     /// Block that will be executed when this instace's `lightEmojis` changed.
-    internal var lightEmojisChangedBlock: ((lightEmojis: String) -> Void)?
+    internal var lightEmojisChangedBlock: ((_ lightEmojis: String) -> Void)?
     
     static internal let minimumVoltage = 0.3
     static internal let preferredVoltage = 0.5
@@ -31,11 +31,11 @@ class ChristmasLights {
     
     internal let minimumDCCurrent = 1
     
-    private let refreshEmojiInterval = NSTimeInterval(1.5)
+    fileprivate let refreshEmojiInterval = TimeInterval(1.5)
     
-    private let lightEmojisDefaultLength = 12
+    fileprivate let lightEmojisDefaultLength = 12
     
-    static private let validEmojis = [
+    static fileprivate let validEmojis = [
         "❤️", "💜", "💛",
         "💚", "💙", "🔴",
         "🔵", "🔶", "🔷",
@@ -62,9 +62,9 @@ class ChristmasLights {
         
         refreshLightEmoji()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(self.refreshEmojiInterval,
+        timer = Timer.scheduledTimer(timeInterval: self.refreshEmojiInterval,
             target: self,
-            selector: Selector("refreshLightEmoji"),
+            selector: #selector(ChristmasLights.refreshLightEmoji),
             userInfo: nil,
             repeats: true
         )
@@ -81,7 +81,7 @@ class ChristmasLights {
         lightEmojis = ""
     }
     
-    @objc private func refreshLightEmoji() {
+    @objc fileprivate func refreshLightEmoji() {
         
         let validVoltage = (battery.voltage <= ChristmasLights.maximumVoltage) && (battery.voltage >= ChristmasLights.minimumVoltage)
         
@@ -100,7 +100,7 @@ class ChristmasLights {
         lightEmojis = retrieveRandomEmojis()
     }
     
-    private func retrieveRandomEmojis() -> String {
+    fileprivate func retrieveRandomEmojis() -> String {
         
         let voltageRatio = Double(battery.voltage / ChristmasLights.preferredVoltage)
         let emojisLength = lightEmojisDefaultLength * Int(ceil(voltageRatio))
@@ -110,7 +110,7 @@ class ChristmasLights {
         for _ in 0 ..< emojisLength {
             
             if let randomisedEmoji = ChristmasLights.validEmojis.randomElement() {
-                emojis.appendContentsOf(randomisedEmoji)
+                emojis.append(randomisedEmoji)
             }
         }
         

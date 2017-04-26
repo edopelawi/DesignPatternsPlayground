@@ -9,8 +9,8 @@
 import Foundation
 
 enum PandaBeverage {
-    case GreenTea
-    case Beer
+    case greenTea
+    case beer
 }
 
 class PandaChef {
@@ -19,10 +19,10 @@ class PandaChef {
         return "Bambo Leaves! 🎋 If you're lucky, you'll find money in the red envelope!"
     }
     
-    func beverage(type: PandaBeverage) -> String {
+    func beverage(_ type: PandaBeverage) -> String {
         switch type {
-        case .GreenTea: return "Green Tea! 🍵 Good drink after you finished eating, extra health for you!"
-        case .Beer: return "Beer! 🍺 This one's a secret recipe from Mangix, the legendary brewmaster!"
+        case .greenTea: return "Green Tea! 🍵 Good drink after you finished eating, extra health for you!"
+        case .beer: return "Beer! 🍺 This one's a secret recipe from Mangix, the legendary brewmaster!"
         }
     }
     

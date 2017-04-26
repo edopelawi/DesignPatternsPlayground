@@ -10,7 +10,7 @@ import Foundation
 
 struct DCCurrent {
     
-    internal private(set) var voltage: Double
+    internal fileprivate(set) var voltage: Double
     
     init(voltage: Double) {
         self.voltage = voltage

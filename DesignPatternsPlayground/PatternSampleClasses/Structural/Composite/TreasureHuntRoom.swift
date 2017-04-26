@@ -9,9 +9,9 @@
 import Foundation
 
 enum TreasureHuntRoomContentType {
-    case MoreRooms
-    case Treasure
-    case Monster
+    case moreRooms
+    case treasure
+    case monster
 }
 
 protocol TreasureHuntRoom {

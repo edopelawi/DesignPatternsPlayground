@@ -16,37 +16,37 @@ class CompositeSampleViewController: UIViewController {
         configureCommentBarButton()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBarHidden = false
+        navigationController?.isNavigationBarHidden = false
     }
 
-    @IBAction func enterEasyDungeon(sender: UIButton) {
+    @IBAction func enterEasyDungeon(_ sender: UIButton) {
         let depth = 3
         pushDungeonWithDepth(depth)
     }
 
-    @IBAction func enterMediumDungeon(sender: UIButton) {
+    @IBAction func enterMediumDungeon(_ sender: UIButton) {
         let depth = 7
         pushDungeonWithDepth(depth)
     }
     
-    @IBAction func enterHardDungeon(sender: UIButton) {
+    @IBAction func enterHardDungeon(_ sender: UIButton) {
         let depth = 12
         pushDungeonWithDepth(depth)
     }
     
     // MARK: Private methods
     
-    private func configureCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentsPage:"))
+    fileprivate func configureCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(CompositeSampleViewController.pushCommentsPage(_:)))
     }
     
-    @objc private func pushCommentsPage(sender: AnyObject) {
-        pushCommentaryPage(structuralPatternType: .Composite)
+    @objc fileprivate func pushCommentsPage(_ sender: AnyObject) {
+        pushCommentaryPage(structuralPatternType: .composite)
     }
     
-    private func pushDungeonWithDepth(depth: Int) {
+    fileprivate func pushDungeonWithDepth(_ depth: Int) {
         let alleyRoom = TreasureHuntRoomFactory.treasureHuntRoomsWithDepth(depth) as! TreasureHuntAlleyRoom
         let viewController = TreasureHuntAlleyRoomViewController(alleyRoom: alleyRoom)
         

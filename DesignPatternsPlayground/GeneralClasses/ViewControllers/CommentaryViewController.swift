@@ -10,10 +10,10 @@ import UIKit
 
 class CommentaryViewController: UIViewController {
 
-    @IBOutlet private weak var commentaryLabel: UILabel!
-    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet fileprivate weak var commentaryLabel: UILabel!
+    @IBOutlet fileprivate weak var scrollView: UIScrollView!
     
-    private var commentaryTextBuffer: String?
+    fileprivate var commentaryTextBuffer: String?
     
     convenience init() {
         self.init(nibName: "CommentaryViewController", bundle: nil)
@@ -34,7 +34,7 @@ class CommentaryViewController: UIViewController {
         }
     }
     
-    internal func setCommentaryText(commentary: String) {
+    internal func setCommentaryText(_ commentary: String) {
         
         if commentaryLabel != nil {
             commentaryLabel.text = commentary

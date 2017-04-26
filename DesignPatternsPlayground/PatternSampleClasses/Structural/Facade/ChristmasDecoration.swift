@@ -12,7 +12,7 @@ import Foundation
 
 class ChristmasDecoration: DCRechargeableBatteryDelegate {
   
-    private var baseVoltage = ChristmasLights.preferredVoltage
+    fileprivate var baseVoltage = ChristmasLights.preferredVoltage
     
     /// This instance's `DCRechargeableBattery` that used to power its `christmasLights`.
     internal var battery: DCRechargeableBattery!
@@ -21,10 +21,10 @@ class ChristmasDecoration: DCRechargeableBatteryDelegate {
     internal var christmasLights = [ChristmasLights]()
     
     /// Block that will be executed each time this instance's `battery` is charged.
-    internal var batteryChargeUpdatedBlock: ((numberOfCharge: Int) -> Void)?
+    internal var batteryChargeUpdatedBlock: ((_ numberOfCharge: Int) -> Void)?
     
     /// Block that will be executed each time any of `ChristmasLights` got its lights updated.
-    internal var christmasLightUpdatedBlock: ((indexOfLight: Int, christmasLight: ChristmasLights) -> Void)?
+    internal var christmasLightUpdatedBlock: ((_ indexOfLight: Int, _ christmasLight: ChristmasLights) -> Void)?
     
     init() {
         battery = DCRechargeableBattery(voltage: baseVoltage)
@@ -33,10 +33,10 @@ class ChristmasDecoration: DCRechargeableBatteryDelegate {
     
     // MARK: DCRechargeableBatteryDelegate
     
-    func battery(battery: DCRechargeableBattery, numberOfCurrentsUpdated: Int) {
+    func battery(_ battery: DCRechargeableBattery, numberOfCurrentsUpdated: Int) {
         
         if let chargeUpdatedBlock = self.batteryChargeUpdatedBlock {
-            chargeUpdatedBlock(numberOfCharge: numberOfCurrentsUpdated);
+            chargeUpdatedBlock(numberOfCurrentsUpdated);
         }
     }
     
@@ -51,7 +51,7 @@ class ChristmasDecoration: DCRechargeableBatteryDelegate {
             
             if let strongSelf = self,
                let validBlock = strongSelf.christmasLightUpdatedBlock {
-                validBlock(indexOfLight: lightIndex, christmasLight: newChristmasLight)
+                validBlock(lightIndex, newChristmasLight)
             }
             
         };

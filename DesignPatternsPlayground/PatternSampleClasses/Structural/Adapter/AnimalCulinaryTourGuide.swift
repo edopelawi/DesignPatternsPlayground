@@ -14,10 +14,10 @@ protocol AnimalCulinaryTourGuide {
     
     /// Request drinks for this animal culinary spot. Will return `AnimalCulinaryTourDialogue` through
     /// passed `closure`.
-    func requestDrinks(closure: AnimalCulinaryRequestClosure)
+    func requestDrinks(_ closure: AnimalCulinaryRequestClosure)
 
     /// Request food for this animal culinary spot. Will return `AnimalCulinaryTourDialogue` through
     /// passed `closure`.
-    func requestFood(closure: AnimalCulinaryRequestClosure)
+    func requestFood(_ closure: AnimalCulinaryRequestClosure)
     
 }

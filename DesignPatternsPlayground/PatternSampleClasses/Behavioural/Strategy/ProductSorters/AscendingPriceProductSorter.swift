@@ -10,7 +10,7 @@ import Foundation
 
 class AscendingPriceProductSorter: ProductSorter {
     
-    func sortProducts(products: [Product]) -> [Product] {
-        return products.sort { $0.price < $1.price }
+    func sortProducts(_ products: [Product]) -> [Product] {
+        return products.sorted { $0.price < $1.price }
     }
 }

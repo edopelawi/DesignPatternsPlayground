@@ -11,31 +11,31 @@ import Foundation
 class PatternCommentaryFactory {
         
     /// Returns `String` instance of commentaries of passed `pattern`.
-    class func commentaryForCreationalPatternType(pattern: CreationalPatternType) -> String {
-        let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+    class func commentaryForCreationalPatternType(_ pattern: CreationalPatternType) -> String {
+        let fileName = pattern.toString().replacingOccurrences(of: " ", with: "")
         return commentariesFromTextFile(fileName)
     }
     
     /// Returns `String` instance of commentaries of passed `pattern`.
-    class func commentaryForStructuralPatternType(pattern: StructuralPatternType) -> String {
-        let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+    class func commentaryForStructuralPatternType(_ pattern: StructuralPatternType) -> String {
+        let fileName = pattern.toString().replacingOccurrences(of: " ", with: "")
         return commentariesFromTextFile(fileName)
     }
     
     /// Returns `String` instance of commentaries of passed `pattern`.
-    class func commentaryForBehaviouralPatternType(pattern: BehaviouralPatternType) -> String {
-        let fileName = pattern.toString().stringByReplacingOccurrencesOfString(" ", withString: "")
+    class func commentaryForBehaviouralPatternType(_ pattern: BehaviouralPatternType) -> String {
+        let fileName = pattern.toString().replacingOccurrences(of: " ", with: "")
         return commentariesFromTextFile(fileName)
     }
     
-    private class func commentariesFromTextFile(fileName: String) -> String {
+    fileprivate class func commentariesFromTextFile(_ fileName: String) -> String {
     
         var comments = ""
         
-        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "txt") {
+        if let path = Bundle.main.path(forResource: fileName, ofType: "txt") {
             
             do {
-                comments = try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)
+                comments = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
             } catch {
                 print("Failed to load \(fileName).txt. Please check if the file has proper name.")
             }

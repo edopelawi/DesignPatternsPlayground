@@ -10,9 +10,9 @@ import UIKit
 
 class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
-    private let cellIdentifier = "cellIdentifier"
+    fileprivate let cellIdentifier = "cellIdentifier"
     
     convenience init() {
         self.init(nibName: "AbstractFactorySampleViewController", bundle: nil)
@@ -28,24 +28,24 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     }
     
     
-    @IBAction func randomizeFood(sender: AnyObject) {
+    @IBAction func randomizeFood(_ sender: AnyObject) {
         tableView.reloadData()
     }
     
     // MARK: - UITableView Data Source and Delegate -
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FoodType.numberOfTypes()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		var cell: UITableViewCell
 		
-		if let dequeuedCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) {
+		if let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
 			cell = dequeuedCell
 		} else {
-			cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+			cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
 		}
 		
         if let foodType = FoodType(rawValue: indexPath.row) {
@@ -65,17 +65,17 @@ class AbstractFactorySampleViewController: UIViewController, UITableViewDelegate
     
     // MARK: - Private methods -
     
-    private func prepareTableView() {
+    fileprivate func prepareTableView() {
         
         tableView.delegate = self
         tableView.dataSource = self        
     }
 
-    private func prepareCommentBarButton() {
-        addCommentsRightBarButton(target: self, action: Selector("pushCommentPage:"))
+    fileprivate func prepareCommentBarButton() {
+        addCommentsRightBarButton(target: self, action: #selector(AbstractFactorySampleViewController.pushCommentPage(_:)))
     }
     
-    @objc private func pushCommentPage(sender: UIBarButtonItem) {        
-        pushCommentaryPage(creationalPatternType: .AbstractFactory)
+    @objc fileprivate func pushCommentPage(_ sender: UIBarButtonItem) {        
+        pushCommentaryPage(creationalPatternType: .abstractFactory)
     }
 }

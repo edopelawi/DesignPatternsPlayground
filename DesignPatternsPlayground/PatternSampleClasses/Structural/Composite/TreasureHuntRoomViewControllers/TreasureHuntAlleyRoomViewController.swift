@@ -10,7 +10,7 @@ import UIKit
 
 class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    private var alleyRoom: TreasureHuntAlleyRoom?
+    fileprivate var alleyRoom: TreasureHuntAlleyRoom?
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -34,21 +34,21 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
             headerLabel.text = "Room #\(validRoom.roomNumber). Choose your door wisely."
         }
         
-        navigationController?.navigationBarHidden = true
+        navigationController?.isNavigationBarHidden = true
     }
     
     // MARK: Private methods
     
-    private func registerCells() {
+    fileprivate func registerCells() {
         let cellNib = TreasureHuntRoomCollectionViewCell.nib()
         let cellIdentifier = TreasureHuntRoomCollectionViewCell.identifier
         
-        collectionView.registerNib(cellNib, forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: cellIdentifier)
     }
     
     // MARK: UICollectionView delegate and datasource
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if let validRoom = alleyRoom {
             return validRoom.numberOfNextRooms()
@@ -57,31 +57,31 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         }
     }
     
-    func collectionView(collectionView: UICollectionView,
+    func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
             return TreasureHuntRoomCollectionViewCell.preferredSize()
     }
     
-    func collectionView(collectionView: UICollectionView,
+    func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
             return 0.0
     }
     
-    func collectionView(collectionView: UICollectionView, layout
+    func collectionView(_ collectionView: UICollectionView, layout
         collectionViewLayout: UICollectionViewLayout,
         minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
             return 0.0
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // TODO: Update this later.
         
         let identifier = TreasureHuntRoomCollectionViewCell.identifier
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! TreasureHuntRoomCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! TreasureHuntRoomCollectionViewCell
         
-        cell.setLabelColor(UIColor.whiteColor())
+        cell.setLabelColor(UIColor.white)
         let index = indexPath.row
         
         if let nextRoom = alleyRoom?.retrieveTreasureHuntRoomAtIndex(index) {
@@ -91,7 +91,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         let index = indexPath.row
         
@@ -103,9 +103,9 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
         
         switch nextRoom.roomContentType() {
         
-        case .MoreRooms: nextViewController = TreasureHuntAlleyRoomViewController(alleyRoom: nextRoom as! TreasureHuntAlleyRoom)
+        case .moreRooms: nextViewController = TreasureHuntAlleyRoomViewController(alleyRoom: nextRoom as! TreasureHuntAlleyRoom)
             
-        case .Monster:
+        case .monster:
             nextViewController = TreasureHuntMonsterRoomViewController(
                 monsterRoom: nextRoom as! TreasureHuntMonsterRoom,
                 backButtonTappedClosure: {
@@ -115,11 +115,11 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                         return
                     }
                     
-                    strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
+                    let _ = strongSelf.navigationController?.popToViewController(strongSelf, animated: true)
                     
             })
             
-        case .Treasure:
+        case .treasure:
             nextViewController = TreasureHuntTreasureRoomViewController(
                 treasureRoom: nextRoom as! TreasureHuntTreasureRoom,
                 takeHomeActionClosure: {
@@ -136,7 +136,7 @@ class TreasureHuntAlleyRoomViewController: UIViewController, UICollectionViewDel
                     for viewController in viewControllers {
                         
                         if let firstPage = viewController as? CompositeSampleViewController {
-                            strongSelf.navigationController?.popToViewController(firstPage, animated: true)
+                            let _ = strongSelf.navigationController?.popToViewController(firstPage, animated: true)
                             break
                         }
                     }                    

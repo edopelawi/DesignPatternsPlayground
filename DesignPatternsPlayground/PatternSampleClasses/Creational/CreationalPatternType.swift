@@ -10,11 +10,11 @@ import Foundation
 
 enum CreationalPatternType: Int, PatternType {
 
-    case AbstractFactory = 0
-    case FactoryMethod = 1
-    case Builder = 2
-    case Prototype = 3
-    case Singleton = 4
+    case abstractFactory = 0
+    case factoryMethod = 1
+    case builder = 2
+    case prototype = 3
+    case singleton = 4
     
     static func numberOfTypes() -> Int {
         return 5
@@ -24,11 +24,11 @@ enum CreationalPatternType: Int, PatternType {
         
         switch self {
             
-        case .AbstractFactory: return "Abstract Factory"
-        case .FactoryMethod: return "Factory Method"
-        case .Builder: return "Builder"
-        case .Prototype: return "Prototype"
-        case .Singleton: return "Singleton"
+        case .abstractFactory: return "Abstract Factory"
+        case .factoryMethod: return "Factory Method"
+        case .builder: return "Builder"
+        case .prototype: return "Prototype"
+        case .singleton: return "Singleton"
         }
     }
 }

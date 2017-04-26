@@ -10,7 +10,7 @@ import Foundation
 
 class AlienMothership {
 
-    private var listeners = [AlienMothershipListener]()
+    fileprivate var listeners = [AlienMothershipListener]()
     
     /// Message of this instance. Will call its `listeners` `handleMothershipMessage:` method.
     internal var message = AlienMothershipMessage.StayInPosition {
@@ -27,9 +27,9 @@ class AlienMothership {
     
      - parameter listener: `AlienMothershipListener` compliant instance.
      */
-    internal func addListener(listener: AlienMothershipListener) {
+    internal func addListener(_ listener: AlienMothershipListener) {
         
-        if listeners.contains({ unsafeAddressOf($0) == unsafeAddressOf(listener)}) {
+        if listeners.contains(where: { Unmanaged<AnyObject>.passUnretained($0).toOpaque() == Unmanaged<AnyObject>.passUnretained(listener).toOpaque()}) {
             return
         }
         
@@ -43,14 +43,14 @@ class AlienMothership {
      
      - parameter listener: `AlienMothershipListener` compliant instance.
      */
-    internal func removeListener(listener: AlienMothershipListener) {
-        let optionalIndex = listeners.indexOf({ unsafeAddressOf($0) == unsafeAddressOf(listener) })
+    internal func removeListener(_ listener: AlienMothershipListener) {
+        let optionalIndex = listeners.index(where: { $0 === listener })
         
         guard let objectIndex = optionalIndex else {
                 
             return
         }
         
-        listeners.removeAtIndex(objectIndex)
+        listeners.remove(at: objectIndex)
     }
 }

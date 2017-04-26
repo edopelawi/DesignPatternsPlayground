@@ -10,7 +10,7 @@ import Foundation
 
 class FireFightingArmament: FightingMoves {
     
-    private var fighter: FightingMoves
+    fileprivate var fighter: FightingMoves
     
     init(fighter: FightingMoves) {
         self.fighter = fighter

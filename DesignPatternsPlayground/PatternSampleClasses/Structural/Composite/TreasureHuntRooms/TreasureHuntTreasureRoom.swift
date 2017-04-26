@@ -17,7 +17,7 @@ class TreasureHuntTreasureRoom: TreasureHuntRoom {
     }
     
     func roomContentType() -> TreasureHuntRoomContentType {
-        return .Treasure
+        return .treasure
     }
     
     /// Returns emoji presentation of the treasure that stored in this room.

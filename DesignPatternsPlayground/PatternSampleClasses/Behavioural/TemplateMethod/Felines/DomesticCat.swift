@@ -14,23 +14,23 @@ class DomesticCat: Feline {
     override func planDailyActivity() {
         
         morningActivity = [
-            FelineDailyActivity.Sleep,
-            FelineDailyActivity.Play,
-            FelineDailyActivity.Eat,
-            FelineDailyActivity.Play
+            FelineDailyActivity.sleep,
+            FelineDailyActivity.play,
+            FelineDailyActivity.eat,
+            FelineDailyActivity.play
         ]
 
         afternoonActivity = [
-            FelineDailyActivity.Bored,
-            FelineDailyActivity.Bath,
-            FelineDailyActivity.Eat
+            FelineDailyActivity.bored,
+            FelineDailyActivity.bath,
+            FelineDailyActivity.eat
         ]
 
         eveningActivity = [
-            FelineDailyActivity.Eat,
-            FelineDailyActivity.Bored,
-            FelineDailyActivity.Play,
-            FelineDailyActivity.Sleep
+            FelineDailyActivity.eat,
+            FelineDailyActivity.bored,
+            FelineDailyActivity.play,
+            FelineDailyActivity.sleep
         ]
         
     }

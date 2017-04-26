@@ -11,6 +11,6 @@ import Foundation
 protocol ThemeParkTicketProvider {
 
     /// Returns `String` instance of ticket code for passed `ThemeParkVisitor`.
-    func retrieveTicketForVisitor(visitor: ThemeParkVisitor) -> String
+    func retrieveTicketForVisitor(_ visitor: ThemeParkVisitor) -> String
 }
 

@@ -11,7 +11,7 @@ import UIKit
 protocol FlyweightSampleCollectionHeaderViewDelegate: class {
     
     /// Called when `headerView` needs to present a `UIAlertController`.
-    func headerView(headerView: FlyweightSampleCollectionHeaderView, shouldPresentAlertController: UIAlertController)
+    func headerView(_ headerView: FlyweightSampleCollectionHeaderView, shouldPresentAlertController: UIAlertController)
     
 }
 
@@ -21,14 +21,14 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     weak internal var delegate: FlyweightSampleCollectionHeaderViewDelegate?
     
-    @IBOutlet private weak var duplicationMethodButton: UIButton!
-    @IBOutlet private weak var numberPerTypeTextField: UITextField!
+    @IBOutlet fileprivate weak var duplicationMethodButton: UIButton!
+    @IBOutlet fileprivate weak var numberPerTypeTextField: UITextField!
     
-    @IBOutlet private weak var usedMemoryLabel: UILabel!
+    @IBOutlet fileprivate weak var usedMemoryLabel: UILabel!
     
-    @IBOutlet private var monsterButtons: [UIButton]!
+    @IBOutlet fileprivate var monsterButtons: [UIButton]!
     
-    private var viewModel: FlyweightSampleViewModel?
+    fileprivate var viewModel: FlyweightSampleViewModel?
     
     // MARK: Public methods
     
@@ -39,13 +39,13 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     /// Returns preferred `CGSize` to present this class' instance
     static func preferredSize() -> CGSize {
-        let width = UIScreen.mainScreen().bounds.width
+        let width = UIScreen.main.bounds.width
         let height = CGFloat(402)
         
         return CGSize(width: width, height: height)
     }    
     
-    internal func configureForViewModel(viewModel: FlyweightSampleViewModel) {
+    internal func configureForViewModel(_ viewModel: FlyweightSampleViewModel) {
         
         if self.viewModel === viewModel {
             return
@@ -61,28 +61,28 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     
     // MARK: FlyweightSampleViewModel delegate methods
     
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersStartUpdating: Void) {
         usedMemoryLabel.text = "Generating..."
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, duplicationMethodUpdated: FlyweightSampleDuplicationMethod) {
         
-        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, forState: .Normal)
-        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, forState: .Highlighted)
+        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, for: UIControlState())
+        duplicationMethodButton.setTitle(duplicationMethodUpdated.rawValue, for: .highlighted)
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, usedMemoryStringUpdated: String) {
         
         usedMemoryLabel.text = usedMemoryStringUpdated
     }
     
-    func viewModel(viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader]) {
+    func viewModel(_ viewModel: FlyweightSampleViewModel, monsterInvadersUpdated: [MonsterInvader]) {
         
     }
     
     // MARK: IBActions
     
-    @IBAction func showDuplicationMethodOptions(sender: UIButton) {
+    @IBAction func showDuplicationMethodOptions(_ sender: UIButton) {
         guard let validViewModel = self.viewModel else {
             return
         }
@@ -90,14 +90,14 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
         let alertController = UIAlertController(
             title: "Duplication methods",
             message: nil,
-            preferredStyle: .ActionSheet
+            preferredStyle: .actionSheet
         )
         
         for option in validViewModel.duplicationMethodOptions {
 
             let action = UIAlertAction(
                 title: option.rawValue,
-                style: .Default,
+                style: .default,
                 handler: {
                     [weak self] _ in
                     self?.viewModel?.selectedDuplicationMethod = option
@@ -109,7 +109,7 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
         delegate?.headerView(self, shouldPresentAlertController: alertController)
     }
     
-    @IBAction func numberTypeFieldUpdated(sender: UITextField) {
+    @IBAction func numberTypeFieldUpdated(_ sender: UITextField) {
         
         if let validString = sender.text,
            let validNumber = Int(validString) {
@@ -118,17 +118,17 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
     }
     
     
-    @IBAction func monsterSelected(sender: UIButton) {
+    @IBAction func monsterSelected(_ sender: UIButton) {
         
-        sender.selected = !sender.selected
+        sender.isSelected = !sender.isSelected
         
-        sender.backgroundColor = sender.selected ? UIColor.lightGrayColor() : UIColor.whiteColor()
+        sender.backgroundColor = sender.isSelected ? UIColor.lightGray : UIColor.white
         
         guard let monsterIcon = sender.titleLabel?.text else {
             return
         }
         
-        if sender.selected {
+        if sender.isSelected {
             viewModel?.addMonsterIcon(monsterIcon)
         } else {
             viewModel?.removeMonsterIcon(monsterIcon)
@@ -136,7 +136,7 @@ class FlyweightSampleCollectionHeaderView: UICollectionReusableView, FlyweightSa
         
     }
     
-    @IBAction func startInvasion(sender: UIButton) {
+    @IBAction func startInvasion(_ sender: UIButton) {
         viewModel?.startInvasion()
     }
 }

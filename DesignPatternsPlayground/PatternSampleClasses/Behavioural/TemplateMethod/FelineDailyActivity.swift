@@ -9,10 +9,10 @@
 import Foundation
 
 enum FelineDailyActivity {
-    case Sleep
-    case Bath
-    case Eat
-    case Hunt
-    case Play
-    case Bored
+    case sleep
+    case bath
+    case eat
+    case hunt
+    case play
+    case bored
 }

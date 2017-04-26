@@ -10,7 +10,7 @@ import Foundation
 
 class AlienRepairShip: AlienMothershipListener {
     
-    private var mothershipMessage: AlienMothershipMessage? {
+    fileprivate var mothershipMessage: AlienMothershipMessage? {
         didSet {
             guard let validMessage = mothershipMessage else {
                 currentStatus = "Waiting for command."
@@ -26,9 +26,9 @@ class AlienRepairShip: AlienMothershipListener {
         }
     }
     
-    private var currentStatus = "Waiting for command."
+    fileprivate var currentStatus = "Waiting for command."
     
-    func handleMothershipMessage(message: AlienMothershipMessage) {
+    func handleMothershipMessage(_ message: AlienMothershipMessage) {
         mothershipMessage = message
     }
     

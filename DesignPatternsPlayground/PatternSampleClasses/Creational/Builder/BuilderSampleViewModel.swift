@@ -9,11 +9,11 @@
 import Foundation
 
 enum BurgerOrderRows: Int {
-    case Burger = 0
-    case Drinks = 1
-    case Fries = 2
-    case Salads = 3
-    case Sweets = 4
+    case burger = 0
+    case drinks = 1
+    case fries = 2
+    case salads = 3
+    case sweets = 4
     
     static func numberOfRows() -> Int {
         return 5
@@ -21,11 +21,11 @@ enum BurgerOrderRows: Int {
     
     func toString() -> String {
         switch self {
-        case .Burger: return "Burger"
-        case .Drinks: return "Drinks"
-        case .Fries: return "Fries"
-        case .Salads: return "Salads"
-        case .Sweets: return "Sweets"
+        case .burger: return "Burger"
+        case .drinks: return "Drinks"
+        case .fries: return "Fries"
+        case .salads: return "Salads"
+        case .sweets: return "Sweets"
         }
     }
 }
@@ -39,18 +39,18 @@ protocol BuilderSampleViewModelDelegate: class {
 
     /// This method will be called when passed `viewModel`'s `selectedPackage` is changed.
     /// Will pass the latest `BurgerOrderPackage` through `selectedPackageChanged` parameter.
-    func viewModel(viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage);
+    func viewModel(_ viewModel: BuilderSampleViewModel, selectedPackageChanged: BurgerOrderPackage);
 }
 
 class BuilderSampleViewModel {
     
     // MARK: Properties
     
-    internal private(set) var orderPartNames: [ String ] = []
+    internal fileprivate(set) var orderPartNames: [ String ] = []
     
     internal var orderPartSelectedMarker: [ Bool ] = []
     
-    internal private(set) var orderPackages = [
+    internal fileprivate(set) var orderPackages = [
         BurgerOrderPackage.Normal.rawValue,
         BurgerOrderPackage.Whopper.rawValue
     ]
@@ -74,8 +74,8 @@ class BuilderSampleViewModel {
     internal func resetOrderPartSelections() {
         
         orderPartSelectedMarker = Array(
-            count: BurgerOrderRows.numberOfRows(),
-            repeatedValue: false
+            repeating: false,
+            count: BurgerOrderRows.numberOfRows()
         )
     }
     
@@ -95,9 +95,9 @@ class BuilderSampleViewModel {
     
     // MARK: Private methods
     
-    private func prepareOrderPartNames() {
+    fileprivate func prepareOrderPartNames() {
 
-        for var index = 0; index < BurgerOrderRows.numberOfRows(); index += 1 {
+        for index in 0 ..< BurgerOrderRows.numberOfRows() {
             
             if let row = BurgerOrderRows(rawValue: index) {
                 orderPartNames.append(row.toString())
@@ -105,18 +105,27 @@ class BuilderSampleViewModel {
         }
     }
     
-    private func buildOrderWithBuilder(builder: BurgerOrderBuilder) -> BurgerOrder {
+    fileprivate func buildOrderWithBuilder(_ builder: BurgerOrderBuilder) -> BurgerOrder {
 
-        for (index, selected) in orderPartSelectedMarker.enumerate() {
+        for (index, selected) in orderPartSelectedMarker.enumerated() {
             
-            if let row = BurgerOrderRows(rawValue: index) where selected {
+            if let row = BurgerOrderRows(rawValue: index), selected {
                 
                 switch row {
-                case .Burger: builder.addBurger()
-                case .Drinks: builder.addDrinks()
-                case .Fries: builder.addFries()
-                case .Salads: builder.addSalad()
-                case .Sweets: builder.addSweets()
+                case .burger:
+					let _ = builder.addBurger()
+					
+                case .drinks:
+					let _ = builder.addDrinks()
+					
+				case .fries:
+					let _ = builder.addFries()
+					
+                case .salads:
+					let _ = builder.addSalad()
+					
+                case .sweets:
+					let _ = builder.addSweets()
                 }
             }
         }

@@ -10,11 +10,11 @@ import Foundation
 
 class WhopperBurgerOrderBuilder: BurgerOrderBuilder {
     
-    private var burger = ""
-    private var drinks = ""
-    private var fries = ""
-    private var salad = ""
-    private var sweets = ""
+    fileprivate var burger = ""
+    fileprivate var drinks = ""
+    fileprivate var fries = ""
+    fileprivate var salad = ""
+    fileprivate var sweets = ""
     
     func addBurger() -> BurgerOrderBuilder {
         burger = "WHOPPER™ Sandwich"

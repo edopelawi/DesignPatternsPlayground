@@ -9,25 +9,26 @@
 import Foundation
 
 enum FoodType: Int {
-	case Chinese = 0
-	case Western = 1
-	case Japanese = 2
-	case Indonesian = 3
-	case Others = 4
+	
+	case chinese = 0
+	case western = 1
+	case japanese = 2
+	case indonesian = 3
+	case others = 4
 	
 	/// Return total number of types.
 	static func numberOfTypes() -> Int {
 		return 5
 	}
 	
-	static func stringForType(type: FoodType) -> String {
+	static func stringForType(_ type: FoodType) -> String {
 		
 		switch type {
-		case .Chinese: return "Chinese"
-		case .Western: return "Western"
-		case .Japanese: return "Japanese"
-		case .Indonesian: return "Indonesian"
-		case .Others: return "Others"
+		case .chinese: return "Chinese"
+		case .western: return "Western"
+		case .japanese: return "Japanese"
+		case .indonesian: return "Indonesian"
+		case .others: return "Others"
 		}
 	}
 }

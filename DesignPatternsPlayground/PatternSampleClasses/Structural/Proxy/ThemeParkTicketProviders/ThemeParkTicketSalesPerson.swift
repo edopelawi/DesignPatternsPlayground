@@ -10,14 +10,14 @@ import Foundation
 
 class ThemeParkTicketSalesPerson: ThemeParkTicketProvider {
     
-    private var vendingMachine = ThemeParkTicketVendingMachine()
+    fileprivate var vendingMachine = ThemeParkTicketVendingMachine()
     internal let minimumVisitorHeight = 140
     
     
     /// Returns ticket code for `visitor` that has height that equals or more than
     /// `minimumVisitorHeight`. Will return empty `String` for visitor that doesn't meet
     /// the requirements.
-    func retrieveTicketForVisitor(visitor: ThemeParkVisitor) -> String  {
+    func retrieveTicketForVisitor(_ visitor: ThemeParkVisitor) -> String  {
         
         if visitor.height >= minimumVisitorHeight {
             return vendingMachine.retrieveTicketForVisitor(visitor)
