@@ -65,6 +65,12 @@ class MementoSampleViewController: UIViewController {
 		
 		let memento = viewModel.createMemento()
 		mementoManager.add(memento: memento)
+		
+		let alert = UIAlertController(title: "Wohoo!", message: "Selection saved!", preferredStyle: .alert)
+		let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+		
+		alert.addAction(okAction)
+		self.present(alert, animated: true, completion: nil)
 	}
 	
 	@IBAction func loadButtonTapped(_ sender: Any) {
@@ -116,7 +122,6 @@ extension MementoSampleViewController: UICollectionViewDataSource {
 			indexPath.item < viewModel.characterViewModels.count else {
 			return cell
 		}
-		
 		
 		let characterViewModel = viewModel.characterViewModels[indexPath.item]
 		characterCell.configure(viewModel: characterViewModel)
