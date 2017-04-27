@@ -28,6 +28,8 @@ class MementoSampleViewController: UIViewController {
 		
 		configureCollectionView()
 		reconfigureForViewModel()
+		
+		// TODO: Add comment bar button later.
     }
 
 	private func configureCollectionView() {
