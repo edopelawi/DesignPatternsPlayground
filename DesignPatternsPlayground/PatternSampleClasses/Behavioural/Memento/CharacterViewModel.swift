@@ -10,5 +10,5 @@ import Foundation
 
 struct CharacterViewModel {
 	let emoji: String
-	let selected: Bool
+	var selected: Bool
 }
