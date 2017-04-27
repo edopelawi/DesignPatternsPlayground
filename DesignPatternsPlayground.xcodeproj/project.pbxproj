@@ -219,6 +219,7 @@
 		8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */; };
 		8DC264281EB1AD21002FD60E /* MementoSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */; };
 		8DC264291EB1AD21002FD60E /* MementoSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */; };
+		8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; };
@@ -514,6 +515,7 @@
 		8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCollectionCell.xib; sourceTree = "<group>"; };
 		8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MementoSampleViewController.swift; sourceTree = "<group>"; };
 		8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MementoSampleViewController.xib; sourceTree = "<group>"; };
+		8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+MementoSample.swift"; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -1021,6 +1023,7 @@
 				8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */,
 				8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */,
 				8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */,
+				8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -1852,6 +1855,7 @@
 				8DC42CB71C58E1350061D5F3 /* TreasureHuntRoomFactory.swift in Sources */,
 				8DC42C511C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
+				8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */,
 				8DC42C681C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
