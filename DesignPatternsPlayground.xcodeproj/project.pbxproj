@@ -214,6 +214,7 @@
 		8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
 		8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */; };
 		8DC2641E1EB19312002FD60E /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */; };
+		8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; };
@@ -504,6 +505,7 @@
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
 		8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
+		8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModelFactory.swift; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -1006,6 +1008,7 @@
 			children = (
 				8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */,
 				8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */,
+				8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -1793,6 +1796,7 @@
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D59F0821CAA5C0B004CFFE8 /* Product.swift in Sources */,
+				8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */,
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */,
 				8DADC9E11CAB731500FA46B7 /* AlienMothershipListener.swift in Sources */,
