@@ -15,11 +15,7 @@ class MementoSampleViewController: UIViewController {
 	@IBOutlet fileprivate weak var mementoPickerView: UIPickerView?
 	@IBOutlet fileprivate weak var pickerWrapperView: UIView?
 	
-	fileprivate var viewModel: CharacterSelectionViewModel? {
-		didSet {
-			configureForNewViewModel()
-		}
-	}
+	fileprivate var viewModel: CharacterSelectionViewModel?
 	
 	fileprivate let mementoManager = CharacterSelectionViewModel.MementoStorage.shared
 	
@@ -29,8 +25,9 @@ class MementoSampleViewController: UIViewController {
 		title = "Character Selection!"
 		viewModel = CharacterSelectionViewModelFactory.create()
 		selectedCharacterLabel?.text = ""
-		configureCollectionView()
 		
+		configureCollectionView()
+		reconfigureForViewModel()
     }
 
 	private func configureCollectionView() {
@@ -41,8 +38,10 @@ class MementoSampleViewController: UIViewController {
 		)
 	}
 	
-	private func configureForNewViewModel() {
+	private func reconfigureForViewModel() {
 
+		selectedCharacterLabel?.text = ""
+		
 		guard let viewModel = viewModel else {
 			return
 		}
@@ -86,7 +85,7 @@ class MementoSampleViewController: UIViewController {
 		let selectedMemento = mementoManager.mementos[selectedIndex]
 		viewModel?.load(memento: selectedMemento)
 		
-		collectionView?.reloadData()
+		reconfigureForViewModel()
 		pickerWrapperView?.isHidden = true
 	}
 	
@@ -159,7 +158,7 @@ extension MementoSampleViewController: UIPickerViewDataSource {
 
 extension MementoSampleViewController: UIPickerViewDelegate {
 	
-	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+	func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
 		
 		guard component < mementoManager.mementos.count else {
 			return nil
@@ -168,7 +167,16 @@ extension MementoSampleViewController: UIPickerViewDelegate {
 		let memento = mementoManager.mementos[component]
 		let dateFormatter = DateFormatter()
 		
-		return dateFormatter.stringForMementoSample(date: memento.date)
+		let string = dateFormatter.stringForMementoSample(date: memento.date)
+		
+		let attributes: [String: Any] = [
+			NSForegroundColorAttributeName: UIColor.white,
+			NSFontAttributeName: UIFont(name: "Avenir-Medium", size: 17.0) ?? UIFont.systemFont(ofSize: 17.0)
+		]
+		
+		return NSAttributedString(
+			string: string,
+			attributes: attributes
+		)
 	}
-	
 }

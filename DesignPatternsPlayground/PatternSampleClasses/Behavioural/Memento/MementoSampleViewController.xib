@@ -107,14 +107,14 @@
                     <rect key="frame" x="0.0" y="427" width="375" height="240"/>
                     <subviews>
                         <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oi2-nI-r60">
-                            <rect key="frame" x="0.0" y="60" width="375" height="180"/>
+                            <rect key="frame" x="0.0" y="52" width="375" height="188"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="fNC-Nb-IvP"/>
                                 <outlet property="delegate" destination="-1" id="l17-do-wjW"/>
                             </connections>
                         </pickerView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HS-lO-JEm" userLabel="Cancel Memento Button">
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HS-lO-JEm" userLabel="Cancel Memento Button">
                             <rect key="frame" x="8" y="8" width="52" height="36"/>
                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                             <state key="normal" title="Cancel"/>
@@ -133,6 +133,7 @@
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75350492294520544" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="Oi2-nI-r60" firstAttribute="top" secondItem="1HS-lO-JEm" secondAttribute="bottom" constant="8" id="0fF-01-1vU"/>
                         <constraint firstItem="Oi2-nI-r60" firstAttribute="leading" secondItem="ZmW-Oj-3qx" secondAttribute="leading" id="6eu-0E-GEK"/>
                         <constraint firstAttribute="trailing" secondItem="Oi2-nI-r60" secondAttribute="trailing" id="DaP-xx-WkL"/>
                         <constraint firstItem="1HS-lO-JEm" firstAttribute="leading" secondItem="ZmW-Oj-3qx" secondAttribute="leading" constant="8" id="Ljv-7w-gLW"/>
@@ -141,7 +142,6 @@
                         <constraint firstAttribute="height" constant="240" id="ahE-Ih-DGc"/>
                         <constraint firstAttribute="trailing" secondItem="AlQ-9v-352" secondAttribute="trailing" constant="8" id="gOK-v7-zR4"/>
                         <constraint firstAttribute="bottom" secondItem="Oi2-nI-r60" secondAttribute="bottom" id="qiy-37-vQl"/>
-                        <constraint firstItem="Oi2-nI-r60" firstAttribute="top" secondItem="ZmW-Oj-3qx" secondAttribute="top" constant="60" id="tIn-jN-Xcr"/>
                     </constraints>
                 </view>
             </subviews>
