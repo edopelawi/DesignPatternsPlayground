@@ -215,6 +215,8 @@
 		8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */; };
 		8DC2641E1EB19312002FD60E /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */; };
 		8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */; };
+		8DC264241EB1AB10002FD60E /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */; };
+		8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; };
@@ -506,6 +508,8 @@
 		8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
 		8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModelFactory.swift; sourceTree = "<group>"; };
+		8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
+		8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCollectionCell.xib; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -1009,6 +1013,8 @@
 				8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */,
 				8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */,
 				8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */,
+				8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */,
+				8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -1469,6 +1475,7 @@
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DADC9F51CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */,
+				8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
 				8DC42C981C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */,
@@ -1769,6 +1776,7 @@
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8DA0718A1D928F63007FA320 /* ChefAcademyAgency.swift in Sources */,
 				8DC2641E1EB19312002FD60E /* CharacterSelectionViewModel.swift in Sources */,
+				8DC264241EB1AB10002FD60E /* CharacterCollectionCell.swift in Sources */,
 				8D59F09C1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D5524881C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
