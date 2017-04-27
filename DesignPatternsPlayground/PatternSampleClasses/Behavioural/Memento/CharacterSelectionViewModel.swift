@@ -83,7 +83,7 @@ extension CharacterSelectionViewModel.Memento {
 		
 		let dateFormatter = DateFormatter()
 		
-		let rawDate = dateFormatter.string(from: self.date)
+		let rawDate = dateFormatter.stringForMementoSample(date: self.date)
 		let rawChilds = self.childMementos.map { $0.toDictionary() }
 		
 		return [
@@ -98,7 +98,7 @@ extension CharacterSelectionViewModel.Memento {
 		
 		guard let rawDate = dictionary["date"] as? String,
 			let rawChilds = dictionary["childs"] as? [[String: Any]],
-			let date = dateFormatter.date(from: rawDate) else {
+			let date = dateFormatter.dateForMementoSample(string: rawDate) else {
 				return nil
 		}
 		

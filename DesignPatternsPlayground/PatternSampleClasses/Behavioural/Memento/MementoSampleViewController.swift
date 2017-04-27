@@ -168,7 +168,7 @@ extension MementoSampleViewController: UIPickerViewDelegate {
 		let memento = mementoManager.mementos[component]
 		let dateFormatter = DateFormatter()
 		
-		return dateFormatter.string(from: memento.date)
+		return dateFormatter.stringForMementoSample(date: memento.date)
 	}
 	
 }
