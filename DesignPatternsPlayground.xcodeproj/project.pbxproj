@@ -212,6 +212,14 @@
 		8DBADAAE1C5A33BE00B18CEF /* MonsterInvader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */; };
 		8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
 		8DBADAB11C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */; };
+		8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */; };
+		8DC2641E1EB19312002FD60E /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */; };
+		8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */; };
+		8DC264241EB1AB10002FD60E /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */; };
+		8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */; };
+		8DC264281EB1AD21002FD60E /* MementoSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */; };
+		8DC264291EB1AD21002FD60E /* MementoSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */; };
+		8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; };
@@ -500,6 +508,14 @@
 		8DADCA191CAD4F7900FA46B7 /* TemplateMethod.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TemplateMethod.txt; sourceTree = "<group>"; };
 		8DBADAAC1C5A33BE00B18CEF /* MonsterInvader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvader.swift; sourceTree = "<group>"; };
 		8DBADAAF1C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterInvaderFlyweightFactory.swift; sourceTree = "<group>"; };
+		8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
+		8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModelFactory.swift; sourceTree = "<group>"; };
+		8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
+		8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCollectionCell.xib; sourceTree = "<group>"; };
+		8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MementoSampleViewController.swift; sourceTree = "<group>"; };
+		8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MementoSampleViewController.xib; sourceTree = "<group>"; };
+		8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+MementoSample.swift"; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -747,6 +763,7 @@
 				8D59F0801CAA4F85004CFFE8 /* Strategy */,
 				8DADC9DC1CAB70F300FA46B7 /* Observer */,
 				8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */,
+				8DC264181EB191AC002FD60E /* Memento */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -994,6 +1011,21 @@
 				8DADCA161CAD4E4100FA46B7 /* Tiger.swift */,
 			);
 			path = Felines;
+			sourceTree = "<group>";
+		};
+		8DC264181EB191AC002FD60E /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2641B1EB1924D002FD60E /* CharacterViewModel.swift */,
+				8DC2641D1EB19312002FD60E /* CharacterSelectionViewModel.swift */,
+				8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */,
+				8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */,
+				8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */,
+				8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */,
+				8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */,
+				8DC2642A1EB1BF38002FD60E /* DateFormatter+MementoSample.swift */,
+			);
+			path = Memento;
 			sourceTree = "<group>";
 		};
 		8DC42C271C58C4910061D5F3 /* Structural */ = {
@@ -1425,6 +1457,7 @@
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
+				8DC264291EB1AD21002FD60E /* MementoSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1452,6 +1485,7 @@
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DADC9F51CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */,
+				8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
 				8DC42C981C58D1820061D5F3 /* TreasureHuntTreasureRoomViewController.xib in Resources */,
 				8D278B081C4F826100E6CD4E /* Bridge.txt in Resources */,
@@ -1751,6 +1785,8 @@
 				8D55244D1C58AF5100D5A4B4 /* Food.swift in Sources */,
 				8D5524671C58B10A00D5A4B4 /* BuilderSampleViewController.swift in Sources */,
 				8DA0718A1D928F63007FA320 /* ChefAcademyAgency.swift in Sources */,
+				8DC2641E1EB19312002FD60E /* CharacterSelectionViewModel.swift in Sources */,
+				8DC264241EB1AB10002FD60E /* CharacterCollectionCell.swift in Sources */,
 				8D59F09C1CAA7354004CFFE8 /* StrategySampleViewController.swift in Sources */,
 				8D5524481C58AF0C00D5A4B4 /* AbstractFactorySampleViewController.swift in Sources */,
 				8D5524881C58B3BE00D5A4B4 /* BlackParadeViewModel.swift in Sources */,
@@ -1778,7 +1814,9 @@
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D59F0821CAA5C0B004CFFE8 /* Product.swift in Sources */,
+				8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */,
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
+				8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */,
 				8DADC9E11CAB731500FA46B7 /* AlienMothershipListener.swift in Sources */,
 				8DC42C5A1C58C7A40061D5F3 /* AnimalCulinaryTourDialogue.swift in Sources */,
 				8DC42C4D1C58C77A0061D5F3 /* BearCulinaryTourGuide.swift in Sources */,
@@ -1792,6 +1830,7 @@
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DC264281EB1AD21002FD60E /* MementoSampleViewController.swift in Sources */,
 				8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DADC9F31CABA39000FA46B7 /* ObserverSampleViewController.swift in Sources */,
 				8DADC9EC1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */,
@@ -1816,6 +1855,7 @@
 				8DC42CB71C58E1350061D5F3 /* TreasureHuntRoomFactory.swift in Sources */,
 				8DC42C511C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
+				8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */,
 				8DC42C681C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,

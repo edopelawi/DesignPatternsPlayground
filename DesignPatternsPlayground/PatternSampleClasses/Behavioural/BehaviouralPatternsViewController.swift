@@ -49,6 +49,7 @@ class BehaviouralPatternsViewController: UIViewController {
         case .strategy: viewController = StrategySampleViewController()
         case .observer: viewController = ObserverSampleViewController()
         case .templateMethod: viewController = TemplateMethodSampleViewController()
+		case .memento: viewController = MementoSampleViewController()
         default: break
         }
         
