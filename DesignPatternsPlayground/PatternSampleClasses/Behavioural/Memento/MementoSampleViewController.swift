@@ -12,12 +12,16 @@ class MementoSampleViewController: UIViewController {
 	
 	@IBOutlet fileprivate weak var selectedCharacterLabel: UILabel?
 	@IBOutlet fileprivate weak var collectionView: UICollectionView?
-
+	@IBOutlet fileprivate weak var mementoPickerView: UIPickerView?
+	@IBOutlet fileprivate weak var pickerWrapperView: UIView?
+	
 	fileprivate var viewModel: CharacterSelectionViewModel? {
 		didSet {
 			configureForNewViewModel()
 		}
 	}
+	
+	fileprivate let mementoManager = CharacterSelectionViewModel.MementoStorage.shared
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,16 +32,7 @@ class MementoSampleViewController: UIViewController {
 		configureCollectionView()
 		
     }
-	
-	@IBAction func saveButtonTapped(_ sender: Any) {
-		
-		// TODO: Add logic for this later.
-	}
-	
-	@IBAction func loadButtonTapped(_ sender: Any) {
-		// TODO: Add logic for this later.
-	}
-	
+
 	private func configureCollectionView() {
 
 		collectionView?.register(
@@ -61,6 +56,38 @@ class MementoSampleViewController: UIViewController {
 		}
 		
 		collectionView?.reloadData()
+	}
+	
+	@IBAction func saveButtonTapped(_ sender: Any) {
+		
+		guard let viewModel = viewModel else {
+			return
+		}
+		
+		let memento = viewModel.createMemento()
+		mementoManager.add(memento: memento)
+	}
+	
+	@IBAction func loadButtonTapped(_ sender: Any) {
+		
+		mementoPickerView?.reloadAllComponents()
+		pickerWrapperView?.isHidden = false
+	}
+	
+	@IBAction func cancelMementoPick(_ sender: Any) {
+		pickerWrapperView?.isHidden = true
+	}
+	
+	@IBAction func selectMementoPick(_ sender: Any) {
+		guard let selectedIndex = mementoPickerView?.selectedRow(inComponent: 0) else {
+			return
+		}
+		
+		let selectedMemento = mementoManager.mementos[selectedIndex]
+		viewModel?.load(memento: selectedMemento)
+		
+		collectionView?.reloadData()
+		pickerWrapperView?.isHidden = true
 	}
 	
 }
@@ -117,4 +144,31 @@ extension MementoSampleViewController: UICollectionViewDelegate {
 		
 		collectionView.reloadData()
 	}
+}
+
+extension MementoSampleViewController: UIPickerViewDataSource {
+	
+	func numberOfComponents(in pickerView: UIPickerView) -> Int {
+		return 1
+	}
+	
+	func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+		return mementoManager.mementos.count
+	}
+}
+
+extension MementoSampleViewController: UIPickerViewDelegate {
+	
+	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+		
+		guard component < mementoManager.mementos.count else {
+			return nil
+		}
+		
+		let memento = mementoManager.mementos[component]
+		let dateFormatter = DateFormatter()
+		
+		return dateFormatter.string(from: memento.date)
+	}
+	
 }

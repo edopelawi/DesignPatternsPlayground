@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MementoSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="3v6-dK-2IH" id="wfe-HB-fxG"/>
+                <outlet property="mementoPickerView" destination="Oi2-nI-r60" id="o47-Qs-isW"/>
+                <outlet property="pickerWrapperView" destination="ZmW-Oj-3qx" id="PIx-vo-iWf"/>
                 <outlet property="selectedCharacterLabel" destination="XgW-I3-0zh" id="4K5-0K-dKa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -101,11 +103,55 @@
                         <constraint firstItem="XgW-I3-0zh" firstAttribute="top" secondItem="O3s-xV-Mr6" secondAttribute="bottom" constant="8" id="sQs-Ia-1me"/>
                     </constraints>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmW-Oj-3qx" userLabel="PickerWrapperView">
+                    <rect key="frame" x="0.0" y="427" width="375" height="240"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oi2-nI-r60">
+                            <rect key="frame" x="0.0" y="60" width="375" height="180"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="fNC-Nb-IvP"/>
+                                <outlet property="delegate" destination="-1" id="l17-do-wjW"/>
+                            </connections>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HS-lO-JEm" userLabel="Cancel Memento Button">
+                            <rect key="frame" x="8" y="8" width="52" height="36"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelMementoPick:" destination="-1" eventType="touchUpInside" id="SCA-7R-VH1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-9v-352" userLabel="Select Memento Button">
+                            <rect key="frame" x="320" y="8" width="47" height="36"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="Select"/>
+                            <connections>
+                                <action selector="selectMementoPick:" destination="-1" eventType="touchUpInside" id="WVt-oW-IGj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75350492294520544" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Oi2-nI-r60" firstAttribute="leading" secondItem="ZmW-Oj-3qx" secondAttribute="leading" id="6eu-0E-GEK"/>
+                        <constraint firstAttribute="trailing" secondItem="Oi2-nI-r60" secondAttribute="trailing" id="DaP-xx-WkL"/>
+                        <constraint firstItem="1HS-lO-JEm" firstAttribute="leading" secondItem="ZmW-Oj-3qx" secondAttribute="leading" constant="8" id="Ljv-7w-gLW"/>
+                        <constraint firstItem="AlQ-9v-352" firstAttribute="top" secondItem="ZmW-Oj-3qx" secondAttribute="top" constant="8" id="Ndn-si-SZY"/>
+                        <constraint firstItem="1HS-lO-JEm" firstAttribute="top" secondItem="ZmW-Oj-3qx" secondAttribute="top" constant="8" id="aSn-Ob-tIc"/>
+                        <constraint firstAttribute="height" constant="240" id="ahE-Ih-DGc"/>
+                        <constraint firstAttribute="trailing" secondItem="AlQ-9v-352" secondAttribute="trailing" constant="8" id="gOK-v7-zR4"/>
+                        <constraint firstAttribute="bottom" secondItem="Oi2-nI-r60" secondAttribute="bottom" id="qiy-37-vQl"/>
+                        <constraint firstItem="Oi2-nI-r60" firstAttribute="top" secondItem="ZmW-Oj-3qx" secondAttribute="top" constant="60" id="tIn-jN-Xcr"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="WdE-Kj-LQP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="31B-GC-EnY"/>
+                <constraint firstAttribute="bottom" secondItem="ZmW-Oj-3qx" secondAttribute="bottom" id="8e3-EA-Bmn"/>
                 <constraint firstItem="WdE-Kj-LQP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9aK-ve-ZmZ"/>
+                <constraint firstAttribute="trailing" secondItem="ZmW-Oj-3qx" secondAttribute="trailing" id="PMa-0H-MJn"/>
+                <constraint firstItem="ZmW-Oj-3qx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hLM-VN-WCA"/>
                 <constraint firstAttribute="bottom" secondItem="WdE-Kj-LQP" secondAttribute="bottom" id="o9J-oh-6X1"/>
                 <constraint firstAttribute="trailing" secondItem="WdE-Kj-LQP" secondAttribute="trailing" id="vAX-ZS-ESH"/>
             </constraints>
