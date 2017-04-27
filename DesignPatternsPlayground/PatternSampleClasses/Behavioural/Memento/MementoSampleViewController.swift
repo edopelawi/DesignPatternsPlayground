@@ -113,8 +113,7 @@ extension MementoSampleViewController: UICollectionViewDelegate {
 		
 		selectedCharacterLabel?.text = viewModel.characterViewModels[index].emoji
 		
-		viewModel.characterViewModels.forEach { $0.selected = false }
-		viewModel.characterViewModels[index].selected = true
+		viewModel.selectCharacter(withIndex: index)
 		
 		collectionView.reloadData()
 	}
