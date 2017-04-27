@@ -28,6 +28,19 @@ final class CharacterSelectionViewModel {
 		self.characterViewModels = characterViewModels
 	}
 	
+	func selectCharacter(withIndex index: Int) {
+
+		guard index < characterViewModels.count else {
+			return
+		}
+		
+		characterViewModels = characterViewModels.map { viewModel -> CharacterViewModel in
+			return CharacterViewModel(emoji: viewModel.emoji, selected: false)
+		}
+		
+		characterViewModels[index].selected = true
+	}
+	
 	// MARK: - Memento-related methods
 	
 	func createMemento() -> Memento {
