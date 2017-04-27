@@ -12,7 +12,7 @@ import Foundation
 final class CharacterSelectionViewModelFactory {
 	
 	static let availableEmojis: [String] = [
-		"😀", "😎", "🤡", "🤠",
+		"😀", "😎", "😡", "👿",
 		"😈", "👺", "👻", "👽",
 		"🤖", "👾", "🎃", "🦁",
 		"🐻", "🐼", "🐨", "🐯"
