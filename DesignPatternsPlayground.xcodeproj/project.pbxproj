@@ -217,6 +217,8 @@
 		8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */; };
 		8DC264241EB1AB10002FD60E /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */; };
 		8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */; };
+		8DC264281EB1AD21002FD60E /* MementoSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */; };
+		8DC264291EB1AD21002FD60E /* MementoSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */; };
 		8DC42C311C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C321C58C4910061D5F3 /* StructuralPatternsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */; };
 		8DC42C331C58C4910061D5F3 /* StructuralPatternType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */; };
@@ -510,6 +512,8 @@
 		8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModelFactory.swift; sourceTree = "<group>"; };
 		8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
 		8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCollectionCell.xib; sourceTree = "<group>"; };
+		8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MementoSampleViewController.swift; sourceTree = "<group>"; };
+		8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MementoSampleViewController.xib; sourceTree = "<group>"; };
 		8DC42C2F1C58C4910061D5F3 /* StructuralPatternsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternsViewController.swift; sourceTree = "<group>"; };
 		8DC42C301C58C4910061D5F3 /* StructuralPatternType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralPatternType.swift; sourceTree = "<group>"; };
 		8DC42C351C58C6FA0061D5F3 /* AdapterSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSampleViewController.swift; sourceTree = "<group>"; };
@@ -1015,6 +1019,8 @@
 				8DC264201EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift */,
 				8DC264221EB1AB10002FD60E /* CharacterCollectionCell.swift */,
 				8DC264231EB1AB10002FD60E /* CharacterCollectionCell.xib */,
+				8DC264261EB1AD21002FD60E /* MementoSampleViewController.swift */,
+				8DC264271EB1AD21002FD60E /* MementoSampleViewController.xib */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -1448,6 +1454,7 @@
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
 				8D8E67B91C96B70E0035D69A /* FacadeSampleViewController.xib in Resources */,
+				8DC264291EB1AD21002FD60E /* MementoSampleViewController.xib in Resources */,
 				8DFF67941C59FBF40095B7D7 /* FlyweightSampleViewController.xib in Resources */,
 				8D5524691C58B10A00D5A4B4 /* BuilderSampleViewController.xib in Resources */,
 				8D5D112B1C4E1D56003CA559 /* Adapter.txt in Resources */,
@@ -1820,6 +1827,7 @@
 				8D5524971C58B40E00D5A4B4 /* NormalBurgerOrderBuilder.swift in Sources */,
 				8DFF67981C59FD1B0095B7D7 /* FlyweightSampleCollectionHeaderView.swift in Sources */,
 				8DC42C821C58D1820061D5F3 /* CompositeSampleViewController.swift in Sources */,
+				8DC264281EB1AD21002FD60E /* MementoSampleViewController.swift in Sources */,
 				8DDC0B081C71950C008DBDCF /* DCCurrent.swift in Sources */,
 				8DADC9F31CABA39000FA46B7 /* ObserverSampleViewController.swift in Sources */,
 				8DADC9EC1CAB8B4D00FA46B7 /* AlienAttackerShip.swift in Sources */,
