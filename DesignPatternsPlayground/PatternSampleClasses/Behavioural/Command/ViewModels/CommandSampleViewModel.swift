@@ -98,4 +98,13 @@ class CommandSampleViewModel {
 			self.storedCommands.append(healCommand)
 		}
 	}
+	
+	func revertLatestCommand() {
+		
+		guard let latestCommand = storedCommands.popLast() else {
+			return
+		}
+		
+		latestCommand.revertCommand()
+	}
 }
