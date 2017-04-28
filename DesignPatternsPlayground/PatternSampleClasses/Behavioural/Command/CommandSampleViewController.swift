@@ -24,4 +24,8 @@ class CommandSampleViewController: UIViewController {
 		rightFighterView?.configureFor(viewModel: viewModel.predatorFighterViewModel)
     }
 
+	@IBAction func undoLatestCommand(_ sender: Any) {
+		viewModel.revertLatestCommand()
+	}
+	
 }

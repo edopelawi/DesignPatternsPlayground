@@ -39,10 +39,24 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-xY-yea" userLabel="Bottom Buttons View">
-                            <rect key="frame" x="8" y="519" width="359" height="60"/>
+                            <rect key="frame" x="0.0" y="519" width="375" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-pK-ovc">
+                                    <rect key="frame" x="8" y="12" width="359" height="36"/>
+                                    <color key="backgroundColor" red="0.1058823529" green="0.69803921570000005" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                    <state key="normal" title="Undo Latest Command"/>
+                                    <connections>
+                                        <action selector="undoLatestCommand:" destination="-1" eventType="touchUpInside" id="Q1Z-HN-Ddl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="Hxg-pK-ovc" firstAttribute="centerY" secondItem="x2K-xY-yea" secondAttribute="centerY" id="1vb-yp-54i"/>
                                 <constraint firstAttribute="height" constant="60" id="287-mI-6Qz"/>
+                                <constraint firstAttribute="trailing" secondItem="Hxg-pK-ovc" secondAttribute="trailing" constant="8" id="6Hh-TG-Lwr"/>
+                                <constraint firstItem="Hxg-pK-ovc" firstAttribute="leading" secondItem="x2K-xY-yea" secondAttribute="leading" constant="8" id="kDK-QW-CpT"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Ip-gzD">
@@ -68,11 +82,11 @@
                         <constraint firstItem="y15-rn-Kkw" firstAttribute="bottom" secondItem="eF6-6B-mme" secondAttribute="bottom" id="8Bp-dq-I4d"/>
                         <constraint firstItem="BK4-8x-L5O" firstAttribute="leading" secondItem="Bbm-KD-EaV" secondAttribute="leading" constant="8" id="923-e0-5C8"/>
                         <constraint firstItem="eF6-6B-mme" firstAttribute="top" secondItem="b9f-Ip-gzD" secondAttribute="bottom" constant="8" id="Ee4-ib-sBV"/>
-                        <constraint firstAttribute="trailing" secondItem="x2K-xY-yea" secondAttribute="trailing" constant="8" id="FNU-my-yZe"/>
+                        <constraint firstAttribute="trailing" secondItem="x2K-xY-yea" secondAttribute="trailing" id="FNU-my-yZe"/>
                         <constraint firstItem="y15-rn-Kkw" firstAttribute="trailing" secondItem="b9f-Ip-gzD" secondAttribute="trailing" id="KsD-Ji-oB5"/>
                         <constraint firstItem="eF6-6B-mme" firstAttribute="leading" secondItem="b9f-Ip-gzD" secondAttribute="leading" id="Mog-o5-jCA"/>
                         <constraint firstItem="b9f-Ip-gzD" firstAttribute="top" secondItem="BK4-8x-L5O" secondAttribute="bottom" constant="8" id="PBk-TL-RKR"/>
-                        <constraint firstItem="x2K-xY-yea" firstAttribute="leading" secondItem="Bbm-KD-EaV" secondAttribute="leading" constant="8" id="QzQ-g0-aLD"/>
+                        <constraint firstItem="x2K-xY-yea" firstAttribute="leading" secondItem="Bbm-KD-EaV" secondAttribute="leading" id="QzQ-g0-aLD"/>
                         <constraint firstItem="b9f-Ip-gzD" firstAttribute="leading" secondItem="BK4-8x-L5O" secondAttribute="leading" id="Ske-Mr-9nX"/>
                         <constraint firstItem="BK4-8x-L5O" firstAttribute="top" secondItem="Bbm-KD-EaV" secondAttribute="top" constant="8" id="cBF-t7-GKv"/>
                         <constraint firstItem="y15-rn-Kkw" firstAttribute="top" secondItem="eF6-6B-mme" secondAttribute="top" id="dCG-qO-ygV"/>
