@@ -157,6 +157,7 @@
 		8D66E7B31EB2ED4F00D24984 /* DuelFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */; };
 		8D66E7B61EB2F0F700D24984 /* DuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */; };
 		8D66E7B81EB2F27500D24984 /* AttackDuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */; };
+		8D66E7BA1EB2F5B900D24984 /* HealDuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -480,6 +481,7 @@
 		8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighter.swift; sourceTree = "<group>"; };
 		8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterCommand.swift; sourceTree = "<group>"; };
 		8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackDuelFighterCommand.swift; sourceTree = "<group>"; };
+		8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealDuelFighterCommand.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -940,6 +942,7 @@
 				8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */,
 				8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */,
 				8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */,
+				8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -1759,6 +1762,7 @@
 				8DADCA011CACF31700FA46B7 /* Feline.swift in Sources */,
 				8D66E7B81EB2F27500D24984 /* AttackDuelFighterCommand.swift in Sources */,
 				8DADCA0F1CAD316000FA46B7 /* TemplateMethodSampleViewController.swift in Sources */,
+				8D66E7BA1EB2F5B900D24984 /* HealDuelFighterCommand.swift in Sources */,
 				8DC42C861C58D1820061D5F3 /* TreasureHuntRoom.swift in Sources */,
 				8DADC9EF1CAB900F00FA46B7 /* AlienRepairShip.swift in Sources */,
 				8D55246C1C58B13100D5A4B4 /* BuilderSampleViewModel.swift in Sources */,
