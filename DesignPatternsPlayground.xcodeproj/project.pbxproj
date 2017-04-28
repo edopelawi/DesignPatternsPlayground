@@ -162,6 +162,7 @@
 		8D66E7C21EB3024B00D24984 /* DuelFighterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */; };
 		8D66E7C51EB304CE00D24984 /* CommandSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7C31EB304CE00D24984 /* CommandSampleViewController.swift */; };
 		8D66E7C61EB304CE00D24984 /* CommandSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */; };
+		8D66E7C91EB30AF300D24984 /* DuelFighterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -490,6 +491,7 @@
 		8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuelFighterView.xib; sourceTree = "<group>"; };
 		8D66E7C31EB304CE00D24984 /* CommandSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSampleViewController.swift; sourceTree = "<group>"; };
 		8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommandSampleViewController.xib; sourceTree = "<group>"; };
+		8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -947,6 +949,7 @@
 		8D66E7B11EB2ED1B00D24984 /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				8D66E7C71EB30AC900D24984 /* ViewModels */,
 				8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */,
 				8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */,
 				8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */,
@@ -957,6 +960,14 @@
 				8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		8D66E7C71EB30AC900D24984 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8D8BD7251C43A41400E71C88 /* Resources */ = {
@@ -1851,6 +1862,7 @@
 				8DED25701C2292FF00462C0F /* AppDelegate.swift in Sources */,
 				8D55249D1C58B61F00D5A4B4 /* PrototypeSampleViewController.swift in Sources */,
 				8D59F0821CAA5C0B004CFFE8 /* Product.swift in Sources */,
+				8D66E7C91EB30AF300D24984 /* DuelFighterViewModel.swift in Sources */,
 				8DC264211EB19EA2002FD60E /* CharacterSelectionViewModelFactory.swift in Sources */,
 				8D55241A1C58A9F700D5A4B4 /* HomeViewController.swift in Sources */,
 				8DC2641C1EB1924D002FD60E /* CharacterViewModel.swift in Sources */,
