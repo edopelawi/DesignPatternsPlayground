@@ -13,11 +13,15 @@ class CommandSampleViewController: UIViewController {
 	@IBOutlet private weak var leftFighterView: DuelFighterView?
 	@IBOutlet private weak var rightFighterView: DuelFighterView?
 	
+	private let viewModel = CommandSampleViewModel()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		title = "Alien vs Predator!"
-		// TODO: Configure the duel fighter views here.
+		
+		leftFighterView?.configureFor(viewModel: viewModel.alienFighterViewModel)
+		rightFighterView?.configureFor(viewModel: viewModel.predatorFighterViewModel)
     }
 
 }
