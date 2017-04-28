@@ -19,6 +19,8 @@ final class DuelFighterView: UIView {
 	@IBOutlet private weak var attackAmountLabel: UILabel?
 	@IBOutlet private weak var healAmountLabel: UILabel?
 	
+	private var viewModel: DuelFighterViewModel?
+	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		commonInit()
@@ -27,6 +29,10 @@ final class DuelFighterView: UIView {
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		commonInit()
+	}
+	
+	deinit {
+		viewModel?.remove(observer: self)
 	}
 	
 	private func commonInit() {
@@ -43,15 +49,40 @@ final class DuelFighterView: UIView {
 		self.addSubview(contentView)
 	}
 	
-	@IBAction private func attackButtonTapped(_ sender: Any) {
+	func configureFor(viewModel: DuelFighterViewModel) {
 		
+		self.viewModel = viewModel
+		viewModel.add(observer: self)
+		
+		self.updateValuesFromViewModel()
+	}
+	
+	fileprivate func updateValuesFromViewModel() {
+		guard let viewModel = viewModel else {
+			return
+		}
+		
+		fighterNameLabel?.text = viewModel.name
+		fighterEmojiLabel?.text = viewModel.emoji
+		
+		healthAmountLabel?.text = viewModel.health
+		attackAmountLabel?.text = viewModel.attackPoint
+		healAmountLabel?.text = viewModel.healPoint
+	}
+	
+	@IBAction private func attackButtonTapped(_ sender: Any) {
+		viewModel?.requestAttack()
 	}
 		
 	@IBAction private func healButtonTapped(_ sender: Any) {
-		
+		viewModel?.requestHeal()
 	}
-	
-	// TODO: Add method to listen from ViewModel later.
-	
 
+}
+
+extension DuelFighterView: DuelFighterViewModelObserver {
+	
+	func updated(duelFighterViewModel: DuelFighterViewModel) {
+		updateValuesFromViewModel()
+	}
 }
