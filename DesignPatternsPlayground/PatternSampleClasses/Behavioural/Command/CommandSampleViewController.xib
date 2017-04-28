@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommandSampleViewController" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="leftFighterView" destination="eF6-6B-mme" id="xl1-vb-CYb"/>
+                <outlet property="rightFighterView" destination="y15-rn-Kkw" id="m0A-sL-FGN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbm-KD-EaV" userLabel="Wrapper View">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Executed Commands" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK4-8x-L5O">
+                            <rect key="frame" x="8" y="8" width="359" height="30.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Ip-gzD">
+                            <rect key="frame" x="8" y="46.5" width="359" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Xih-oJ-VnG"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="geg-mt-m1p">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF6-6B-mme" userLabel="Left Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
+                            <rect key="frame" x="8" y="94.5" width="175.5" height="436.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y15-rn-Kkw" userLabel="Right Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
+                            <rect key="frame" x="191.5" y="94.5" width="175.5" height="436.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-xY-yea" userLabel="Bottom Buttons View">
+                            <rect key="frame" x="8" y="539" width="359" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="287-mI-6Qz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="x2K-xY-yea" firstAttribute="top" secondItem="eF6-6B-mme" secondAttribute="bottom" constant="8" id="0x1-hS-rZs"/>
+                        <constraint firstItem="y15-rn-Kkw" firstAttribute="leading" secondItem="eF6-6B-mme" secondAttribute="trailing" constant="8" id="1wJ-FZ-a4R"/>
+                        <constraint firstItem="y15-rn-Kkw" firstAttribute="width" secondItem="eF6-6B-mme" secondAttribute="width" id="2Dv-tO-TjB"/>
+                        <constraint firstAttribute="bottom" secondItem="x2K-xY-yea" secondAttribute="bottom" constant="8" id="2Ou-wX-Dr6"/>
+                        <constraint firstItem="y15-rn-Kkw" firstAttribute="bottom" secondItem="eF6-6B-mme" secondAttribute="bottom" id="8Bp-dq-I4d"/>
+                        <constraint firstItem="BK4-8x-L5O" firstAttribute="leading" secondItem="Bbm-KD-EaV" secondAttribute="leading" constant="8" id="923-e0-5C8"/>
+                        <constraint firstItem="eF6-6B-mme" firstAttribute="top" secondItem="b9f-Ip-gzD" secondAttribute="bottom" constant="8" id="Ee4-ib-sBV"/>
+                        <constraint firstAttribute="trailing" secondItem="x2K-xY-yea" secondAttribute="trailing" constant="8" id="FNU-my-yZe"/>
+                        <constraint firstItem="y15-rn-Kkw" firstAttribute="trailing" secondItem="b9f-Ip-gzD" secondAttribute="trailing" id="KsD-Ji-oB5"/>
+                        <constraint firstItem="eF6-6B-mme" firstAttribute="leading" secondItem="b9f-Ip-gzD" secondAttribute="leading" id="Mog-o5-jCA"/>
+                        <constraint firstItem="b9f-Ip-gzD" firstAttribute="top" secondItem="BK4-8x-L5O" secondAttribute="bottom" constant="8" id="PBk-TL-RKR"/>
+                        <constraint firstItem="x2K-xY-yea" firstAttribute="leading" secondItem="Bbm-KD-EaV" secondAttribute="leading" constant="8" id="QzQ-g0-aLD"/>
+                        <constraint firstItem="b9f-Ip-gzD" firstAttribute="leading" secondItem="BK4-8x-L5O" secondAttribute="leading" id="Ske-Mr-9nX"/>
+                        <constraint firstItem="BK4-8x-L5O" firstAttribute="top" secondItem="Bbm-KD-EaV" secondAttribute="top" constant="8" id="cBF-t7-GKv"/>
+                        <constraint firstItem="y15-rn-Kkw" firstAttribute="top" secondItem="eF6-6B-mme" secondAttribute="top" id="dCG-qO-ygV"/>
+                        <constraint firstItem="b9f-Ip-gzD" firstAttribute="trailing" secondItem="BK4-8x-L5O" secondAttribute="trailing" id="phh-Pc-qXb"/>
+                        <constraint firstAttribute="trailing" secondItem="BK4-8x-L5O" secondAttribute="trailing" constant="8" id="xEC-5c-ZTN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bbm-KD-EaV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V1f-HF-NxQ"/>
+                <constraint firstItem="Bbm-KD-EaV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="aRV-oW-A3u"/>
+                <constraint firstAttribute="bottom" secondItem="Bbm-KD-EaV" secondAttribute="bottom" id="f8X-d3-P7q"/>
+                <constraint firstAttribute="trailing" secondItem="Bbm-KD-EaV" secondAttribute="trailing" id="hPA-9d-z18"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="99.5"/>
+        </view>
+    </objects>
+</document>
