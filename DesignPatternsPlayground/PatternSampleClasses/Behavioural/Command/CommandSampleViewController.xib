@@ -22,16 +22,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbm-KD-EaV" userLabel="Wrapper View">
-                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Executed Commands" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK4-8x-L5O">
-                            <rect key="frame" x="8" y="8" width="359" height="30.5"/>
-                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Executed Commands" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK4-8x-L5O">
+                            <rect key="frame" x="8" y="8" width="359" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Ip-gzD">
-                            <rect key="frame" x="8" y="46.5" width="359" height="40"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF6-6B-mme" userLabel="Left Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
+                            <rect key="frame" x="8" y="87.5" width="175.5" height="423.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y15-rn-Kkw" userLabel="Right Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
+                            <rect key="frame" x="191.5" y="87.5" width="175.5" height="423.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-xY-yea" userLabel="Bottom Buttons View">
+                            <rect key="frame" x="8" y="519" width="359" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="287-mI-6Qz"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-Ip-gzD">
+                            <rect key="frame" x="8" y="39" width="359" height="40"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Xih-oJ-VnG"/>
@@ -43,21 +58,6 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF6-6B-mme" userLabel="Left Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
-                            <rect key="frame" x="8" y="94.5" width="175.5" height="436.5"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y15-rn-Kkw" userLabel="Right Fighter View" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
-                            <rect key="frame" x="191.5" y="94.5" width="175.5" height="436.5"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2K-xY-yea" userLabel="Bottom Buttons View">
-                            <rect key="frame" x="8" y="539" width="359" height="60"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="60" id="287-mI-6Qz"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -84,7 +84,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Bbm-KD-EaV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V1f-HF-NxQ"/>
-                <constraint firstItem="Bbm-KD-EaV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="aRV-oW-A3u"/>
+                <constraint firstItem="Bbm-KD-EaV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="aRV-oW-A3u"/>
                 <constraint firstAttribute="bottom" secondItem="Bbm-KD-EaV" secondAttribute="bottom" id="f8X-d3-P7q"/>
                 <constraint firstAttribute="trailing" secondItem="Bbm-KD-EaV" secondAttribute="trailing" id="hPA-9d-z18"/>
             </constraints>
