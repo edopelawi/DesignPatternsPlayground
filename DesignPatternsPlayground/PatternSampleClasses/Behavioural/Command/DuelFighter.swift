@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol DuelFighterObserver: class {
+	func healthUpdated(duelFighter: DuelFighter)
+}
+
 class DuelFighter {
 	
 	struct Memento {
@@ -35,8 +39,12 @@ class DuelFighter {
 			} else if overMaximum {
 				health = 100
 			}
+			
+			observers.forEach { $0.healthUpdated(duelFighter: self) }
 		}
 	}
+	
+	private var observers = [DuelFighterObserver]()
 	
 	init(name: String, emoji: String, attackPoint: Int, healPoint: Int) {
 		self.name = name
@@ -57,6 +65,32 @@ class DuelFighter {
 		health += healPoint
 	}
 	
+	// MARK: - Observer-related methods
+	
+	func add(observer: DuelFighterObserver) {
+		
+		if let _ = indexFor(observer: observer) {
+			return
+		} else {
+			self.observers.append(observer)
+		}
+		
+	}
+	
+	func remove(observer: DuelFighterObserver) {
+		
+		guard let validIndex = indexFor(observer: observer) else {
+			return
+		}
+		
+		observers.remove(at: validIndex)
+	}
+	
+	private func indexFor(observer: DuelFighterObserver) -> Int? {
+		return observers.index { currentObserver -> Bool in
+			return currentObserver === observer
+		}
+	}
 	// MARK: - Memento-related methods
 	
 	func createMemento() -> Memento {
