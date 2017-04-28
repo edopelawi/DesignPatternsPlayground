@@ -158,6 +158,8 @@
 		8D66E7B61EB2F0F700D24984 /* DuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */; };
 		8D66E7B81EB2F27500D24984 /* AttackDuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */; };
 		8D66E7BA1EB2F5B900D24984 /* HealDuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */; };
+		8D66E7C11EB3024B00D24984 /* DuelFighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7BF1EB3024B00D24984 /* DuelFighterView.swift */; };
+		8D66E7C21EB3024B00D24984 /* DuelFighterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -482,6 +484,8 @@
 		8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterCommand.swift; sourceTree = "<group>"; };
 		8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackDuelFighterCommand.swift; sourceTree = "<group>"; };
 		8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealDuelFighterCommand.swift; sourceTree = "<group>"; };
+		8D66E7BF1EB3024B00D24984 /* DuelFighterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterView.swift; sourceTree = "<group>"; };
+		8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuelFighterView.xib; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -943,6 +947,8 @@
 				8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */,
 				8D66E7B71EB2F27500D24984 /* AttackDuelFighterCommand.swift */,
 				8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */,
+				8D66E7BF1EB3024B00D24984 /* DuelFighterView.swift */,
+				8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -1473,6 +1479,7 @@
 				8DC42CD01C58E23C0061D5F3 /* TreasureHuntRoomCollectionViewCell.xib in Resources */,
 				8DED257A1C2292FF00462C0F /* LaunchScreen.storyboard in Resources */,
 				8DC42C901C58D1820061D5F3 /* TreasureHuntAlleyRoomViewController.xib in Resources */,
+				8D66E7C21EB3024B00D24984 /* DuelFighterView.xib in Resources */,
 				8DC42C721C58C9BF0061D5F3 /* BridgeSampleViewController.xib in Resources */,
 				8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */,
 				8DADCA1A1CAD4F7900FA46B7 /* TemplateMethod.txt in Resources */,
@@ -1877,6 +1884,7 @@
 				8DC42CB71C58E1350061D5F3 /* TreasureHuntRoomFactory.swift in Sources */,
 				8DC42C511C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
+				8D66E7C11EB3024B00D24984 /* DuelFighterView.swift in Sources */,
 				8D66E7B61EB2F0F700D24984 /* DuelFighterCommand.swift in Sources */,
 				8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */,
 				8DC42C681C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
