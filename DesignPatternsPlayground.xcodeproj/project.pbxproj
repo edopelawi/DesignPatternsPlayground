@@ -155,6 +155,7 @@
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
 		8D66B20D1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
 		8D66E7B31EB2ED4F00D24984 /* DuelFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */; };
+		8D66E7B61EB2F0F700D24984 /* DuelFighterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -476,6 +477,7 @@
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
 		8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighter.swift; sourceTree = "<group>"; };
+		8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterCommand.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -934,6 +936,7 @@
 			isa = PBXGroup;
 			children = (
 				8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */,
+				8D66E7B51EB2F0F700D24984 /* DuelFighterCommand.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -1866,6 +1869,7 @@
 				8DC42CB71C58E1350061D5F3 /* TreasureHuntRoomFactory.swift in Sources */,
 				8DC42C511C58C77A0061D5F3 /* KoalaCulinaryTourGuide.swift in Sources */,
 				8D55245A1C58AF9A00D5A4B4 /* IndonesianChef.swift in Sources */,
+				8D66E7B61EB2F0F700D24984 /* DuelFighterCommand.swift in Sources */,
 				8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */,
 				8DC42C681C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
