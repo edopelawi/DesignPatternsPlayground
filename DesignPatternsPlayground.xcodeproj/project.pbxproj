@@ -154,6 +154,7 @@
 		8D5D112C1C4E1D56003CA559 /* Adapter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D5D112A1C4E1D56003CA559 /* Adapter.txt */; };
 		8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
 		8D66B20D1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */; };
+		8D66E7B31EB2ED4F00D24984 /* DuelFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -474,6 +475,7 @@
 		8D59F0A11CAA8864004CFFE8 /* Strategy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Strategy.txt; sourceTree = "<group>"; };
 		8D5D112A1C4E1D56003CA559 /* Adapter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Adapter.txt; sourceTree = "<group>"; };
 		8D66B20B1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyweightSampleViewModel.swift; sourceTree = "<group>"; };
+		8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighter.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -764,6 +766,7 @@
 				8DADC9DC1CAB70F300FA46B7 /* Observer */,
 				8DADC9FB1CACF10A00FA46B7 /* TemplateMethod */,
 				8DC264181EB191AC002FD60E /* Memento */,
+				8D66E7B11EB2ED1B00D24984 /* Command */,
 			);
 			path = Behavioural;
 			sourceTree = "<group>";
@@ -925,6 +928,14 @@
 				8DA222A11CA27EBF00931CF7 /* Facade.txt */,
 			);
 			path = Structural;
+			sourceTree = "<group>";
+		};
+		8D66E7B11EB2ED1B00D24984 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				8D66E7B21EB2ED4F00D24984 /* DuelFighter.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 		8D8BD7251C43A41400E71C88 /* Resources */ = {
@@ -1858,6 +1869,7 @@
 				8DC2642B1EB1BF38002FD60E /* DateFormatter+MementoSample.swift in Sources */,
 				8DC42C681C58C7F70061D5F3 /* KoalaChef.swift in Sources */,
 				8DC42CC01C58E1D40061D5F3 /* ProxySampleViewController.swift in Sources */,
+				8D66E7B31EB2ED4F00D24984 /* DuelFighter.swift in Sources */,
 				8D5524631C58AFC200D5A4B4 /* Chef.swift in Sources */,
 				8D5524861C58B3BE00D5A4B4 /* ParadeViewModel.swift in Sources */,
 				8DBADAB01C5A362200B18CEF /* MonsterInvaderFlyweightFactory.swift in Sources */,
