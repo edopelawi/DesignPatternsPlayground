@@ -163,6 +163,7 @@
 		8D66E7C51EB304CE00D24984 /* CommandSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7C31EB304CE00D24984 /* CommandSampleViewController.swift */; };
 		8D66E7C61EB304CE00D24984 /* CommandSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */; };
 		8D66E7C91EB30AF300D24984 /* DuelFighterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */; };
+		8D66E7CC1EB312B300D24984 /* CommandSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7CB1EB312B200D24984 /* CommandSampleViewModel.swift */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -492,6 +493,7 @@
 		8D66E7C31EB304CE00D24984 /* CommandSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSampleViewController.swift; sourceTree = "<group>"; };
 		8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommandSampleViewController.xib; sourceTree = "<group>"; };
 		8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterViewModel.swift; sourceTree = "<group>"; };
+		8D66E7CB1EB312B200D24984 /* CommandSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSampleViewModel.swift; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -966,6 +968,7 @@
 			isa = PBXGroup;
 			children = (
 				8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */,
+				8D66E7CB1EB312B200D24984 /* CommandSampleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1891,6 +1894,7 @@
 				8DADCA171CAD4E4100FA46B7 /* Tiger.swift in Sources */,
 				8D59F08F1CAA63D9004CFFE8 /* AscendingPriceProductSorter.swift in Sources */,
 				8DC42CB11C58E0D70061D5F3 /* BridgeSampleViewModel.swift in Sources */,
+				8D66E7CC1EB312B300D24984 /* CommandSampleViewModel.swift in Sources */,
 				8D5524211C58AABC00D5A4B4 /* UIViewController+PatternCommentary.swift in Sources */,
 				8DDC0B0E1C71B034008DBDCF /* ChristmasLights.swift in Sources */,
 				8DA071801D9289C8007FA320 /* IndonesianChefAcademy.swift in Sources */,
