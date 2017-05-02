@@ -164,6 +164,8 @@
 		8D66E7C61EB304CE00D24984 /* CommandSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */; };
 		8D66E7C91EB30AF300D24984 /* DuelFighterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */; };
 		8D66E7CC1EB312B300D24984 /* CommandSampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7CB1EB312B200D24984 /* CommandSampleViewModel.swift */; };
+		8D66E7CF1EB3160E00D24984 /* DuelFighterCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66E7CD1EB3160E00D24984 /* DuelFighterCommandCell.swift */; };
+		8D66E7D01EB3160E00D24984 /* DuelFighterCommandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D66E7CE1EB3160E00D24984 /* DuelFighterCommandCell.xib */; };
 		8D68A6B41C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D68A6B51C579A8700BEDC5C /* Proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D68A6B31C579A8700BEDC5C /* Proxy.txt */; };
 		8D8BD7291C43A4FB00E71C88 /* AbstractFactory.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */; };
@@ -494,6 +496,8 @@
 		8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommandSampleViewController.xib; sourceTree = "<group>"; };
 		8D66E7C81EB30AF300D24984 /* DuelFighterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterViewModel.swift; sourceTree = "<group>"; };
 		8D66E7CB1EB312B200D24984 /* CommandSampleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSampleViewModel.swift; sourceTree = "<group>"; };
+		8D66E7CD1EB3160E00D24984 /* DuelFighterCommandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelFighterCommandCell.swift; sourceTree = "<group>"; };
+		8D66E7CE1EB3160E00D24984 /* DuelFighterCommandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DuelFighterCommandCell.xib; sourceTree = "<group>"; };
 		8D68A6B31C579A8700BEDC5C /* Proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Proxy.txt; sourceTree = "<group>"; };
 		8D8BD7281C43A4FB00E71C88 /* AbstractFactory.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AbstractFactory.txt; sourceTree = "<group>"; };
 		8D8E67B61C96B70E0035D69A /* FacadeSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeSampleViewController.swift; sourceTree = "<group>"; };
@@ -958,6 +962,8 @@
 				8D66E7B91EB2F5B900D24984 /* HealDuelFighterCommand.swift */,
 				8D66E7BF1EB3024B00D24984 /* DuelFighterView.swift */,
 				8D66E7C01EB3024B00D24984 /* DuelFighterView.xib */,
+				8D66E7CD1EB3160E00D24984 /* DuelFighterCommandCell.swift */,
+				8D66E7CE1EB3160E00D24984 /* DuelFighterCommandCell.xib */,
 				8D66E7C31EB304CE00D24984 /* CommandSampleViewController.swift */,
 				8D66E7C41EB304CE00D24984 /* CommandSampleViewController.xib */,
 			);
@@ -1444,6 +1450,7 @@
 					};
 					8DED256B1C2292FF00462C0F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = GX458V4RKG;
 						LastSwiftMigration = 0810;
 					};
 					8DED257F1C2292FF00462C0F = {
@@ -1532,6 +1539,7 @@
 				8D55247C1C58B33C00D5A4B4 /* FactoryMethodSampleViewController.xib in Resources */,
 				8DED25771C2292FF00462C0F /* Assets.xcassets in Resources */,
 				8DADC9F51CABA39000FA46B7 /* ObserverSampleViewController.xib in Resources */,
+				8D66E7D01EB3160E00D24984 /* DuelFighterCommandCell.xib in Resources */,
 				8D66E7C61EB304CE00D24984 /* CommandSampleViewController.xib in Resources */,
 				8DC264251EB1AB10002FD60E /* CharacterCollectionCell.xib in Resources */,
 				8DED25751C2292FF00462C0F /* Main.storyboard in Resources */,
@@ -1820,6 +1828,7 @@
 				8D1ED3111C7C765A00A6535B /* ChristmasDecoration.swift in Sources */,
 				8DC42CCA1C58E1D40061D5F3 /* ThemeParkVisitor.swift in Sources */,
 				8D55248A1C58B3BE00D5A4B4 /* CityParadeViewModel.swift in Sources */,
+				8D66E7CF1EB3160E00D24984 /* DuelFighterCommandCell.swift in Sources */,
 				8DC42C451C58C7530061D5F3 /* AnimalCulinaryTourGuide.swift in Sources */,
 				8D59F0891CAA61D8004CFFE8 /* AscendingNameProductSorter.swift in Sources */,
 				8D66B20C1C5B0D53006EEF9F /* FlyweightSampleViewModel.swift in Sources */,
@@ -2257,6 +2266,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GX458V4RKG;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2272,6 +2282,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GX458V4RKG;
 				INFOPLIST_FILE = DesignPatternsPlayground/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
