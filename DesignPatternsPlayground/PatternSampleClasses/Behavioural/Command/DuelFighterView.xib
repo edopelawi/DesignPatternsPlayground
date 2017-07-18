@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DuelFighterView" customModule="DesignPatternsPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="attackAmountLabel" destination="yTM-mC-znY" id="r1a-BI-TDs"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ih4-NN-X1w"/>
+                <outlet property="fighterEmojiLabel" destination="5ky-UU-c70" id="bFX-up-H9E"/>
+                <outlet property="fighterNameLabel" destination="o6u-DB-hH3" id="tw0-3y-xfx"/>
+                <outlet property="healAmountLabel" destination="ATP-LA-VUU" id="9Eg-LK-n7k"/>
+                <outlet property="healthAmountLabel" destination="iRn-cU-04t" id="QcG-Oa-61B"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fighter Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="o6u-DB-hH3">
+                    <rect key="frame" x="0.0" y="8" width="375" height="27.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="😄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5ky-UU-c70" userLabel="Fighter Emoji">
+                    <rect key="frame" x="8" y="67.5" width="359" height="377"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aD0-vS-IAn" userLabel="Bottom Info View">
+                    <rect key="frame" x="0.0" y="464.5" width="375" height="102.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔵 Health:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5O-Vf-hIg">
+                            <rect key="frame" x="0.0" y="8" width="122" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💥Attack Point:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyS-FY-8Op">
+                            <rect key="frame" x="0.0" y="39.5" width="122" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💊 Heal Point:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWc-Lb-nZb">
+                            <rect key="frame" x="0.0" y="71" width="122" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRn-cU-04t" userLabel="Health Amount Label">
+                            <rect key="frame" x="130" y="8" width="245" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTM-mC-znY" userLabel="Attack Amount Label">
+                            <rect key="frame" x="130" y="39.5" width="245" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATP-LA-VUU" userLabel="Heal Amount Label">
+                            <rect key="frame" x="130" y="71" width="245" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iRn-cU-04t" firstAttribute="baseline" secondItem="N5O-Vf-hIg" secondAttribute="baseline" id="2Et-e3-zgO"/>
+                        <constraint firstItem="yTM-mC-znY" firstAttribute="baseline" secondItem="lyS-FY-8Op" secondAttribute="baseline" id="5W9-fV-duo"/>
+                        <constraint firstItem="iRn-cU-04t" firstAttribute="leading" secondItem="N5O-Vf-hIg" secondAttribute="trailing" constant="8" id="9ie-SW-u6w"/>
+                        <constraint firstItem="ATP-LA-VUU" firstAttribute="trailing" secondItem="yTM-mC-znY" secondAttribute="trailing" id="AeF-AP-bIM"/>
+                        <constraint firstItem="N5O-Vf-hIg" firstAttribute="top" secondItem="aD0-vS-IAn" secondAttribute="top" constant="8" id="CdG-PT-W24"/>
+                        <constraint firstItem="EWc-Lb-nZb" firstAttribute="top" secondItem="lyS-FY-8Op" secondAttribute="bottom" constant="8" id="Jbb-tv-XVv"/>
+                        <constraint firstAttribute="bottom" secondItem="EWc-Lb-nZb" secondAttribute="bottom" constant="8" id="KTe-9K-K8j"/>
+                        <constraint firstItem="EWc-Lb-nZb" firstAttribute="width" secondItem="lyS-FY-8Op" secondAttribute="width" id="MFM-zc-bPW"/>
+                        <constraint firstItem="lyS-FY-8Op" firstAttribute="leading" secondItem="N5O-Vf-hIg" secondAttribute="leading" id="TWS-dL-nep"/>
+                        <constraint firstItem="lyS-FY-8Op" firstAttribute="width" secondItem="N5O-Vf-hIg" secondAttribute="width" id="UJh-4W-idS"/>
+                        <constraint firstItem="yTM-mC-znY" firstAttribute="trailing" secondItem="iRn-cU-04t" secondAttribute="trailing" id="W0m-hY-jvM"/>
+                        <constraint firstItem="yTM-mC-znY" firstAttribute="leading" secondItem="iRn-cU-04t" secondAttribute="leading" id="WWq-BU-nbu"/>
+                        <constraint firstAttribute="trailing" secondItem="iRn-cU-04t" secondAttribute="trailing" id="WqN-B2-JNq"/>
+                        <constraint firstItem="N5O-Vf-hIg" firstAttribute="leading" secondItem="aD0-vS-IAn" secondAttribute="leading" id="fjn-E3-pfw"/>
+                        <constraint firstItem="ATP-LA-VUU" firstAttribute="baseline" secondItem="EWc-Lb-nZb" secondAttribute="baseline" id="kQQ-NG-cFC"/>
+                        <constraint firstItem="ATP-LA-VUU" firstAttribute="leading" secondItem="yTM-mC-znY" secondAttribute="leading" id="qw4-lh-cik"/>
+                        <constraint firstItem="lyS-FY-8Op" firstAttribute="top" secondItem="N5O-Vf-hIg" secondAttribute="bottom" constant="8" id="t6l-wK-oQW"/>
+                        <constraint firstItem="EWc-Lb-nZb" firstAttribute="leading" secondItem="lyS-FY-8Op" secondAttribute="leading" id="zxx-TE-yAk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-SS-Fmz" userLabel="Bottom Action View">
+                    <rect key="frame" x="0.0" y="561" width="375" height="98"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCA-TE-Nyo" userLabel="Attack Button">
+                            <rect key="frame" x="0.0" y="8" width="375" height="37"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <state key="normal" title="💥Attack!"/>
+                            <connections>
+                                <action selector="attackButtonTapped:" destination="-1" eventType="touchUpInside" id="fUv-JX-7HN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f76-cW-cs8" userLabel="Heal Button">
+                            <rect key="frame" x="0.0" y="53" width="375" height="37"/>
+                            <color key="backgroundColor" red="0.0" green="0.4431372549" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <state key="normal" title="💊Heal!"/>
+                            <connections>
+                                <action selector="healButtonTapped:" destination="-1" eventType="touchUpInside" id="8rC-ME-vnO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DCA-TE-Nyo" secondAttribute="trailing" id="1Ct-Ly-oHf"/>
+                        <constraint firstItem="DCA-TE-Nyo" firstAttribute="leading" secondItem="Bpe-SS-Fmz" secondAttribute="leading" id="1FM-qQ-fxg"/>
+                        <constraint firstItem="f76-cW-cs8" firstAttribute="leading" secondItem="DCA-TE-Nyo" secondAttribute="leading" id="2Dw-W2-FxL"/>
+                        <constraint firstItem="f76-cW-cs8" firstAttribute="trailing" secondItem="DCA-TE-Nyo" secondAttribute="trailing" id="3ON-EI-8Ph"/>
+                        <constraint firstItem="f76-cW-cs8" firstAttribute="top" secondItem="DCA-TE-Nyo" secondAttribute="bottom" constant="8" id="Ew7-5x-voO"/>
+                        <constraint firstItem="f76-cW-cs8" firstAttribute="height" secondItem="DCA-TE-Nyo" secondAttribute="height" id="WcI-3r-vIq"/>
+                        <constraint firstAttribute="bottom" secondItem="f76-cW-cs8" secondAttribute="bottom" constant="8" id="ezb-6E-MH8"/>
+                        <constraint firstItem="DCA-TE-Nyo" firstAttribute="top" secondItem="Bpe-SS-Fmz" secondAttribute="top" constant="8" id="xwe-T2-5pU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aD0-vS-IAn" firstAttribute="top" secondItem="5ky-UU-c70" secondAttribute="bottom" constant="20" id="2jH-Y2-fZE"/>
+                <constraint firstItem="o6u-DB-hH3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="3Po-ZC-W4t"/>
+                <constraint firstItem="Bpe-SS-Fmz" firstAttribute="top" secondItem="aD0-vS-IAn" secondAttribute="bottom" constant="-6" id="NfP-yS-gPe"/>
+                <constraint firstItem="5ky-UU-c70" firstAttribute="top" secondItem="o6u-DB-hH3" secondAttribute="bottom" constant="32" id="Sfq-Mq-awI"/>
+                <constraint firstItem="Bpe-SS-Fmz" firstAttribute="leading" secondItem="aD0-vS-IAn" secondAttribute="leading" id="UZh-jT-P9F"/>
+                <constraint firstItem="aD0-vS-IAn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gGW-mz-ne0"/>
+                <constraint firstAttribute="trailing" secondItem="5ky-UU-c70" secondAttribute="trailing" constant="8" id="gir-OU-Don"/>
+                <constraint firstItem="5ky-UU-c70" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="jjO-5H-jPM"/>
+                <constraint firstItem="Bpe-SS-Fmz" firstAttribute="trailing" secondItem="aD0-vS-IAn" secondAttribute="trailing" id="p7y-f3-96S"/>
+                <constraint firstAttribute="trailing" secondItem="o6u-DB-hH3" secondAttribute="trailing" id="sa6-wm-7Mj"/>
+                <constraint firstAttribute="trailing" secondItem="aD0-vS-IAn" secondAttribute="trailing" id="wSc-P4-NaZ"/>
+                <constraint firstItem="o6u-DB-hH3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wUB-qP-5SN"/>
+                <constraint firstAttribute="bottom" secondItem="Bpe-SS-Fmz" secondAttribute="bottom" constant="8" id="xu6-7W-noz"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="111.5"/>
+        </view>
+    </objects>
+</document>
